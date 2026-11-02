@@ -8,26 +8,21 @@ on:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
-
-      - name: Install dependencies
-        run: npm install
-
-      - name: Run scraper (10 Pages International)
+      - name: Install Chrome
+        uses: browser-actions/setup-chrome@latest
+      - name: Install Puppeteer Core only
+        run: npm install puppeteer-core@21.6.1 --no-save --no-audit --no-fund
+      - name: Run scraper
         run: node scraper.js
-
-      - name: Commit and Push
+      - name: Commit
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "bot"
+          git config --global user.email "bot@bot.com"
           git add match-schedule.json
-          git diff --staged --quiet || git commit -m "Update International schedule - $(date -u)"
+          git diff --staged --quiet || git commit -m "Update"
           git push
