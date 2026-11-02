@@ -1,222 +1,136 @@
-const puppeteer = require('puppeteer');
 const fs = require('fs');
 const path = require('path');
 
 const OUTPUT_FILE = path.join(__dirname, 'match-schedule.json');
-const MAX_PAGES_TO_SCRAPE = 10; // 10 pages as you wanted
+const END_DATE = new Date(2026, 10, 30); // 30 Nov 2026
 
-async function scrapeCrexScheduleWithPagination() {
-    console.log('🚀 [CREX Pagination Scraper] Launching browser...');
+console.log(`📅 Scraping from Today to ${END_DATE.toDateString()} WITH TIME`);
 
-    let launchOptions = {
-        headless: 'new',
-        args: [
-            '--no-sandbox',
-            '--disable-setuid-sandbox',
-            '--disable-dev-shm-usage',
-            '--disable-gpu'
-        ]
-    };
-
-    const possiblePaths = [
-        'C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe',
-        'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'
-    ];
-    for (const p of possiblePaths) {
-        if (fs.existsSync(p)) {
-            launchOptions.executablePath = p;
-            console.log(`Using local Chrome: ${p}`);
-            break;
+async function scrape() {
+    let puppeteer;
+    try {
+        puppeteer = require('puppeteer-core');
+        console.log('Using puppeteer-core');
+    } catch (e) {
+        console.log('puppeteer-core not found, trying puppeteer', e.message);
+        try {
+            puppeteer = require('puppeteer');
+        } catch (e2) {
+            console.error('No puppeteer found');
+            process.exit(1);
         }
     }
 
-    const browser = await puppeteer.launch(launchOptions);
+    const browser = await puppeteer.launch({
+        headless: 'new',
+        channel: 'chrome',
+        args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage', '--disable-gpu']
+    }).catch(async () => {
+        return await puppeteer.launch({
+            headless: 'new',
+            args: ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
+        });
+    });
 
     try {
         const page = await browser.newPage();
-        await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36');
+        await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
         await page.setViewport({ width: 1920, height: 1080 });
 
-        console.log('📡 Navigating to CREX Schedule...');
-        await page.goto('https://crex.com/schedule', {
-            waitUntil: 'networkidle2',
-            timeout: 90000
-        });
+        console.log('📡 Opening CREX...');
+        await page.goto('https://crex.com/schedule', { waitUntil: 'domcontentloaded', timeout: 60000 });
+        await new Promise(r => setTimeout(r, 5000));
 
-        // ===== ONLY ADDITION: Apply International Filter One Time =====
-        console.log('🎯 Applying Filter: Series Type = International (One Time)...');
-        await new Promise(r => setTimeout(r, 3000));
-
+        // International filter
+        console.log('🎯 Applying International filter...');
         try {
-            // Wait for filter wrapper
-            await page.waitForSelector('.fixture-filter-wrapper, #date-wise-wrap', { timeout: 15000 });
-            
-            // Try URL based filter first - many sites support it
-            console.log('Trying URL param filter...');
-            await page.goto('https://crex.com/schedule?seriesType=international&series_type=international', { waitUntil: 'networkidle2', timeout: 30000 }).catch(()=>{});
-            await new Promise(r => setTimeout(r, 3000));
-
-            
-            const filterDone = await page.evaluate(async () => {
-                const sleep = (ms) => new Promise(r => setTimeout(r, ms));
-                
-                // Find Series Type wrapper
-                const wrappers = document.querySelectorAll('.option-wrapper');
-                let targetWrapper = null;
-                
-                for (let w of wrappers) {
-                    const nameEl = w.querySelector('.name');
-                    if (nameEl && nameEl.innerText.trim().toLowerCase().includes('series type')) {
-                        targetWrapper = w;
-                        break;
-                    }
-                }
-                
-                if (!targetWrapper) {
-                    console.log('Series Type wrapper not found');
-                    return false;
-                }
-                
-                const selection = targetWrapper.querySelector('.selection');
-                if (!selection) return false;
-                
-                // If already International, done
-                if (selection.innerText.toLowerCase().includes('international')) {
-                    console.log('Already International');
-                    return true;
-                }
-                
-                // Click to open dropdown
-                selection.click();
-                await sleep(1500);
-                
-                // Find International option in dropdown
-                // CREX creates dropdown options dynamically
-                const possibleOptionSelectors = [
-                    '.option-wrapper .options div',
-                    '.dropdown div',
-                    '.options-list div',
-                    '[class*="dropdown"] div',
-                    'ul li'
-                ];
-                
-                let clicked = false;
-                for (let sel of possibleOptionSelectors) {
-                    const opts = document.querySelectorAll(sel);
-                    for (let opt of opts) {
-                        if (opt.innerText.trim().toLowerCase() === 'international') {
-                            if (opt.offsetParent !== null) { // visible
-                                opt.click();
-                                clicked = true;
-                                console.log('Clicked International via selector: ' + sel);
-                                break;
-                            }
-                        }
-                    }
-                    if (clicked) break;
-                }
-                
-                // Fallback: search all visible divs for exact text "International"
-                if (!clicked) {
-                    const allDivs = document.querySelectorAll('div, li, span');
-                    for (let d of allDivs) {
-                        if (d.innerText && d.innerText.trim() === 'International' && d.offsetParent !== null) {
-                            // Make sure it's not the selection itself but dropdown option
-                            const rect = d.getBoundingClientRect();
-                            if (rect.width > 10 && rect.height > 5) {
-                                // Check if its parent is near filter area
-                                if (d.closest('.option-wrapper') || d.closest('[class*="filter"]') || d.parentElement) {
-                                    // Don't click the already selected one
-                                    if (d !== selection && !d.classList.contains('selection')) {
-                                        d.click();
-                                        clicked = true;
-                                        console.log('Clicked International via fallback');
-                                        break;
-                                    }
+            await page.evaluate(async () => {
+                for (let w of document.querySelectorAll('.option-wrapper')) {
+                    const n = w.querySelector('.name');
+                    if (n && n.innerText.toLowerCase().includes('series type')) {
+                        const s = w.querySelector('.selection');
+                        if (s && !s.innerText.toLowerCase().includes('international')) {
+                            s.click();
+                            await new Promise(r => setTimeout(r, 1000));
+                            for (let d of document.querySelectorAll('div, li')) {
+                                if (d.innerText && d.innerText.trim() === 'International' && d.offsetParent !== null && d !== s) {
+                                    d.click();
+                                    break;
                                 }
                             }
                         }
+                        break;
                     }
                 }
-                
-                return clicked;
             });
-            
-            console.log('Filter click result:', filterDone);
-            await new Promise(r => setTimeout(r, 4000)); // Wait for filtered data to load
-            
-            // Verify filter applied
-            const verifyFilter = await page.evaluate(() => {
-                const sel = document.querySelector('.option-wrapper .selection');
-                if (sel) {
-                    // Check all wrappers for Series Type
-                    const wrappers = document.querySelectorAll('.option-wrapper');
-                    for (let w of wrappers) {
-                        const name = w.querySelector('.name');
-                        if (name && name.innerText.toLowerCase().includes('series type')) {
-                            const selection = w.querySelector('.selection');
-                            return selection ? selection.innerText.trim() : 'not found';
-                        }
-                    }
-                }
-                return 'verification failed';
-            });
-            console.log('Current filter value:', verifyFilter);
-            
-        } catch (e) {
-            console.log('Filter apply error (will continue):', e.message);
-        }
-        // ===== END OF FILTER CODE =====
+            await new Promise(r => setTimeout(r, 4000));
+        } catch(e){}
 
-        let allMatchesMaster = [];
+        let allMatches = [];
+        let pageNum = 1;
+        let shouldStop = false;
+        const maxPages = 25;
 
-        for (let pageNum = 1; pageNum <= MAX_PAGES_TO_SCRAPE; pageNum++) {
-            console.log(`📄 Scraping Page ${pageNum} of ${MAX_PAGES_TO_SCRAPE}...`);
-            await page.waitForSelector('li.match-card-container', { timeout: 20000 }).catch(() => console.log('No match cards found on this page view'));
-
-            const pageData = await page.evaluate(() => {
+        while (!shouldStop && pageNum <= maxPages) {
+            console.log(`\n📄 Page ${pageNum} scraping...`);
+            await new Promise(r => setTimeout(r, 2000));
+            
+            const data = await page.evaluate(() => {
                 const results = [];
-                const dateBlocks = document.querySelectorAll('#date-wise-wrap > div');
-                dateBlocks.forEach((block) => {
+                document.querySelectorAll('#date-wise-wrap > div').forEach(block => {
                     const dateHeader = block.querySelector('h2.date span')?.innerText.trim() || 'Upcoming';
-                    const matchCards = block.querySelectorAll('li.match-card-container');
-                    matchCards.forEach((card) => {
-                        const matchAnchor = card.querySelector('a.match-card-wrapper');
-                        const href = matchAnchor?.getAttribute('href') || '';
+                    block.querySelectorAll('li.match-card-container').forEach(card => {
+                        const anchor = card.querySelector('a.match-card-wrapper');
+                        const href = anchor?.getAttribute('href') || '';
                         if (!href) return;
-
-                        const teamElements = card.querySelectorAll('.team');
-                        let team1Name = '', team1Flag = '', team1Score = '', team1Overs = '';
-                        let team2Name = '', team2Flag = '', team2Score = '', team2Overs = '';
-
-                        if (teamElements.length >= 2) {
-                            const t1Img = teamElements[0].querySelector('img');
-                            team1Flag = t1Img?.getAttribute('src') || '';
-                            team1Name = teamElements[0].querySelector('.team-name')?.innerText.trim() || t1Img?.getAttribute('alt') || 'Team A';
-                            team1Score = teamElements[0].querySelector('.team-score')?.innerText.trim() || '';
-                            team1Overs = teamElements[0].querySelector('.total-overs')?.innerText.trim() || '';
-
-                            const t2Img = teamElements[1].querySelector('img');
-                            team2Flag = t2Img?.getAttribute('src') || '';
-                            team2Name = teamElements[1].querySelector('.team-name')?.innerText.trim() || t2Img?.getAttribute('alt') || 'Team B';
-                            const scoreEl2 = teamElements[1].querySelector('.team-score');
-                            team2Score = scoreEl2?.innerText.trim() || '';
-                            team2Overs = teamElements[1].querySelector('.total-overs')?.innerText.trim() || '';
+                        const teams = card.querySelectorAll('.team');
+                        let t1Name='', t1Flag='', t1Score='', t1Overs='', t2Name='', t2Flag='', t2Score='', t2Overs='';
+                        if (teams.length >= 2) {
+                            const t1Img = teams[0].querySelector('img');
+                            t1Flag = t1Img?.src || '';
+                            t1Name = teams[0].querySelector('.team-name')?.innerText.trim() || t1Img?.alt || 'Team A';
+                            t1Score = teams[0].querySelector('.team-score')?.innerText.trim() || '';
+                            t1Overs = teams[0].querySelector('.total-overs')?.innerText.trim() || '';
+                            const t2Img = teams[1].querySelector('img');
+                            t2Flag = t2Img?.src || '';
+                            t2Name = teams[1].querySelector('.team-name')?.innerText.trim() || t2Img?.alt || 'Team B';
+                            t2Score = teams[1].querySelector('.team-score')?.innerText.trim() || '';
+                            t2Overs = teams[1].querySelector('.total-overs')?.innerText.trim() || '';
                         }
-
+                        // Time extraction
+                        let matchTime = '';
+                        const timeSelectors = ['.time', '.start-text', '.match-time'];
+                        for (let sel of timeSelectors) {
+                            const el = card.querySelector(sel);
+                            if (el) {
+                                const txt = el.innerText.trim();
+                                if (txt.match(/\d{1,2}:\d{2}\s*(AM|PM)/i) || txt.toLowerCase().includes('live')) {
+                                    matchTime = txt;
+                                    break;
+                                }
+                            }
+                        }
+                        if (!matchTime) {
+                            const fullText = card.innerText || '';
+                            for (let line of fullText.split('\n')) {
+                                if (line.match(/\d{1,2}:\d{2}\s*(AM|PM)/i) || line.toLowerCase() === 'live' || line.includes('• Live')) {
+                                    matchTime = line.trim();
+                                    break;
+                                }
+                            }
+                        }
                         const startText = card.querySelector('.start-text')?.innerText.trim() || '';
-                        const matchInfoText = card.querySelector('.time, .reason')?.innerText.trim() || '';
+                        const infoText = card.querySelector('.reason')?.innerText.trim() || '';
                         const resultText = card.querySelector('.result span')?.innerText.trim() || '';
-
                         const slug = href.split('/cricket-live-score/')[1] || href;
-
                         results.push({
                             id: slug,
                             date: dateHeader,
-                            seriesInfo: matchInfoText,
-                            matchStatus: resultText || (startText ? `Starts at ${startText}` : 'Scheduled'),
-                            team1: { name: team1Name, flagUrl: team1Flag, score: team1Score, overs: team1Overs },
-                            team2: { name: team2Name, flagUrl: team2Flag, score: team2Score, overs: team2Overs },
+                            matchTime: matchTime || startText || 'TBD',
+                            seriesInfo: infoText,
+                            matchStatus: resultText || (matchTime && matchTime.toLowerCase().includes('live') ? 'Live' : 'Scheduled'),
+                            team1: { name: t1Name, flagUrl: t1Flag, score: t1Score, overs: t1Overs },
+                            team2: { name: t2Name, flagUrl: t2Flag, score: t2Score, overs: t2Overs },
                             detailUrl: `https://crex.com${href}`,
                             scrapedAt: new Date().toISOString()
                         });
@@ -225,92 +139,79 @@ async function scrapeCrexScheduleWithPagination() {
                 return results;
             });
 
-            pageData.forEach(m => {
-                if (!allMatchesMaster.some(existing => existing.id === m.id)) {
-                    allMatchesMaster.push(m);
-                }
-            });
+            console.log(`Found ${data.length} on page ${pageNum}`);
 
-            console.log(`✅ Page ${pageNum} done. Total: ${allMatchesMaster.length}`);
+            for (let m of data) {
+                try {
+                    const parsed = new Date(m.date);
+                    if (!isNaN(parsed.getTime())) {
+                        if (parsed > new Date(2026, 10, 30, 23, 59, 59)) {
+                            console.log(`Stop beyond Nov: ${m.date}`);
+                            shouldStop = true;
+                            break;
+                        }
+                        if (parsed.getMonth() === 11) {
+                            console.log(`Stop Dec: ${m.date}`);
+                            shouldStop = true;
+                            break;
+                        }
+                    } else if (m.date.toLowerCase().includes('dec')) {
+                        shouldStop = true;
+                        break;
+                    }
+                } catch(e){}
+                if (!allMatches.some(x => x.id === m.id)) allMatches.push(m);
+            }
 
-            if (pageNum < MAX_PAGES_TO_SCRAPE) {
-                console.log('➡ Clicking Next Page...');
-                const nextClicked = await page.evaluate(() => {
-                    // Try multiple selectors for next button
-                    const selectors = [
-                        'button.arrow-right',
-                        'button.arrow:last-child',
-                        '.pagination .next',
-                        'button.arrow'
-                    ];
-                    for (let sel of selectors) {
-                        const btn = document.querySelector(sel);
-                        if (btn && !btn.disabled && btn.offsetParent !== null) {
-                            btn.click();
+            if (shouldStop) break;
+
+            console.log(`Total till Nov: ${allMatches.length}`);
+
+            const clicked = await page.evaluate(() => {
+                for (let b of document.querySelectorAll('button')) {
+                    if (b.innerText.trim() === '>' || b.innerHTML.includes('arrow-right')) {
+                        if (!b.disabled && b.offsetParent !== null) {
+                            b.click();
                             return true;
                         }
                     }
-                    // Fallback: find button with > text
-                    const buttons = document.querySelectorAll('button');
-                    for (let b of buttons) {
-                        if (b.innerText.trim() === '>' || b.innerHTML.includes('keyboard_arrow_right')) {
-                            if (!b.disabled) {
-                                b.click();
-                                return true;
-                            }
-                        }
-                    }
-                    return false;
-                });
-                if (!nextClicked) {
-                    console.log('⚠ Next button not found. Stopping.');
-                    break;
                 }
-                await new Promise(r => setTimeout(r, 3500));
-                await page.waitForSelector('li.match-card-container', { timeout: 10000 }).catch(()=>{});
+                return false;
+            });
+
+            if (!clicked) {
+                console.log('No next button');
+                break;
             }
+            await new Promise(r => setTimeout(r, 3500));
+            pageNum++;
         }
 
-
-        // ===== FINAL SAFETY FILTER: Remove domestic if UI filter failed =====
-        console.log(`\n🔍 Before filter: ${allMatchesMaster.length} total matches`);
-        const domesticKeywords = [
-            'ranji', 'plate', 'wbbl', 'hong-kong', 'hong kong', 'nepal', 'npl', 
-            'global t20', 'emirates', 'ford trophy', 'csa', 'county', 'duleep', 
-            'deodhar', 'syed mushtaq', 'vijay hazare', 'irandai', 'first-class', 
-            'first class', 'list a', 'womens big bash', 'big bash', 'lpl', 'psl', 'ipl'
-        ];
-        
-        const internationalOnly = allMatchesMaster.filter(m => {
-            const text = `${m.id} ${m.seriesInfo} ${m.date}`.toLowerCase();
-            const isDomestic = domesticKeywords.some(k => text.includes(k));
-            return !isDomestic;
-        });
-        
-        console.log(`✅ After domestic removal: ${internationalOnly.length} INTERNATIONAL matches`);
-        
-        // Also try to enrich seriesInfo if empty - extract from id
-        internationalOnly.forEach(m => {
-            if (!m.seriesInfo || m.seriesInfo === '') {
-                const idLower = m.id.toLowerCase();
-                if (idLower.includes('odi')) m.seriesInfo = 'ODI';
-                else if (idLower.includes('t20i') || idLower.includes('t20')) m.seriesInfo = 'T20I';
-                else if (idLower.includes('test')) m.seriesInfo = 'Test';
-                else m.seriesInfo = 'International';
-            }
+        const domestic = ['ranji','plate','wbbl','hong-kong','nepal','npl','global t20','emirates','ford trophy','csa','county','first class','list a','womens big bash'];
+        const filtered = allMatches.filter(m => {
+            const txt = `${m.id} ${m.seriesInfo}`.toLowerCase();
+            if (domestic.some(k => txt.includes(k))) return false;
+            try {
+                const d = new Date(m.date);
+                if (!isNaN(d.getTime())) {
+                    if (d > new Date(2026, 10, 30, 23, 59, 59)) return false;
+                    if (d.getMonth() === 11) return false;
+                } else if (m.date.toLowerCase().includes('dec')) return false;
+            } catch(e){}
+            return true;
         });
 
-        fs.writeFileSync(OUTPUT_FILE, JSON.stringify(internationalOnly, null, 2));
-
-        console.log(`🎉 Complete! ${allMatchesMaster.length} INTERNATIONAL matches saved to ${OUTPUT_FILE}`);
+        console.log(`FINAL: ${allMatches.length} -> ${filtered.length}`);
+        filtered.sort((a,b) => new Date(a.date) - new Date(b.date));
+        fs.writeFileSync(OUTPUT_FILE, JSON.stringify(filtered, null, 2));
+        console.log(`🎉 DONE ${filtered.length} matches`);
 
     } catch (err) {
-        console.error('❌ Error:', err.message);
-        console.error(err.stack);
+        console.error('Error:', err.message, err.stack);
         process.exit(1);
     } finally {
-        await browser.close();
+        if (browser) await browser.close();
     }
 }
 
-scrapeCrexScheduleWithPagination();
+scrape();
