@@ -35,18 +35,15 @@ async function scrape() {
         await page.goto('https://crex.com/schedule?seriesType=International', { waitUntil: 'networkidle2', timeout: 90000 });
         await new Promise(r => setTimeout(r, 8000));
 
-        // Check if filter applied, if not try alternative URLs
         let check = await page.evaluate(() => {
             return {
                 blocks: document.querySelectorAll('#date-wise-wrap > div').length,
                 cards: document.querySelectorAll('#date-wise-wrap li.match-card-container').length,
-                url: window.location.href,
                 filterText: document.querySelector('.option-wrapper .selection')?.innerText || 'not found'
             };
         });
         console.log(`Initial check: ${JSON.stringify(check)}`);
 
-        // If still All Series, try clicking filter one more time as backup
         if (check.filterText.toLowerCase().includes('all series') || check.cards === 0) {
             console.log('🎯 Filter not applied, trying backup click...');
             await page.evaluate(async () => {
@@ -81,48 +78,30 @@ async function scrape() {
         let noNewDataCount = 0;
         const maxScrollAttempts = 40;
 
-        console.log('\n📄 Starting INFINITE SCROLL to load all dates till Dec 31...');
+        console.log('\n📄 Starting INFINITE SCROLL to load all dates...');
 
         for (let scrollAttempt = 1; scrollAttempt <= maxScrollAttempts; scrollAttempt++) {
             console.log(`\n--- Scroll Attempt ${scrollAttempt} ---`);
             
-            // Scroll to bottom to trigger load more dates
-            await page.evaluate(() => {
-                window.scrollTo(0, document.body.scrollHeight);
-            });
+            await page.evaluate(() => { window.scrollTo(0, document.body.scrollHeight); });
             await new Promise(r => setTimeout(r, 3000));
             
-            // Also try to find and click "Load More" or ">" button if exists
             const paginationResult = await page.evaluate(() => {
-                // Try to find next button
                 for (let b of document.querySelectorAll('button')) {
                     const txt = (b.innerText || '').trim();
                     const html = b.innerHTML || '';
                     if ((txt === '>' || txt === '›' || html.includes('arrow-right') || html.includes('keyboard_arrow_right') || html.includes('chevron')) && !b.disabled) {
-                        if (b.offsetParent !== null) {
-                            b.click();
-                            return { clicked: true, type: 'button ' + txt };
-                        }
-                    }
-                }
-                // Try pagination container
-                const pagContainers = document.querySelectorAll('[class*="pagination"], [class*="pager"], [class*="load-more"]');
-                for (let pag of pagContainers) {
-                    const btn = pag.querySelector('button, a');
-                    if (btn && !btn.disabled && btn.offsetParent !== null) {
-                        btn.click();
-                        return { clicked: true, type: 'pagination container' };
+                        if (b.offsetParent !== null) { b.click(); return { clicked: true }; }
                     }
                 }
                 return { clicked: false };
             });
 
             if (paginationResult.clicked) {
-                console.log(`Clicked pagination: ${paginationResult.type}`);
+                console.log(`Clicked pagination`);
                 await new Promise(r => setTimeout(r, 4000));
             }
 
-            // Get current data
             const data = await page.evaluate(() => {
                 const results = [];
                 const blocks = document.querySelectorAll('#date-wise-wrap > div');
@@ -146,7 +125,6 @@ async function scrape() {
                                 t1Name = teams[0].querySelector('.team-name') ? teams[0].querySelector('.team-name').innerText.trim() : (t1Img ? t1Img.alt : 'Team A');
                                 t1Score = teams[0].querySelector('.team-score') ? teams[0].querySelector('.team-score').innerText.trim() : '';
                                 t1Overs = teams[0].querySelector('.total-overs') ? teams[0].querySelector('.total-overs').innerText.trim() : '';
-                                
                                 const t2Img = teams[1].querySelector('img');
                                 t2Flag = t2Img ? t2Img.src : '';
                                 t2Name = teams[1].querySelector('.team-name') ? teams[1].querySelector('.team-name').innerText.trim() : (t2Img ? t2Img.alt : 'Team B');
@@ -166,7 +144,6 @@ async function scrape() {
                             
                             const seriesInfo = card.querySelector('.reason') ? card.querySelector('.reason').innerText.trim() : '';
                             const resultText = card.querySelector('.result span') ? card.querySelector('.result span').innerText.trim() : '';
-                            
                             const clean = (s) => s ? s.replace(/\n.*/g,'').replace(/\d+\/\d+.*/g,'').trim().split('  ')[0].trim() : '';
                             
                             results.push({
@@ -186,75 +163,35 @@ async function scrape() {
                 return results;
             });
 
-            console.log(`Scroll ${scrollAttempt}: Found ${data.length} total matches on page`);
-            
-            // Count unique dates
+            console.log(`Scroll ${scrollAttempt}: Found ${data.length} total`);
             const uniqueDates = [...new Set(data.map(d => d.date))];
-            console.log(`Unique dates so far: ${uniqueDates.length} - ${uniqueDates.slice(0,5).join(', ')}`);
+            console.log(`Unique dates: ${uniqueDates.length} - ${uniqueDates.slice(0,3).join(', ')}`);
             
-            // Check if we reached beyond END_DATE
             let shouldStop = false;
             for (let m of data) {
                 try {
                     const parsed = new Date(m.date);
-                    if (!isNaN(parsed.getTime()) && parsed > END_DATE) {
-                        console.log(`🛑 Reached beyond ${END_DATE.toDateString()}: ${m.date}`);
-                        shouldStop = true;
-                        break;
-                    }
+                    if (!isNaN(parsed.getTime()) && parsed > END_DATE) { shouldStop = true; break; }
                 } catch(e){}
             }
-            if (shouldStop) {
-                allMatches = data;
-                break;
-            }
+            if (shouldStop) { allMatches = data; break; }
 
-            // Check if new data loaded
             if (data.length === lastBlockCount) {
                 noNewDataCount++;
-                console.log(`No new data count: ${noNewDataCount}`);
-                if (noNewDataCount >= 3) {
-                    console.log('No new data after 3 attempts, stopping scroll');
-                    allMatches = data;
-                    break;
-                }
+                if (noNewDataCount >= 3) { allMatches = data; break; }
             } else {
                 noNewDataCount = 0;
                 lastBlockCount = data.length;
                 allMatches = data;
             }
-
-            // If we have enough dates (till Dec 31), stop
-            try {
-                const lastDateStr = uniqueDates[uniqueDates.length - 1];
-                if (lastDateStr) {
-                    const lastDate = new Date(lastDateStr);
-                    if (!isNaN(lastDate.getTime()) && lastDate >= END_DATE) {
-                        console.log(`✅ Reached target end date: ${lastDateStr}`);
-                        break;
-                    }
-                }
-            } catch(e){}
-
-            if (data.length >= 100) {
-                console.log('Got 100+ matches, likely enough');
-                // Don't break yet, try to get till Dec
-            }
         }
 
-        console.log(`\n📊 Total scraped before filter: ${allMatches.length}`);
-
-        // Domestic filter - very strong
-        const domestic = ['ranji','plate','wbbl','hong-kong','hong kong','nepal','npl','global t20','emirates','ford trophy','csa t20','county','maharaja','duleep','deodhar','vijay hazare','syed mushtaq','miz vs','manipur','nagaland','assam','tripura','bengal','odisha','delhi vs','uttarakhand','himachal','railways','chhattisgarh','tamil nadu','uttar pradesh','gujarat','kerala','karnataka','andhra','bihar','vidarbha','jammu','hyderabad','punjab vs','goa vs','cg vs','up vs','mgly vs','asm vs','tri vs','ben vs','odsa vs','mnp vs','miz vs','ap vs','ker vs','ser vs','har vs','raj vs','mum vs','tn vs','brd vs','bihr vs','mp vs','pdc vs','chg vs','andr vs'];
-        
+        const domestic = ['ranji','plate','wbbl','hong-kong','nepal','npl','global t20','emirates','ford trophy','csa t20','county','maharaja','duleep','deodhar','vijay hazare','syed mushtaq','miz vs','manipur','nagaland','assam','tripura','bengal','odisha','delhi vs','mgly vs','asm vs','tri vs','ben vs','odsa vs','mnp vs'];
         const filtered = allMatches.filter(m => {
             const txt = `${m.id} ${m.seriesInfo} ${m.team1.name} ${m.team2.name}`.toLowerCase();
             return !domestic.some(k => txt.includes(k));
         });
 
-        console.log(`\nFiltering: ${allMatches.length} -> ${filtered.length} International`);
-
-        // Date filter: Today to Dec 31
         const dateFiltered = filtered.filter(m => {
             try {
                 const d = new Date(m.date);
@@ -263,14 +200,10 @@ async function scrape() {
             } catch(e){ return true; }
         });
 
-        console.log(`Date filter: ${filtered.length} -> ${dateFiltered.length} (from ${START_DATE.toDateString()} to ${END_DATE.toDateString()})`);
-
         dateFiltered.sort((a,b) => new Date(a.date) - new Date(b.date));
-
         fs.writeFileSync(OUTPUT_FILE, JSON.stringify(dateFiltered, null, 2));
-        console.log(`\n✅ FINAL: ${dateFiltered.length} International matches from ${START_DATE.toDateString()} to ${END_DATE.toDateString()}`);
-        console.log(`🎉 SAVED! Sample:`);
-        console.log(JSON.stringify(dateFiltered.slice(0,3), null, 2));
+        console.log(`\n✅ FINAL: ${dateFiltered.length} International matches`);
+        console.log(`🎉 SAVED!`);
 
     } catch (err) {
         console.error('Error:', err.message, err.stack);
