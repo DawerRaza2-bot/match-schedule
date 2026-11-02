@@ -2,8 +2,8 @@ name: Update International Match Schedule
 
 on:
   schedule:
-    - cron: '0 0 25 * *'  # Har mahine ki 25 tareekh ko raat 12 baje
-  workflow_dispatch:  # Manual bhi chala sakte ho kabhi bhi
+    - cron: '0 0 25 * *'  # Har mahine ki 25 ko - agle mahine ka data
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -11,31 +11,31 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
-    
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-
+      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
-
+      
       - name: Setup Chrome
-        uses: browser-actions/setup-chrome@latest
-
+        uses: browser-actions/setup-chrome@v1
+      
       - name: Install Puppeteer Core only
         run: npm install puppeteer-core@21.6.1 --no-save --no-audit --no-fund
-
-      - name: Run scraper (Full Month - 10 Pages)
+      
+      - name: Run scraper (Today to End Next Month - International + Time)
         run: node scraper.js
-
-      - name: Commit and Push
+      
+      - name: Commit and Push with pull fix
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git pull --rebase origin main || git pull --rebase
           git add match-schedule.json
-          git diff --staged --quiet || git commit -m "Update Monthly schedule (25th) - $(date -u)"
+          git diff --staged --quiet || git commit -m "Update schedule - $(date -u)"
           git push
