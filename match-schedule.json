@@ -1,1 +1,23 @@
-[]
+[
+  {
+    "id": "ned-vs-oma-144th-odi-mens-cwc-league-2-2023-27-match-updates-14VF",
+    "date": "Mon, 2 Nov 2026",
+    "matchTime": "Live",
+    "seriesInfo": "",
+    "matchStatus": "Live",
+    "team1": {
+      "name": "OMA",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/15.png",
+      "score": "90/4",
+      "overs": "26.0"
+    },
+    "team2": {
+      "name": "NED",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/12.png",
+      "score": "Yet to bat",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/ned-vs-oma-144th-odi-mens-cwc-league-2-2023-27-match-updates-14VF",
+    "scrapedAt": "2026-11-02T07:19:00.876Z"
+  }
+]
