@@ -1,10 +1,13 @@
 name: Update International Match Schedule
+
 on:
   schedule:
     - cron: '0 0 25 * *'
   workflow_dispatch:
+
 permissions:
   contents: write
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
@@ -13,21 +16,29 @@ jobs:
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+      
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
+      
       - name: Setup Chrome
         uses: browser-actions/setup-chrome@v1
+      
       - name: Install Puppeteer Core only
         run: npm install puppeteer-core@21.6.1 --no-save --no-audit --no-fund
-      - name: Run scraper
+      
+      - name: Run scraper (Current Date to Month End - International + Time)
         run: node scraper.js
-      - name: Commit and Push with pull fix
+      
+      - name: Commit and Push with stash fix
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git pull --rebase origin main || git pull --rebase
+          git add match-schedule.json
+          git stash --keep-index --include-untracked || true
+          git pull --rebase origin main || git pull --rebase || true
+          git stash pop || true
           git add match-schedule.json
           git diff --staged --quiet || git commit -m "Update schedule - $(date -u)"
-          git push
+          git push || (git pull --rebase origin main && git push)
