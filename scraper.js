@@ -3,28 +3,25 @@ const path = require('path');
 
 const OUTPUT_FILE = path.join(__dirname, 'match-schedule.json');
 
-// ===== DYNAMIC NEXT MONTH LOGIC =====
-// Agar aaj 25 Nov hai -> 1 Dec to 31 Dec
-// Agar aaj 25 Dec hai -> 1 Jan to 31 Jan (next year)
-// Agar manual run 2 Nov ko kiya to bhi next month = Dec hi lega
+// ===== FIXED LOGIC: TODAY to END OF NEXT MONTH =====
+// Agar aaj 2 Nov hai -> 2 Nov se 31 Dec tak (taake empty na aaye)
+// 25 Nov ko chalega -> 25 Nov se 31 Dec tak (current + next month)
 
 const now = new Date();
-let targetMonth = now.getMonth() + 1; // Next month (0-11)
+now.setHours(0,0,0,0);
+
+let targetMonth = now.getMonth() + 1;
 let targetYear = now.getFullYear();
+if (targetMonth > 11) { targetMonth = 0; targetYear += 1; }
 
-if (targetMonth > 11) {
-    targetMonth = 0; // Jan
-    targetYear += 1;
-}
-
-const START_DATE = new Date(targetYear, targetMonth, 1); // 1st of next month
-const END_DATE = new Date(targetYear, targetMonth + 1, 0); // Last day of next month
+const START_DATE = new Date(now); // Aaj se start (2 Nov)
+const END_DATE = new Date(targetYear, targetMonth + 1, 0); // End of next month (31 Dec)
 
 console.log(`📅 TODAY: ${now.toDateString()}`);
-console.log(`🎯 TARGET: Scraping WHOLE NEXT MONTH -> ${START_DATE.toDateString()} to ${END_DATE.toDateString()}`);
+console.log(`🎯 TARGET: ${START_DATE.toDateString()} to ${END_DATE.toDateString()} (Today to End of Next Month)`);
 console.log(`📅 INTERNATIONAL ONLY + TIME`);
 
-async function scrapeNextMonth() {
+async function scrape() {
     let puppeteer;
     try { puppeteer = require('puppeteer-core'); console.log('Using puppeteer-core'); }
     catch { puppeteer = require('puppeteer'); }
@@ -43,18 +40,17 @@ async function scrapeNextMonth() {
         await page.goto('https://crex.com/schedule', { waitUntil: 'networkidle2', timeout: 90000 });
         await new Promise(r => setTimeout(r, 6000));
 
-        // ================= INTERNATIONAL FILTER (MOST IMPORTANT) =================
+        // INTERNATIONAL FILTER
         console.log('🎯 Applying International filter...');
         try {
-            const filterApplied = await page.evaluate(async () => {
+            await page.evaluate(async () => {
                 for (let w of document.querySelectorAll('.option-wrapper')) {
-                    const nameEl = w.querySelector('.name');
-                    if (nameEl && nameEl.innerText.toLowerCase().includes('series type')) {
-                        const selection = w.querySelector('.selection');
-                        const selText = selection ? selection.innerText.toLowerCase() : '';
-                        console.log('Current:', selText);
-                        if (!selText.includes('international')) {
-                            if (selection) selection.click();
+                    const n = w.querySelector('.name');
+                    if (n && n.innerText.toLowerCase().includes('series type')) {
+                        const s = w.querySelector('.selection');
+                        const sel = s ? s.innerText.toLowerCase() : '';
+                        if (!sel.includes('international')) {
+                            if (s) s.click();
                             await new Promise(r => setTimeout(r, 1500));
                             for (let el of document.querySelectorAll('div, li, span')) {
                                 if (el.innerText && el.innerText.trim() === 'International' && el.offsetParent !== null) {
@@ -63,22 +59,28 @@ async function scrapeNextMonth() {
                                         const parent = el.closest('.option-wrapper');
                                         if (!parent || !parent.querySelector('.name')) {
                                             el.click();
-                                            return true;
+                                            break;
                                         }
                                     }
                                 }
                             }
-                        } else {
-                            return true;
                         }
                         break;
                     }
                 }
-                return false;
             });
-            console.log('Filter result:', filterApplied);
             await new Promise(r => setTimeout(r, 5000));
-        } catch(e){ console.log('Filter error:', e.message); }
+            const verify = await page.evaluate(() => {
+                for (let w of document.querySelectorAll('.option-wrapper')) {
+                    const n = w.querySelector('.name');
+                    if (n && n.innerText.toLowerCase().includes('series type')) {
+                        return w.querySelector('.selection')?.innerText.trim() || '';
+                    }
+                }
+                return '';
+            });
+            console.log('Verified filter:', verify);
+        } catch(e){ console.log('Filter error', e.message); }
 
         let allMatches = [];
         let pageNum = 1;
@@ -86,10 +88,9 @@ async function scrapeNextMonth() {
         const maxPages = 40;
 
         while (!shouldStop && pageNum <= maxPages) {
-            console.log(`\n📄 PAGE ${pageNum} - Looking for ${START_DATE.toDateString()} to ${END_DATE.toDateString()}...`);
-            
+            console.log(`\n📄 PAGE ${pageNum} - ${START_DATE.toDateString()} to ${END_DATE.toDateString()}`);
             await page.evaluate(() => window.scrollTo(0, document.body.scrollHeight));
-            await new Promise(r => setTimeout(r, 1500));
+            await new Promise(r => setTimeout(r, 1000));
             await page.evaluate(() => window.scrollTo(0, 0));
             await new Promise(r => setTimeout(r, 1000));
 
@@ -98,13 +99,11 @@ async function scrapeNextMonth() {
                 document.querySelectorAll('#date-wise-wrap > div').forEach(block => {
                     const dateHeader = block.querySelector('h2.date span')?.innerText.trim() || block.querySelector('h2')?.innerText.trim() || '';
                     if (!dateHeader) return;
-                    
                     block.querySelectorAll('li.match-card-container').forEach(card => {
                         try {
                             const anchor = card.querySelector('a.match-card-wrapper');
                             const href = anchor?.getAttribute('href') || '';
                             if (!href || !href.includes('cricket-live-score')) return;
-                            
                             let t1Name='', t1Flag='', t1Score='', t1Overs='', t2Name='', t2Flag='', t2Score='', t2Overs='';
                             const teams = card.querySelectorAll('.team');
                             if (teams.length >= 2) {
@@ -149,25 +148,19 @@ async function scrapeNextMonth() {
                 return results;
             });
 
-            console.log(`Found ${data.length} matches on page ${pageNum}`);
-            
+            console.log(`Found ${data.length} on page ${pageNum}`);
+            data.forEach(d => console.log(`  - ${d.date} | ${d.matchTime} | ${d.team1.name} vs ${d.team2.name}`));
+
             for (let m of data) {
                 try {
                     const parsed = new Date(m.date);
                     if (!isNaN(parsed.getTime())) {
-                        // Check if within START to END
-                        const startCheck = new Date(START_DATE);
-                        startCheck.setHours(0,0,0,0);
-                        const endCheck = new Date(END_DATE);
-                        endCheck.setHours(23,59,59,999);
-                        
-                        if (parsed < startCheck) {
-                            // Still before target month, skip but continue searching
-                            console.log(`Skip past month: ${m.date}`);
+                        if (parsed < START_DATE) {
+                            console.log(`Skip before today: ${m.date}`);
                             continue;
                         }
-                        if (parsed > endCheck) {
-                            console.log(`🛑 Beyond target month: ${m.date} > ${END_DATE.toDateString()}`);
+                        if (parsed > END_DATE) {
+                            console.log(`🛑 Beyond ${END_DATE.toDateString()}: ${m.date}`);
                             shouldStop = true;
                             break;
                         }
@@ -177,7 +170,7 @@ async function scrapeNextMonth() {
             }
 
             if (shouldStop) break;
-            console.log(`Total for ${START_DATE.toLocaleString('default',{month:'long'})}: ${allMatches.length}`);
+            console.log(`Total till now: ${allMatches.length}`);
 
             const clicked = await page.evaluate(() => {
                 for (let b of document.querySelectorAll('button')) {
@@ -195,27 +188,24 @@ async function scrapeNextMonth() {
             pageNum++;
         }
 
-        // Domestic filter double safety
-        const domestic = ['ranji','plate','wbbl','hong-kong','nepal','npl','global t20','emirates','ford trophy','csa t20','county','maharaja','duleep','deodhar','vijay hazare','syed mushtaq'];
+        const domestic = ['ranji','plate','wbbl','hong-kong','nepal','npl','global t20','emirates','ford trophy','csa t20','county','maharaja','duleep','deodhar'];
         const filtered = allMatches.filter(m => {
             const txt = `${m.id} ${m.seriesInfo}`.toLowerCase();
             return !domestic.some(k => txt.includes(k));
         });
 
-        // Only keep matches within target month
-        const monthFiltered = filtered.filter(m => {
-            try {
-                const d = new Date(m.date);
-                if (isNaN(d.getTime())) return true;
-                return d.getMonth() === START_DATE.getMonth() && d.getFullYear() === START_DATE.getFullYear();
-            } catch(e){ return true; }
-        });
+        filtered.sort((a,b) => new Date(a.date) - new Date(b.date));
 
-        monthFiltered.sort((a,b) => new Date(a.date) - new Date(b.date));
-
-        console.log(`\n✅ FINAL: ${allMatches.length} -> ${filtered.length} -> ${monthFiltered.length} matches for ${START_DATE.toLocaleString('default',{month:'long',year:'numeric'})}`);
-        fs.writeFileSync(OUTPUT_FILE, JSON.stringify(monthFiltered, null, 2));
-        console.log(`🎉 DONE! Saved ${monthFiltered.length} International matches for next month`);
+        console.log(`\n✅ FINAL International: ${allMatches.length} -> ${filtered.length} matches (${START_DATE.toDateString()} to ${END_DATE.toDateString()})`);
+        
+        if (filtered.length === 0) {
+            console.log('⚠️ No matches found - maybe next month data not yet available, saving whatever found');
+            // Save at least something to avoid []
+            fs.writeFileSync(OUTPUT_FILE, JSON.stringify(allMatches, null, 2));
+        } else {
+            fs.writeFileSync(OUTPUT_FILE, JSON.stringify(filtered, null, 2));
+        }
+        console.log(`🎉 DONE! ${filtered.length} matches`);
 
     } catch (err) {
         console.error('Error:', err.message, err.stack);
@@ -225,4 +215,4 @@ async function scrapeNextMonth() {
     }
 }
 
-scrapeNextMonth();
+scrape();
