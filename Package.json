@@ -1,0 +1,11 @@
+{
+  "name": "match-schedule",
+  "version": "1.0.0",
+  "main": "scraper.js",
+  "scripts": {
+    "start": "node scraper.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.6.1"
+  }
+}
