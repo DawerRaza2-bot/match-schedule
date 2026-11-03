@@ -1,10 +1,94 @@
 [
   {
+    "id": "dol-vs-wp-63rd-t20-csa-pro-t20-cup-2026-match-updates-150B",
+    "date": "Tue, 3 Nov 2026",
+    "matchTime": "10:00 AM",
+    "seriesInfo": "63rdT20, CSA T20 2026",
+    "matchStatus": "",
+    "team1": {
+      "name": "DOL",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/6A.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "WP",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/J7.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/dol-vs-wp-63rd-t20-csa-pro-t20-cup-2026-match-updates-150B",
+    "scrapedAt": "2026-11-03T18:17:51.628Z"
+  },
+  {
+    "id": "auck-vs-cs-7th-list-a-the-ford-trophy-2026-27-match-updates-13L0",
+    "date": "Wed, 4 Nov 2026",
+    "matchTime": "9:30 PM",
+    "seriesInfo": "",
+    "matchStatus": "9:30 PM",
+    "team1": {
+      "name": "Central Stags",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/56.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Auckland",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/53.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/auck-vs-cs-7th-list-a-the-ford-trophy-2026-27-match-updates-13L0",
+    "scrapedAt": "2026-11-03T18:17:51.628Z"
+  },
+  {
+    "id": "nb-vs-wel-8th-list-a-the-ford-trophy-2026-27-match-updates-13L1",
+    "date": "Wed, 4 Nov 2026",
+    "matchTime": "9:30 PM",
+    "seriesInfo": "",
+    "matchStatus": "9:30 PM",
+    "team1": {
+      "name": "Wellington",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/57.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Northern Brave",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/54.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/nb-vs-wel-8th-list-a-the-ford-trophy-2026-27-match-updates-13L1",
+    "scrapedAt": "2026-11-03T18:17:51.628Z"
+  },
+  {
+    "id": "cant-vs-otg-9th-list-a-the-ford-trophy-2026-27-match-updates-13L2",
+    "date": "Wed, 4 Nov 2026",
+    "matchTime": "9:30 PM",
+    "seriesInfo": "",
+    "matchStatus": "9:30 PM",
+    "team1": {
+      "name": "Otago",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/52.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Canterbury",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/55.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/cant-vs-otg-9th-list-a-the-ford-trophy-2026-27-match-updates-13L2",
+    "scrapedAt": "2026-11-03T18:17:51.628Z"
+  },
+  {
     "id": "ind-vs-nz-1st-odi-india-tour-of-new-zealand-2026-match-updates-12JH",
     "date": "Wed, 4 Nov 2026",
-    "matchTime": "6:00 AM",
-    "seriesInfo": "India tour of New Zealand",
-    "matchStatus": "Upcoming",
+    "matchTime": "2:00 AM",
+    "seriesInfo": "",
+    "matchStatus": "2:00 AM",
     "team1": {
       "name": "New Zealand",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/R.png",
@@ -18,6 +102,69 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ind-vs-nz-1st-odi-india-tour-of-new-zealand-2026-match-updates-12JH",
-    "scrapedAt": "2026-11-03T18:15:00.000Z"
+    "scrapedAt": "2026-11-03T18:17:51.628Z"
+  },
+  {
+    "id": "oma-vs-uae-145th-odi-mens-cwc-league-2-2023-27-match-updates-14VG",
+    "date": "Wed, 4 Nov 2026",
+    "matchTime": "5:30 AM",
+    "seriesInfo": "",
+    "matchStatus": "5:30 AM",
+    "team1": {
+      "name": "United Arab Emirates",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/11.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Oman",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/15.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/oma-vs-uae-145th-odi-mens-cwc-league-2-2023-27-match-updates-14VG",
+    "scrapedAt": "2026-11-03T18:17:51.628Z"
+  },
+  {
+    "id": "ban-vs-wi-2nd-test-west-indies-tour-of-bangladesh-2026-match-updates-13TE",
+    "date": "Thu, 5 Nov 2026",
+    "matchTime": "3:30 AM",
+    "seriesInfo": "",
+    "matchStatus": "3:30 AM",
+    "team1": {
+      "name": "Bangladesh",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/W.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "West Indies",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/V.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/ban-vs-wi-2nd-test-west-indies-tour-of-bangladesh-2026-match-updates-13TE",
+    "scrapedAt": "2026-11-03T18:17:51.628Z"
+  },
+  {
+    "id": "afg-vs-zim-1st-test-afghanistan-vs-zimbabwe-in-uae-2026-match-updates-13TP",
+    "date": "Thu, 5 Nov 2026",
+    "matchTime": "5:00 AM",
+    "seriesInfo": "",
+    "matchStatus": "5:00 AM",
+    "team1": {
+      "name": "Afghanistan",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/Y.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Zimbabwe",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/X.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/afg-vs-zim-1st-test-afghanistan-vs-zimbabwe-in-uae-2026-match-updates-13TP",
+    "scrapedAt": "2026-11-03T18:17:51.628Z"
   }
 ]
