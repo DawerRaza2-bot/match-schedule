@@ -3,121 +3,21 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>iOS Broadcast Scoreboard - With Video Slot</title>
+<title>iOS Broadcast Scoreboard - FINAL LIVE - International + Countdown</title>
 <link href="https://fonts.googleapis.com/css2?family=Teko:wght@600;700&display=swap" rel="stylesheet">
 <style>
 * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
 body { background: #0a0f1c; height: 100vh; overflow: hidden; position: relative; }
-
-/* === STADIUM BACKGROUND FOR WHITE SPACE === */
-.middle-area {
-    position: absolute;
-    top: 120px;
-    left: 0;
-    width: 100vw;
-    height: calc(100vh - 120px - 145px);
-    background: linear-gradient(180deg, #0a1628 0%, #0f172a 50%, #1e293b 100%);
-    /* OPTIONAL: Stadium image - uncomment if you have image */
-    /* background-image: url('./stadium.jpg'); */
-    /* background-size: cover; background-position: center; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    z-index: 1;
-}
-.middle-area::before {
-    content: '';
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background: radial-gradient(ellipse at center, rgba(56,189,248,0.08) 0%, transparent 70%);
-    z-index: 2;
-}
-
-/* === CENTER COMMENTARY === */
-.center-mid-ios-card {
-    position: relative;
-    width: 85vw;
-    max-width: 1000px;
-    background: rgba(0,0,0,0.45);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1.5px solid rgba(255,204,0,0.4);
-    border-radius: 16px;
-    padding: 18px 28px;
-    text-align: center;
-    z-index: 10;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.8), 0 0 30px rgba(255,204,0,0.15);
-}
+.middle-area { position: absolute; top: 120px; left: 0; width: 100vw; height: calc(100vh - 120px - 145px); background: linear-gradient(180deg, #0a1628 0%, #0f172a 50%, #1e293b 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 20px; z-index: 1; }
+.middle-area::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: radial-gradient(ellipse at center, rgba(56,189,248,0.08) 0%, transparent 70%); z-index: 2; }
+.center-mid-ios-card { position: relative; width: 85vw; max-width: 1000px; background: rgba(0,0,0,0.45); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border: 1.5px solid rgba(255,204,0,0.4); border-radius: 16px; padding: 18px 28px; text-align: center; z-index: 10; box-shadow: 0 15px 40px rgba(0,0,0,0.8), 0 0 30px rgba(255,204,0,0.15); }
 .center-mid-ios-text { font-size: 42px; font-weight: 900; color: #ffcc00; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 4px 20px rgba(0,0,0,0.95), 0 0 30px rgba(255,204,0,0.3); line-height: 1.15; }
-
-/* === VIDEO SLOT - TUMHARI VIDEO YAHAN AAYEGI === */
-.video-slot-container {
-    position: relative;
-    width: 640px;
-    max-width: 85vw;
-    height: 360px;
-    max-height: 38vh;
-    background: #000;
-    border-radius: 16px;
-    overflow: hidden;
-    border: 2.5px solid rgba(255,204,0,0.5);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.9), 0 0 40px rgba(255,204,0,0.2);
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.video-slot-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.video-slot-placeholder {
-    position: absolute;
-    top: 0; left: 0; width: 100%; height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    z-index: 1;
-}
+.video-slot-container { position: relative; width: 640px; max-width: 85vw; height: 360px; max-height: 38vh; background: #000; border-radius: 16px; overflow: hidden; border: 2.5px solid rgba(255,204,0,0.5); box-shadow: 0 20px 50px rgba(0,0,0,0.9), 0 0 40px rgba(255,204,0,0.2); z-index: 10; display: flex; align-items: center; justify-content: center; }
+.video-slot-container video { width: 100%; height: 100%; object-fit: cover; }
+.video-slot-placeholder { position: absolute; top: 0; left: 0; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); color: #fff; text-align: center; padding: 20px; z-index: 1; }
 .video-slot-placeholder.hidden { display: none; }
-.video-label {
-    position: absolute;
-    top: 10px;
-    left: 12px;
-    background: rgba(255,204,0,0.95);
-    color: #000;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 11px;
-    font-weight: 900;
-    letter-spacing: 1px;
-    z-index: 15;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-}
-.traffic-watermark {
-    position: absolute;
-    bottom: 10px;
-    right: 12px;
-    background: rgba(0,0,0,0.7);
-    backdrop-filter: blur(8px);
-    color: #ffcc00;
-    padding: 4px 10px;
-    border-radius: 6px;
-    font-size: 10px;
-    font-weight: 800;
-    z-index: 15;
-    border: 1px solid rgba(255,204,0,0.3);
-}
-
-/* === TOP BAR === */
+.video-label { position: absolute; top: 10px; left: 12px; background: rgba(255,204,0,0.95); color: #000; padding: 4px 12px; border-radius: 20px; font-size: 11px; font-weight: 900; letter-spacing: 1px; z-index: 15; box-shadow: 0 4px 12px rgba(0,0,0,0.5); }
+.traffic-watermark { position: absolute; bottom: 10px; right: 12px; background: rgba(0,0,0,0.7); backdrop-filter: blur(8px); color: #ffcc00; padding: 4px 10px; border-radius: 6px; font-size: 10px; font-weight: 800; z-index: 15; border: 1px solid rgba(255,204,0,0.3); }
 .broadcast-bar { width: 100vw; height: 120px; position: absolute; top: 0; left: 0; background: linear-gradient(90deg, rgba(10,25,47,0.92) 0%, rgba(15,23,42,0.96) 50%, rgba(88,28,28,0.92) 100%); backdrop-filter: blur(25px); border-bottom: 1.5px solid rgba(255,255,255,0.15); display: grid; grid-template-columns: 28% 44% 28%; align-items: center; box-shadow: 0 15px 35px rgba(0,0,0,0.8); z-index: 100; padding: 0 25px; }
 .team-side { display: flex; align-items: center; gap: 15px; } .team-side.right { justify-content: flex-end; }
 .flag-name-wrapper { display: flex; flex-direction: column; align-items: center; }
@@ -135,115 +35,87 @@ body { background: #0a0f1c; height: 100vh; overflow: hidden; position: relative;
 .center-box { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 10px; }
 .matchup-tag { font-size: 22px; font-weight: 800; color: #fff; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 2px 10px rgba(0,0,0,0.9); max-width: 520px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .series-tag { font-size: 15px; font-weight: 800; color: #ffcc00; text-transform: uppercase; margin-top: 3px; text-shadow: 0 2px 8px rgba(0,0,0,0.9); max-width: 550px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-
-/* === BOTTOM PLAYERS === */
-.bottom-players-strip { width: 100vw; position: absolute; bottom: 0; left: 0; display: grid; grid-template-columns: 1fr 1fr 1fr; background: rgba(8,12,22,0.95); backdrop-filter: blur(16px); border-top: 3.5px solid #ffcc00; box-shadow: 0 -12px 35px rgba(0,0,0,0.9); z-index: 100; }
-.player-section-box { position: relative; padding: 10px 15px 10px 150px; display: flex; flex-direction: column; justify-content: space-between; height: 145px; border-right: 1.5px solid rgba(255,255,255,0.15); overflow: visible; }
+.players-grid { position: absolute; bottom: 0; left: 0; width: 100vw; height: 145px; display: grid; grid-template-columns: 1fr 1fr 1fr; background: linear-gradient(180deg, rgba(10,15,28,0.96) 0%, rgba(5,10,20,0.98) 100%); backdrop-filter: blur(20px); border-top: 2px solid #ffcc00; box-shadow: 0 -10px 30px rgba(0,0,0,0.8); z-index: 100; }
+.player-section-box { position: relative; display: flex; flex-direction: column; justify-content: center; padding: 12px 18px 8px 110px; border-right: 1px solid rgba(255,255,255,0.1); overflow: hidden; }
 .player-section-box:last-child { border-right: none; }
-.batting-theme-1, .batting-theme-2 { background: linear-gradient(180deg, rgba(10,37,64,0.9) 0%, rgba(19,57,99,0.95) 100%); }
-.bowling-theme { background: linear-gradient(180deg, rgba(92,15,15,0.9) 0%, rgba(138,23,23,0.95) 100%); }
-.role-tag-box { position: absolute; top: 8px; right: 16px; background: rgba(255,255,255,0.95); color: #000; font-size: 11px; font-weight: 900; padding: 2px 12px; border-radius: 4px; letter-spacing: 1px; text-transform: uppercase; box-shadow: 0 2px 8px rgba(0,0,0,0.4); z-index: 10; }
-.playerProfileDefault { position: absolute; left: 10px; bottom: 0px; width: 130px; height: 160px; z-index: 20; overflow: visible; }
-.player-vector { position: absolute; bottom: 0; left: 8px; width: 130px; height: 230px; z-index: 5; object-fit: contain; }
-.player-jersey { position: absolute; bottom: 15px; left: 0px; width: 145px; height: 100px; z-index: 15; object-fit: contain; opacity: 0.98; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.6)); }
-.card-main-content { display: flex; flex-direction: column; justify-content: center; height: 78px; margin-left: 15px; }
-.player-fullname { font-size: 15px; font-weight: 900; color: #fff; letter-spacing: 0.5px; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-shadow: 0 2px 6px rgba(0,0,0,0.6); margin-bottom: 2px; }
-.player-primary-stats { font-family: 'Teko', sans-serif; font-size: 42px; line-height: 0.9; color: #fff; font-weight: 700; text-shadow: 0 2px 6px rgba(0,0,0,0.6); margin-left: 15px; }
-.player-primary-stats span.highlight-num { color: #ffcc00; }
-.player-sub-stats-bar { display: flex; align-items: center; gap: 15px; font-size: 13px; font-weight: 800; color: #fff; border-top: 1px solid rgba(255,255,255,0.18); padding-top: 4px; margin-top: 2px; text-shadow: 0 1px 4px rgba(0,0,0,0.5); margin-left: 15px; }
-.player-sub-stats-bar span.yellow-val { color: #ffcc00; }
-#status { position: absolute; top: 130px; left: 10px; background: rgba(0,0,0,0.7); color: #0f0; padding: 5px 10px; border-radius: 5px; font-size: 12px; z-index: 200; }
+.batting-theme-1 { background: linear-gradient(135deg, rgba(15,23,42,0.9) 0%, rgba(10,20,40,0.95) 100%); }
+.batting-theme-2 { background: linear-gradient(135deg, rgba(12,20,38,0.9) 0%, rgba(8,18,36,0.95) 100%); }
+.bowling-theme { background: linear-gradient(135deg, rgba(88,28,28,0.9) 0%, rgba(60,20,20,0.95) 100%); }
+.role-tag-box { position: absolute; top: 8px; right: 10px; background: rgba(255,255,255,0.9); color: #000; padding: 2px 8px; border-radius: 4px; font-size: 9px; font-weight: 900; letter-spacing: 0.8px; }
+.playerProfileDefault { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); width: 85px; height: 85px; }
+.player-vector { width: 85px; height: 85px; border-radius: 50%; object-fit: cover; border: 2px solid rgba(255,255,255,0.3); background: #1e293b; position: absolute; top: 0; left: 0; z-index: 2; }
+.player-jersey { width: 32px; height: 32px; border-radius: 50%; object-fit: cover; position: absolute; bottom: -2px; right: -2px; z-index: 3; border: 2px solid #fff; background: #000; }
+.card-main-content { z-index: 2; }
+.player-fullname { font-size: 14px; font-weight: 800; color: #fff; text-transform: uppercase; letter-spacing: 0.5px; text-shadow: 0 2px 6px rgba(0,0,0,0.9); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 180px; }
+.player-primary-stats { font-family: 'Teko', sans-serif; font-size: 36px; font-weight: 700; color: #fff; line-height: 1; margin-top: 2px; }
+.highlight-num { color: #ffcc00; }
+.player-sub-stats-bar { display: flex; gap: 12px; margin-top: 6px; font-size: 11px; font-weight: 700; color: rgba(255,255,255,0.7); }
+.yellow-val { color: #ffcc00; font-weight: 800; }
+.status-bar { position: absolute; top: 120px; left: 0; width: 100%; background: rgba(0,100,0,0.8); color: #fff; font-size: 11px; padding: 4px 12px; z-index: 200; font-family: monospace; }
+.countdown-card { background: rgba(0,0,0,0.6); border: 1.5px solid rgba(56,189,248,0.5); border-radius: 12px; padding: 15px 25px; margin-top: 10px; }
+.countdown-text { font-size: 18px; font-weight: 800; color: #38bdf8; }
 </style>
 </head>
 <body>
-<div id="status">Loading live data from Cloudflare...</div>
-
 <div class="broadcast-bar">
     <div class="team-side">
         <div class="flag-name-wrapper">
-            <span class="team-code" id="t1Code">...</span>
-            <img id="t1Flag" class="flag-img" src="" alt="Flag">
+            <div class="team-code" id="t1Code">TEAM1</div>
+            <img id="t1Flag" class="flag-img" src="" alt="">
         </div>
         <div class="team-info">
-            <span class="team-role">BATTING</span>
-            <div class="score-row"><span class="score-val" id="t1Score">0/0</span></div>
+            <div class="team-role" id="t1Role">BATTING</div>
+            <div class="score-row"><div class="score-val" id="t1Score">0-0</div></div>
         </div>
     </div>
     <div class="center-box">
-        <span class="matchup-tag" id="matchupTitle">... VS ...</span>
-        <span class="series-tag" id="matchSeries">...</span>
+        <div class="matchup-tag" id="matchupTitle">LOADING...</div>
+        <div class="series-tag" id="matchSeries">Fetching schedule...</div>
     </div>
     <div class="team-side right">
-        <div class="score-row">
-            <div class="stat-group"><span class="stat-label">OVERS</span><span class="stat-value" id="valOvers">0</span></div>
-            <div class="stat-group"><span class="stat-label">BALLS</span><span class="stat-value" id="valBalls">0</span></div>
+        <div class="team-info">
+            <div class="stat-group"><div class="stat-label">OVERS</div><div class="stat-value" id="valOvers">0</div></div>
+        </div>
+        <div class="team-info">
+            <div class="stat-group"><div class="stat-label">BALLS</div><div class="stat-value" id="valBalls">0</div></div>
         </div>
         <div class="flag-name-wrapper">
-            <span class="team-code" id="t2Code">...</span>
-            <img id="t2Flag" class="flag-img" src="" alt="Flag">
+            <div class="team-code" id="t2Code">TEAM2</div>
+            <img id="t2Flag" class="flag-img" src="" alt="">
         </div>
     </div>
 </div>
-
-<!-- === MIDDLE AREA - COMMENTARY + VIDEO SLOT === -->
+<div class="status-bar" id="status">Loading...</div>
 <div class="middle-area">
-    <!-- Commentary Card -->
     <div class="center-mid-ios-card">
-        <div class="center-mid-ios-text" id="centerMidCommentary">NETHERLANDS WON BY 7 WICKETS</div>
+        <div class="center-mid-ios-text" id="centerMidCommentary">Loading schedule from CREX...</div>
+        <div id="countdownContainer" class="countdown-card" style="display:none;">
+            <div class="countdown-text" id="countdownText"></div>
+            <div style="font-size:12px; color:#fff; margin-top:5px;" id="countdownSub"></div>
+        </div>
     </div>
-
-    <!-- VIDEO SLOT - YAHAN TUMHARI VIDEO AAYEGI -->
-    <div class="video-slot-container" id="videoSlot">
+    <div class="video-slot-container">
         <div class="video-label">🔴 YOUR PROMO</div>
         <div class="traffic-watermark">www.YourSite.com</div>
-        
-        <!-- PLACEHOLDER - Jab tak video nahi hai -->
         <div class="video-slot-placeholder" id="videoPlaceholder">
-            <div style="font-size: 48px; margin-bottom: 10px;">🎬</div>
-            <div style="font-size: 16px; font-weight: 900; color: #ffcc00; letter-spacing: 1px;">VIDEO SLOT</div>
-            <div style="font-size: 12px; margin-top: 8px; opacity: 0.8; line-height: 1.4;">
-                Apni video yahan lagao<br>
-                File: <span style="color: #38bdf8;">./promo.mp4</span> ya <span style="color: #38bdf8;">./trailer.mp4</span><br>
-                Size: 640x360 | MP4 | Muted Autoplay Loop
-            </div>
-            <div style="margin-top: 12px; font-size: 10px; background: rgba(255,204,0,0.15); padding: 6px 12px; border-radius: 20px; border: 1px solid rgba(255,204,0,0.3);">
-                👉 HTML me line 148 pe src change karo
-            </div>
+            <div style="font-size:48px;">🎬</div>
+            <div style="font-size:16px; font-weight:800; color:#ffcc00; margin-top:10px;">VIDEO SLOT</div>
+            <div style="font-size:12px; margin-top:8px; color:rgba(255,255,255,0.7);">Apni video yahan lagao<br>File: <span style="color:#38bdf8;">/promo.mp4</span> ya <span style="color:#38bdf8;">/trailer.mp4</span><br>Size: 640x360 | MP4 | Muted Autoplay Loop</div>
+            <div style="background:rgba(255,204,0,0.15); border:1px solid rgba(255,204,0,0.3); padding:6px 12px; border-radius:20px; font-size:10px; margin-top:12px;">📝 HTML me line 148 pe src change karo</div>
         </div>
-
-        <!-- VIDEO TAG - TUM APNI VIDEO KA NAAM YAHAN LAGAO -->
-        <!-- 
-            INSTRUCTIONS:
-            1. Apni video banao (10-15 sec trailer apni website ka)
-            2. Uska naam rakho promo.mp4
-            3. Isi folder me daalo jahan scoreboard.html hai
-            4. Neeche src me ./promo.mp4 likha hai, wo kaam karega!
-            
-            Agar dusra naam hai to src change kar do:
-            <video src="./MY_VIDEO.mp4" ...>
-        -->
-        <video 
-            id="promoVideo"
-            src="./promo.mp4"
-            autoplay 
-            muted 
-            loop 
-            playsinline
-            poster=""
-            onerror="this.style.display='none'"
-            onloadeddata="document.getElementById('videoPlaceholder').classList.add('hidden')"
-        >
-            Your browser does not support video.
+        <video id="promoVideo" autoplay muted loop playsinline style="display:none;">
+            <source src="./promo.mp4" type="video/mp4">
+            <source src="/promo.mp4" type="video/mp4">
+            <source src="./trailer.mp4" type="video/mp4">
         </video>
     </div>
 </div>
-
-<div class="bottom-players-strip">
+<div class="players-grid">
     <div class="player-section-box batting-theme-1">
         <div class="role-tag-box">BATSMAN</div>
         <div class="playerProfileDefault"><img id="b1Img" class="player-vector" src="" alt=""><img id="b1Jersey" class="player-jersey" src="" alt=""></div>
         <div class="card-main-content"><div class="player-fullname" id="b1Name">Batter 1</div><div class="player-primary-stats"><span id="b1Runs">0</span> <span class="highlight-num">(<span id="b1Balls">0</span>)</span></div></div>
-        <div class="player-sub-stats-bar"><div>4S: <span class="yellow-val" id="b14s">0</span></div><div>6S: <span class="yellow-val" id="b16s">0</span></div><div>SR: <span class="yellow-val" id="b1Sr">0.00</span></div></div>
+        <div class="player-sub-stats-bar"><div>4S: <span class="yellow-val" id="b14s">0</span></div><div>6S: <span class="yellow-val" id="b14s">0</span></div><div>SR: <span class="yellow-val" id="b1Sr">0.00</span></div></div>
     </div>
     <div class="player-section-box batting-theme-2">
         <div class="role-tag-box">BATSMAN</div>
@@ -258,11 +130,11 @@ body { background: #0a0f1c; height: 100vh; overflow: hidden; position: relative;
         <div class="player-sub-stats-bar"><div>ECON: <span class="yellow-val" id="bowlEcon">0.00</span></div></div>
     </div>
 </div>
-
 <script>
 let currentMatchIndex = 0;
 let liveData = null;
-
+let scheduleData = null;
+let countdownInterval = null;
 function getRouteParams() {
     const urlParams = new URLSearchParams(window.location.search);
     const matchParam = urlParams.get('match') || urlParams.get('id') || urlParams.get('slug');
@@ -270,41 +142,169 @@ function getRouteParams() {
     const hash = window.location.hash.replace('#','');
     return { matchId: matchParam || hash || null, index: indexParam ? parseInt(indexParam) : null };
 }
-
-async function fetchLiveData() {
+function formatTimeRemaining(targetDate, targetTimeStr) {
     try {
-        let res;
-        try {
-            res = await fetch('./live-data.json?v=' + Date.now());
-            if (!res.ok) throw new Error('Local not found');
-        } catch(e) {
-            res = await fetch('https://raw.githubusercontent.com/DawerRaza2-bot/match-schedule/main/live-data.json?v=' + Date.now());
-        }
-        if (!res.ok) throw new Error('No live data');
-        const data = await res.json();
-        document.getElementById('status').innerText = `Live: ${data.count} | Updated: ${new Date(data.updatedAt).toLocaleTimeString()} | ${res.url.includes('raw.githubusercontent') ? 'GitHub' : 'Local'} | Avatars: ${data.matches[0]?.live?.batsman1?.vector ? 'YES' : 'NO'} | Route: ?match=ID`;
-        document.getElementById('status').style.background = 'rgba(0,100,0,0.8)';
-        liveData = data;
-        if (data.matches && data.matches.length > 0) {
-            const route = getRouteParams();
-            if (route.matchId) {
-                const foundIndex = data.matches.findIndex(m => m.id === route.matchId || m.id.includes(route.matchId) || m.detailUrl.includes(route.matchId));
-                if (foundIndex !== -1) currentMatchIndex = foundIndex;
-            } else if (route.index !== null && route.index >=0 && route.index < data.matches.length) {
-                currentMatchIndex = route.index;
+        // Parse date like "Tue, 3 Nov 2026" or "Wed, 4 Nov 2026" + time like "10:00 AM" or "1st" or "2:30 PM"
+        const now = new Date();
+        let target = new Date(targetDate);
+        
+        // Try to parse time if available
+        if (targetTimeStr && targetTimeStr.toLowerCase() !== 'live') {
+            const timeMatch = targetTimeStr.match(/(\d+):?(\d+)?\s*(am|pm)?/i);
+            if (timeMatch) {
+                let hours = parseInt(timeMatch[1]);
+                const minutes = timeMatch[2] ? parseInt(timeMatch[2]) : 0;
+                const ampm = timeMatch[3] ? timeMatch[3].toLowerCase() : '';
+                if (ampm === 'pm' && hours < 12) hours += 12;
+                if (ampm === 'am' && hours === 12) hours = 0;
+                target.setHours(hours, minutes, 0, 0);
             }
-            updateUI(data.matches[currentMatchIndex].live, data.matches[currentMatchIndex]);
         }
+        
+        const diff = target - now;
+        if (diff <= 0) return { text: "STARTING SOON", sub: "Match is about to start", expired: true };
+        
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const secs = Math.floor((diff % (1000 * 60)) / 1000);
+        
+        let text = "";
+        if (days > 0) text += `${days}d `;
+        text += `${hours}h ${mins}m ${secs}s`;
+        
+        return { 
+            text: text,
+            sub: `${targetDate} at ${targetTimeStr || 'Scheduled Time'}`,
+            expired: false
+        };
     } catch(e) {
-        document.getElementById('status').innerText = 'Error: ' + e.message;
-        document.getElementById('status').style.background = 'rgba(100,0,0,0.8)';
+        return { text: "UPCOMING", sub: `${targetDate} ${targetTimeStr || ''}`, expired: false };
     }
 }
-
+function startCountdown(match) {
+    if (countdownInterval) clearInterval(countdownInterval);
+    
+    const countdownContainer = document.getElementById('countdownContainer');
+    const countdownText = document.getElementById('countdownText');
+    const countdownSub = document.getElementById('countdownSub');
+    
+    countdownContainer.style.display = 'block';
+    
+    function update() {
+        const remaining = formatTimeRemaining(match.date, match.matchTime);
+        if (remaining.expired) {
+            countdownText.innerText = "🔴 LIVE SOON - REFRESHING...";
+            countdownSub.innerText = "Checking CREX for live score...";
+            // Try to refetch live data
+            setTimeout(fetchAllData, 5000);
+        } else {
+            countdownText.innerText = `⏰ STARTS IN: ${remaining.text}`;
+            countdownSub.innerText = remaining.sub + ` | ${match.team1.name} vs ${match.team2.name} | ${match.seriesInfo || ''}`;
+        }
+    }
+    
+    update();
+    countdownInterval = setInterval(update, 1000);
+}
+async function fetchAllData() {
+    try {
+        // Fetch both files with cache bust
+        const ts = Date.now();
+        let liveRes, schedRes;
+        
+        // Try local first, then GitHub
+        try {
+            liveRes = await fetch(`./live-data.json?v=${ts}`);
+            if (!liveRes.ok) throw new Error('local live not found');
+        } catch(e) {
+            liveRes = await fetch(`https://raw.githubusercontent.com/DawerRaza2-bot/match-schedule/main/live-data.json?v=${ts}`);
+        }
+        
+        try {
+            schedRes = await fetch(`./match-schedule.json?v=${ts}`);
+            if (!schedRes.ok) throw new Error('local schedule not found');
+        } catch(e) {
+            schedRes = await fetch(`https://raw.githubusercontent.com/DawerRaza2-bot/match-schedule/main/match-schedule.json?v=${ts}`);
+        }
+        
+        const liveJson = liveRes.ok ? await liveRes.json() : { count: 0, matches: [] };
+        const schedJson = schedRes.ok ? await schedRes.json() : [];
+        
+        liveData = liveJson;
+        scheduleData = schedJson;
+        
+        const statusEl = document.getElementById('status');
+        const isLive = liveJson.count > 0;
+        
+        if (isLive) {
+            // LIVE MODE
+            statusEl.innerText = `🔴 LIVE: ${liveJson.count} | Updated: ${new Date(liveJson.updatedAt).toLocaleTimeString()} | ${liveRes.url.includes('raw.githubusercontent') ? 'GitHub' : 'Local'} | Avatars: ${liveJson.matches[0]?.live?.batsman1?.vector ? 'YES' : 'NO'} | Route: ?match=ID or ?index=N`;
+            statusEl.style.background = 'rgba(0,150,0,0.9)';
+            
+            if (countdownInterval) {
+                clearInterval(countdownInterval);
+                document.getElementById('countdownContainer').style.display = 'none';
+            }
+            
+            const route = getRouteParams();
+            if (route.matchId) {
+                const foundIndex = liveJson.matches.findIndex(m => m.id === route.matchId || m.id.includes(route.matchId) || (m.detailUrl && m.detailUrl.includes(route.matchId)));
+                if (foundIndex !== -1) currentMatchIndex = foundIndex;
+            } else if (route.index !== null && route.index >=0 && route.index < liveJson.matches.length) {
+                currentMatchIndex = route.index;
+            }
+            
+            if (liveJson.matches.length > 0) {
+                updateUI(liveJson.matches[currentMatchIndex].live, liveJson.matches[currentMatchIndex]);
+            }
+        } else {
+            // UPCOMING MODE - Show next match from schedule with countdown
+            const nextMatch = liveJson.nextMatch || (schedJson.length > 0 ? schedJson[0] : null);
+            
+            if (nextMatch) {
+                statusEl.innerText = `⏰ UPCOMING: ${liveJson.count} Live | Next: ${nextMatch.team1?.name || nextMatch.team1} vs ${nextMatch.team2?.name || nextMatch.team2} | ${nextMatch.date} ${nextMatch.matchTime} | Schedule: ${schedJson.length} matches | GitHub`;
+                statusEl.style.background = 'rgba(200,150,0,0.9)';
+                
+                // Show upcoming in UI
+                document.getElementById('matchupTitle').innerText = `${(nextMatch.team1?.name || nextMatch.team1 || 'TEAM1')} VS ${(nextMatch.team2?.name || nextMatch.team2 || 'TEAM2')}`.toUpperCase();
+                document.getElementById('matchSeries').innerText = nextMatch.seriesInfo || nextMatch.series || "UPCOMING INTERNATIONAL";
+                document.getElementById('t1Code').innerText = nextMatch.team1?.name || nextMatch.team1 || 'T1';
+                if (nextMatch.team1?.flagUrl) document.getElementById('t1Flag').src = nextMatch.team1.flagUrl;
+                document.getElementById('t2Code').innerText = nextMatch.team2?.name || nextMatch.team2 || 'T2';
+                if (nextMatch.team2?.flagUrl) document.getElementById('t2Flag').src = nextMatch.team2.flagUrl;
+                document.getElementById('t1Score').innerText = "UPCOMING";
+                document.getElementById('valOvers').innerText = "--";
+                document.getElementById('valBalls').innerText = "--";
+                document.getElementById('centerMidCommentary').innerText = `NEXT: ${(nextMatch.team1?.name || nextMatch.team1)} VS ${(nextMatch.team2?.name || nextMatch.team2)} - ${nextMatch.seriesInfo || ''}`.toUpperCase();
+                
+                // Start countdown
+                startCountdown(nextMatch);
+                
+                // Show placeholder for players
+                document.getElementById('b1Name').innerText = "Match starts";
+                document.getElementById('b1Runs').innerText = "--";
+                document.getElementById('b2Name').innerText = nextMatch.date;
+                document.getElementById('b2Runs').innerText = nextMatch.matchTime;
+                document.getElementById('bowlName').innerText = "Countdown active";
+                document.getElementById('bowlFigs').innerText = "LIVE SOON";
+            } else {
+                statusEl.innerText = `No schedule | Live: 0 | Waiting for data...`;
+                statusEl.style.background = 'rgba(100,0,0,0.8)';
+                document.getElementById('centerMidCommentary').innerText = "NO UPCOMING INTERNATIONAL MATCHES FOUND - CHECK match-schedule.json";
+            }
+        }
+        
+    } catch(e) {
+        document.getElementById('status').innerText = 'Error: ' + e.message + ' - Check console';
+        document.getElementById('status').style.background = 'rgba(100,0,0,0.9)';
+        console.error(e);
+    }
+}
 function updateUI(d, matchMeta) {
     if(!d) return;
     document.getElementById('matchupTitle').innerText = (matchMeta.team1.name + " VS " + matchMeta.team2.name).toUpperCase();
-    document.getElementById('matchSeries').innerText = d.series || matchMeta.seriesInfo || "LIVE";
+    document.getElementById('matchSeries').innerText = d.series || matchMeta.seriesInfo || "LIVE INTERNATIONAL";
     document.getElementById('t1Code').innerText = d.team1Name || matchMeta.team1.name;
     if(d.team1Flag || matchMeta.team1.flagUrl) document.getElementById('t1Flag').src = d.team1Flag || matchMeta.team1.flagUrl;
     document.getElementById('t1Score').innerText = d.team1Score;
@@ -336,12 +336,24 @@ function updateUI(d, matchMeta) {
     if(d.bowler.vector) document.getElementById('bowlImg').src = d.bowler.vector;
     if(d.bowler.jersey) document.getElementById('bowlJersey').src = d.bowler.jersey;
 }
-
-setInterval(fetchLiveData, 3000);
-fetchLiveData();
-
+// Try to load promo video
+window.addEventListener('load', () => {
+    const video = document.getElementById('promoVideo');
+    const placeholder = document.getElementById('videoPlaceholder');
+    video.addEventListener('loadeddata', () => {
+        placeholder.classList.add('hidden');
+        video.style.display = 'block';
+    });
+    video.addEventListener('error', () => {
+        console.log('No promo video found, showing placeholder');
+    });
+    // Try to play
+    video.play().catch(() => {});
+});
+setInterval(fetchAllData, 10000); // Check every 10 seconds
+fetchAllData();
 document.addEventListener('keydown', (e) => {
-    if (!liveData || !liveData.matches) return;
+    if (!liveData || !liveData.matches || liveData.matches.length === 0) return;
     if (e.key === 'ArrowRight') {
         currentMatchIndex = (currentMatchIndex + 1) % liveData.matches.length;
         updateUI(liveData.matches[currentMatchIndex].live, liveData.matches[currentMatchIndex]);
