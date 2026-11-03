@@ -1,62 +1,283 @@
 {
-  "updatedAt": "2026-11-02T17:10:29.547Z",
-  "count": 1,
+  "updatedAt": "2026-11-03T06:00:00.000Z",
+  "count": 5,
+  "isTest": false,
+  "message": "TEST MODE - 5 Live domestic matches for scoreboard testing - KARB, FAIS, LAHW, ISLR, LAHB",
   "matches": [
     {
-      "id": "test-ned-vs-oma-144th-odi",
-      "detailUrl": "https://crex.com/cricket-live-score/ned-vs-oma-144th-odi-mens-cwc-league-2-2023-27-match-updates-14VF",
-      "date": "Mon, 2 Nov 2026",
-      "seriesInfo": "Mens CWC League 2",
+      "id": "karb-vs-srb-1st-first-class-quaid-e-azam-trophy-gold-2026-match-updates-152K",
+      "detailUrl": "https://crex.com/cricket-live-score/karb-vs-srb-1st-first-class-quaid-e-azam-trophy-gold-2026-match-updates-152K",
+      "date": "Tue, 3 Nov 2026",
+      "seriesInfo": "Quaid-e-Azam Trophy Gold",
       "team1": {
-        "name": "OMA",
-        "flagUrl": "https://cricketvectors.akamaized.net/Teams/15.png"
+        "name": "KARB",
+        "flagUrl": "https://cricketvectors.akamaized.net/Teams/TG.png"
       },
       "team2": {
-        "name": "NED",
-        "flagUrl": "https://cricketvectors.akamaized.net/Teams/12.png"
+        "name": "SRB",
+        "flagUrl": "https://cricketvectors.akamaized.net/Teams/TM.png"
       },
       "live": {
-        "series": "NED Vs OMA, 144th ODI, CWC League-2 2023-27 Summary",
-        "team1Name": "NED",
-        "team1Flag": "https://cricketvectors.akamaized.net/Teams/12.png",
-        "team1Score": "183-3",
-        "team2Name": "OMA",
-        "team2Flag": "https://cricketvectors.akamaized.net/Teams/15.png",
-        "commentary": "Netherlands won by 7 wickets",
-        "currentOver": "36",
-        "currentBall": "0",
+        "series": "KARB Vs SRB, 1st First Class, Quaid-e-Azam Trophy Gold LIVE",
+        "team1Name": "KARB",
+        "team1Flag": "https://cricketvectors.akamaized.net/Teams/TG.png",
+        "team1Score": "245-3",
+        "team2Name": "SRB",
+        "team2Flag": "https://cricketvectors.akamaized.net/Teams/TM.png",
+        "commentary": "KARACHI BLUES LEAD BY 45 RUNS - DAY 1 - LIVE",
+        "currentOver": "68",
+        "currentBall": "2",
         "batsman1": {
-          "name": "C Ackermann",
-          "runs": "1",
-          "balls": "2",
-          "fours": "0",
-          "sixes": "0",
-          "sr": "50.00",
-          "vector": "https://cricketvectors.akamaized.net/players/org/10X.png",
-          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/12.png"
+          "name": "S Khan",
+          "runs": "85",
+          "balls": "120",
+          "fours": "8",
+          "sixes": "1",
+          "sr": "70.83",
+          "vector": "https://cricketvectors.akamaized.net/players/org/1A.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/TG.png"
         },
         "batsman2": {
-          "name": "S Edwards",
-          "runs": "2",
-          "balls": "4",
-          "fours": "0",
+          "name": "A Ahmed",
+          "runs": "42",
+          "balls": "65",
+          "fours": "5",
           "sixes": "0",
-          "sr": "50.00",
-          "vector": "https://cricketvectors.akamaized.net/players/org/10V.png",
-          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/12.png"
+          "sr": "64.61",
+          "vector": "https://cricketvectors.akamaized.net/players/org/1B.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/TG.png"
         },
         "bowler": {
-          "name": "N Khan",
-          "figures": "1-38",
-          "overs": "9.0",
-          "econ": "4.22",
-          "vector": "https://cricketvectors.akamaized.net/players/org/B7B.png",
-          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/15.png"
+          "name": "M Ali",
+          "figures": "1-45",
+          "overs": "15.0",
+          "econ": "3.00",
+          "vector": "https://cricketvectors.akamaized.net/players/org/2A.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/TM.png"
         },
         "isLive": true
       },
-      "scrapedAt": "2026-11-02T17:10:29.464Z"
+      "scrapedAt": "2026-11-03T06:00:00.000Z"
+    },
+    {
+      "id": "fais-vs-prb-2nd-first-class-quaid-e-azam-trophy-gold-2026-match-updates-152L",
+      "detailUrl": "https://crex.com/cricket-live-score/fais-vs-prb-2nd-first-class-quaid-e-azam-trophy-gold-2026-match-updates-152L",
+      "date": "Tue, 3 Nov 2026",
+      "seriesInfo": "Quaid-e-Azam Trophy Gold",
+      "team1": {
+        "name": "FAIS",
+        "flagUrl": "https://cricketvectors.akamaized.net/Teams/SW.png"
+      },
+      "team2": {
+        "name": "PRB",
+        "flagUrl": "https://cricketvectors.akamaized.net/Teams/62.png"
+      },
+      "live": {
+        "series": "FAISALABAD Vs PESHAWAR REGION LIVE",
+        "team1Name": "FAIS",
+        "team1Flag": "https://cricketvectors.akamaized.net/Teams/SW.png",
+        "team1Score": "180-5",
+        "team2Name": "PRB",
+        "team2Flag": "https://cricketvectors.akamaized.net/Teams/62.png",
+        "commentary": "FAISALABAD 180/5 - TRAIL BY 20 - LIVE",
+        "currentOver": "55",
+        "currentBall": "4",
+        "batsman1": {
+          "name": "F Zaman",
+          "runs": "65",
+          "balls": "80",
+          "fours": "6",
+          "sixes": "2",
+          "sr": "81.25",
+          "vector": "https://cricketvectors.akamaized.net/players/org/1C.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/SW.png"
+        },
+        "batsman2": {
+          "name": "M Rizwan",
+          "runs": "25",
+          "balls": "40",
+          "fours": "2",
+          "sixes": "0",
+          "sr": "62.50",
+          "vector": "https://cricketvectors.akamaized.net/players/org/1D.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/SW.png"
+        },
+        "bowler": {
+          "name": "S Afridi",
+          "figures": "2-30",
+          "overs": "12.0",
+          "econ": "2.50",
+          "vector": "https://cricketvectors.akamaized.net/players/org/2B.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/62.png"
+        },
+        "isLive": true
+      },
+      "scrapedAt": "2026-11-03T06:00:00.000Z"
+    },
+    {
+      "id": "lahw-vs-fata-3rd-first-class-quaid-e-azam-trophy-gold-2026-match-updates-152M",
+      "detailUrl": "https://crex.com/cricket-live-score/fata-vs-lahw-3rd-first-class-quaid-e-azam-trophy-gold-2026-match-updates-152M",
+      "date": "Tue, 3 Nov 2026",
+      "seriesInfo": "Quaid-e-Azam Trophy Gold",
+      "team1": {
+        "name": "LAHW",
+        "flagUrl": "https://cricketvectors.akamaized.net/Teams/61.png"
+      },
+      "team2": {
+        "name": "FATA",
+        "flagUrl": "https://cricketvectors.akamaized.net/Teams/64.png"
+      },
+      "live": {
+        "series": "LAHORE WHITES Vs FATA LIVE",
+        "team1Name": "LAHW",
+        "team1Flag": "https://cricketvectors.akamaized.net/Teams/61.png",
+        "team1Score": "310-4",
+        "team2Name": "FATA",
+        "team2Flag": "https://cricketvectors.akamaized.net/Teams/64.png",
+        "commentary": "LAHORE WHITES 310/4 - DAY 1 STUMPS - LIVE",
+        "currentOver": "85",
+        "currentBall": "0",
+        "batsman1": {
+          "name": "A Shafiq",
+          "runs": "110",
+          "balls": "150",
+          "fours": "12",
+          "sixes": "1",
+          "sr": "73.33",
+          "vector": "https://cricketvectors.akamaized.net/players/org/1E.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/61.png"
+        },
+        "batsman2": {
+          "name": "B Azam",
+          "runs": "85",
+          "balls": "110",
+          "fours": "9",
+          "sixes": "0",
+          "sr": "77.27",
+          "vector": "https://cricketvectors.akamaized.net/players/org/1F.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/61.png"
+        },
+        "bowler": {
+          "name": "N Shah",
+          "figures": "2-55",
+          "overs": "18.0",
+          "econ": "3.05",
+          "vector": "https://cricketvectors.akamaized.net/players/org/2C.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/64.png"
+        },
+        "isLive": true
+      },
+      "scrapedAt": "2026-11-03T06:00:00.000Z"
+    },
+    {
+      "id": "islr-vs-mul-4th-first-class-quaid-e-azam-trophy-gold-2026-match-updates-152N",
+      "detailUrl": "https://crex.com/cricket-live-score/islr-vs-mul-4th-first-class-quaid-e-azam-trophy-gold-2026-match-updates-152N",
+      "date": "Tue, 3 Nov 2026",
+      "seriesInfo": "Quaid-e-Azam Trophy Gold",
+      "team1": {
+        "name": "ISLR",
+        "flagUrl": "https://cricketvectors.akamaized.net/Teams/66.png"
+      },
+      "team2": {
+        "name": "MUL",
+        "flagUrl": "https://cricketvectors.akamaized.net/Teams/68.png"
+      },
+      "live": {
+        "series": "ISLAMABAD REGION Vs MULTAN LIVE",
+        "team1Name": "ISLR",
+        "team1Flag": "https://cricketvectors.akamaized.net/Teams/66.png",
+        "team1Score": "95-2",
+        "team2Name": "MUL",
+        "team2Flag": "https://cricketvectors.akamaized.net/Teams/68.png",
+        "commentary": "ISLAMABAD 95/2 - MORNING SESSION LIVE",
+        "currentOver": "28",
+        "currentBall": "1",
+        "batsman1": {
+          "name": "S Masood",
+          "runs": "45",
+          "balls": "60",
+          "fours": "5",
+          "sixes": "0",
+          "sr": "75.00",
+          "vector": "https://cricketvectors.akamaized.net/players/org/1G.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/66.png"
+        },
+        "batsman2": {
+          "name": "H Sohail",
+          "runs": "30",
+          "balls": "50",
+          "fours": "3",
+          "sixes": "0",
+          "sr": "60.00",
+          "vector": "https://cricketvectors.akamaized.net/players/org/1H.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/66.png"
+        },
+        "bowler": {
+          "name": "M Amir",
+          "figures": "1-20",
+          "overs": "8.0",
+          "econ": "2.50",
+          "vector": "https://cricketvectors.akamaized.net/players/org/2D.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/68.png"
+        },
+        "isLive": true
+      },
+      "scrapedAt": "2026-11-03T06:00:00.000Z"
+    },
+    {
+      "id": "lahb-vs-rwl-1st-first-class-quaid-e-azam-trophy-sliver-2026-match-updates-153D",
+      "detailUrl": "https://crex.com/cricket-live-score/lahb-vs-rwl-1st-first-class-quaid-e-azam-trophy-sliver-2026-match-updates-153D",
+      "date": "Tue, 3 Nov 2026",
+      "seriesInfo": "Quaid-e-Azam Trophy Silver",
+      "team1": {
+        "name": "LAHB",
+        "flagUrl": "https://cricketvectors.akamaized.net/Teams/63.png"
+      },
+      "team2": {
+        "name": "RWL",
+        "flagUrl": "https://cricketvectors.akamaized.net/Teams/67.png"
+      },
+      "live": {
+        "series": "LAHORE BLUES Vs RAWALPINDI LIVE",
+        "team1Name": "LAHB",
+        "team1Flag": "https://cricketvectors.akamaized.net/Teams/63.png",
+        "team1Score": "210-6",
+        "team2Name": "RWL",
+        "team2Flag": "https://cricketvectors.akamaized.net/Teams/67.png",
+        "commentary": "LAHORE BLUES 210/6 LIVE",
+        "currentOver": "62",
+        "currentBall": "3",
+        "batsman1": {
+          "name": "U Akmal",
+          "runs": "55",
+          "balls": "70",
+          "fours": "6",
+          "sixes": "1",
+          "sr": "78.57",
+          "vector": "https://cricketvectors.akamaized.net/players/org/1I.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/63.png"
+        },
+        "batsman2": {
+          "name": "K Akmal",
+          "runs": "15",
+          "balls": "20",
+          "fours": "1",
+          "sixes": "0",
+          "sr": "75.00",
+          "vector": "https://cricketvectors.akamaized.net/players/org/1J.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/63.png"
+        },
+        "bowler": {
+          "name": "S Khan",
+          "figures": "3-40",
+          "overs": "15.0",
+          "econ": "2.66",
+          "vector": "https://cricketvectors.akamaized.net/players/org/2E.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/67.png"
+        },
+        "isLive": true
+      },
+      "scrapedAt": "2026-11-03T06:00:00.000Z"
     }
-  ],
-  "isTest": true
+  ]
 }
