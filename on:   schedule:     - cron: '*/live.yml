@@ -1,0 +1,4 @@
+on:
+  schedule:
+    - cron: '*/3 * * * *'  # Har 3 min me - Smart check ke saath minutes bachao
+  workflow_dispatch:
