@@ -6,130 +6,139 @@ const LIVE_FILE = path.join(__dirname, 'live-data.json');
 
 async function scrapeLiveMatches() {
     const puppeteer = require('puppeteer-core');
-    console.log('Using puppeteer-core for live scraping - FINAL FIXED');
+    console.log('Using puppeteer-core for live scraping - INTERNATIONAL ONLY - FINAL');
 
-    // 1. Try to read schedule to find Live matches, but also fallback to direct crex live page
     let schedule = [];
     try {
         if (fs.existsSync(SCHEDULE_FILE)) {
             schedule = JSON.parse(fs.readFileSync(SCHEDULE_FILE, 'utf8'));
-            console.log(`Loaded schedule: ${schedule.length} matches`);
+            console.log(`Loaded schedule: ${schedule.length} matches (International 1 month)`);
         }
     } catch(e) {
         console.log('Schedule read error:', e.message);
     }
 
+    // Find LIVE matches from schedule - INTERNATIONAL ONLY
     let liveMatches = schedule.filter(m => {
         const time = (m.matchTime || '').toLowerCase();
         const status = (m.matchStatus || '').toLowerCase();
+        // Check for LIVE badge
         return time === 'live' || status === 'live' || status.includes('live') || time.includes('live');
-    }).slice(0,3);
+    }).slice(0,3); // Max 3 to save GitHub minutes
 
-    console.log(`Found ${liveMatches.length} Live matches from schedule file`);
+    console.log(`Found ${liveMatches.length} Live INTERNATIONAL matches from schedule`);
 
-    // If no live from schedule, try to find live from crex.com directly
+    // If no live in schedule, check if any match is starting within next 10 minutes (pre-live)
+    if (liveMatches.length === 0 && schedule.length > 0) {
+        const now = new Date();
+        const upcoming = schedule.filter(m => {
+            try {
+                const matchDate = new Date(m.date);
+                const timeStr = m.matchTime || '';
+                // Simple check: if date is today and time is within 1 hour
+                const isToday = matchDate.toDateString() === now.toDateString();
+                return isToday;
+            } catch(e) { return false; }
+        });
+        console.log(`Found ${upcoming.length} matches today (not yet Live, but checking Crex for Live badge)`);
+        // Will check Crex directly below
+    }
+
     const browser = await puppeteer.launch({
-        headless: 'new',
-        channel: 'chrome',
+        headless: 'new', channel: 'chrome',
         args: ['--no-sandbox','--disable-setuid-sandbox','--disable-dev-shm-usage','--disable-gpu']
     }).catch(() => puppeteer.launch({ headless: 'new', args: ['--no-sandbox'] }));
 
     try {
-        // If schedule has no live, scrape crex.com/live or crex.com directly for live matches
+        // If no live in schedule file, check https://crex.com/schedule?seriesType=international directly for LIVE
         if (liveMatches.length === 0) {
-            console.log('No live in schedule, checking https://crex.com/ for live matches...');
+            console.log('No live in schedule, checking https://crex.com/schedule?seriesType=international for LIVE badges...');
             const page = await browser.newPage();
             await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
-            await page.goto('https://crex.com/', { waitUntil: 'domcontentloaded', timeout: 60000 });
+            await page.goto('https://crex.com/schedule?seriesType=international', { waitUntil: 'domcontentloaded', timeout: 60000 });
             await new Promise(r => setTimeout(r, 8000));
 
             const directLive = await page.evaluate(() => {
                 const results = [];
-                // Look for live cards on homepage
-                const liveCards = document.querySelectorAll('li.match-card-container, .match-card, [class*="live"]');
-                liveCards.forEach(card => {
-                    const liveBadge = card.innerText.toLowerCase().includes('live');
-                    const link = card.querySelector('a[href*="cricket-live-score"]');
-                    if (liveBadge && link) {
-                        const href = link.getAttribute('href');
-                        results.push({
-                            id: href.split('/cricket-live-score/')[1] || href,
-                            detailUrl: href.startsWith('http') ? href : `https://crex.com${href}`,
-                            date: new Date().toDateString(),
-                            team1: { name: 'Team1', flagUrl: '' },
-                            team2: { name: 'Team2', flagUrl: '' }
-                        });
-                    }
-                });
-                // Also check all links with live
-                const allLinks = document.querySelectorAll('a[href*="cricket-live-score"]');
-                allLinks.forEach(link => {
-                    const card = link.closest('li') || link.parentElement;
-                    if (card && card.innerText.toLowerCase().includes('live')) {
-                        const href = link.getAttribute('href');
-                        const id = href.split('/cricket-live-score/')[1] || href;
-                        if (!results.some(r => r.id === id)) {
-                            results.push({
-                                id: id,
-                                detailUrl: href.startsWith('http') ? href : `https://crex.com${href}`,
-                                date: new Date().toDateString(),
-                                team1: { name: 'Team1', flagUrl: '' },
-                                team2: { name: 'Team2', flagUrl: '' }
-                            });
+                const cards = document.querySelectorAll('#date-wise-wrap li.match-card-container');
+                cards.forEach(card => {
+                    const isLive = card.innerText.includes('Live') || card.innerText.includes('LIVE');
+                    if (isLive) {
+                        const link = card.querySelector('a[href*="cricket-live-score"]');
+                        if (link) {
+                            const href = link.getAttribute('href');
+                            const teamEls = card.querySelectorAll('.team-name');
+                            const t1 = teamEls[0]?.innerText.trim() || 'Team1';
+                            const t2 = teamEls[1]?.innerText.trim() || 'Team2';
+                            const timeEl = card.querySelector('.time span');
+                            const matchTime = timeEl ? timeEl.innerText.trim() : 'Live';
+                            // Filter out domestic even here
+                            const idLower = href.toLowerCase();
+                            const isDomestic = ['quaid-e-azam', 'nepal-premier', 'emirates-d20', 'csa-pro-t20', 'ford-trophy', '-a-vs-', 'u19', 'wbbl', 'womens'].some(k => idLower.includes(k));
+                            if (!isDomestic) {
+                                results.push({
+                                    id: href.split('/cricket-live-score/')[1] || href,
+                                    detailUrl: href.startsWith('http') ? href : `https://crex.com${href}`,
+                                    date: new Date().toDateString(),
+                                    team1: { name: t1, flagUrl: '' },
+                                    team2: { name: t2, flagUrl: '' },
+                                    matchTime: matchTime,
+                                    matchStatus: 'Live'
+                                });
+                            }
                         }
                     }
                 });
-                return results.slice(0,3);
+                return results;
             });
 
-            console.log(`Found ${directLive.length} live matches directly from crex.com homepage`);
-            liveMatches = directLive;
-
+            console.log(`Found ${directLive.length} live INTERNATIONAL matches directly from crex.com/schedule?seriesType=international`);
+            liveMatches = directLive.slice(0,3);
             await page.close();
         }
 
-        // If still 0, check if user passed --test or if we should keep old data
         if (liveMatches.length === 0) {
-            const isTest = process.argv.includes('--test');
-            if (isTest) {
-                console.log('No live now, using TEST sample for checking...');
-                liveMatches = [{
-                    id: 'afg-vs-zim-1st-test-afghanistan-vs-zimbabwe-in-uae-2026-match-updates-13TP',
-                    detailUrl: 'https://crex.com/cricket-live-score/afg-vs-zim-1st-test-afghanistan-vs-zimbabwe-in-uae-2026-match-updates-13TP',
-                    team1: { name: 'AFG', flagUrl: 'https://cricketvectors.akamaized.net/Teams/Y.png' },
-                    team2: { name: 'ZIM', flagUrl: 'https://cricketvectors.akamaized.net/Teams/X.png' },
-                    date: new Date().toDateString(),
-                    seriesInfo: 'AFG vs ZIM Test'
-                }];
-            } else {
-                console.log('No Live matches now, keeping old live-data.json if exists or writing empty');
-                // Don't overwrite with empty if old file exists and has data
-                if (fs.existsSync(LIVE_FILE)) {
-                    try {
-                        const old = JSON.parse(fs.readFileSync(LIVE_FILE, 'utf8'));
-                        if (old.matches && old.matches.length > 0 && old.count > 0) {
-                            console.log(`Keeping old live-data with ${old.count} matches, since no new live`);
-                            // Update timestamp only
-                            old.updatedAt = new Date().toISOString();
-                            old.message = 'No new live, kept old data';
-                            fs.writeFileSync(LIVE_FILE, JSON.stringify(old, null, 2));
-                            await browser.close();
-                            return;
-                        }
-                    } catch(e){}
-                }
-                const emptyData = { updatedAt: new Date().toISOString(), count: 0, matches: [], message: 'No live matches currently - check back at 10 AM' };
-                fs.writeFileSync(LIVE_FILE, JSON.stringify(emptyData, null, 2));
-                await browser.close();
-                return;
+            // NO LIVE - Write count:0 with NEXT match info for countdown
+            let nextMatch = null;
+            if (schedule.length > 0) {
+                // Find next match by date
+                const now = new Date();
+                const upcoming = schedule.filter(m => {
+                    try { return new Date(m.date) >= now; } catch(e) { return true; }
+                }).sort((a,b) => new Date(a.date) - new Date(b.date));
+                nextMatch = upcoming[0] || schedule[0];
             }
+
+            const emptyData = { 
+                updatedAt: new Date().toISOString(), 
+                count: 0, 
+                matches: [],
+                nextMatch: nextMatch ? {
+                    id: nextMatch.id,
+                    team1: nextMatch.team1.name,
+                    team2: nextMatch.team2.name,
+                    date: nextMatch.date,
+                    matchTime: nextMatch.matchTime,
+                    seriesInfo: nextMatch.seriesInfo,
+                    detailUrl: nextMatch.detailUrl
+                } : null,
+                message: nextMatch ? `Next: ${nextMatch.team1.name} vs ${nextMatch.team2.name} on ${nextMatch.date} at ${nextMatch.matchTime}` : 'No live matches currently - Next match on Thu 5 Nov AFG vs ZIM'
+            };
+            
+            // If old file had live matches and we now have 0, we overwrite with 0 (since no live)
+            // But we keep message with next match for countdown
+            fs.writeFileSync(LIVE_FILE, JSON.stringify(emptyData, null, 2));
+            console.log(`\n✅ NO LIVE - Written count:0 with next match: ${emptyData.message}`);
+            console.log(`⏰ Countdown will show on scoreboard: Time remaining until ${nextMatch?.date} ${nextMatch?.matchTime}`);
+            await browser.close();
+            return;
         }
 
         const allLiveData = [];
 
         for (let match of liveMatches) {
             const url = match.detailUrl;
-            console.log(`\n📡 Scraping LIVE: ${match.team1?.name || ''} vs ${match.team2?.name || ''} - ${url}`);
+            console.log(`\n📡 Scraping LIVE INTERNATIONAL: ${match.team1?.name || ''} vs ${match.team2?.name || ''} - ${url}`);
             
             const page = await browser.newPage();
             await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
@@ -142,7 +151,7 @@ async function scrapeLiveMatches() {
                 const data = await page.evaluate(() => {
                     const getText = (sel) => document.querySelector(sel)?.innerText?.trim() || "";
 
-                    let series = getText('.name-wrapper span') || getText('.series-name') || "";
+                    let series = getText('.name-wrapper span') || getText('.series-name') || document.querySelector('h1')?.innerText || "";
                     
                     const teamInnings = document.querySelectorAll('.team-inning');
                     let t1Flag = "";
@@ -170,19 +179,29 @@ async function scrapeLiveMatches() {
                     if (!t1Name && nameBlocks.length > 0) t1Name = nameBlocks[0].innerText.trim();
                     if (!t2Name && nameBlocks.length > 1) t2Name = nameBlocks[1].innerText.trim();
 
-                    let comment = getText('.team-result .result-box') || getText('.final-result') || getText('.commentary-text') || "LIVE MATCH";
+                    let comment = getText('.team-result .result-box') || getText('.final-result') || getText('.commentary-text') || getText('.result-box') || "LIVE MATCH";
 
                     let overNum = "0";
                     let ballNum = "0";
 
-                    const liveOversText = getText('.team-inning .runs.f-runs span.over-text') || getText('.total-overs') || "";
+                    const liveOversText = getText('.team-inning .runs.f-runs span.over-text') || getText('.total-overs') || getText('.over-text') || "";
                     const overMatch = liveOversText.match(/(\d+)\.(\d+)/);
                     if (overMatch) {
                         overNum = overMatch[1];
                         ballNum = overMatch[2];
+                    } else {
+                        // Try alternative
+                        const overSlides = document.querySelectorAll('.overs-slide');
+                        if (overSlides.length > 0) {
+                            const latest = overSlides[overSlides.length - 1];
+                            const title = latest.querySelector('.over-title')?.innerText || '';
+                            const m = title.match(/(\d+)/);
+                            if (m) overNum = m[1];
+                            ballNum = latest.querySelectorAll('.over-ball').length.toString();
+                        }
                     }
 
-                    const pships = document.querySelectorAll('app-match-live-player .batsmen-partnership, .batsmen-partnership');
+                    const pships = document.querySelectorAll('app-match-live-player .batsmen-partnership, .batsmen-partnership, .player-card');
 
                     const b1Node = pships[0];
                     const b1Name = b1Node?.querySelector('.batsmen-name p')?.innerText?.trim() || "";
@@ -253,16 +272,33 @@ async function scrapeLiveMatches() {
             updatedAt: new Date().toISOString(), 
             count: allLiveData.length, 
             matches: allLiveData,
-            message: allLiveData.length > 0 ? `Live: ${allLiveData.length} matches` : 'No live matches found - will keep checking'
+            message: allLiveData.length > 0 ? `Live: ${allLiveData.length} INTERNATIONAL matches` : 'No international live currently',
+            isTest: false
         };
         fs.writeFileSync(LIVE_FILE, JSON.stringify(finalJson, null, 2));
-        console.log(`\n✅ FINAL LIVE-DATA: ${allLiveData.length} matches saved`);
+        console.log(`\n✅ FINAL LIVE-DATA: ${allLiveData.length} INTERNATIONAL matches saved`);
+        if (allLiveData.length > 0) {
+            console.log(`Sample: ${allLiveData[0].live.team1Name} ${allLiveData[0].live.team1Score} | ${allLiveData[0].live.commentary}`);
+        } else {
+            console.log(`No live international now - Next match will be AFG vs ZIM on Thu`);
+        }
 
     } catch (err) {
         console.error('Live scraper error:', err.message);
-        // Don't overwrite with empty if error - keep old
+        // Don't overwrite with empty if error and old file exists
         if (fs.existsSync(LIVE_FILE)) {
-            console.log('Keeping old live-data due to error');
+            try {
+                const old = JSON.parse(fs.readFileSync(LIVE_FILE, 'utf8'));
+                if (old.count > 0) {
+                    console.log('Keeping old live-data due to error');
+                    old.updatedAt = new Date().toISOString();
+                    fs.writeFileSync(LIVE_FILE, JSON.stringify(old, null, 2));
+                } else {
+                    throw new Error('no old');
+                }
+            } catch(e) {
+                fs.writeFileSync(LIVE_FILE, JSON.stringify({ updatedAt: new Date().toISOString(), count: 0, matches: [], message: 'No live international - error: ' + err.message }, null, 2));
+            }
         } else {
             fs.writeFileSync(LIVE_FILE, JSON.stringify({ updatedAt: new Date().toISOString(), count: 0, matches: [], error: err.message }, null, 2));
         }
