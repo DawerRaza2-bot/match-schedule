@@ -6,8 +6,9 @@ const LIVE_FILE = path.join(__dirname, 'live-data.json');
 
 async function scrapeLiveMatches() {
     const puppeteer = require('puppeteer-core');
-    console.log('Using puppeteer-core for live scraping - TEST ALL MATCHES MODE');
+    console.log('Using puppeteer-core for live scraping - FINAL FIXED');
 
+    // 1. Try to read schedule to find Live matches, but also fallback to direct crex live page
     let schedule = [];
     try {
         if (fs.existsSync(SCHEDULE_FILE)) {
@@ -18,16 +19,15 @@ async function scrapeLiveMatches() {
         console.log('Schedule read error:', e.message);
     }
 
-    // For TEST mode: get ALL Live matches from schedule, no filter
     let liveMatches = schedule.filter(m => {
         const time = (m.matchTime || '').toLowerCase();
         const status = (m.matchStatus || '').toLowerCase();
         return time === 'live' || status === 'live' || status.includes('live') || time.includes('live');
-    });
+    }).slice(0,3);
 
-    console.log(`Found ${liveMatches.length} Live matches from schedule file (ALL TYPES - for testing)`);
+    console.log(`Found ${liveMatches.length} Live matches from schedule file`);
 
-    // Also try direct from crex.com
+    // If no live from schedule, try to find live from crex.com directly
     const browser = await puppeteer.launch({
         headless: 'new',
         channel: 'chrome',
@@ -35,57 +35,94 @@ async function scrapeLiveMatches() {
     }).catch(() => puppeteer.launch({ headless: 'new', args: ['--no-sandbox'] }));
 
     try {
+        // If schedule has no live, scrape crex.com/live or crex.com directly for live matches
         if (liveMatches.length === 0) {
-            console.log('No live in schedule file, checking https://crex.com/schedule for LIVE badges directly...');
+            console.log('No live in schedule, checking https://crex.com/ for live matches...');
             const page = await browser.newPage();
             await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
-            await page.goto('https://crex.com/schedule', { waitUntil: 'domcontentloaded', timeout: 60000 });
+            await page.goto('https://crex.com/', { waitUntil: 'domcontentloaded', timeout: 60000 });
             await new Promise(r => setTimeout(r, 8000));
 
             const directLive = await page.evaluate(() => {
                 const results = [];
-                const cards = document.querySelectorAll('#date-wise-wrap li.match-card-container');
-                cards.forEach(card => {
-                    const isLive = card.innerText.includes('Live') || card.innerText.includes('LIVE');
-                    if (isLive) {
-                        const link = card.querySelector('a[href*="cricket-live-score"]');
-                        if (link) {
-                            const href = link.getAttribute('href');
-                            const teamEls = card.querySelectorAll('.team-name');
-                            const t1 = teamEls[0]?.innerText.trim() || 'Team1';
-                            const t2 = teamEls[1]?.innerText.trim() || 'Team2';
+                // Look for live cards on homepage
+                const liveCards = document.querySelectorAll('li.match-card-container, .match-card, [class*="live"]');
+                liveCards.forEach(card => {
+                    const liveBadge = card.innerText.toLowerCase().includes('live');
+                    const link = card.querySelector('a[href*="cricket-live-score"]');
+                    if (liveBadge && link) {
+                        const href = link.getAttribute('href');
+                        results.push({
+                            id: href.split('/cricket-live-score/')[1] || href,
+                            detailUrl: href.startsWith('http') ? href : `https://crex.com${href}`,
+                            date: new Date().toDateString(),
+                            team1: { name: 'Team1', flagUrl: '' },
+                            team2: { name: 'Team2', flagUrl: '' }
+                        });
+                    }
+                });
+                // Also check all links with live
+                const allLinks = document.querySelectorAll('a[href*="cricket-live-score"]');
+                allLinks.forEach(link => {
+                    const card = link.closest('li') || link.parentElement;
+                    if (card && card.innerText.toLowerCase().includes('live')) {
+                        const href = link.getAttribute('href');
+                        const id = href.split('/cricket-live-score/')[1] || href;
+                        if (!results.some(r => r.id === id)) {
                             results.push({
-                                id: href.split('/cricket-live-score/')[1] || href,
+                                id: id,
                                 detailUrl: href.startsWith('http') ? href : `https://crex.com${href}`,
                                 date: new Date().toDateString(),
-                                team1: { name: t1, flagUrl: '' },
-                                team2: { name: t2, flagUrl: '' },
-                                matchTime: 'Live',
-                                matchStatus: 'Live'
+                                team1: { name: 'Team1', flagUrl: '' },
+                                team2: { name: 'Team2', flagUrl: '' }
                             });
                         }
                     }
                 });
-                return results;
+                return results.slice(0,3);
             });
 
-            console.log(`Found ${directLive.length} live matches directly from crex.com/schedule`);
-            liveMatches = directLive.slice(0,5); // Max 5 for testing
+            console.log(`Found ${directLive.length} live matches directly from crex.com homepage`);
+            liveMatches = directLive;
 
             await page.close();
         }
 
+        // If still 0, check if user passed --test or if we should keep old data
         if (liveMatches.length === 0) {
-            console.log('No Live matches found anywhere - writing sample for testing');
-            // For testing, create sample with current live domestic matches
-            liveMatches = [{
-                id: 'karb-vs-srb-1st-first-class-quaid-e-azam-trophy-gold-2026-match-updates-152K',
-                detailUrl: 'https://crex.com/cricket-live-score/karb-vs-srb-1st-first-class-quaid-e-azam-trophy-gold-2026-match-updates-152K',
-                team1: { name: 'KARB', flagUrl: 'https://cricketvectors.akamaized.net/Teams/3H.png' },
-                team2: { name: 'SRB', flagUrl: 'https://cricketvectors.akamaized.net/Teams/3E.png' },
-                date: new Date().toDateString(),
-                seriesInfo: 'Quaid-e-Azam Trophy Gold'
-            }];
+            const isTest = process.argv.includes('--test');
+            if (isTest) {
+                console.log('No live now, using TEST sample for checking...');
+                liveMatches = [{
+                    id: 'afg-vs-zim-1st-test-afghanistan-vs-zimbabwe-in-uae-2026-match-updates-13TP',
+                    detailUrl: 'https://crex.com/cricket-live-score/afg-vs-zim-1st-test-afghanistan-vs-zimbabwe-in-uae-2026-match-updates-13TP',
+                    team1: { name: 'AFG', flagUrl: 'https://cricketvectors.akamaized.net/Teams/Y.png' },
+                    team2: { name: 'ZIM', flagUrl: 'https://cricketvectors.akamaized.net/Teams/X.png' },
+                    date: new Date().toDateString(),
+                    seriesInfo: 'AFG vs ZIM Test'
+                }];
+            } else {
+                console.log('No Live matches now, keeping old live-data.json if exists or writing empty');
+                // Don't overwrite with empty if old file exists and has data
+                if (fs.existsSync(LIVE_FILE)) {
+                    try {
+                        const old = JSON.parse(fs.readFileSync(LIVE_FILE, 'utf8'));
+                        if (old.matches && old.matches.length > 0 && old.count > 0) {
+                            console.log(`Keeping old live-data with ${old.count} matches, since no new live`);
+                            // Update timestamp only
+                            old.updatedAt = new Date().toISOString();
+                            old.message = 'No new live, kept old data';
+                            fs.writeFileSync(LIVE_FILE, JSON.stringify(old, null, 2));
+                            await browser.close();
+                            return;
+                        }
+                    } catch(e){}
+                }
+                const emptyData = { updatedAt: new Date().toISOString(), count: 0, matches: [], message: 'No live matches currently - check back at 10 AM' };
+                fs.writeFileSync(LIVE_FILE, JSON.stringify(emptyData, null, 2));
+                await browser.close();
+                return;
+            }
         }
 
         const allLiveData = [];
@@ -105,7 +142,7 @@ async function scrapeLiveMatches() {
                 const data = await page.evaluate(() => {
                     const getText = (sel) => document.querySelector(sel)?.innerText?.trim() || "";
 
-                    let series = getText('.name-wrapper span') || getText('.series-name') || document.querySelector('h1')?.innerText || "";
+                    let series = getText('.name-wrapper span') || getText('.series-name') || "";
                     
                     const teamInnings = document.querySelectorAll('.team-inning');
                     let t1Flag = "";
@@ -133,28 +170,28 @@ async function scrapeLiveMatches() {
                     if (!t1Name && nameBlocks.length > 0) t1Name = nameBlocks[0].innerText.trim();
                     if (!t2Name && nameBlocks.length > 1) t2Name = nameBlocks[1].innerText.trim();
 
-                    let comment = getText('.team-result .result-box') || getText('.final-result') || getText('.commentary-text') || getText('.result-box') || "LIVE MATCH";
+                    let comment = getText('.team-result .result-box') || getText('.final-result') || getText('.commentary-text') || "LIVE MATCH";
 
                     let overNum = "0";
                     let ballNum = "0";
 
-                    const liveOversText = getText('.team-inning .runs.f-runs span.over-text') || getText('.total-overs') || getText('.over-text') || "";
+                    const liveOversText = getText('.team-inning .runs.f-runs span.over-text') || getText('.total-overs') || "";
                     const overMatch = liveOversText.match(/(\d+)\.(\d+)/);
                     if (overMatch) {
                         overNum = overMatch[1];
                         ballNum = overMatch[2];
                     }
 
-                    const pships = document.querySelectorAll('app-match-live-player .batsmen-partnership, .batsmen-partnership, .player-card, .batsman');
+                    const pships = document.querySelectorAll('app-match-live-player .batsmen-partnership, .batsmen-partnership');
 
                     const b1Node = pships[0];
-                    const b1Name = b1Node?.querySelector('.batsmen-name p')?.innerText?.trim() || b1Node?.querySelector('.player-name')?.innerText?.trim() || b1Node?.querySelector('.name')?.innerText?.trim() || "";
-                    const b1Runs = b1Node?.querySelector('.batsmen-score p:nth-child(1)')?.innerText?.trim() || b1Node?.querySelector('.score')?.innerText?.trim() || "0";
+                    const b1Name = b1Node?.querySelector('.batsmen-name p')?.innerText?.trim() || "";
+                    const b1Runs = b1Node?.querySelector('.batsmen-score p:nth-child(1)')?.innerText?.trim() || "0";
                     const b1Balls = b1Node?.querySelector('.batsmen-score p:nth-child(2)')?.innerText?.replace(/[()]/g, '').trim() || "0";
                     const b1Fours = b1Node?.querySelectorAll('.player-strike-wrapper .strike-rate span')[1]?.innerText?.trim() || "0";
                     const b1Sixes = b1Node?.querySelectorAll('.player-strike-wrapper .strike-rate span')[3]?.innerText?.trim() || "0";
                     const b1Sr = b1Node?.querySelectorAll('.player-strike-wrapper .strike-rate span')[5]?.innerText?.trim() || "0.00";
-                    const b1Vector = b1Node?.querySelector('app-player-profile-img img:not(.mr-top)')?.src || b1Node?.querySelector('img')?.src || "";
+                    const b1Vector = b1Node?.querySelector('app-player-profile-img img:not(.mr-top)')?.src || "";
                     const b1Jersey = b1Node?.querySelector('app-player-profile-img img.mr-top')?.src || "";
 
                     const b2Node = pships[1];
@@ -216,18 +253,19 @@ async function scrapeLiveMatches() {
             updatedAt: new Date().toISOString(), 
             count: allLiveData.length, 
             matches: allLiveData,
-            message: allLiveData.length > 0 ? `Live: ${allLiveData.length} matches - TEST MODE ALL` : 'No live found',
-            isTest: false
+            message: allLiveData.length > 0 ? `Live: ${allLiveData.length} matches` : 'No live matches found - will keep checking'
         };
         fs.writeFileSync(LIVE_FILE, JSON.stringify(finalJson, null, 2));
-        console.log(`\n✅ FINAL LIVE-DATA: ${allLiveData.length} matches saved - TEST MODE`);
-        if (allLiveData.length > 0) {
-            console.log(`Sample: ${allLiveData[0].live.team1Name} ${allLiveData[0].live.team1Score} | ${allLiveData[0].live.commentary}`);
-        }
+        console.log(`\n✅ FINAL LIVE-DATA: ${allLiveData.length} matches saved`);
 
     } catch (err) {
         console.error('Live scraper error:', err.message);
-        fs.writeFileSync(LIVE_FILE, JSON.stringify({ updatedAt: new Date().toISOString(), count: 0, matches: [], error: err.message }, null, 2));
+        // Don't overwrite with empty if error - keep old
+        if (fs.existsSync(LIVE_FILE)) {
+            console.log('Keeping old live-data due to error');
+        } else {
+            fs.writeFileSync(LIVE_FILE, JSON.stringify({ updatedAt: new Date().toISOString(), count: 0, matches: [], error: err.message }, null, 2));
+        }
     } finally {
         if (browser) await browser.close();
     }
