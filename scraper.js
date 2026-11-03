@@ -11,7 +11,7 @@ END_DATE.setHours(23,59,59,999);
 
 console.log(`📅 TODAY: ${START_DATE.toDateString()}`);
 console.log(`🎯 TARGET: ${START_DATE.toDateString()} to ${END_DATE.toDateString()}`);
-console.log(`📅 INTERNATIONAL ONLY FILTER - FIXED`);
+console.log(`📅 INTERNATIONAL ONLY FILTER - FINAL FIXED V2`);
 
 async function scrape() {
     const puppeteer = require('puppeteer-core');
@@ -28,12 +28,9 @@ async function scrape() {
         await page.setViewport({ width: 1920, height: 1080 });
 
         console.log('📡 Opening https://crex.com/schedule?seriesType=international');
-        // Direct URL with international param - most reliable
         await page.goto('https://crex.com/schedule?seriesType=international', { waitUntil: 'domcontentloaded', timeout: 90000 });
         await new Promise(r => setTimeout(r, 8000));
 
-        // Try UI filter as backup
-        console.log('🎯 Verifying International filter...');
         const verify = await page.evaluate(() => {
             const wrappers = document.querySelectorAll('.option-wrapper');
             for (let w of wrappers) {
@@ -132,9 +129,6 @@ async function scrape() {
 
             if (data.length === lastTotal && added === 0) {
                 noNewDataStreak++;
-                if (noNewDataStreak >= 2) {
-                    console.log('No new data, trying pagination click...');
-                }
             } else {
                 noNewDataStreak = 0;
             }
@@ -177,65 +171,49 @@ async function scrape() {
 
         console.log(`\n📊 Total scraped (before filter): ${allMatches.length}`);
 
-        // ===== FIXED INTERNATIONAL FILTER - COMPREHENSIVE =====
+        // ===== FINAL FIXED FILTER - V2 =====
+        // Only filter TRUE domestic, not international tours
         const domesticKeywords = [
+            // Nepal Premier League
+            'nepal-premier-league', 'biratnagar kings', 'janakpur bolts', 'lumbini lions', 'pokhara avengers',
+            // UAE Domestic D20
+            'emirates blues', 'emirates red', 'ajman', 'dubai vs', 'sharjah',
+            'emb-vs', 'emirates-d20', 'd20-league',
             // Global T20 Canada
-            'global t20', 'canada', 'toronto', 'montreal', 'brampton', 'vancouver', 'surrey', 'mississauga',
-            'kings', 'warriors', 'tigers', 'jaguars',
-            // CSA South Africa
-            'csa', 'dolphins', 'western province', 'rocks', 'eastern storm', 'lions', 'titans', 'knights',
-            // Ford Trophy NZ
-            'ford trophy', 'auckland', 'central stags', 'northern brave', 'wellington', 'canterbury', 'otago',
-            // A teams
-            'eng-a', 'wi-a', 'ind-a', 'nz-a', 'ire-a', 'zim-a', 'sl-a', 'ban-a', 'pak-a', 'aus-a',
-            'england a', 'west indies a', 'india a', 'new zealand a', 'ireland a', 'zimbabwe a', 'sri lanka a', 'bangladesh a', 'pakistan a', 'australia a',
-            'a-tour', 'a tour',
+            'global t20 canada', 'toronto kings', 'montreal warriors', 'brampton wolves', 'vancouver knights',
+            // CSA Pro T20 SA domestic
+            'csa-pro-t20', 'csa t20', 'dolphins vs', 'western province', 'rocks vs', 'warriors vs', 'eastern storm', 'lions vs', 'titans vs',
+            // Ford Trophy NZ domestic
+            'ford-trophy', 'the-ford-trophy',
+            // A teams - exact patterns
+            '-a-vs-', 'eng-a-vs', 'wi-a-vs', 'ind-a-vs', 'nz-a-vs', 'ire-a-vs', 'zim-a-vs', 'sl-a-vs', 'ban-a-vs', 'pak-a-vs', 'aus-a-vs',
+            'england-a-tour', 'west-indies-a-tour', 'india-a-tour', 'new-zealand-a-tour', 'ireland-a-tour', 'zimbabwe-a-tour',
+            'england a vs', 'west indies a vs', 'india a vs', 'new zealand a vs',
             // U19
-            'u19', 'u-19', 'youth odi', 'u19 asia cup',
-            'afg-u19', 'ban-u19', 'sl-u19', 'mas-u19', 'ind-u19', 'pak-u19',
-            'afghanistan u19', 'bangladesh u19', 'sri lanka u19', 'malaysia u19', 'india u19',
-            // Womens domestic leagues
-            'womens big bash', 'wbbl', 'hbh-w', 'mlr-w', 'ads-w', 'bh-w', 'prs-w', 'syt-w', 'mls-w', 'sys-w',
+            'u19-vs', '-u19-', 'u-19', 'youth-odi', 'u19-asia-cup', 'u19 asia cup',
+            'afg-u19-vs', 'ban-u19-vs', 'sl-u19-vs', 'mas-u19-vs', 'ind-u19-vs', 'pak-u19-vs',
+            // Womens domestic leagues - Big Bash etc
+            'womens-big-bash', 'womens big bash', 'wbbl', 
+            'hbh-w-vs', 'mlr-w-vs', 'ads-w-vs', 'bh-w-vs', 'prs-w-vs', 'syt-w-vs', 'mls-w-vs', 'sys-w-vs',
             'hobart hurricanes women', 'melbourne renegades women', 'adelaide strikers women', 'brisbane heat women',
             'perth scorchers women', 'sydney thunder women', 'melbourne stars women', 'sydney sixers women',
-            // Womens associate / Victoria series (associate women - not top international)
-            'womens victoria', 'victoria t20i', 'nam-w', 'ugn-w', 'rwa-w', 'usa-w', 'namibia women', 'uganda women', 'rwanda women',
+            // Womens associate Victoria series
+            'womens-victoria', 'victoria-t20i-series', 'nam-w-vs', 'ugn-w-vs', 'rwa-w-vs', 'usa-w-vs',
+            // Pakistan domestic first-class - Quaid-e-Azam Trophy
+            'quaid-e-azam-trophy', 'quaid e azam trophy', 'first-class-quaid', 'karb-vs-srb', 'fais-vs-prb', 'lahm-vs-fata', 'islr-vs-mul', 'lahb-vs-rwl', 'lrk-vs-qet', 'bhwr-vs-prw', 'karw-vs-ajk', 'hyd-vs-dmj', 'abt-vs-srw',
             // Domestic India
-            'ranji', 'plate', 'duleep', 'deodhar', 'vijay hazare', 'syed mushtaq', 'maharaja', 'miz vs', 'manipur', 'nagaland', 'assam', 'tripura', 'bengal', 'odisha', 'delhi vs', 'uttarakhand', 'himachal', 'railways', 'chhattisgarh', 'tamil nadu', 'uttar pradesh', 'gujarat', 'kerala', 'karnataka', 'andhra', 'bihar', 'vidarbha', 'jammu', 'hyderabad', 'punjab vs', 'goa vs', 'saurashtra', 'baroda', 'odisha',
-            // List A domestic
-            'list-a', 'list a',
-            // Multi-day A
-            'multi-day',
+            'ranji trophy', 'duleep trophy', 'deodhar trophy', 'vijay hazare', 'syed mushtaq ali', 'maharaja trophy',
             // Other domestic
-            'county', 'emirates', 'hong-kong', 'hong kong', 'nepal', 'npl', 'lpl', 'psl', 'ipl', 'bpl'
-        ];
-        
-        // Whitelist for REAL international - if seriesInfo contains these, keep it
-        const internationalIndicators = [
-            'test', 'odi', 't20i', 't20', 'international', 'cwc', 'world cup', 'asia cup', 'tri-nation', 'tri nation'
+            'county championship', 'lpl', 'psl', 'ipl', 'bpl', 'hong-kong', 'hong kong premier'
         ];
 
         const filtered = allMatches.filter(m => {
             const txt = `${m.id} ${m.seriesInfo} ${m.team1.name} ${m.team2.name}`.toLowerCase();
-            
-            // First check domestic - if any domestic keyword matches, exclude
             const isDomestic = domesticKeywords.some(k => txt.includes(k));
             if (isDomestic) {
-                console.log(`❌ Filtered domestic: ${m.team1.name} vs ${m.team2.name} | ${m.id.substring(0,60)}`);
+                console.log(`❌ Filtered domestic: ${m.team1.name} vs ${m.team2.name} | ${m.id.substring(0,70)}`);
                 return false;
             }
-
-            // Additional check: if team name contains "A" as standalone (England A)
-            // But careful: Afghanistan contains "A" - so check pattern " A" or "-a-"
-            const teamCheck = `${m.team1.name} ${m.team2.name}`.toLowerCase();
-            if (teamCheck.includes(' a ') || teamCheck.endsWith(' a') || teamCheck.includes('-a-') || teamCheck.includes(' a-tour') || m.id.includes('-a-vs-') || m.id.includes('-vs-') && m.id.split('-vs-')[0].endsWith('-a')) {
-                // Check if it's really A team
-                if (/(^| )england a($| )|(^| )west indies a|(^| )india a|(^| )australia a|(^| )new zealand a|(^| )ireland a|(^| )zimbabwe a/i.test(teamCheck) || m.id.includes('eng-a') || m.id.includes('wi-a') || m.id.includes('ind-a') || m.id.includes('nz-a') || m.id.includes('ire-a') || m.id.includes('zim-a')) {
-                    console.log(`❌ Filtered A-team: ${m.team1.name} vs ${m.team2.name}`);
-                    return false;
-                }
-            }
-
             return true;
         });
 
@@ -247,7 +225,7 @@ async function scrape() {
         console.log(`\n🎉 FINAL: ${filtered.length} International matches from ${START_DATE.toDateString()} to ${END_DATE.toDateString()}`);
         if (filtered.length > 0) {
             console.log('Samples:');
-            filtered.slice(0,10).forEach(m => console.log(`  ${m.date} | ${m.matchTime} | ${m.team1.name} vs ${m.team2.name} | ${m.seriesInfo} | ${m.id}`));
+            filtered.slice(0,15).forEach(m => console.log(`  ${m.date} | ${m.matchTime} | ${m.team1.name} vs ${m.team2.name} | ${m.seriesInfo} | ${m.id}`));
         }
         console.log(`✅ SAVED to ${OUTPUT_FILE}`);
 
