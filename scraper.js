@@ -1,256 +1,236 @@
 const fs = require('fs');
 const path = require('path');
 
-const SCHEDULE_FILE = path.join(__dirname, 'match-schedule.json');
-const LIVE_FILE = path.join(__dirname, 'live-data.json');
+const OUTPUT_FILE = path.join(__dirname, 'match-schedule.json');
 
-async function scrapeLiveMatches() {
-    let puppeteer;
-    try {
-        puppeteer = require('puppeteer-core');
-        console.log('Using puppeteer-core for live scraping - INTERNATIONAL ONLY - FINAL FIXED CHROME');
-    } catch(e) {
-        puppeteer = require('puppeteer');
-        console.log('Using puppeteer (fallback)');
-    }
+const now = new Date();
+now.setHours(0,0,0,0);
+const START_DATE = new Date(now);
+const END_DATE = new Date(now.getFullYear(), now.getMonth() + 1, 0);
+END_DATE.setHours(23,59,59,999);
 
-    let schedule = [];
-    try {
-        if (fs.existsSync(SCHEDULE_FILE)) {
-            schedule = JSON.parse(fs.readFileSync(SCHEDULE_FILE, 'utf8'));
-            console.log(`Loaded schedule: ${schedule.length} matches (International 1 month)`);
-        }
-    } catch(e) {
-        console.log('Schedule read error:', e.message);
-    }
+console.log(`📅 TODAY: ${START_DATE.toDateString()} to ${END_DATE.toDateString()}`);
+console.log(`🎯 INTERNATIONAL ONLY - UI FILTER - TIME FIX FINAL`);
 
-    // Find LIVE matches
-    let liveMatches = schedule.filter(m => {
-        const time = (m.matchTime || '').toLowerCase();
-        const status = (m.matchStatus || '').toLowerCase();
-        return time === 'live' || status === 'live' || status.includes('live') || time.includes('live');
-    }).slice(0,3);
+async function scrape() {
+    const puppeteer = require('puppeteer-core');
+    console.log('Using puppeteer-core');
 
-    console.log(`Found ${liveMatches.length} Live INTERNATIONAL matches from schedule`);
-
-    // FIXED CHROME LAUNCH - Works with browser-actions/setup-chrome@v1
-    let browser;
-    try {
-        browser = await puppeteer.launch({
-            headless: 'new',
-            channel: 'chrome',
-            args: ['--no-sandbox','--disable-setuid-sandbox','--disable-dev-shm-usage','--disable-gpu','--disable-features=VizDisplayCompositor']
-        });
-        console.log('Browser launched with channel: chrome');
-    } catch(err1) {
-        console.log('First launch failed (channel chrome):', err1.message);
-        try {
-            // Try with executablePath from env (setup-chrome provides it)
-            const execPath = process.env.CHROME_PATH || process.env.PUPPETEER_EXECUTABLE_PATH || null;
-            console.log('Trying with executablePath:', execPath);
-            browser = await puppeteer.launch({
-                headless: 'new',
-                executablePath: execPath || undefined,
-                args: ['--no-sandbox','--disable-setuid-sandbox','--disable-dev-shm-usage']
-            });
-            console.log('Browser launched with executablePath');
-        } catch(err2) {
-            console.log('Second launch failed:', err2.message);
-            // Final fallback - no channel, no executablePath (for puppeteer full)
-            browser = await puppeteer.launch({
-                headless: true,
-                args: ['--no-sandbox','--disable-setuid-sandbox','--disable-dev-shm-usage']
-            });
-            console.log('Browser launched with fallback');
-        }
-    }
+    const browser = await puppeteer.launch({
+        headless: 'new', channel: 'chrome',
+        args: ['--no-sandbox','--disable-setuid-sandbox','--disable-dev-shm-usage','--disable-gpu']
+    }).catch(() => puppeteer.launch({ headless: 'new', args: ['--no-sandbox'] }));
 
     try {
-        if (liveMatches.length === 0) {
-            // NO LIVE - Write count:0 with NEXT match info for countdown - FIXED TIME
-            let nextMatch = null;
-            if (schedule.length > 0) {
-                const now = new Date();
-                const upcoming = schedule.filter(m => {
-                    try { 
-                        const d = new Date(m.date);
-                        return !isNaN(d.getTime()) && d >= now; 
-                    } catch(e) { return true; }
-                }).sort((a,b) => new Date(a.date) - new Date(b.date));
-                nextMatch = upcoming[0] || schedule[0];
-            }
+        const page = await browser.newPage();
+        await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
+        await page.setViewport({ width: 1920, height: 1080 });
 
-            // Fix matchTime if it's "1st", "2nd", etc - replace with real time or default
-            if (nextMatch) {
-                const mt = (nextMatch.matchTime || '').toLowerCase();
-                if (['1st','2nd','3rd','1st,','2nd,','3rd,'].includes(mt) || mt.match(/^\d+(st|nd|rd|th)$/)) {
-                    nextMatch.matchTime = '10:00 AM';
-                    console.log(`Fixed matchTime from "${mt}" to "10:00 AM"`);
+        console.log('📡 Opening https://crex.com/schedule');
+        await page.goto('https://crex.com/schedule', { waitUntil: 'domcontentloaded', timeout: 90000 });
+        await new Promise(r => setTimeout(r, 10000));
+
+        // UI CLICK - Series Type -> International
+        console.log('🎯 Selecting Series Type -> International');
+        const filterClicked = await page.evaluate(async () => {
+            const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+            let allSeriesEl = null;
+            const allElements = document.querySelectorAll('*');
+            for (let el of allElements) {
+                if (el.innerText && el.innerText.trim() === 'All Series' && el.offsetParent !== null) {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.width > 50 && rect.width < 600 && rect.height > 15 && rect.height < 80) {
+                        allSeriesEl = el;
+                        break;
+                    }
                 }
             }
-
-            const emptyData = { 
-                updatedAt: new Date().toISOString(), 
-                count: 0, 
-                matches: [],
-                nextMatch: nextMatch ? {
-                    id: nextMatch.id,
-                    team1: nextMatch.team1?.name || nextMatch.team1,
-                    team2: nextMatch.team2?.name || nextMatch.team2,
-                    date: nextMatch.date,
-                    matchTime: nextMatch.matchTime,
-                    seriesInfo: nextMatch.seriesInfo,
-                    detailUrl: nextMatch.detailUrl,
-                    team1Flag: nextMatch.team1?.flagUrl || '',
-                    team2Flag: nextMatch.team2?.flagUrl || ''
-                } : null,
-                message: nextMatch ? `Next: ${nextMatch.team1?.name || nextMatch.team1} vs ${nextMatch.team2?.name || nextMatch.team2} on ${nextMatch.date} at ${nextMatch.matchTime}` : 'No live international currently',
-                isTest: false
-            };
-            
-            fs.writeFileSync(LIVE_FILE, JSON.stringify(emptyData, null, 2));
-            console.log(`\n✅ NO LIVE - Written count:0 with next match: ${emptyData.message}`);
-            console.log(`⏰ Countdown will show on scoreboard`);
-            await browser.close();
-            return;
-        }
-
-        const allLiveData = [];
-
-        for (let match of liveMatches) {
-            const url = match.detailUrl;
-            console.log(`\n📡 Scraping LIVE: ${match.team1?.name || ''} vs ${match.team2?.name || ''} - ${url}`);
-            
-            const page = await browser.newPage();
-            await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
-            await page.setViewport({ width: 1920, height: 1080 });
-            
-            try {
-                await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
-                await new Promise(r => setTimeout(r, 8000));
-
-                const data = await page.evaluate(() => {
-                    const getText = (sel) => document.querySelector(sel)?.innerText?.trim() || "";
-                    let series = getText('.name-wrapper span') || getText('.series-name') || document.querySelector('h1')?.innerText || "";
-                    const teamInnings = document.querySelectorAll('.team-inning');
-                    let t1Flag = "", t2Flag = "", t1Name = "", t2Name = "", score = "0/0";
-                    if (teamInnings.length > 0) {
-                        t1Flag = teamInnings[0].querySelector('img')?.src || "";
-                        t1Name = teamInnings[0].querySelector('.team-name')?.innerText?.trim() || "";
-                        score = teamInnings[0].querySelector('.runs.f-runs span')?.innerText?.trim() || "0/0";
+            if (!allSeriesEl) {
+                const labels = document.querySelectorAll('*');
+                for (let label of labels) {
+                    if (label.innerText && label.innerText.trim() === 'Series Type') {
+                        const parent = label.parentElement;
+                        if (parent) {
+                            for (let child of parent.querySelectorAll('*')) {
+                                if (child.innerText && child.innerText.trim() === 'All Series' && child !== label) {
+                                    allSeriesEl = child;
+                                    break;
+                                }
+                            }
+                        }
+                        if (allSeriesEl) break;
                     }
-                    const headerImgs = document.querySelectorAll('.team-img img, .team-logo img, app-match-header img, .team img');
-                    if (!t1Flag && headerImgs.length > 0) t1Flag = headerImgs[0]?.src || "";
-                    if (headerImgs.length > 1) t2Flag = headerImgs[1]?.src || "";
-                    if (teamInnings.length > 1) {
-                        if (!t2Flag) t2Flag = teamInnings[1].querySelector('img')?.src || "";
-                        t2Name = teamInnings[1].querySelector('.team-name')?.innerText?.trim() || "";
-                    }
-                    const nameBlocks = document.querySelectorAll('.team-name');
-                    if (!t1Name && nameBlocks.length > 0) t1Name = nameBlocks[0].innerText.trim();
-                    if (!t2Name && nameBlocks.length > 1) t2Name = nameBlocks[1].innerText.trim();
-                    let comment = getText('.team-result .result-box') || getText('.final-result') || "LIVE MATCH";
-                    let overNum = "0", ballNum = "0";
-                    const liveOversText = getText('.team-inning .runs.f-runs span.over-text') || "";
-                    const overMatch = liveOversText.match(/(\d+)\.(\d+)/);
-                    if (overMatch) { overNum = overMatch[1]; ballNum = overMatch[2]; }
-                    const pships = document.querySelectorAll('app-match-live-player .batsmen-partnership');
-                    const b1Node = pships[0];
-                    const b1Name = b1Node?.querySelector('.batsmen-name p')?.innerText?.trim() || "";
-                    const b1Runs = b1Node?.querySelector('.batsmen-score p:nth-child(1)')?.innerText?.trim() || "0";
-                    const b1Balls = b1Node?.querySelector('.batsmen-score p:nth-child(2)')?.innerText?.replace(/[()]/g, '').trim() || "0";
-                    const b1Fours = b1Node?.querySelectorAll('.player-strike-wrapper .strike-rate span')[1]?.innerText?.trim() || "0";
-                    const b1Sixes = b1Node?.querySelectorAll('.player-strike-wrapper .strike-rate span')[3]?.innerText?.trim() || "0";
-                    const b1Sr = b1Node?.querySelectorAll('.player-strike-wrapper .strike-rate span')[5]?.innerText?.trim() || "0.00";
-                    const b1Vector = b1Node?.querySelector('app-player-profile-img img:not(.mr-top)')?.src || "";
-                    const b1Jersey = b1Node?.querySelector('app-player-profile-img img.mr-top')?.src || "";
-                    const b2Node = pships[1];
-                    const b2Name = b2Node?.querySelector('.batsmen-name p')?.innerText?.trim() || "";
-                    const b2Runs = b2Node?.querySelector('.batsmen-score p:nth-child(1)')?.innerText?.trim() || "0";
-                    const b2Balls = b2Node?.querySelector('.batsmen-score p:nth-child(2)')?.innerText?.replace(/[()]/g, '').trim() || "0";
-                    const b2Fours = b2Node?.querySelectorAll('.player-strike-wrapper .strike-rate span')[1]?.innerText?.trim() || "0";
-                    const b2Sixes = b2Node?.querySelectorAll('.player-strike-wrapper .strike-rate span')[3]?.innerText?.trim() || "0";
-                    const b2Sr = b2Node?.querySelectorAll('.player-strike-wrapper .strike-rate span')[5]?.innerText?.trim() || "0.00";
-                    const b2Vector = b2Node?.querySelector('app-player-profile-img img:not(.mr-top)')?.src || "";
-                    const b2Jersey = b2Node?.querySelector('app-player-profile-img img.mr-top')?.src || "";
-                    const bowlNode = pships[2];
-                    const bowlName = bowlNode?.querySelector('.batsmen-name p')?.innerText?.trim() || "";
-                    const bowlFigs = bowlNode?.querySelector('.batsmen-score p:nth-child(1)')?.innerText?.trim() || "0-0";
-                    const bowlOvs = bowlNode?.querySelector('.batsmen-score p:nth-child(2)')?.innerText?.replace(/[()]/g, '').trim() || "0.0";
-                    const bowlEcon = bowlNode?.querySelectorAll('.player-strike-wrapper .strike-rate span')[1]?.innerText?.trim() || "0.00";
-                    const bowlVector = bowlNode?.querySelector('app-player-profile-img img:not(.mr-top)')?.src || "";
-                    const bowlJersey = bowlNode?.querySelector('app-player-profile-img img.mr-top')?.src || "";
-                    return {
-                        series, team1Name: t1Name, team1Flag: t1Flag, team1Score: score, team2Name: t2Name, team2Flag: t2Flag,
-                        commentary: comment, currentOver: overNum, currentBall: ballNum,
-                        batsman1: { name: b1Name, runs: b1Runs, balls: b1Balls, fours: b1Fours, sixes: b1Sixes, sr: b1Sr, vector: b1Vector, jersey: b1Jersey },
-                        batsman2: { name: b2Name, runs: b2Runs, balls: b2Balls, fours: b2Fours, sixes: b2Sixes, sr: b2Sr, vector: b2Vector, jersey: b2Jersey },
-                        bowler: { name: bowlName, figures: bowlFigs, overs: bowlOvs, econ: bowlEcon, vector: bowlVector, jersey: bowlJersey },
-                        isLive: true
-                    };
-                });
-
-                allLiveData.push({
-                    id: match.id, detailUrl: url, date: match.date, seriesInfo: match.seriesInfo || data.series,
-                    team1: { name: match.team1?.name || data.team1Name, flagUrl: match.team1?.flagUrl || data.team1Flag },
-                    team2: { name: match.team2?.name || data.team2Name, flagUrl: match.team2?.flagUrl || data.team2Flag },
-                    live: data, scrapedAt: new Date().toISOString()
-                });
-                console.log(`✅ Scraped: ${data.team1Name} ${data.team1Score}`);
-
-            } catch (err) {
-                console.log(`❌ Failed ${url}: ${err.message}`);
-            } finally {
-                await page.close();
+                }
             }
+            if (!allSeriesEl) return { found: false };
+            allSeriesEl.click();
+            await sleep(3000);
+            let internationalEl = null;
+            for (let opt of document.querySelectorAll('*')) {
+                if (opt.innerText && opt.innerText.trim() === 'International' && opt.offsetParent !== null) {
+                    const rect = opt.getBoundingClientRect();
+                    if (rect.width > 20 && rect.width < 500 && rect.height > 10 && rect.height < 100) {
+                        internationalEl = opt;
+                        break;
+                    }
+                }
+            }
+            if (!internationalEl) return { found: false };
+            internationalEl.click();
+            await sleep(5000);
+            return { found: true };
+        });
+
+        console.log(`Filter: ${JSON.stringify(filterClicked)}`);
+        await new Promise(r => setTimeout(r, 8000));
+
+        let allMatches = [];
+        let pageNum = 1;
+        const maxPages = 40;
+
+        console.log('\n📄 Scraping with TIME FIX...');
+
+        while (pageNum <= maxPages) {
+            console.log(`--- PAGE ${pageNum} ---`);
+            
+            const data = await page.evaluate(() => {
+                const results = [];
+                const blocks = document.querySelectorAll('#date-wise-wrap > div');
+                blocks.forEach(block => {
+                    const dateEl = block.querySelector('h2.date span') || block.querySelector('h2 span') || block.querySelector('h2');
+                    const dateHeader = dateEl ? dateEl.innerText.trim() : 'Unknown Date';
+                    const cards = block.querySelectorAll('li.match-card-container');
+                    cards.forEach(card => {
+                        const link = card.querySelector('a[href*="cricket-live-score"]');
+                        if (!link) return;
+                        const href = link.getAttribute('href');
+                        if (!href) return;
+                        
+                        // TIME FIX: Look for real time with AM/PM, not "1st"
+                        let matchTime = '';
+                        // Try all possible time selectors
+                        const timeSelectors = ['.time span', '.start-text', '.time', '.match-time', '.time-text'];
+                        let timeCandidates = [];
+                        timeSelectors.forEach(sel => {
+                            card.querySelectorAll(sel).forEach(el => {
+                                const txt = el.innerText.trim();
+                                if (txt) timeCandidates.push(txt);
+                            });
+                        });
+                        // Also check card innerText for time pattern
+                        const cardText = card.innerText;
+                        const timeRegex = /(\d{1,2}:\d{2}\s*(AM|PM)|\d{1,2}\s*(AM|PM))/gi;
+                        const timeMatches = cardText.match(timeRegex);
+                        if (timeMatches) timeCandidates = timeCandidates.concat(timeMatches);
+                        
+                        // Find first valid AM/PM time
+                        for (let t of timeCandidates) {
+                            if (t.match(/\d+.*(AM|PM)/i) && !t.includes('st') && !t.includes('nd') && !t.includes('rd') && !t.includes('th') || t.match(/^\d{1,2}:\d{2}/)) {
+                                // Must contain : or AM/PM and not be ordinal like 1st
+                                if (t.match(/(AM|PM)/i)) {
+                                    matchTime = t;
+                                    break;
+                                }
+                            }
+                        }
+                        // If still no time, check if any candidate has : and is short
+                        if (!matchTime) {
+                            for (let t of timeCandidates) {
+                                if (t.includes(':') && t.length < 20 && !t.toLowerCase().includes('won') && !t.toLowerCase().includes('result')) {
+                                    matchTime = t;
+                                    break;
+                                }
+                            }
+                        }
+                        if (!matchTime) matchTime = '10:00 AM'; // Default for International
+                        
+                        const seriesEl = card.querySelector('.series-name') || card.querySelector('.reason');
+                        const seriesInfo = seriesEl ? seriesEl.innerText.trim() : '';
+                        const statusEl = card.querySelector('.result span') || card.querySelector('.time .reason');
+                        const matchStatus = statusEl ? statusEl.innerText.trim() : matchTime;
+                        const teamEls = card.querySelectorAll('.team');
+                        let team1Name = '', team1Flag = '', team1Score = '', team1Overs = '';
+                        let team2Name = '', team2Flag = '', team2Score = '', team2Overs = '';
+                        if (teamEls.length >= 2) {
+                            const t1Img = teamEls[0].querySelector('img');
+                            team1Flag = t1Img?.getAttribute('src') || '';
+                            team1Name = teamEls[0].querySelector('.team-name')?.innerText.trim() || t1Img?.getAttribute('alt') || 'Team A';
+                            team1Score = teamEls[0].querySelector('.team-score')?.innerText.trim() || '';
+                            team1Overs = teamEls[0].querySelector('.total-overs')?.innerText.trim() || '';
+                            const t2Img = teamEls[1].querySelector('img');
+                            team2Flag = t2Img?.getAttribute('src') || '';
+                            team2Name = teamEls[1].querySelector('.team-name')?.innerText.trim() || t2Img?.getAttribute('alt') || 'Team B';
+                            team2Score = teamEls[1].querySelector('.team-score')?.innerText.trim() || '';
+                            team2Overs = teamEls[1].querySelector('.total-overs')?.innerText.trim() || '';
+                        }
+                        const slug = href.split('/cricket-live-score/')[1] || href;
+                        results.push({
+                            id: slug,
+                            date: dateHeader,
+                            matchTime: matchTime,
+                            seriesInfo: seriesInfo,
+                            matchStatus: matchStatus,
+                            team1: { name: team1Name, flagUrl: team1Flag, score: team1Score, overs: team1Overs },
+                            team2: { name: team2Name, flagUrl: team2Flag, score: team2Score, overs: team2Overs },
+                            detailUrl: `https://crex.com${href}`,
+                            scrapedAt: new Date().toISOString()
+                        });
+                    });
+                });
+                return results;
+            });
+
+            console.log(`Found ${data.length} cards on page ${pageNum}`);
+            let added = 0;
+            data.forEach(m => {
+                if (!allMatches.some(existing => existing.id === m.id)) {
+                    allMatches.push(m);
+                    added++;
+                }
+            });
+            console.log(`Added ${added} new, Total: ${allMatches.length}`);
+            if (pageNum >= maxPages) break;
+            const paginated = await page.evaluate(() => {
+                const buttons = document.querySelectorAll('button');
+                for (let b of buttons) {
+                    const txt = (b.innerText || '').trim();
+                    if ((txt === '>' || txt === '›') && !b.disabled) {
+                        if (b.offsetParent !== null) {
+                            b.click();
+                            return true;
+                        }
+                    }
+                }
+                return false;
+            });
+            console.log(`Pagination: ${paginated}`);
+            if (!paginated) break;
+            await new Promise(r => setTimeout(r, 4000));
+            pageNum++;
         }
 
-        const finalJson = { 
-            updatedAt: new Date().toISOString(), 
-            count: allLiveData.length, 
-            matches: allLiveData,
-            message: allLiveData.length > 0 ? `Live: ${allLiveData.length} INTERNATIONAL matches` : 'No international live currently',
-            isTest: false
-        };
-        fs.writeFileSync(LIVE_FILE, JSON.stringify(finalJson, null, 2));
-        console.log(`\n✅ FINAL LIVE-DATA: ${allLiveData.length} INTERNATIONAL matches saved`);
+        console.log(`\n📊 Total: ${allMatches.length}`);
+
+        // Filter domestic
+        const domesticKeywords = ['nepal-premier', 'biratnagar', 'janakpur', 'lumbini', 'pokhara', 'emirates blues', 'emirates red', 'emirates-d20', 'quaid-e-azam', 'karb-vs-srb', 'fais-vs-prb', 'lahm-vs-fata', 'islr-vs-mul', 'lahb-vs-rwl', 'lrk-vs-qet', 'bhwr-vs-prw', 'eng-a-vs', 'wi-a-vs', 'u19', 'wbbl', 'womens', 'women', 'victoria', 'hong-kong'];
+        const filtered = allMatches.filter(m => {
+            const txt = `${m.id} ${m.seriesInfo}`.toLowerCase();
+            return !domesticKeywords.some(k => txt.includes(k));
+        });
+
+        console.log(`After filter: ${filtered.length}`);
+        filtered.sort((a,b) => new Date(a.date) - new Date(b.date));
+        fs.writeFileSync(OUTPUT_FILE, JSON.stringify(filtered, null, 2));
+        console.log(`\n🎉 FINAL: ${filtered.length} INTERNATIONAL matches`);
+        filtered.slice(0,15).forEach(m => console.log(`  ${m.date} | ${m.matchTime} | ${m.team1.name} vs ${m.team2.name}`));
+        console.log(`✅ SAVED`);
 
     } catch (err) {
-        console.error('Live scraper error:', err.message);
-        // Write countdown file even on error if schedule exists
-        try {
-            if (fs.existsSync(SCHEDULE_FILE)) {
-                const sched = JSON.parse(fs.readFileSync(SCHEDULE_FILE, 'utf8'));
-                const next = sched[0];
-                if (next) {
-                    if (next.matchTime === '1st' || next.matchTime === '2nd') next.matchTime = '10:00 AM';
-                    fs.writeFileSync(LIVE_FILE, JSON.stringify({
-                        updatedAt: new Date().toISOString(),
-                        count: 0,
-                        matches: [],
-                        nextMatch: {
-                            id: next.id,
-                            team1: next.team1?.name || next.team1,
-                            team2: next.team2?.name || next.team2,
-                            date: next.date,
-                            matchTime: next.matchTime,
-                            seriesInfo: next.seriesInfo,
-                            detailUrl: next.detailUrl
-                        },
-                        message: `Next: ${next.team1?.name || next.team1} vs ${next.team2?.name || next.team2} on ${next.date}`,
-                        error: err.message
-                    }, null, 2));
-                    console.log('Wrote fallback countdown file');
-                }
-            } else {
-                throw err;
-            }
-        } catch(e2) {
-            fs.writeFileSync(LIVE_FILE, JSON.stringify({ updatedAt: new Date().toISOString(), count: 0, matches: [], message: 'No live - error: ' + err.message }, null, 2));
-        }
+        console.error('Error:', err.message, err.stack);
+        process.exit(1);
     } finally {
         if (browser) await browser.close();
     }
 }
 
-scrapeLiveMatches();
+scrape();
