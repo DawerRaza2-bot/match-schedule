@@ -1,52 +1,10 @@
 [
   {
-    "id": "ned-vs-oma-144th-odi-mens-cwc-league-2-2023-27-match-updates-14VF",
-    "date": "Mon, 2 Nov 2026",
-    "matchTime": "Live",
-    "seriesInfo": "",
-    "matchStatus": "Live",
-    "team1": {
-      "name": "OMA",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/15.png",
-      "score": "162/7",
-      "overs": "44.1"
-    },
-    "team2": {
-      "name": "NED",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/12.png",
-      "score": "Yet to bat",
-      "overs": ""
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/ned-vs-oma-144th-odi-mens-cwc-league-2-2023-27-match-updates-14VF",
-    "scrapedAt": "2026-11-02T08:35:20.357Z"
-  },
-  {
-    "id": "mls-w-vs-prs-w-8th-t20-womens-big-bash-league-2026-match-updates-12XB",
-    "date": "Mon, 2 Nov 2026",
-    "matchTime": "Live",
-    "seriesInfo": "",
-    "matchStatus": "Live",
-    "team1": {
-      "name": "MLS-W",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/4W.png",
-      "score": "Yet to bat",
-      "overs": ""
-    },
-    "team2": {
-      "name": "PRS-W",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/4X.png",
-      "score": "41/1",
-      "overs": "4.3"
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/mls-w-vs-prs-w-8th-t20-womens-big-bash-league-2026-match-updates-12XB",
-    "scrapedAt": "2026-11-02T08:35:20.357Z"
-  },
-  {
     "id": "mw-vs-tk-final-global-t20-canada-2026-match-updates-1504",
     "date": "Tue, 3 Nov 2026",
-    "matchTime": "11:00 PM",
+    "matchTime": "4:00 AM",
     "seriesInfo": "",
-    "matchStatus": "11:00 PM",
+    "matchStatus": "4:00 AM",
     "team1": {
       "name": "Toronto Kings",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/2I.png",
@@ -60,14 +18,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/mw-vs-tk-final-global-t20-canada-2026-match-updates-1504",
-    "scrapedAt": "2026-11-02T08:35:24.391Z"
+    "scrapedAt": "2026-11-02T13:11:43.693Z"
   },
   {
     "id": "dol-vs-wp-63rd-t20-csa-pro-t20-cup-2026-match-updates-150B",
     "date": "Tue, 3 Nov 2026",
-    "matchTime": "4:00 PM",
+    "matchTime": "9:00 PM",
     "seriesInfo": "",
-    "matchStatus": "4:00 PM",
+    "matchStatus": "9:00 PM",
     "team1": {
       "name": "Dolphins",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/6A.png",
@@ -81,14 +39,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/dol-vs-wp-63rd-t20-csa-pro-t20-cup-2026-match-updates-150B",
-    "scrapedAt": "2026-11-02T08:35:24.391Z"
+    "scrapedAt": "2026-11-02T13:11:43.694Z"
   },
   {
     "id": "eng-a-vs-wi-a-2nd-t20-england-a-tour-of-west-indies-2026-match-updates-150L",
     "date": "Tue, 3 Nov 2026",
-    "matchTime": "5:00 PM",
+    "matchTime": "10:00 PM",
     "seriesInfo": "",
-    "matchStatus": "5:00 PM",
+    "matchStatus": "10:00 PM",
     "team1": {
       "name": "West Indies A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/VI.png",
@@ -102,14 +60,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/eng-a-vs-wi-a-2nd-t20-england-a-tour-of-west-indies-2026-match-updates-150L",
-    "scrapedAt": "2026-11-02T08:35:24.391Z"
+    "scrapedAt": "2026-11-02T13:11:43.694Z"
   },
   {
     "id": "auck-vs-cs-7th-list-a-the-ford-trophy-2026-27-match-updates-13L0",
     "date": "Wed, 4 Nov 2026",
-    "matchTime": "9:30 PM",
+    "matchTime": "2:30 AM",
     "seriesInfo": "",
-    "matchStatus": "9:30 PM",
+    "matchStatus": "2:30 AM",
     "team1": {
       "name": "Central Stags",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/56.png",
@@ -123,14 +81,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/auck-vs-cs-7th-list-a-the-ford-trophy-2026-27-match-updates-13L0",
-    "scrapedAt": "2026-11-02T08:35:24.391Z"
+    "scrapedAt": "2026-11-02T13:11:43.694Z"
   },
   {
     "id": "nb-vs-wel-8th-list-a-the-ford-trophy-2026-27-match-updates-13L1",
     "date": "Wed, 4 Nov 2026",
-    "matchTime": "9:30 PM",
+    "matchTime": "2:30 AM",
     "seriesInfo": "",
-    "matchStatus": "9:30 PM",
+    "matchStatus": "2:30 AM",
     "team1": {
       "name": "Wellington",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/57.png",
@@ -144,14 +102,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/nb-vs-wel-8th-list-a-the-ford-trophy-2026-27-match-updates-13L1",
-    "scrapedAt": "2026-11-02T08:35:24.391Z"
+    "scrapedAt": "2026-11-02T13:11:43.695Z"
   },
   {
     "id": "cant-vs-otg-9th-list-a-the-ford-trophy-2026-27-match-updates-13L2",
     "date": "Wed, 4 Nov 2026",
-    "matchTime": "9:30 PM",
+    "matchTime": "2:30 AM",
     "seriesInfo": "",
-    "matchStatus": "9:30 PM",
+    "matchStatus": "2:30 AM",
     "team1": {
       "name": "Otago",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/52.png",
@@ -165,14 +123,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/cant-vs-otg-9th-list-a-the-ford-trophy-2026-27-match-updates-13L2",
-    "scrapedAt": "2026-11-02T08:35:24.391Z"
+    "scrapedAt": "2026-11-02T13:11:43.695Z"
   },
   {
     "id": "ind-vs-nz-1st-odi-india-tour-of-new-zealand-2026-match-updates-12JH",
     "date": "Wed, 4 Nov 2026",
-    "matchTime": "2:00 AM",
+    "matchTime": "7:00 AM",
     "seriesInfo": "",
-    "matchStatus": "2:00 AM",
+    "matchStatus": "7:00 AM",
     "team1": {
       "name": "New Zealand",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/R.png",
@@ -186,14 +144,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ind-vs-nz-1st-odi-india-tour-of-new-zealand-2026-match-updates-12JH",
-    "scrapedAt": "2026-11-02T08:35:24.391Z"
+    "scrapedAt": "2026-11-02T13:11:43.695Z"
   },
   {
     "id": "hbh-w-vs-mlr-w-9th-t20-womens-big-bash-league-2026-match-updates-12XC",
     "date": "Wed, 4 Nov 2026",
-    "matchTime": "8:10 AM",
+    "matchTime": "1:10 PM",
     "seriesInfo": "",
-    "matchStatus": "8:10 AM",
+    "matchStatus": "1:10 PM",
     "team1": {
       "name": "Hobart Hurricanes Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4T.png",
@@ -207,14 +165,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/hbh-w-vs-mlr-w-9th-t20-womens-big-bash-league-2026-match-updates-12XC",
-    "scrapedAt": "2026-11-02T08:35:24.391Z"
+    "scrapedAt": "2026-11-02T13:11:43.695Z"
   },
   {
     "id": "eng-a-vs-wi-a-3rd-t20-england-a-tour-of-west-indies-2026-match-updates-150M",
     "date": "Wed, 4 Nov 2026",
-    "matchTime": "5:00 PM",
+    "matchTime": "10:00 PM",
     "seriesInfo": "",
-    "matchStatus": "5:00 PM",
+    "matchStatus": "10:00 PM",
     "team1": {
       "name": "West Indies A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/VI.png",
@@ -228,14 +186,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/eng-a-vs-wi-a-3rd-t20-england-a-tour-of-west-indies-2026-match-updates-150M",
-    "scrapedAt": "2026-11-02T08:35:24.392Z"
+    "scrapedAt": "2026-11-02T13:11:43.695Z"
   },
   {
     "id": "ban-vs-wi-2nd-test-west-indies-tour-of-bangladesh-2026-match-updates-13TE",
     "date": "Thu, 5 Nov 2026",
-    "matchTime": "3:30 AM",
+    "matchTime": "8:30 AM",
     "seriesInfo": "",
-    "matchStatus": "3:30 AM",
+    "matchStatus": "8:30 AM",
     "team1": {
       "name": "Bangladesh",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/W.png",
@@ -249,14 +207,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ban-vs-wi-2nd-test-west-indies-tour-of-bangladesh-2026-match-updates-13TE",
-    "scrapedAt": "2026-11-02T08:35:24.392Z"
+    "scrapedAt": "2026-11-02T13:11:52.057Z"
   },
   {
     "id": "ads-w-vs-bh-w-10th-t20-womens-big-bash-league-2026-match-updates-12XD",
     "date": "Thu, 5 Nov 2026",
-    "matchTime": "4:40 AM",
+    "matchTime": "9:40 AM",
     "seriesInfo": "",
-    "matchStatus": "4:40 AM",
+    "matchStatus": "9:40 AM",
     "team1": {
       "name": "Adelaide Strikers Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4R.png",
@@ -270,14 +228,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ads-w-vs-bh-w-10th-t20-womens-big-bash-league-2026-match-updates-12XD",
-    "scrapedAt": "2026-11-02T08:35:28.420Z"
+    "scrapedAt": "2026-11-02T13:11:52.057Z"
   },
   {
     "id": "afg-vs-zim-1st-test-afghanistan-vs-zimbabwe-in-uae-2026-match-updates-13TP",
     "date": "Thu, 5 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Afghanistan",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/Y.png",
@@ -291,14 +249,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/afg-vs-zim-1st-test-afghanistan-vs-zimbabwe-in-uae-2026-match-updates-13TP",
-    "scrapedAt": "2026-11-02T08:35:28.420Z"
+    "scrapedAt": "2026-11-02T13:11:52.057Z"
   },
   {
     "id": "mas-u19-vs-sl-u19-1st-youth-odi-u19-asia-cup-2026-match-updates-14SZ",
     "date": "Thu, 5 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Sri Lanka U19",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/8O.png",
@@ -312,14 +270,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/mas-u19-vs-sl-u19-1st-youth-odi-u19-asia-cup-2026-match-updates-14SZ",
-    "scrapedAt": "2026-11-02T08:35:28.420Z"
+    "scrapedAt": "2026-11-02T13:11:52.057Z"
   },
   {
     "id": "afg-u19-vs-ban-u19-2nd-youth-odi-u19-asia-cup-2026-match-updates-14T0",
     "date": "Thu, 5 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Bangladesh U19",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/8J.png",
@@ -333,14 +291,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/afg-u19-vs-ban-u19-2nd-youth-odi-u19-asia-cup-2026-match-updates-14T0",
-    "scrapedAt": "2026-11-02T08:35:28.420Z"
+    "scrapedAt": "2026-11-02T13:11:52.057Z"
   },
   {
     "id": "prs-w-vs-syt-w-11th-t20-womens-big-bash-league-2026-match-updates-12XE",
     "date": "Thu, 5 Nov 2026",
-    "matchTime": "8:10 AM",
+    "matchTime": "1:10 PM",
     "seriesInfo": "",
-    "matchStatus": "8:10 AM",
+    "matchStatus": "1:10 PM",
     "team1": {
       "name": "Sydney Thunder Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/8W.png",
@@ -354,14 +312,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/prs-w-vs-syt-w-11th-t20-womens-big-bash-league-2026-match-updates-12XE",
-    "scrapedAt": "2026-11-02T08:35:28.421Z"
+    "scrapedAt": "2026-11-02T13:11:52.057Z"
   },
   {
     "id": "rocks-vs-war-64th-t20-csa-pro-t20-cup-2026-match-updates-150C",
     "date": "Thu, 5 Nov 2026",
-    "matchTime": "4:00 PM",
+    "matchTime": "9:00 PM",
     "seriesInfo": "",
-    "matchStatus": "4:00 PM",
+    "matchStatus": "9:00 PM",
     "team1": {
       "name": "Warriors",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/6C.png",
@@ -375,14 +333,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/rocks-vs-war-64th-t20-csa-pro-t20-cup-2026-match-updates-150C",
-    "scrapedAt": "2026-11-02T08:35:28.421Z"
+    "scrapedAt": "2026-11-02T13:11:52.057Z"
   },
   {
     "id": "nam-w-vs-ugn-w-1st-t20i-womens-victoria-t20i-series-2026-match-updates-1525",
     "date": "Fri, 6 Nov 2026",
-    "matchTime": "6:30 AM",
+    "matchTime": "11:30 AM",
     "seriesInfo": "",
-    "matchStatus": "6:30 AM",
+    "matchStatus": "11:30 AM",
     "team1": {
       "name": "Uganda Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/CG.png",
@@ -396,14 +354,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/nam-w-vs-ugn-w-1st-t20i-womens-victoria-t20i-series-2026-match-updates-1525",
-    "scrapedAt": "2026-11-02T08:35:28.421Z"
+    "scrapedAt": "2026-11-02T13:11:52.057Z"
   },
   {
     "id": "ire-a-vs-zim-a-1st-multi-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TE",
     "date": "Fri, 6 Nov 2026",
-    "matchTime": "7:30 AM",
+    "matchTime": "12:30 PM",
     "seriesInfo": "",
-    "matchStatus": "7:30 AM",
+    "matchStatus": "12:30 PM",
     "team1": {
       "name": "Zimbabwe A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/ID.png",
@@ -417,14 +375,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ire-a-vs-zim-a-1st-multi-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TE",
-    "scrapedAt": "2026-11-02T08:35:28.421Z"
+    "scrapedAt": "2026-11-02T13:11:52.057Z"
   },
   {
     "id": "mls-w-vs-sys-w-12th-t20-womens-big-bash-league-2026-match-updates-12XF",
     "date": "Fri, 6 Nov 2026",
-    "matchTime": "8:10 AM",
+    "matchTime": "1:10 PM",
     "seriesInfo": "",
-    "matchStatus": "8:10 AM",
+    "matchStatus": "1:10 PM",
     "team1": {
       "name": "Melbourne Stars Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4W.png",
@@ -438,14 +396,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/mls-w-vs-sys-w-12th-t20-womens-big-bash-league-2026-match-updates-12XF",
-    "scrapedAt": "2026-11-02T08:35:28.421Z"
+    "scrapedAt": "2026-11-02T13:11:52.057Z"
   },
   {
     "id": "rwa-w-vs-usa-w-2nd-t20i-womens-victoria-t20i-series-2026-match-updates-1526",
     "date": "Fri, 6 Nov 2026",
-    "matchTime": "11:00 AM",
+    "matchTime": "4:00 PM",
     "seriesInfo": "",
-    "matchStatus": "11:00 AM",
+    "matchStatus": "4:00 PM",
     "team1": {
       "name": "Rwanda Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/UB.png",
@@ -459,14 +417,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/rwa-w-vs-usa-w-2nd-t20i-womens-victoria-t20i-series-2026-match-updates-1526",
-    "scrapedAt": "2026-11-02T08:35:28.421Z"
+    "scrapedAt": "2026-11-02T13:11:52.057Z"
   },
   {
     "id": "dol-vs-es-65th-t20-csa-pro-t20-cup-2026-match-updates-150D",
     "date": "Fri, 6 Nov 2026",
-    "matchTime": "4:00 PM",
+    "matchTime": "9:00 PM",
     "seriesInfo": "",
-    "matchStatus": "4:00 PM",
+    "matchStatus": "9:00 PM",
     "team1": {
       "name": "Eastern Storm",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/JF.png",
@@ -480,14 +438,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/dol-vs-es-65th-t20-csa-pro-t20-cup-2026-match-updates-150D",
-    "scrapedAt": "2026-11-02T08:35:28.421Z"
+    "scrapedAt": "2026-11-02T13:11:52.057Z"
   },
   {
     "id": "ind-a-vs-nz-a-3rd-multi-day-india-a-tour-of-new-zealand-2026-match-updates-13QS",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "10:00 PM",
+    "matchTime": "3:00 AM",
     "seriesInfo": "",
-    "matchStatus": "10:00 PM",
+    "matchStatus": "3:00 AM",
     "team1": {
       "name": "New Zealand A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/M1.png",
@@ -501,14 +459,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ind-a-vs-nz-a-3rd-multi-day-india-a-tour-of-new-zealand-2026-match-updates-13QS",
-    "scrapedAt": "2026-11-02T08:35:28.421Z"
+    "scrapedAt": "2026-11-02T13:11:52.058Z"
   },
   {
     "id": "ind-vs-nz-2nd-odi-india-tour-of-new-zealand-2026-match-updates-12JI",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "2:00 AM",
+    "matchTime": "7:00 AM",
     "seriesInfo": "",
-    "matchStatus": "2:00 AM",
+    "matchStatus": "7:00 AM",
     "team1": {
       "name": "New Zealand",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/R.png",
@@ -522,14 +480,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ind-vs-nz-2nd-odi-india-tour-of-new-zealand-2026-match-updates-12JI",
-    "scrapedAt": "2026-11-02T08:35:28.421Z"
+    "scrapedAt": "2026-11-02T13:12:00.202Z"
   },
   {
     "id": "raj-vs-syl-21st-first-class-only-bangladesh-national-league-2026-match-updates-14RB",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "3:30 AM",
+    "matchTime": "8:30 AM",
     "seriesInfo": "",
-    "matchStatus": "3:30 AM",
+    "matchStatus": "8:30 AM",
     "team1": {
       "name": "Sylhet Division",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1CL.png",
@@ -543,14 +501,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/raj-vs-syl-21st-first-class-only-bangladesh-national-league-2026-match-updates-14RB",
-    "scrapedAt": "2026-11-02T08:35:32.445Z"
+    "scrapedAt": "2026-11-02T13:12:00.202Z"
   },
   {
     "id": "bar-vs-mys-22nd-first-class-only-bangladesh-national-league-2026-match-updates-14RC",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "3:30 AM",
+    "matchTime": "8:30 AM",
     "seriesInfo": "",
-    "matchStatus": "3:30 AM",
+    "matchStatus": "8:30 AM",
     "team1": {
       "name": "Mymensingh Division",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LM.png",
@@ -564,14 +522,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/bar-vs-mys-22nd-first-class-only-bangladesh-national-league-2026-match-updates-14RC",
-    "scrapedAt": "2026-11-02T08:35:32.445Z"
+    "scrapedAt": "2026-11-02T13:12:00.202Z"
   },
   {
     "id": "dha-vs-khu-23rd-first-class-only-bangladesh-national-league-2026-match-updates-14RD",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "3:30 AM",
+    "matchTime": "8:30 AM",
     "seriesInfo": "",
-    "matchStatus": "3:30 AM",
+    "matchStatus": "8:30 AM",
     "team1": {
       "name": "Dhaka Division",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1CQ.png",
@@ -585,14 +543,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/dha-vs-khu-23rd-first-class-only-bangladesh-national-league-2026-match-updates-14RD",
-    "scrapedAt": "2026-11-02T08:35:32.445Z"
+    "scrapedAt": "2026-11-02T13:12:00.202Z"
   },
   {
     "id": "cht-vs-ran-24th-first-class-only-bangladesh-national-league-2026-match-updates-14RE",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "3:30 AM",
+    "matchTime": "8:30 AM",
     "seriesInfo": "",
-    "matchStatus": "3:30 AM",
+    "matchStatus": "8:30 AM",
     "team1": {
       "name": "Rangpur Division",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1CP.png",
@@ -606,14 +564,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/cht-vs-ran-24th-first-class-only-bangladesh-national-league-2026-match-updates-14RE",
-    "scrapedAt": "2026-11-02T08:35:32.445Z"
+    "scrapedAt": "2026-11-02T13:12:00.202Z"
   },
   {
     "id": "ads-w-vs-mlr-w-13th-t20-womens-big-bash-league-2026-match-updates-12XG",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "4:40 AM",
+    "matchTime": "9:40 AM",
     "seriesInfo": "",
-    "matchStatus": "4:40 AM",
+    "matchStatus": "9:40 AM",
     "team1": {
       "name": "Melbourne Renegades Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4V.png",
@@ -627,14 +585,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ads-w-vs-mlr-w-13th-t20-womens-big-bash-league-2026-match-updates-12XG",
-    "scrapedAt": "2026-11-02T08:35:32.445Z"
+    "scrapedAt": "2026-11-02T13:12:00.203Z"
   },
   {
     "id": "afg-u19-vs-mas-u19-5th-youth-odi-u19-asia-cup-2026-match-updates-14T3",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Afghanistan U19",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/8E.png",
@@ -648,14 +606,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/afg-u19-vs-mas-u19-5th-youth-odi-u19-asia-cup-2026-match-updates-14T3",
-    "scrapedAt": "2026-11-02T08:35:32.445Z"
+    "scrapedAt": "2026-11-02T13:12:00.203Z"
   },
   {
     "id": "ban-u19-vs-sl-u19-6th-youth-odi-u19-asia-cup-2026-match-updates-14T4",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Sri Lanka U19",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/8O.png",
@@ -669,14 +627,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ban-u19-vs-sl-u19-6th-youth-odi-u19-asia-cup-2026-match-updates-14T4",
-    "scrapedAt": "2026-11-02T08:35:32.445Z"
+    "scrapedAt": "2026-11-02T13:12:00.203Z"
   },
   {
     "id": "nam-w-vs-usa-w-3rd-t20i-womens-victoria-t20i-series-2026-match-updates-1527",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "6:30 AM",
+    "matchTime": "11:30 AM",
     "seriesInfo": "",
-    "matchStatus": "6:30 AM",
+    "matchStatus": "11:30 AM",
     "team1": {
       "name": "Namibia Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/CJ.png",
@@ -690,14 +648,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/nam-w-vs-usa-w-3rd-t20i-womens-victoria-t20i-series-2026-match-updates-1527",
-    "scrapedAt": "2026-11-02T08:35:32.445Z"
+    "scrapedAt": "2026-11-02T13:12:00.203Z"
   },
   {
     "id": "bh-w-vs-hbh-w-14th-t20-womens-big-bash-league-2026-match-updates-12XH",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "8:10 AM",
+    "matchTime": "1:10 PM",
     "seriesInfo": "",
-    "matchStatus": "8:10 AM",
+    "matchStatus": "1:10 PM",
     "team1": {
       "name": "Brisbane Heat Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4S.png",
@@ -711,14 +669,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/bh-w-vs-hbh-w-14th-t20-womens-big-bash-league-2026-match-updates-12XH",
-    "scrapedAt": "2026-11-02T08:35:32.445Z"
+    "scrapedAt": "2026-11-02T13:12:00.203Z"
   },
   {
     "id": "grb-vs-rocks-66th-t20-csa-pro-t20-cup-2026-match-updates-150E",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "11:00 AM",
+    "matchTime": "4:00 PM",
     "seriesInfo": "",
-    "matchStatus": "11:00 AM",
+    "matchStatus": "4:00 PM",
     "team1": {
       "name": "Rocks",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/JG.png",
@@ -732,14 +690,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/grb-vs-rocks-66th-t20-csa-pro-t20-cup-2026-match-updates-150E",
-    "scrapedAt": "2026-11-02T08:35:32.445Z"
+    "scrapedAt": "2026-11-02T13:12:00.203Z"
   },
   {
     "id": "rwa-w-vs-ugn-w-4th-t20i-womens-victoria-t20i-series-2026-match-updates-1528",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "11:00 AM",
+    "matchTime": "4:00 PM",
     "seriesInfo": "",
-    "matchStatus": "11:00 AM",
+    "matchStatus": "4:00 PM",
     "team1": {
       "name": "Uganda Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/CG.png",
@@ -753,14 +711,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/rwa-w-vs-ugn-w-4th-t20i-womens-victoria-t20i-series-2026-match-updates-1528",
-    "scrapedAt": "2026-11-02T08:35:32.445Z"
+    "scrapedAt": "2026-11-02T13:12:00.203Z"
   },
   {
     "id": "uab-vs-yl-1st-match-abu-dhabi-t10-league-2026-match-updates-14VR",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "11:30 AM",
+    "matchTime": "4:30 PM",
     "seriesInfo": "",
-    "matchStatus": "11:30 AM",
+    "matchStatus": "4:30 PM",
     "team1": {
       "name": "UAE Bulls",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/78.png",
@@ -774,14 +732,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/uab-vs-yl-1st-match-abu-dhabi-t10-league-2026-match-updates-14VR",
-    "scrapedAt": "2026-11-02T08:35:32.445Z"
+    "scrapedAt": "2026-11-02T13:12:00.203Z"
   },
   {
     "id": "aa-vs-ut-3rd-match-abu-dhabi-t10-league-2026-match-updates-14VT",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "4:00 PM",
+    "matchTime": "9:00 PM",
     "seriesInfo": "",
-    "matchStatus": "4:00 PM",
+    "matchStatus": "9:00 PM",
     "team1": {
       "name": "United Tigers",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LJ.png",
@@ -795,14 +753,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/aa-vs-ut-3rd-match-abu-dhabi-t10-league-2026-match-updates-14VT",
-    "scrapedAt": "2026-11-02T08:35:32.446Z"
+    "scrapedAt": "2026-11-02T13:12:00.203Z"
   },
   {
     "id": "lio-vs-wp-67th-t20-csa-pro-t20-cup-2026-match-updates-150F",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "4:00 PM",
+    "matchTime": "9:00 PM",
     "seriesInfo": "",
-    "matchStatus": "4:00 PM",
+    "matchStatus": "9:00 PM",
     "team1": {
       "name": "Western Province",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/J7.png",
@@ -816,14 +774,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/lio-vs-wp-67th-t20-csa-pro-t20-cup-2026-match-updates-150F",
-    "scrapedAt": "2026-11-02T08:35:32.446Z"
+    "scrapedAt": "2026-11-02T13:12:00.203Z"
   },
   {
     "id": "eng-a-vs-wi-a-1st-one-day-england-a-tour-of-west-indies-2026-match-updates-150N",
     "date": "Sat, 7 Nov 2026",
-    "matchTime": "6:00 PM",
+    "matchTime": "11:00 PM",
     "seriesInfo": "",
-    "matchStatus": "6:00 PM",
+    "matchStatus": "11:00 PM",
     "team1": {
       "name": "West Indies A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/VI.png",
@@ -837,14 +795,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/eng-a-vs-wi-a-1st-one-day-england-a-tour-of-west-indies-2026-match-updates-150N",
-    "scrapedAt": "2026-11-02T08:35:32.446Z"
+    "scrapedAt": "2026-11-02T13:12:00.203Z"
   },
   {
     "id": "nb-vs-otg-10th-list-a-the-ford-trophy-2026-27-match-updates-13L3",
     "date": "Sun, 8 Nov 2026",
-    "matchTime": "9:30 PM",
+    "matchTime": "2:30 AM",
     "seriesInfo": "",
-    "matchStatus": "9:30 PM",
+    "matchStatus": "2:30 AM",
     "team1": {
       "name": "Northern Brave",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/54.png",
@@ -858,14 +816,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/nb-vs-otg-10th-list-a-the-ford-trophy-2026-27-match-updates-13L3",
-    "scrapedAt": "2026-11-02T08:35:32.446Z"
+    "scrapedAt": "2026-11-02T13:12:00.204Z"
   },
   {
     "id": "auck-vs-wel-11th-list-a-the-ford-trophy-2026-27-match-updates-13L4",
     "date": "Sun, 8 Nov 2026",
-    "matchTime": "9:30 PM",
+    "matchTime": "2:30 AM",
     "seriesInfo": "",
-    "matchStatus": "9:30 PM",
+    "matchStatus": "2:30 AM",
     "team1": {
       "name": "Wellington",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/57.png",
@@ -879,14 +837,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/auck-vs-wel-11th-list-a-the-ford-trophy-2026-27-match-updates-13L4",
-    "scrapedAt": "2026-11-02T08:35:32.446Z"
+    "scrapedAt": "2026-11-02T13:12:00.204Z"
   },
   {
     "id": "cant-vs-cs-12th-list-a-the-ford-trophy-2026-27-match-updates-13L5",
     "date": "Sun, 8 Nov 2026",
-    "matchTime": "9:30 PM",
+    "matchTime": "2:30 AM",
     "seriesInfo": "",
-    "matchStatus": "9:30 PM",
+    "matchStatus": "2:30 AM",
     "team1": {
       "name": "Central Stags",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/56.png",
@@ -900,14 +858,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/cant-vs-cs-12th-list-a-the-ford-trophy-2026-27-match-updates-13L5",
-    "scrapedAt": "2026-11-02T08:35:32.446Z"
+    "scrapedAt": "2026-11-02T13:12:04.269Z"
   },
   {
     "id": "sys-w-vs-syt-w-15th-t20-womens-big-bash-league-2026-match-updates-12XI",
     "date": "Sun, 8 Nov 2026",
-    "matchTime": "2:40 AM",
+    "matchTime": "7:40 AM",
     "seriesInfo": "",
-    "matchStatus": "2:40 AM",
+    "matchStatus": "7:40 AM",
     "team1": {
       "name": "Sydney Sixers Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/50.png",
@@ -921,14 +879,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/sys-w-vs-syt-w-15th-t20-womens-big-bash-league-2026-match-updates-12XI",
-    "scrapedAt": "2026-11-02T08:35:36.473Z"
+    "scrapedAt": "2026-11-02T13:12:04.269Z"
   },
   {
     "id": "ind-u19-vs-pak-u19-8th-youth-odi-u19-asia-cup-2026-match-updates-14T6",
     "date": "Sun, 8 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "India U19",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/8B.png",
@@ -942,14 +900,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ind-u19-vs-pak-u19-8th-youth-odi-u19-asia-cup-2026-match-updates-14T6",
-    "scrapedAt": "2026-11-02T08:35:36.473Z"
+    "scrapedAt": "2026-11-02T13:12:04.269Z"
   },
   {
     "id": "mls-w-vs-prs-w-16th-t20-womens-big-bash-league-2026-match-updates-12XJ",
     "date": "Sun, 8 Nov 2026",
-    "matchTime": "6:10 AM",
+    "matchTime": "11:10 AM",
     "seriesInfo": "",
-    "matchStatus": "6:10 AM",
+    "matchStatus": "11:10 AM",
     "team1": {
       "name": "Perth Scorchers Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4X.png",
@@ -963,14 +921,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/mls-w-vs-prs-w-16th-t20-womens-big-bash-league-2026-match-updates-12XJ",
-    "scrapedAt": "2026-11-02T08:35:36.473Z"
+    "scrapedAt": "2026-11-02T13:12:04.269Z"
   },
   {
     "id": "nam-w-vs-rwa-w-5th-t20i-womens-victoria-t20i-series-2026-match-updates-1529",
     "date": "Sun, 8 Nov 2026",
-    "matchTime": "6:30 AM",
+    "matchTime": "11:30 AM",
     "seriesInfo": "",
-    "matchStatus": "6:30 AM",
+    "matchStatus": "11:30 AM",
     "team1": {
       "name": "Namibia Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/CJ.png",
@@ -984,14 +942,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/nam-w-vs-rwa-w-5th-t20i-womens-victoria-t20i-series-2026-match-updates-1529",
-    "scrapedAt": "2026-11-02T08:35:36.473Z"
+    "scrapedAt": "2026-11-02T13:12:04.269Z"
   },
   {
     "id": "es-vs-war-68th-t20-csa-pro-t20-cup-2026-match-updates-150G",
     "date": "Sun, 8 Nov 2026",
-    "matchTime": "8:00 AM",
+    "matchTime": "1:00 PM",
     "seriesInfo": "",
-    "matchStatus": "8:00 AM",
+    "matchStatus": "1:00 PM",
     "team1": {
       "name": "Eastern Storm",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/JF.png",
@@ -1005,14 +963,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/es-vs-war-68th-t20-csa-pro-t20-cup-2026-match-updates-150G",
-    "scrapedAt": "2026-11-02T08:35:36.473Z"
+    "scrapedAt": "2026-11-02T13:12:04.269Z"
   },
   {
     "id": "dol-vs-tit-69th-t20-csa-pro-t20-cup-2026-match-updates-150H",
     "date": "Sun, 8 Nov 2026",
-    "matchTime": "10:30 AM",
+    "matchTime": "3:30 PM",
     "seriesInfo": "",
-    "matchStatus": "10:30 AM",
+    "matchStatus": "3:30 PM",
     "team1": {
       "name": "Titans",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/69.png",
@@ -1026,14 +984,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/dol-vs-tit-69th-t20-csa-pro-t20-cup-2026-match-updates-150H",
-    "scrapedAt": "2026-11-02T08:35:36.473Z"
+    "scrapedAt": "2026-11-02T13:12:04.269Z"
   },
   {
     "id": "ugn-w-vs-usa-w-6th-t20i-womens-victoria-t20i-series-2026-match-updates-152A",
     "date": "Sun, 8 Nov 2026",
-    "matchTime": "11:00 AM",
+    "matchTime": "4:00 PM",
     "seriesInfo": "",
-    "matchStatus": "11:00 AM",
+    "matchStatus": "4:00 PM",
     "team1": {
       "name": "Uganda Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/CG.png",
@@ -1047,14 +1005,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ugn-w-vs-usa-w-6th-t20i-womens-victoria-t20i-series-2026-match-updates-152A",
-    "scrapedAt": "2026-11-02T08:35:36.473Z"
+    "scrapedAt": "2026-11-02T13:12:04.269Z"
   },
   {
     "id": "uab-vs-ut-5th-match-abu-dhabi-t10-league-2026-match-updates-14VV",
     "date": "Sun, 8 Nov 2026",
-    "matchTime": "1:45 PM",
+    "matchTime": "6:45 PM",
     "seriesInfo": "",
-    "matchStatus": "1:45 PM",
+    "matchStatus": "6:45 PM",
     "team1": {
       "name": "United Tigers",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LJ.png",
@@ -1068,14 +1026,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/uab-vs-ut-5th-match-abu-dhabi-t10-league-2026-match-updates-14VV",
-    "scrapedAt": "2026-11-02T08:35:36.473Z"
+    "scrapedAt": "2026-11-02T13:12:04.270Z"
   },
   {
     "id": "aa-vs-rdc-6th-match-abu-dhabi-t10-league-2026-match-updates-14VW",
     "date": "Sun, 8 Nov 2026",
-    "matchTime": "4:00 PM",
+    "matchTime": "9:00 PM",
     "seriesInfo": "",
-    "matchStatus": "4:00 PM",
+    "matchStatus": "9:00 PM",
     "team1": {
       "name": "Arabian Aces",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LI.png",
@@ -1089,14 +1047,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/aa-vs-rdc-6th-match-abu-dhabi-t10-league-2026-match-updates-14VW",
-    "scrapedAt": "2026-11-02T08:35:36.473Z"
+    "scrapedAt": "2026-11-02T13:12:04.270Z"
   },
   {
     "id": "pak-vs-sl-1st-test-sri-lanka-tour-of-pakistan-2026-match-updates-13LT",
     "date": "Mon, 9 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Pakistan",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/U.png",
@@ -1110,14 +1068,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/pak-vs-sl-1st-test-sri-lanka-tour-of-pakistan-2026-match-updates-13LT",
-    "scrapedAt": "2026-11-02T08:35:36.473Z"
+    "scrapedAt": "2026-11-02T13:12:04.270Z"
   },
   {
     "id": "ban-u19-vs-mas-u19-9th-youth-odi-u19-asia-cup-2026-match-updates-14T7",
     "date": "Mon, 9 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Bangladesh U19",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/8J.png",
@@ -1131,14 +1089,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ban-u19-vs-mas-u19-9th-youth-odi-u19-asia-cup-2026-match-updates-14T7",
-    "scrapedAt": "2026-11-02T08:35:36.473Z"
+    "scrapedAt": "2026-11-02T13:12:04.270Z"
   },
   {
     "id": "afg-u19-vs-sl-u19-10th-youth-odi-u19-asia-cup-2026-match-updates-14T8",
     "date": "Mon, 9 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Sri Lanka U19",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/8O.png",
@@ -1152,14 +1110,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/afg-u19-vs-sl-u19-10th-youth-odi-u19-asia-cup-2026-match-updates-14T8",
-    "scrapedAt": "2026-11-02T08:35:36.473Z"
+    "scrapedAt": "2026-11-02T13:12:04.270Z"
   },
   {
     "id": "rdc-vs-ut-8th-match-abu-dhabi-t10-league-2026-match-updates-14VY",
     "date": "Mon, 9 Nov 2026",
-    "matchTime": "4:00 PM",
+    "matchTime": "9:00 PM",
     "seriesInfo": "",
-    "matchStatus": "4:00 PM",
+    "matchStatus": "9:00 PM",
     "team1": {
       "name": "United Tigers",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LJ.png",
@@ -1173,14 +1131,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/rdc-vs-ut-8th-match-abu-dhabi-t10-league-2026-match-updates-14VY",
-    "scrapedAt": "2026-11-02T08:35:36.473Z"
+    "scrapedAt": "2026-11-02T13:12:04.270Z"
   },
   {
     "id": "eng-a-vs-wi-a-2nd-one-day-england-a-tour-of-west-indies-2026-match-updates-150O",
     "date": "Mon, 9 Nov 2026",
-    "matchTime": "6:00 PM",
+    "matchTime": "11:00 PM",
     "seriesInfo": "",
-    "matchStatus": "6:00 PM",
+    "matchStatus": "11:00 PM",
     "team1": {
       "name": "West Indies A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/VI.png",
@@ -1194,14 +1152,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/eng-a-vs-wi-a-2nd-one-day-england-a-tour-of-west-indies-2026-match-updates-150O",
-    "scrapedAt": "2026-11-02T08:35:36.473Z"
+    "scrapedAt": "2026-11-02T13:12:04.270Z"
   },
   {
     "id": "ind-vs-nz-3rd-odi-india-tour-of-new-zealand-2026-match-updates-12JJ",
     "date": "Tue, 10 Nov 2026",
-    "matchTime": "2:00 AM",
+    "matchTime": "7:00 AM",
     "seriesInfo": "",
-    "matchStatus": "2:00 AM",
+    "matchStatus": "7:00 AM",
     "team1": {
       "name": "New Zealand",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/R.png",
@@ -1215,14 +1173,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ind-vs-nz-3rd-odi-india-tour-of-new-zealand-2026-match-updates-12JJ",
-    "scrapedAt": "2026-11-02T08:35:36.473Z"
+    "scrapedAt": "2026-11-02T13:12:08.326Z"
   },
   {
     "id": "rwa-w-vs-usa-w-7th-t20i-womens-victoria-t20i-series-2026-match-updates-152B",
     "date": "Tue, 10 Nov 2026",
-    "matchTime": "6:30 AM",
+    "matchTime": "11:30 AM",
     "seriesInfo": "",
-    "matchStatus": "6:30 AM",
+    "matchStatus": "11:30 AM",
     "team1": {
       "name": "Rwanda Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/UB.png",
@@ -1236,14 +1194,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/rwa-w-vs-usa-w-7th-t20i-womens-victoria-t20i-series-2026-match-updates-152B",
-    "scrapedAt": "2026-11-02T08:35:40.507Z"
+    "scrapedAt": "2026-11-02T13:12:08.327Z"
   },
   {
     "id": "ads-w-vs-hbh-w-17th-t20-womens-big-bash-league-2026-match-updates-12XK",
     "date": "Tue, 10 Nov 2026",
-    "matchTime": "8:10 AM",
+    "matchTime": "1:10 PM",
     "seriesInfo": "",
-    "matchStatus": "8:10 AM",
+    "matchStatus": "1:10 PM",
     "team1": {
       "name": "Hobart Hurricanes Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4T.png",
@@ -1257,14 +1215,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ads-w-vs-hbh-w-17th-t20-womens-big-bash-league-2026-match-updates-12XK",
-    "scrapedAt": "2026-11-02T08:35:40.507Z"
+    "scrapedAt": "2026-11-02T13:12:08.327Z"
   },
   {
     "id": "nam-w-vs-ugn-w-8th-t20i-womens-victoria-t20i-series-2026-match-updates-152C",
     "date": "Tue, 10 Nov 2026",
-    "matchTime": "11:00 AM",
+    "matchTime": "4:00 PM",
     "seriesInfo": "",
-    "matchStatus": "11:00 AM",
+    "matchStatus": "4:00 PM",
     "team1": {
       "name": "Namibia Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/CJ.png",
@@ -1278,14 +1236,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/nam-w-vs-ugn-w-8th-t20i-womens-victoria-t20i-series-2026-match-updates-152C",
-    "scrapedAt": "2026-11-02T08:35:40.507Z"
+    "scrapedAt": "2026-11-02T13:12:08.327Z"
   },
   {
     "id": "ut-vs-yl-9th-match-abu-dhabi-t10-league-2026-match-updates-14VZ",
     "date": "Tue, 10 Nov 2026",
-    "matchTime": "1:45 PM",
+    "matchTime": "6:45 PM",
     "seriesInfo": "",
-    "matchStatus": "1:45 PM",
+    "matchStatus": "6:45 PM",
     "team1": {
       "name": "Yas Lions",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LH.png",
@@ -1299,14 +1257,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ut-vs-yl-9th-match-abu-dhabi-t10-league-2026-match-updates-14VZ",
-    "scrapedAt": "2026-11-02T08:35:40.507Z"
+    "scrapedAt": "2026-11-02T13:12:08.327Z"
   },
   {
     "id": "grb-vs-wp-70th-t20-csa-pro-t20-cup-2026-match-updates-150I",
     "date": "Tue, 10 Nov 2026",
-    "matchTime": "4:00 PM",
+    "matchTime": "9:00 PM",
     "seriesInfo": "",
-    "matchStatus": "4:00 PM",
+    "matchStatus": "9:00 PM",
     "team1": {
       "name": "Western Province",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/J7.png",
@@ -1320,14 +1278,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/grb-vs-wp-70th-t20-csa-pro-t20-cup-2026-match-updates-150I",
-    "scrapedAt": "2026-11-02T08:35:40.507Z"
+    "scrapedAt": "2026-11-02T13:12:08.327Z"
   },
   {
     "id": "nsw-vs-saca-10th-first-class-sheffield-shield-2026-27-match-updates-1343",
     "date": "Wed, 11 Nov 2026",
-    "matchTime": "11:30 PM",
+    "matchTime": "4:30 AM",
     "seriesInfo": "",
-    "matchStatus": "11:30 PM",
+    "matchStatus": "4:30 AM",
     "team1": {
       "name": "New South Wales",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/3L.png",
@@ -1341,14 +1299,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/nsw-vs-saca-10th-first-class-sheffield-shield-2026-27-match-updates-1343",
-    "scrapedAt": "2026-11-02T08:35:40.507Z"
+    "scrapedAt": "2026-11-02T13:12:08.327Z"
   },
   {
     "id": "vic-vs-waca-11th-first-class-sheffield-shield-2026-27-match-updates-1344",
     "date": "Wed, 11 Nov 2026",
-    "matchTime": "11:30 PM",
+    "matchTime": "4:30 AM",
     "seriesInfo": "",
-    "matchStatus": "11:30 PM",
+    "matchStatus": "4:30 AM",
     "team1": {
       "name": "Victoria",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/3J.png",
@@ -1362,14 +1320,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/vic-vs-waca-11th-first-class-sheffield-shield-2026-27-match-updates-1344",
-    "scrapedAt": "2026-11-02T08:35:40.507Z"
+    "scrapedAt": "2026-11-02T13:12:08.327Z"
   },
   {
     "id": "qld-vs-tas-12th-first-class-sheffield-shield-2026-27-match-updates-1345",
     "date": "Wed, 11 Nov 2026",
-    "matchTime": "12:30 AM",
+    "matchTime": "5:30 AM",
     "seriesInfo": "",
-    "matchStatus": "12:30 AM",
+    "matchStatus": "5:30 AM",
     "team1": {
       "name": "Queensland",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/FU.png",
@@ -1383,14 +1341,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/qld-vs-tas-12th-first-class-sheffield-shield-2026-27-match-updates-1345",
-    "scrapedAt": "2026-11-02T08:35:40.507Z"
+    "scrapedAt": "2026-11-02T13:12:08.327Z"
   },
   {
     "id": "rwa-w-vs-ugn-w-9th-t20i-womens-victoria-t20i-series-2026-match-updates-152D",
     "date": "Wed, 11 Nov 2026",
-    "matchTime": "6:30 AM",
+    "matchTime": "11:30 AM",
     "seriesInfo": "",
-    "matchStatus": "6:30 AM",
+    "matchStatus": "11:30 AM",
     "team1": {
       "name": "Uganda Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/CG.png",
@@ -1404,14 +1362,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/rwa-w-vs-ugn-w-9th-t20i-womens-victoria-t20i-series-2026-match-updates-152D",
-    "scrapedAt": "2026-11-02T08:35:40.507Z"
+    "scrapedAt": "2026-11-02T13:12:08.327Z"
   },
   {
     "id": "prs-w-vs-syt-w-18th-t20-womens-big-bash-league-2026-match-updates-12XL",
     "date": "Wed, 11 Nov 2026",
-    "matchTime": "8:10 AM",
+    "matchTime": "1:10 PM",
     "seriesInfo": "",
-    "matchStatus": "8:10 AM",
+    "matchStatus": "1:10 PM",
     "team1": {
       "name": "Perth Scorchers Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4X.png",
@@ -1425,14 +1383,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/prs-w-vs-syt-w-18th-t20-womens-big-bash-league-2026-match-updates-12XL",
-    "scrapedAt": "2026-11-02T08:35:40.507Z"
+    "scrapedAt": "2026-11-02T13:12:08.327Z"
   },
   {
     "id": "lio-vs-rocks-71st-t20-csa-pro-t20-cup-2026-match-updates-150J",
     "date": "Wed, 11 Nov 2026",
-    "matchTime": "11:00 AM",
+    "matchTime": "4:00 PM",
     "seriesInfo": "",
-    "matchStatus": "11:00 AM",
+    "matchStatus": "4:00 PM",
     "team1": {
       "name": "Rocks",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/JG.png",
@@ -1446,14 +1404,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/lio-vs-rocks-71st-t20-csa-pro-t20-cup-2026-match-updates-150J",
-    "scrapedAt": "2026-11-02T08:35:40.507Z"
+    "scrapedAt": "2026-11-02T13:12:08.327Z"
   },
   {
     "id": "nam-w-vs-usa-w-10th-t20i-womens-victoria-t20i-series-2026-match-updates-152E",
     "date": "Wed, 11 Nov 2026",
-    "matchTime": "11:00 AM",
+    "matchTime": "4:00 PM",
     "seriesInfo": "",
-    "matchStatus": "11:00 AM",
+    "matchStatus": "4:00 PM",
     "team1": {
       "name": "Namibia Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/CJ.png",
@@ -1467,14 +1425,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/nam-w-vs-usa-w-10th-t20i-womens-victoria-t20i-series-2026-match-updates-152E",
-    "scrapedAt": "2026-11-02T08:35:40.507Z"
+    "scrapedAt": "2026-11-02T13:12:08.327Z"
   },
   {
     "id": "eng-a-vs-wi-a-3rd-one-day-england-a-tour-of-west-indies-2026-match-updates-150P",
     "date": "Wed, 11 Nov 2026",
-    "matchTime": "1:30 PM",
+    "matchTime": "6:30 PM",
     "seriesInfo": "",
-    "matchStatus": "1:30 PM",
+    "matchStatus": "6:30 PM",
     "team1": {
       "name": "West Indies A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/VI.png",
@@ -1488,14 +1446,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/eng-a-vs-wi-a-3rd-one-day-england-a-tour-of-west-indies-2026-match-updates-150P",
-    "scrapedAt": "2026-11-02T08:35:40.507Z"
+    "scrapedAt": "2026-11-02T13:12:08.327Z"
   },
   {
     "id": "rdc-vs-uab-11th-match-abu-dhabi-t10-league-2026-match-updates-14W1",
     "date": "Wed, 11 Nov 2026",
-    "matchTime": "1:45 PM",
+    "matchTime": "6:45 PM",
     "seriesInfo": "",
-    "matchStatus": "1:45 PM",
+    "matchStatus": "6:45 PM",
     "team1": {
       "name": "Royal Desert Champions",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LL.png",
@@ -1509,14 +1467,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/rdc-vs-uab-11th-match-abu-dhabi-t10-league-2026-match-updates-14W1",
-    "scrapedAt": "2026-11-02T08:35:40.507Z"
+    "scrapedAt": "2026-11-02T13:12:08.327Z"
   },
   {
     "id": "aa-vs-yl-12th-match-abu-dhabi-t10-league-2026-match-updates-14W2",
     "date": "Wed, 11 Nov 2026",
-    "matchTime": "4:00 PM",
+    "matchTime": "9:00 PM",
     "seriesInfo": "",
-    "matchStatus": "4:00 PM",
+    "matchStatus": "9:00 PM",
     "team1": {
       "name": "Arabian Aces",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LI.png",
@@ -1530,14 +1488,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/aa-vs-yl-12th-match-abu-dhabi-t10-league-2026-match-updates-14W2",
-    "scrapedAt": "2026-11-02T08:35:40.507Z"
+    "scrapedAt": "2026-11-02T13:12:08.327Z"
   },
   {
     "id": "tit-vs-war-72nd-t20-csa-pro-t20-cup-2026-match-updates-1517",
     "date": "Wed, 11 Nov 2026",
-    "matchTime": "4:00 PM",
+    "matchTime": "9:00 PM",
     "seriesInfo": "",
-    "matchStatus": "4:00 PM",
+    "matchStatus": "9:00 PM",
     "team1": {
       "name": "Titans",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/69.png",
@@ -1551,14 +1509,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/tit-vs-war-72nd-t20-csa-pro-t20-cup-2026-match-updates-1517",
-    "scrapedAt": "2026-11-02T08:35:40.507Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "auck-vs-otg-13th-list-a-the-ford-trophy-2026-27-match-updates-13L6",
     "date": "Thu, 12 Nov 2026",
-    "matchTime": "9:30 PM",
+    "matchTime": "2:30 AM",
     "seriesInfo": "",
-    "matchStatus": "9:30 PM",
+    "matchStatus": "2:30 AM",
     "team1": {
       "name": "Auckland",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/53.png",
@@ -1572,14 +1530,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/auck-vs-otg-13th-list-a-the-ford-trophy-2026-27-match-updates-13L6",
-    "scrapedAt": "2026-11-02T08:35:44.529Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "cs-vs-wel-14th-list-a-the-ford-trophy-2026-27-match-updates-13L7",
     "date": "Thu, 12 Nov 2026",
-    "matchTime": "9:30 PM",
+    "matchTime": "2:30 AM",
     "seriesInfo": "",
-    "matchStatus": "9:30 PM",
+    "matchStatus": "2:30 AM",
     "team1": {
       "name": "Central Stags",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/56.png",
@@ -1593,14 +1551,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/cs-vs-wel-14th-list-a-the-ford-trophy-2026-27-match-updates-13L7",
-    "scrapedAt": "2026-11-02T08:35:44.529Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "cant-vs-nb-15th-list-a-the-ford-trophy-2026-27-match-updates-13L8",
     "date": "Thu, 12 Nov 2026",
-    "matchTime": "9:30 PM",
+    "matchTime": "2:30 AM",
     "seriesInfo": "",
-    "matchStatus": "9:30 PM",
+    "matchStatus": "2:30 AM",
     "team1": {
       "name": "Canterbury",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/55.png",
@@ -1614,14 +1572,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/cant-vs-nb-15th-list-a-the-ford-trophy-2026-27-match-updates-13L8",
-    "scrapedAt": "2026-11-02T08:35:44.529Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "bh-w-vs-mls-w-19th-t20-womens-big-bash-league-2026-match-updates-12XM",
     "date": "Thu, 12 Nov 2026",
-    "matchTime": "4:40 AM",
+    "matchTime": "9:40 AM",
     "seriesInfo": "",
-    "matchStatus": "4:40 AM",
+    "matchStatus": "9:40 AM",
     "team1": {
       "name": "Melbourne Stars Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4W.png",
@@ -1635,14 +1593,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/bh-w-vs-mls-w-19th-t20-womens-big-bash-league-2026-match-updates-12XM",
-    "scrapedAt": "2026-11-02T08:35:44.529Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "a1-vs-b2-1st-semi-final-u19-asia-cup-2026-match-updates-14TB",
     "date": "Thu, 12 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "1st in Group A",
       "flagUrl": "https://crex.com/assets/img/unknown_team.png",
@@ -1656,14 +1614,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/a1-vs-b2-1st-semi-final-u19-asia-cup-2026-match-updates-14TB",
-    "scrapedAt": "2026-11-02T08:35:44.529Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "a2-vs-b1-2nd-semi-final-u19-asia-cup-2026-match-updates-14TC",
     "date": "Thu, 12 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "1st in Group B",
       "flagUrl": "https://crex.com/assets/img/unknown_team.png",
@@ -1677,14 +1635,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/a2-vs-b1-2nd-semi-final-u19-asia-cup-2026-match-updates-14TC",
-    "scrapedAt": "2026-11-02T08:35:44.529Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "ire-w-vs-sl-w-1st-t20i-womens-emerging-nations-trophy-2026-match-updates-151B",
     "date": "Thu, 12 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Sri Lanka Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1J.png",
@@ -1698,14 +1656,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ire-w-vs-sl-w-1st-t20i-womens-emerging-nations-trophy-2026-match-updates-151B",
-    "scrapedAt": "2026-11-02T08:35:44.529Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "png-w-vs-sco-w-2nd-t20i-womens-emerging-nations-trophy-2026-match-updates-151C",
     "date": "Thu, 12 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Papua New Guinea Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/IG.png",
@@ -1719,14 +1677,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/png-w-vs-sco-w-2nd-t20i-womens-emerging-nations-trophy-2026-match-updates-151C",
-    "scrapedAt": "2026-11-02T08:35:44.530Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "ugn-w-vs-usa-w-11th-t20i-womens-victoria-t20i-series-2026-match-updates-152F",
     "date": "Thu, 12 Nov 2026",
-    "matchTime": "6:30 AM",
+    "matchTime": "11:30 AM",
     "seriesInfo": "",
-    "matchStatus": "6:30 AM",
+    "matchStatus": "11:30 AM",
     "team1": {
       "name": "Uganda Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/CG.png",
@@ -1740,14 +1698,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ugn-w-vs-usa-w-11th-t20i-womens-victoria-t20i-series-2026-match-updates-152F",
-    "scrapedAt": "2026-11-02T08:35:44.530Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "mlr-w-vs-sys-w-20th-t20-womens-big-bash-league-2026-match-updates-12XN",
     "date": "Thu, 12 Nov 2026",
-    "matchTime": "8:10 AM",
+    "matchTime": "1:10 PM",
     "seriesInfo": "",
-    "matchStatus": "8:10 AM",
+    "matchStatus": "1:10 PM",
     "team1": {
       "name": "Melbourne Renegades Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4V.png",
@@ -1761,14 +1719,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/mlr-w-vs-sys-w-20th-t20-womens-big-bash-league-2026-match-updates-12XN",
-    "scrapedAt": "2026-11-02T08:35:44.530Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "ban-w-vs-pak-w-3rd-t20i-womens-emerging-nations-trophy-2026-match-updates-151D",
     "date": "Thu, 12 Nov 2026",
-    "matchTime": "9:15 AM",
+    "matchTime": "2:15 PM",
     "seriesInfo": "",
-    "matchStatus": "9:15 AM",
+    "matchStatus": "2:15 PM",
     "team1": {
       "name": "Pakistan Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1K.png",
@@ -1782,14 +1740,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ban-w-vs-pak-w-3rd-t20i-womens-emerging-nations-trophy-2026-match-updates-151D",
-    "scrapedAt": "2026-11-02T08:35:44.530Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "ned-w-vs-tha-w-4th-t20i-womens-emerging-nations-trophy-2026-match-updates-151E",
     "date": "Thu, 12 Nov 2026",
-    "matchTime": "9:15 AM",
+    "matchTime": "2:15 PM",
     "seriesInfo": "",
-    "matchStatus": "9:15 AM",
+    "matchStatus": "2:15 PM",
     "team1": {
       "name": "Netherlands Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/IF.png",
@@ -1803,14 +1761,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ned-w-vs-tha-w-4th-t20i-womens-emerging-nations-trophy-2026-match-updates-151E",
-    "scrapedAt": "2026-11-02T08:35:44.530Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "nam-w-vs-rwa-w-12th-t20i-womens-victoria-t20i-series-2026-match-updates-152G",
     "date": "Thu, 12 Nov 2026",
-    "matchTime": "11:00 AM",
+    "matchTime": "4:00 PM",
     "seriesInfo": "",
-    "matchStatus": "11:00 AM",
+    "matchStatus": "4:00 PM",
     "team1": {
       "name": "Namibia Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/CJ.png",
@@ -1824,14 +1782,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/nam-w-vs-rwa-w-12th-t20i-womens-victoria-t20i-series-2026-match-updates-152G",
-    "scrapedAt": "2026-11-02T08:35:44.530Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "ind-vs-nz-4th-odi-india-tour-of-new-zealand-2026-match-updates-12JK",
     "date": "Fri, 13 Nov 2026",
-    "matchTime": "2:00 AM",
+    "matchTime": "7:00 AM",
     "seriesInfo": "",
-    "matchStatus": "2:00 AM",
+    "matchStatus": "7:00 AM",
     "team1": {
       "name": "New Zealand",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/R.png",
@@ -1845,14 +1803,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ind-vs-nz-4th-odi-india-tour-of-new-zealand-2026-match-updates-12JK",
-    "scrapedAt": "2026-11-02T08:35:44.530Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "aus-vs-eng-1st-odi-england-tour-of-australia-2026-match-updates-11BL",
     "date": "Fri, 13 Nov 2026",
-    "matchTime": "3:30 AM",
+    "matchTime": "8:30 AM",
     "seriesInfo": "",
-    "matchStatus": "3:30 AM",
+    "matchStatus": "8:30 AM",
     "team1": {
       "name": "Australia",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/Q.png",
@@ -1866,14 +1824,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/aus-vs-eng-1st-odi-england-tour-of-australia-2026-match-updates-11BL",
-    "scrapedAt": "2026-11-02T08:35:44.530Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "afg-vs-zim-2nd-test-afghanistan-vs-zimbabwe-in-uae-2026-match-updates-13TQ",
     "date": "Fri, 13 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Afghanistan",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/Y.png",
@@ -1887,14 +1845,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/afg-vs-zim-2nd-test-afghanistan-vs-zimbabwe-in-uae-2026-match-updates-13TQ",
-    "scrapedAt": "2026-11-02T08:35:44.530Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "sco-w-vs-sl-w-5th-t20i-womens-emerging-nations-trophy-2026-match-updates-151F",
     "date": "Fri, 13 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Scotland Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/CK.png",
@@ -1908,14 +1866,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/sco-w-vs-sl-w-5th-t20i-womens-emerging-nations-trophy-2026-match-updates-151F",
-    "scrapedAt": "2026-11-02T08:35:44.530Z"
+    "scrapedAt": "2026-11-02T13:12:12.388Z"
   },
   {
     "id": "ire-w-vs-uae-w-6th-t20i-womens-emerging-nations-trophy-2026-match-updates-151G",
     "date": "Fri, 13 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "UAE Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/AB.png",
@@ -1929,14 +1887,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ire-w-vs-uae-w-6th-t20i-womens-emerging-nations-trophy-2026-match-updates-151G",
-    "scrapedAt": "2026-11-02T08:35:44.530Z"
+    "scrapedAt": "2026-11-02T13:12:16.440Z"
   },
   {
     "id": "ire-a-vs-zim-a-2nd-multi-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TF",
     "date": "Fri, 13 Nov 2026",
-    "matchTime": "7:30 AM",
+    "matchTime": "12:30 PM",
     "seriesInfo": "",
-    "matchStatus": "7:30 AM",
+    "matchStatus": "12:30 PM",
     "team1": {
       "name": "Zimbabwe A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/ID.png",
@@ -1950,14 +1908,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ire-a-vs-zim-a-2nd-multi-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TF",
-    "scrapedAt": "2026-11-02T08:35:48.555Z"
+    "scrapedAt": "2026-11-02T13:12:16.440Z"
   },
   {
     "id": "png-w-vs-tha-w-7th-t20i-womens-emerging-nations-trophy-2026-match-updates-151H",
     "date": "Fri, 13 Nov 2026",
-    "matchTime": "9:15 AM",
+    "matchTime": "2:15 PM",
     "seriesInfo": "",
-    "matchStatus": "9:15 AM",
+    "matchStatus": "2:15 PM",
     "team1": {
       "name": "Thailand Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/2G.png",
@@ -1971,14 +1929,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/png-w-vs-tha-w-7th-t20i-womens-emerging-nations-trophy-2026-match-updates-151H",
-    "scrapedAt": "2026-11-02T08:35:48.555Z"
+    "scrapedAt": "2026-11-02T13:12:16.440Z"
   },
   {
     "id": "ban-w-vs-zim-w-8th-t20i-womens-emerging-nations-trophy-2026-match-updates-151I",
     "date": "Fri, 13 Nov 2026",
-    "matchTime": "9:15 AM",
+    "matchTime": "2:15 PM",
     "seriesInfo": "",
-    "matchStatus": "9:15 AM",
+    "matchStatus": "2:15 PM",
     "team1": {
       "name": "Zimbabwe Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/6I.png",
@@ -1992,14 +1950,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ban-w-vs-zim-w-8th-t20i-womens-emerging-nations-trophy-2026-match-updates-151I",
-    "scrapedAt": "2026-11-02T08:35:48.555Z"
+    "scrapedAt": "2026-11-02T13:12:16.440Z"
   },
   {
     "id": "rdc-vs-yl-14th-match-abu-dhabi-t10-league-2026-match-updates-14W4",
     "date": "Fri, 13 Nov 2026",
-    "matchTime": "1:45 PM",
+    "matchTime": "6:45 PM",
     "seriesInfo": "",
-    "matchStatus": "1:45 PM",
+    "matchStatus": "6:45 PM",
     "team1": {
       "name": "Royal Desert Champions",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LL.png",
@@ -2013,14 +1971,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/rdc-vs-yl-14th-match-abu-dhabi-t10-league-2026-match-updates-14W4",
-    "scrapedAt": "2026-11-02T08:35:48.555Z"
+    "scrapedAt": "2026-11-02T13:12:16.440Z"
   },
   {
     "id": "aa-vs-uab-15th-match-abu-dhabi-t10-league-2026-match-updates-14W5",
     "date": "Fri, 13 Nov 2026",
-    "matchTime": "4:00 PM",
+    "matchTime": "9:00 PM",
     "seriesInfo": "",
-    "matchStatus": "4:00 PM",
+    "matchStatus": "9:00 PM",
     "team1": {
       "name": "Arabian Aces",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LI.png",
@@ -2034,14 +1992,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/aa-vs-uab-15th-match-abu-dhabi-t10-league-2026-match-updates-14W5",
-    "scrapedAt": "2026-11-02T08:35:48.555Z"
+    "scrapedAt": "2026-11-02T13:12:16.440Z"
   },
   {
     "id": "bar-vs-syl-25th-first-class-only-bangladesh-national-league-2026-match-updates-14RF",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "6:30 PM",
+    "matchTime": "11:30 PM",
     "seriesInfo": "",
-    "matchStatus": "6:30 PM",
+    "matchStatus": "11:30 PM",
     "team1": {
       "name": "Sylhet Division",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1CL.png",
@@ -2055,14 +2013,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/bar-vs-syl-25th-first-class-only-bangladesh-national-league-2026-match-updates-14RF",
-    "scrapedAt": "2026-11-02T08:35:48.555Z"
+    "scrapedAt": "2026-11-02T13:12:16.440Z"
   },
   {
     "id": "mys-vs-raj-26th-first-class-only-bangladesh-national-league-2026-match-updates-14RG",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "6:30 PM",
+    "matchTime": "11:30 PM",
     "seriesInfo": "",
-    "matchStatus": "6:30 PM",
+    "matchStatus": "11:30 PM",
     "team1": {
       "name": "Mymensingh Division",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LM.png",
@@ -2076,14 +2034,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/mys-vs-raj-26th-first-class-only-bangladesh-national-league-2026-match-updates-14RG",
-    "scrapedAt": "2026-11-02T08:35:48.555Z"
+    "scrapedAt": "2026-11-02T13:12:16.440Z"
   },
   {
     "id": "cht-vs-dha-27th-first-class-only-bangladesh-national-league-2026-match-updates-14RH",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "6:30 PM",
+    "matchTime": "11:30 PM",
     "seriesInfo": "",
-    "matchStatus": "6:30 PM",
+    "matchStatus": "11:30 PM",
     "team1": {
       "name": "Dhaka Division",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1CQ.png",
@@ -2097,14 +2055,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/cht-vs-dha-27th-first-class-only-bangladesh-national-league-2026-match-updates-14RH",
-    "scrapedAt": "2026-11-02T08:35:48.555Z"
+    "scrapedAt": "2026-11-02T13:12:16.440Z"
   },
   {
     "id": "khu-vs-ran-28th-first-class-only-bangladesh-national-league-2026-match-updates-14RI",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "6:30 PM",
+    "matchTime": "11:30 PM",
     "seriesInfo": "",
-    "matchStatus": "6:30 PM",
+    "matchStatus": "11:30 PM",
     "team1": {
       "name": "Rangpur Division",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1CP.png",
@@ -2118,14 +2076,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/khu-vs-ran-28th-first-class-only-bangladesh-national-league-2026-match-updates-14RI",
-    "scrapedAt": "2026-11-02T08:35:48.555Z"
+    "scrapedAt": "2026-11-02T13:12:16.440Z"
   },
   {
     "id": "har-vs-pun-2nd-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13XZ",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "3:30 AM",
+    "matchTime": "8:30 AM",
     "seriesInfo": "",
-    "matchStatus": "3:30 AM",
+    "matchStatus": "8:30 AM",
     "team1": {
       "name": "Punjab",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/HC.png",
@@ -2139,14 +2097,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/har-vs-pun-2nd-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13XZ",
-    "scrapedAt": "2026-11-02T08:35:48.555Z"
+    "scrapedAt": "2026-11-02T13:12:16.440Z"
   },
   {
     "id": "mah-vs-pdc-3rd-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Y0",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "3:30 AM",
+    "matchTime": "8:30 AM",
     "seriesInfo": "",
-    "matchStatus": "3:30 AM",
+    "matchStatus": "8:30 AM",
     "team1": {
       "name": "Maharashtra",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/GZ.png",
@@ -2160,14 +2118,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/mah-vs-pdc-3rd-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Y0",
-    "scrapedAt": "2026-11-02T08:35:48.555Z"
+    "scrapedAt": "2026-11-02T13:12:16.440Z"
   },
   {
     "id": "bh-w-vs-hbh-w-21st-t20-womens-big-bash-league-2026-match-updates-12XO",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "4:40 AM",
+    "matchTime": "9:40 AM",
     "seriesInfo": "",
-    "matchStatus": "4:40 AM",
+    "matchStatus": "9:40 AM",
     "team1": {
       "name": "Hobart Hurricanes Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4T.png",
@@ -2181,14 +2139,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/bh-w-vs-hbh-w-21st-t20-womens-big-bash-league-2026-match-updates-12XO",
-    "scrapedAt": "2026-11-02T08:35:48.555Z"
+    "scrapedAt": "2026-11-02T13:12:16.440Z"
   },
   {
     "id": "tbc-vs-tbc-final-u19-asia-cup-2026-match-updates-14TD",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Team 1 (TBC)",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
@@ -2202,14 +2160,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-final-u19-asia-cup-2026-match-updates-14TD",
-    "scrapedAt": "2026-11-02T08:35:48.555Z"
+    "scrapedAt": "2026-11-02T13:12:20.481Z"
   },
   {
     "id": "jhkd-vs-miz-8th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Y5",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "5:30 AM",
+    "matchTime": "10:30 AM",
     "seriesInfo": "",
-    "matchStatus": "5:30 AM",
+    "matchStatus": "10:30 AM",
     "team1": {
       "name": "Mizoram",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/GI.png",
@@ -2223,14 +2181,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/jhkd-vs-miz-8th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Y5",
-    "scrapedAt": "2026-11-02T08:35:52.578Z"
+    "scrapedAt": "2026-11-02T13:12:20.482Z"
   },
   {
     "id": "tbc-vs-tbc-3rd-place-playoff-womens-victoria-t20i-series-2026-match-updates-152H",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "6:30 AM",
+    "matchTime": "11:30 AM",
     "seriesInfo": "",
-    "matchStatus": "6:30 AM",
+    "matchStatus": "11:30 AM",
     "team1": {
       "name": "Team 1 (TBC)",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
@@ -2244,14 +2202,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-3rd-place-playoff-womens-victoria-t20i-series-2026-match-updates-152H",
-    "scrapedAt": "2026-11-02T08:35:52.578Z"
+    "scrapedAt": "2026-11-02T13:12:20.482Z"
   },
   {
     "id": "tbc-vs-tbc-1st-semi-final-csa-pro-t20-cup-2026-match-updates-1518",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "7:30 AM",
+    "matchTime": "12:30 PM",
     "seriesInfo": "",
-    "matchStatus": "7:30 AM",
+    "matchStatus": "12:30 PM",
     "team1": {
       "name": "Team 1 (TBC)",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
@@ -2265,14 +2223,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-1st-semi-final-csa-pro-t20-cup-2026-match-updates-1518",
-    "scrapedAt": "2026-11-02T08:35:52.578Z"
+    "scrapedAt": "2026-11-02T13:12:20.482Z"
   },
   {
     "id": "ads-w-vs-prs-w-22nd-t20-womens-big-bash-league-2026-match-updates-12XP",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "8:10 AM",
+    "matchTime": "1:10 PM",
     "seriesInfo": "",
-    "matchStatus": "8:10 AM",
+    "matchStatus": "1:10 PM",
     "team1": {
       "name": "Perth Scorchers Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4X.png",
@@ -2286,14 +2244,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ads-w-vs-prs-w-22nd-t20-womens-big-bash-league-2026-match-updates-12XP",
-    "scrapedAt": "2026-11-02T08:35:52.578Z"
+    "scrapedAt": "2026-11-02T13:12:20.482Z"
   },
   {
     "id": "tbc-vs-tbc-final-womens-victoria-t20i-series-2026-match-updates-152I",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "11:00 AM",
+    "matchTime": "4:00 PM",
     "seriesInfo": "",
-    "matchStatus": "11:00 AM",
+    "matchStatus": "4:00 PM",
     "team1": {
       "name": "Team 1 (TBC)",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
@@ -2307,14 +2265,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-final-womens-victoria-t20i-series-2026-match-updates-152I",
-    "scrapedAt": "2026-11-02T08:35:52.578Z"
+    "scrapedAt": "2026-11-02T13:12:20.482Z"
   },
   {
     "id": "rdc-vs-ut-16th-match-abu-dhabi-t10-league-2026-match-updates-14W6",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "11:30 AM",
+    "matchTime": "4:30 PM",
     "seriesInfo": "",
-    "matchStatus": "11:30 AM",
+    "matchStatus": "4:30 PM",
     "team1": {
       "name": "Royal Desert Champions",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LL.png",
@@ -2328,14 +2286,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/rdc-vs-ut-16th-match-abu-dhabi-t10-league-2026-match-updates-14W6",
-    "scrapedAt": "2026-11-02T08:35:52.578Z"
+    "scrapedAt": "2026-11-02T13:12:20.482Z"
   },
   {
     "id": "tbc-vs-tbc-2nd-semi-final-csa-pro-t20-cup-2026-match-updates-1519",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "12:00 PM",
+    "matchTime": "5:00 PM",
     "seriesInfo": "",
-    "matchStatus": "12:00 PM",
+    "matchStatus": "5:00 PM",
     "team1": {
       "name": "Team 1 (TBC)",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
@@ -2349,14 +2307,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-2nd-semi-final-csa-pro-t20-cup-2026-match-updates-1519",
-    "scrapedAt": "2026-11-02T08:35:52.578Z"
+    "scrapedAt": "2026-11-02T13:12:24.525Z"
   },
   {
     "id": "uab-vs-yl-18th-match-abu-dhabi-t10-league-2026-match-updates-14W8",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "4:00 PM",
+    "matchTime": "9:00 PM",
     "seriesInfo": "",
-    "matchStatus": "4:00 PM",
+    "matchStatus": "9:00 PM",
     "team1": {
       "name": "Yas Lions",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LH.png",
@@ -2370,14 +2328,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/uab-vs-yl-18th-match-abu-dhabi-t10-league-2026-match-updates-14W8",
-    "scrapedAt": "2026-11-02T08:35:56.602Z"
+    "scrapedAt": "2026-11-02T13:12:24.525Z"
   },
   {
     "id": "tbc-vs-tbc-final-csa-pro-t20-cup-2026-match-updates-151A",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "4:30 PM",
+    "matchTime": "9:30 PM",
     "seriesInfo": "",
-    "matchStatus": "4:30 PM",
+    "matchStatus": "9:30 PM",
     "team1": {
       "name": "Team 1 (TBC)",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
@@ -2391,14 +2349,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-final-csa-pro-t20-cup-2026-match-updates-151A",
-    "scrapedAt": "2026-11-02T08:35:56.602Z"
+    "scrapedAt": "2026-11-02T13:12:24.525Z"
   },
   {
     "id": "eng-a-vs-wi-a-4th-one-day-england-a-tour-of-west-indies-2026-match-updates-150Q",
     "date": "Sat, 14 Nov 2026",
-    "matchTime": "6:00 PM",
+    "matchTime": "11:00 PM",
     "seriesInfo": "",
-    "matchStatus": "6:00 PM",
+    "matchStatus": "11:00 PM",
     "team1": {
       "name": "West Indies A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/VI.png",
@@ -2412,14 +2370,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/eng-a-vs-wi-a-4th-one-day-england-a-tour-of-west-indies-2026-match-updates-150Q",
-    "scrapedAt": "2026-11-02T08:35:56.602Z"
+    "scrapedAt": "2026-11-02T13:12:24.525Z"
   },
   {
     "id": "mlr-w-vs-sys-w-23rd-t20-womens-big-bash-league-2026-match-updates-12XQ",
     "date": "Sun, 15 Nov 2026",
-    "matchTime": "12:00 AM",
+    "matchTime": "5:00 AM",
     "seriesInfo": "",
-    "matchStatus": "12:00 AM",
+    "matchStatus": "5:00 AM",
     "team1": {
       "name": "Sydney Sixers Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/50.png",
@@ -2433,14 +2391,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/mlr-w-vs-sys-w-23rd-t20-womens-big-bash-league-2026-match-updates-12XQ",
-    "scrapedAt": "2026-11-02T08:35:56.602Z"
+    "scrapedAt": "2026-11-02T13:12:24.525Z"
   },
   {
     "id": "ind-vs-nz-5th-odi-india-tour-of-new-zealand-2026-match-updates-12JL",
     "date": "Sun, 15 Nov 2026",
-    "matchTime": "2:00 AM",
+    "matchTime": "7:00 AM",
     "seriesInfo": "",
-    "matchStatus": "2:00 AM",
+    "matchStatus": "7:00 AM",
     "team1": {
       "name": "New Zealand",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/R.png",
@@ -2454,14 +2412,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ind-vs-nz-5th-odi-india-tour-of-new-zealand-2026-match-updates-12JL",
-    "scrapedAt": "2026-11-02T08:35:56.602Z"
+    "scrapedAt": "2026-11-02T13:12:24.525Z"
   },
   {
     "id": "aus-vs-eng-2nd-odi-england-tour-of-australia-2026-match-updates-11BM",
     "date": "Sun, 15 Nov 2026",
-    "matchTime": "3:30 AM",
+    "matchTime": "8:30 AM",
     "seriesInfo": "",
-    "matchStatus": "3:30 AM",
+    "matchStatus": "8:30 AM",
     "team1": {
       "name": "Australia",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/Q.png",
@@ -2475,14 +2433,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/aus-vs-eng-2nd-odi-england-tour-of-australia-2026-match-updates-11BM",
-    "scrapedAt": "2026-11-02T08:35:56.602Z"
+    "scrapedAt": "2026-11-02T13:12:24.525Z"
   },
   {
     "id": "tha-w-vs-zim-w-9th-t20i-womens-emerging-nations-trophy-2026-match-updates-151J",
     "date": "Sun, 15 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Thailand Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/2G.png",
@@ -2496,14 +2454,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/tha-w-vs-zim-w-9th-t20i-womens-emerging-nations-trophy-2026-match-updates-151J",
-    "scrapedAt": "2026-11-02T08:35:56.602Z"
+    "scrapedAt": "2026-11-02T13:12:24.525Z"
   },
   {
     "id": "ned-w-vs-pak-w-10th-t20i-womens-emerging-nations-trophy-2026-match-updates-151K",
     "date": "Sun, 15 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Pakistan Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1K.png",
@@ -2517,14 +2475,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ned-w-vs-pak-w-10th-t20i-womens-emerging-nations-trophy-2026-match-updates-151K",
-    "scrapedAt": "2026-11-02T08:35:56.602Z"
+    "scrapedAt": "2026-11-02T13:12:24.525Z"
   },
   {
     "id": "ban-vs-sa-1st-test-bangladesh-tour-of-south-africa-2026-match-updates-10M9",
     "date": "Sun, 15 Nov 2026",
-    "matchTime": "8:00 AM",
+    "matchTime": "1:00 PM",
     "seriesInfo": "",
-    "matchStatus": "8:00 AM",
+    "matchStatus": "1:00 PM",
     "team1": {
       "name": "South Africa",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/P.png",
@@ -2538,14 +2496,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ban-vs-sa-1st-test-bangladesh-tour-of-south-africa-2026-match-updates-10M9",
-    "scrapedAt": "2026-11-02T08:35:56.603Z"
+    "scrapedAt": "2026-11-02T13:12:24.525Z"
   },
   {
     "id": "sco-w-vs-uae-w-11th-t20i-womens-emerging-nations-trophy-2026-match-updates-151L",
     "date": "Sun, 15 Nov 2026",
-    "matchTime": "9:15 AM",
+    "matchTime": "2:15 PM",
     "seriesInfo": "",
-    "matchStatus": "9:15 AM",
+    "matchStatus": "2:15 PM",
     "team1": {
       "name": "Scotland Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/CK.png",
@@ -2559,14 +2517,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/sco-w-vs-uae-w-11th-t20i-womens-emerging-nations-trophy-2026-match-updates-151L",
-    "scrapedAt": "2026-11-02T08:35:56.603Z"
+    "scrapedAt": "2026-11-02T13:12:24.526Z"
   },
   {
     "id": "png-w-vs-sl-w-12th-t20i-womens-emerging-nations-trophy-2026-match-updates-151M",
     "date": "Sun, 15 Nov 2026",
-    "matchTime": "9:15 AM",
+    "matchTime": "2:15 PM",
     "seriesInfo": "",
-    "matchStatus": "9:15 AM",
+    "matchStatus": "2:15 PM",
     "team1": {
       "name": "Sri Lanka Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1J.png",
@@ -2580,14 +2538,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/png-w-vs-sl-w-12th-t20i-womens-emerging-nations-trophy-2026-match-updates-151M",
-    "scrapedAt": "2026-11-02T08:35:56.603Z"
+    "scrapedAt": "2026-11-02T13:12:24.526Z"
   },
   {
     "id": "aa-vs-rdc-19th-match-abu-dhabi-t10-league-2026-match-updates-14W9",
     "date": "Sun, 15 Nov 2026",
-    "matchTime": "11:30 AM",
+    "matchTime": "4:30 PM",
     "seriesInfo": "",
-    "matchStatus": "11:30 AM",
+    "matchStatus": "4:30 PM",
     "team1": {
       "name": "Royal Desert Champions",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LL.png",
@@ -2601,14 +2559,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/aa-vs-rdc-19th-match-abu-dhabi-t10-league-2026-match-updates-14W9",
-    "scrapedAt": "2026-11-02T08:35:56.603Z"
+    "scrapedAt": "2026-11-02T13:12:24.526Z"
   },
   {
     "id": "ut-vs-yl-21st-match-abu-dhabi-t10-league-2026-match-updates-14WB",
     "date": "Sun, 15 Nov 2026",
-    "matchTime": "4:00 PM",
+    "matchTime": "9:00 PM",
     "seriesInfo": "",
-    "matchStatus": "4:00 PM",
+    "matchStatus": "9:00 PM",
     "team1": {
       "name": "United Tigers",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LJ.png",
@@ -2622,14 +2580,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ut-vs-yl-21st-match-abu-dhabi-t10-league-2026-match-updates-14WB",
-    "scrapedAt": "2026-11-02T08:35:56.603Z"
+    "scrapedAt": "2026-11-02T13:12:24.526Z"
   },
   {
     "id": "nsw-vs-saca-13th-one-day-australia-domestic-one-day-cup-2026-27-match-updates-132M",
     "date": "Mon, 16 Nov 2026",
-    "matchTime": "11:00 PM",
+    "matchTime": "4:00 AM",
     "seriesInfo": "",
-    "matchStatus": "11:00 PM",
+    "matchStatus": "4:00 AM",
     "team1": {
       "name": "New South Wales",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/3L.png",
@@ -2643,14 +2601,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/nsw-vs-saca-13th-one-day-australia-domestic-one-day-cup-2026-27-match-updates-132M",
-    "scrapedAt": "2026-11-02T08:35:56.603Z"
+    "scrapedAt": "2026-11-02T13:12:24.526Z"
   },
   {
     "id": "qld-vs-tas-14th-one-day-australia-domestic-one-day-cup-2026-27-match-updates-132N",
     "date": "Mon, 16 Nov 2026",
-    "matchTime": "12:00 AM",
+    "matchTime": "5:00 AM",
     "seriesInfo": "",
-    "matchStatus": "12:00 AM",
+    "matchStatus": "5:00 AM",
     "team1": {
       "name": "Queensland",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/FU.png",
@@ -2664,14 +2622,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/qld-vs-tas-14th-one-day-australia-domestic-one-day-cup-2026-27-match-updates-132N",
-    "scrapedAt": "2026-11-02T08:35:56.603Z"
+    "scrapedAt": "2026-11-02T13:12:24.526Z"
   },
   {
     "id": "vic-vs-waca-15th-one-day-australia-domestic-one-day-cup-2026-27-match-updates-132O",
     "date": "Mon, 16 Nov 2026",
-    "matchTime": "3:00 AM",
+    "matchTime": "8:00 AM",
     "seriesInfo": "",
-    "matchStatus": "3:00 AM",
+    "matchStatus": "8:00 AM",
     "team1": {
       "name": "Victoria",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/3J.png",
@@ -2685,14 +2643,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/vic-vs-waca-15th-one-day-australia-domestic-one-day-cup-2026-27-match-updates-132O",
-    "scrapedAt": "2026-11-02T08:35:56.603Z"
+    "scrapedAt": "2026-11-02T13:12:28.571Z"
   },
   {
     "id": "jhkd-vs-raj-17th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13YE",
     "date": "Mon, 16 Nov 2026",
-    "matchTime": "3:30 AM",
+    "matchTime": "8:30 AM",
     "seriesInfo": "",
-    "matchStatus": "3:30 AM",
+    "matchStatus": "8:30 AM",
     "team1": {
       "name": "Rajasthan",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/GV.png",
@@ -2706,14 +2664,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/jhkd-vs-raj-17th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13YE",
-    "scrapedAt": "2026-11-02T08:36:00.626Z"
+    "scrapedAt": "2026-11-02T13:12:28.571Z"
   },
   {
     "id": "ban-w-vs-ned-w-13th-t20i-womens-emerging-nations-trophy-2026-match-updates-151N",
     "date": "Mon, 16 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Bangladesh Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1M.png",
@@ -2727,14 +2685,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ban-w-vs-ned-w-13th-t20i-womens-emerging-nations-trophy-2026-match-updates-151N",
-    "scrapedAt": "2026-11-02T08:36:00.626Z"
+    "scrapedAt": "2026-11-02T13:12:28.571Z"
   },
   {
     "id": "pak-w-vs-zim-w-14th-t20i-womens-emerging-nations-trophy-2026-match-updates-151O",
     "date": "Mon, 16 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Zimbabwe Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/6I.png",
@@ -2748,14 +2706,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/pak-w-vs-zim-w-14th-t20i-womens-emerging-nations-trophy-2026-match-updates-151O",
-    "scrapedAt": "2026-11-02T08:36:00.626Z"
+    "scrapedAt": "2026-11-02T13:12:28.571Z"
   },
   {
     "id": "mls-w-vs-syt-w-24th-t20-womens-big-bash-league-2026-match-updates-12XR",
     "date": "Mon, 16 Nov 2026",
-    "matchTime": "8:10 AM",
+    "matchTime": "1:10 PM",
     "seriesInfo": "",
-    "matchStatus": "8:10 AM",
+    "matchStatus": "1:10 PM",
     "team1": {
       "name": "Sydney Thunder Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/8W.png",
@@ -2769,14 +2727,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/mls-w-vs-syt-w-24th-t20-womens-big-bash-league-2026-match-updates-12XR",
-    "scrapedAt": "2026-11-02T08:36:00.627Z"
+    "scrapedAt": "2026-11-02T13:12:28.572Z"
   },
   {
     "id": "ire-w-vs-png-w-15th-t20i-womens-emerging-nations-trophy-2026-match-updates-151P",
     "date": "Mon, 16 Nov 2026",
-    "matchTime": "9:15 AM",
+    "matchTime": "2:15 PM",
     "seriesInfo": "",
-    "matchStatus": "9:15 AM",
+    "matchStatus": "2:15 PM",
     "team1": {
       "name": "Ireland Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/2H.png",
@@ -2790,14 +2748,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ire-w-vs-png-w-15th-t20i-womens-emerging-nations-trophy-2026-match-updates-151P",
-    "scrapedAt": "2026-11-02T08:36:00.627Z"
+    "scrapedAt": "2026-11-02T13:12:28.572Z"
   },
   {
     "id": "sl-w-vs-uae-w-16th-t20i-womens-emerging-nations-trophy-2026-match-updates-151Q",
     "date": "Mon, 16 Nov 2026",
-    "matchTime": "9:15 AM",
+    "matchTime": "2:15 PM",
     "seriesInfo": "",
-    "matchStatus": "9:15 AM",
+    "matchStatus": "2:15 PM",
     "team1": {
       "name": "UAE Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/AB.png",
@@ -2811,14 +2769,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/sl-w-vs-uae-w-16th-t20i-womens-emerging-nations-trophy-2026-match-updates-151Q",
-    "scrapedAt": "2026-11-02T08:36:00.627Z"
+    "scrapedAt": "2026-11-02T13:12:32.624Z"
   },
   {
     "id": "del-vs-pun-31st-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13YS",
     "date": "Mon, 16 Nov 2026",
-    "matchTime": "11:00 AM",
+    "matchTime": "4:00 PM",
     "seriesInfo": "",
-    "matchStatus": "11:00 AM",
+    "matchStatus": "4:00 PM",
     "team1": {
       "name": "Delhi",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/GO.png",
@@ -2832,14 +2790,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/del-vs-pun-31st-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13YS",
-    "scrapedAt": "2026-11-02T08:36:04.652Z"
+    "scrapedAt": "2026-11-02T13:12:32.625Z"
   },
   {
     "id": "aa-vs-ut-22nd-match-abu-dhabi-t10-league-2026-match-updates-14WC",
     "date": "Mon, 16 Nov 2026",
-    "matchTime": "1:45 PM",
+    "matchTime": "6:45 PM",
     "seriesInfo": "",
-    "matchStatus": "1:45 PM",
+    "matchStatus": "6:45 PM",
     "team1": {
       "name": "Arabian Aces",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LI.png",
@@ -2853,14 +2811,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/aa-vs-ut-22nd-match-abu-dhabi-t10-league-2026-match-updates-14WC",
-    "scrapedAt": "2026-11-02T08:36:04.652Z"
+    "scrapedAt": "2026-11-02T13:12:32.625Z"
   },
   {
     "id": "eng-a-vs-wi-a-5th-one-day-england-a-tour-of-west-indies-2026-match-updates-150R",
     "date": "Mon, 16 Nov 2026",
-    "matchTime": "6:00 PM",
+    "matchTime": "11:00 PM",
     "seriesInfo": "",
-    "matchStatus": "6:00 PM",
+    "matchStatus": "11:00 PM",
     "team1": {
       "name": "West Indies A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/VI.png",
@@ -2874,14 +2832,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/eng-a-vs-wi-a-5th-one-day-england-a-tour-of-west-indies-2026-match-updates-150R",
-    "scrapedAt": "2026-11-02T08:36:04.652Z"
+    "scrapedAt": "2026-11-02T13:12:32.625Z"
   },
   {
     "id": "pak-vs-sl-2nd-test-sri-lanka-tour-of-pakistan-2026-match-updates-13LU",
     "date": "Tue, 17 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Pakistan",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/U.png",
@@ -2895,14 +2853,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/pak-vs-sl-2nd-test-sri-lanka-tour-of-pakistan-2026-match-updates-13LU",
-    "scrapedAt": "2026-11-02T08:36:04.652Z"
+    "scrapedAt": "2026-11-02T13:12:32.625Z"
   },
   {
     "id": "ads-w-vs-sys-w-25th-t20-womens-big-bash-league-2026-match-updates-12XS",
     "date": "Tue, 17 Nov 2026",
-    "matchTime": "8:10 AM",
+    "matchTime": "1:10 PM",
     "seriesInfo": "",
-    "matchStatus": "8:10 AM",
+    "matchStatus": "1:10 PM",
     "team1": {
       "name": "Adelaide Strikers Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4R.png",
@@ -2916,14 +2874,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ads-w-vs-sys-w-25th-t20-womens-big-bash-league-2026-match-updates-12XS",
-    "scrapedAt": "2026-11-02T08:36:04.652Z"
+    "scrapedAt": "2026-11-02T13:12:32.625Z"
   },
   {
     "id": "aa-vs-yl-24th-match-abu-dhabi-t10-league-2026-match-updates-14WE",
     "date": "Tue, 17 Nov 2026",
-    "matchTime": "1:45 PM",
+    "matchTime": "6:45 PM",
     "seriesInfo": "",
-    "matchStatus": "1:45 PM",
+    "matchStatus": "6:45 PM",
     "team1": {
       "name": "Yas Lions",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LH.png",
@@ -2937,14 +2895,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/aa-vs-yl-24th-match-abu-dhabi-t10-league-2026-match-updates-14WE",
-    "scrapedAt": "2026-11-02T08:36:04.652Z"
+    "scrapedAt": "2026-11-02T13:12:32.625Z"
   },
   {
     "id": "rdc-vs-uab-25th-match-abu-dhabi-t10-league-2026-match-updates-14WF",
     "date": "Tue, 17 Nov 2026",
-    "matchTime": "4:00 PM",
+    "matchTime": "9:00 PM",
     "seriesInfo": "",
-    "matchStatus": "4:00 PM",
+    "matchStatus": "9:00 PM",
     "team1": {
       "name": "UAE Bulls",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/78.png",
@@ -2958,14 +2916,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/rdc-vs-uab-25th-match-abu-dhabi-t10-league-2026-match-updates-14WF",
-    "scrapedAt": "2026-11-02T08:36:04.652Z"
+    "scrapedAt": "2026-11-02T13:12:32.625Z"
   },
   {
     "id": "aus-vs-eng-3rd-odi-england-tour-of-australia-2026-match-updates-11BN",
     "date": "Wed, 18 Nov 2026",
-    "matchTime": "3:30 AM",
+    "matchTime": "8:30 AM",
     "seriesInfo": "",
-    "matchStatus": "3:30 AM",
+    "matchStatus": "8:30 AM",
     "team1": {
       "name": "Australia",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/Q.png",
@@ -2979,14 +2937,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/aus-vs-eng-3rd-odi-england-tour-of-australia-2026-match-updates-11BN",
-    "scrapedAt": "2026-11-02T08:36:04.652Z"
+    "scrapedAt": "2026-11-02T13:12:32.626Z"
   },
   {
     "id": "png-w-vs-uae-w-17th-t20i-womens-emerging-nations-trophy-2026-match-updates-151R",
     "date": "Wed, 18 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Papua New Guinea Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/IG.png",
@@ -3000,14 +2958,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/png-w-vs-uae-w-17th-t20i-womens-emerging-nations-trophy-2026-match-updates-151R",
-    "scrapedAt": "2026-11-02T08:36:04.652Z"
+    "scrapedAt": "2026-11-02T13:12:36.688Z"
   },
   {
     "id": "ire-w-vs-sco-w-18th-t20i-womens-emerging-nations-trophy-2026-match-updates-151S",
     "date": "Wed, 18 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "Ireland Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/2H.png",
@@ -3021,14 +2979,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ire-w-vs-sco-w-18th-t20i-womens-emerging-nations-trophy-2026-match-updates-151S",
-    "scrapedAt": "2026-11-02T08:36:08.676Z"
+    "scrapedAt": "2026-11-02T13:12:36.688Z"
   },
   {
     "id": "cg-vs-raj-40th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Z1",
     "date": "Wed, 18 Nov 2026",
-    "matchTime": "5:30 AM",
+    "matchTime": "10:30 AM",
     "seriesInfo": "",
-    "matchStatus": "5:30 AM",
+    "matchStatus": "10:30 AM",
     "team1": {
       "name": "Chandigarh",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/GF.png",
@@ -3042,14 +3000,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/cg-vs-raj-40th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Z1",
-    "scrapedAt": "2026-11-02T08:36:08.677Z"
+    "scrapedAt": "2026-11-02T13:12:36.689Z"
   },
   {
     "id": "goa-vs-mum-44th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Z5",
     "date": "Wed, 18 Nov 2026",
-    "matchTime": "8:00 AM",
+    "matchTime": "1:00 PM",
     "seriesInfo": "",
-    "matchStatus": "8:00 AM",
+    "matchStatus": "1:00 PM",
     "team1": {
       "name": "Goa",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/GS.png",
@@ -3063,14 +3021,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/goa-vs-mum-44th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Z5",
-    "scrapedAt": "2026-11-02T08:36:08.677Z"
+    "scrapedAt": "2026-11-02T13:12:36.689Z"
   },
   {
     "id": "ned-w-vs-zim-w-19th-t20i-womens-emerging-nations-trophy-2026-match-updates-151T",
     "date": "Wed, 18 Nov 2026",
-    "matchTime": "9:15 AM",
+    "matchTime": "2:15 PM",
     "seriesInfo": "",
-    "matchStatus": "9:15 AM",
+    "matchStatus": "2:15 PM",
     "team1": {
       "name": "Netherlands Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/IF.png",
@@ -3084,14 +3042,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ned-w-vs-zim-w-19th-t20i-womens-emerging-nations-trophy-2026-match-updates-151T",
-    "scrapedAt": "2026-11-02T08:36:08.677Z"
+    "scrapedAt": "2026-11-02T13:12:36.689Z"
   },
   {
     "id": "ban-w-vs-tha-w-20th-t20i-womens-emerging-nations-trophy-2026-match-updates-151U",
     "date": "Wed, 18 Nov 2026",
-    "matchTime": "9:15 AM",
+    "matchTime": "2:15 PM",
     "seriesInfo": "",
-    "matchStatus": "9:15 AM",
+    "matchStatus": "2:15 PM",
     "team1": {
       "name": "Bangladesh Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1M.png",
@@ -3105,14 +3063,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ban-w-vs-tha-w-20th-t20i-womens-emerging-nations-trophy-2026-match-updates-151U",
-    "scrapedAt": "2026-11-02T08:36:08.677Z"
+    "scrapedAt": "2026-11-02T13:12:36.689Z"
   },
   {
     "id": "uab-vs-ut-26th-match-abu-dhabi-t10-league-2026-match-updates-14WG",
     "date": "Wed, 18 Nov 2026",
-    "matchTime": "1:45 PM",
+    "matchTime": "6:45 PM",
     "seriesInfo": "",
-    "matchStatus": "1:45 PM",
+    "matchStatus": "6:45 PM",
     "team1": {
       "name": "UAE Bulls",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/78.png",
@@ -3126,14 +3084,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/uab-vs-ut-26th-match-abu-dhabi-t10-league-2026-match-updates-14WG",
-    "scrapedAt": "2026-11-02T08:36:08.677Z"
+    "scrapedAt": "2026-11-02T13:12:36.689Z"
   },
   {
     "id": "auck-vs-nb-1st-first-class-plunket-shield-2026-27-match-updates-13RT",
     "date": "Thu, 19 Nov 2026",
-    "matchTime": "9:30 PM",
+    "matchTime": "2:30 AM",
     "seriesInfo": "",
-    "matchStatus": "9:30 PM",
+    "matchStatus": "2:30 AM",
     "team1": {
       "name": "Northern Brave",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/54.png",
@@ -3147,14 +3105,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/auck-vs-nb-1st-first-class-plunket-shield-2026-27-match-updates-13RT",
-    "scrapedAt": "2026-11-02T08:36:08.677Z"
+    "scrapedAt": "2026-11-02T13:12:40.728Z"
   },
   {
     "id": "cs-vs-wel-2nd-first-class-plunket-shield-2026-27-match-updates-13RU",
     "date": "Thu, 19 Nov 2026",
-    "matchTime": "9:30 PM",
+    "matchTime": "2:30 AM",
     "seriesInfo": "",
-    "matchStatus": "9:30 PM",
+    "matchStatus": "2:30 AM",
     "team1": {
       "name": "Central Stags",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/56.png",
@@ -3168,14 +3126,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/cs-vs-wel-2nd-first-class-plunket-shield-2026-27-match-updates-13RU",
-    "scrapedAt": "2026-11-02T08:36:12.703Z"
+    "scrapedAt": "2026-11-02T13:12:40.728Z"
   },
   {
     "id": "cant-vs-otg-3rd-first-class-plunket-shield-2026-27-match-updates-13RV",
     "date": "Thu, 19 Nov 2026",
-    "matchTime": "9:30 PM",
+    "matchTime": "2:30 AM",
     "seriesInfo": "",
-    "matchStatus": "9:30 PM",
+    "matchStatus": "2:30 AM",
     "team1": {
       "name": "Otago",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/52.png",
@@ -3189,14 +3147,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/cant-vs-otg-3rd-first-class-plunket-shield-2026-27-match-updates-13RV",
-    "scrapedAt": "2026-11-02T08:36:12.703Z"
+    "scrapedAt": "2026-11-02T13:12:40.728Z"
   },
   {
     "id": "ind-vs-nz-1st-test-india-tour-of-new-zealand-2026-match-updates-12JM",
     "date": "Thu, 19 Nov 2026",
-    "matchTime": "10:00 PM",
+    "matchTime": "3:00 AM",
     "seriesInfo": "",
-    "matchStatus": "10:00 PM",
+    "matchStatus": "3:00 AM",
     "team1": {
       "name": "New Zealand",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/R.png",
@@ -3210,14 +3168,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ind-vs-nz-1st-test-india-tour-of-new-zealand-2026-match-updates-12JM",
-    "scrapedAt": "2026-11-02T08:36:12.703Z"
+    "scrapedAt": "2026-11-02T13:12:40.728Z"
   },
   {
     "id": "hbh-w-vs-prs-w-26th-t20-womens-big-bash-league-2026-match-updates-12XT",
     "date": "Thu, 19 Nov 2026",
-    "matchTime": "4:40 AM",
+    "matchTime": "9:40 AM",
     "seriesInfo": "",
-    "matchStatus": "4:40 AM",
+    "matchStatus": "9:40 AM",
     "team1": {
       "name": "Hobart Hurricanes Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4T.png",
@@ -3231,14 +3189,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/hbh-w-vs-prs-w-26th-t20-womens-big-bash-league-2026-match-updates-12XT",
-    "scrapedAt": "2026-11-02T08:36:12.703Z"
+    "scrapedAt": "2026-11-02T13:12:40.728Z"
   },
   {
     "id": "ban-a-vs-hk-1st-one-day-mens-asia-cup-rising-stars-2026-match-updates-150S",
     "date": "Thu, 19 Nov 2026",
-    "matchTime": "6:00 AM",
+    "matchTime": "11:00 AM",
     "seriesInfo": "",
-    "matchStatus": "6:00 AM",
+    "matchStatus": "11:00 AM",
     "team1": {
       "name": "Bangladesh A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/PX.png",
@@ -3252,14 +3210,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ban-a-vs-hk-1st-one-day-mens-asia-cup-rising-stars-2026-match-updates-150S",
-    "scrapedAt": "2026-11-02T08:36:12.703Z"
+    "scrapedAt": "2026-11-02T13:12:40.728Z"
   },
   {
     "id": "ire-a-vs-zim-a-1st-one-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TG",
     "date": "Thu, 19 Nov 2026",
-    "matchTime": "7:30 AM",
+    "matchTime": "12:30 PM",
     "seriesInfo": "",
-    "matchStatus": "7:30 AM",
+    "matchStatus": "12:30 PM",
     "team1": {
       "name": "Zimbabwe A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/ID.png",
@@ -3273,14 +3231,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ire-a-vs-zim-a-1st-one-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TG",
-    "scrapedAt": "2026-11-02T08:36:12.703Z"
+    "scrapedAt": "2026-11-02T13:12:40.728Z"
   },
   {
     "id": "bh-w-vs-syt-w-27th-t20-womens-big-bash-league-2026-match-updates-12XU",
     "date": "Thu, 19 Nov 2026",
-    "matchTime": "8:10 AM",
+    "matchTime": "1:10 PM",
     "seriesInfo": "",
-    "matchStatus": "8:10 AM",
+    "matchStatus": "1:10 PM",
     "team1": {
       "name": "Brisbane Heat Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4S.png",
@@ -3294,14 +3252,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/bh-w-vs-syt-w-27th-t20-womens-big-bash-league-2026-match-updates-12XU",
-    "scrapedAt": "2026-11-02T08:36:12.703Z"
+    "scrapedAt": "2026-11-02T13:12:40.728Z"
   },
   {
     "id": "afg-a-vs-sl-a-2nd-one-day-mens-asia-cup-rising-stars-2026-match-updates-150T",
     "date": "Thu, 19 Nov 2026",
-    "matchTime": "10:00 AM",
+    "matchTime": "3:00 PM",
     "seriesInfo": "",
-    "matchStatus": "10:00 AM",
+    "matchStatus": "3:00 PM",
     "team1": {
       "name": "Sri Lanka A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/RK.png",
@@ -3315,14 +3273,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/afg-a-vs-sl-a-2nd-one-day-mens-asia-cup-rising-stars-2026-match-updates-150T",
-    "scrapedAt": "2026-11-02T08:36:12.703Z"
+    "scrapedAt": "2026-11-02T13:12:40.728Z"
   },
   {
     "id": "aa-vs-uab-28th-match-abu-dhabi-t10-league-2026-match-updates-14WI",
     "date": "Thu, 19 Nov 2026",
-    "matchTime": "11:30 AM",
+    "matchTime": "4:30 PM",
     "seriesInfo": "",
-    "matchStatus": "11:30 AM",
+    "matchStatus": "4:30 PM",
     "team1": {
       "name": "UAE Bulls",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/78.png",
@@ -3336,14 +3294,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/aa-vs-uab-28th-match-abu-dhabi-t10-league-2026-match-updates-14WI",
-    "scrapedAt": "2026-11-02T08:36:12.703Z"
+    "scrapedAt": "2026-11-02T13:12:40.728Z"
   },
   {
     "id": "rdc-vs-yl-29th-match-abu-dhabi-t10-league-2026-match-updates-14WJ",
     "date": "Thu, 19 Nov 2026",
-    "matchTime": "1:45 PM",
+    "matchTime": "6:45 PM",
     "seriesInfo": "",
-    "matchStatus": "1:45 PM",
+    "matchStatus": "6:45 PM",
     "team1": {
       "name": "Yas Lions",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/1LH.png",
@@ -3357,14 +3315,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/rdc-vs-yl-29th-match-abu-dhabi-t10-league-2026-match-updates-14WJ",
-    "scrapedAt": "2026-11-02T08:36:12.703Z"
+    "scrapedAt": "2026-11-02T13:12:40.728Z"
   },
   {
     "id": "a2-vs-b2-21st-t20i-womens-emerging-nations-trophy-2026-match-updates-151V",
     "date": "Fri, 20 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "2nd in Group A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/JI.png",
@@ -3378,35 +3336,35 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/a2-vs-b2-21st-t20i-womens-emerging-nations-trophy-2026-match-updates-151V",
-    "scrapedAt": "2026-11-02T08:36:12.703Z"
+    "scrapedAt": "2026-11-02T13:12:40.729Z"
   },
   {
     "id": "a1-vs-b3-22nd-t20i-womens-emerging-nations-trophy-2026-match-updates-151W",
     "date": "Fri, 20 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "1st in Group A",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/JH.png",
+      "flagUrl": "https://crex.com/assets/img/unknown_team.png",
       "score": "",
       "overs": ""
     },
     "team2": {
       "name": "3rd in Group B",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/TS.png",
+      "flagUrl": "https://crex.com/assets/img/unknown_team.png",
       "score": "",
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/a1-vs-b3-22nd-t20i-womens-emerging-nations-trophy-2026-match-updates-151W",
-    "scrapedAt": "2026-11-02T08:36:12.703Z"
+    "scrapedAt": "2026-11-02T13:12:44.786Z"
   },
   {
     "id": "ads-w-vs-mlr-w-28th-t20-womens-big-bash-league-2026-match-updates-12XV",
     "date": "Fri, 20 Nov 2026",
-    "matchTime": "8:10 AM",
+    "matchTime": "1:10 PM",
     "seriesInfo": "",
-    "matchStatus": "8:10 AM",
+    "matchStatus": "1:10 PM",
     "team1": {
       "name": "Adelaide Strikers Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4R.png",
@@ -3420,14 +3378,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ads-w-vs-mlr-w-28th-t20-womens-big-bash-league-2026-match-updates-12XV",
-    "scrapedAt": "2026-11-02T08:36:16.729Z"
+    "scrapedAt": "2026-11-02T13:12:44.786Z"
   },
   {
     "id": "a3-vs-b1-23rd-t20i-womens-emerging-nations-trophy-2026-match-updates-151X",
     "date": "Fri, 20 Nov 2026",
-    "matchTime": "9:15 AM",
+    "matchTime": "2:15 PM",
     "seriesInfo": "",
-    "matchStatus": "9:15 AM",
+    "matchStatus": "2:15 PM",
     "team1": {
       "name": "1st in Group B",
       "flagUrl": "https://crex.com/assets/img/unknown_team.png",
@@ -3441,14 +3399,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/a3-vs-b1-23rd-t20i-womens-emerging-nations-trophy-2026-match-updates-151X",
-    "scrapedAt": "2026-11-02T08:36:16.729Z"
+    "scrapedAt": "2026-11-02T13:12:44.787Z"
   },
   {
     "id": "tbc-vs-tbc-qualifier-1st-match-abu-dhabi-t10-league-2026-match-updates-14WL",
     "date": "Fri, 20 Nov 2026",
-    "matchTime": "1:30 PM",
+    "matchTime": "6:30 PM",
     "seriesInfo": "",
-    "matchStatus": "1:30 PM",
+    "matchStatus": "6:30 PM",
     "team1": {
       "name": "Team 1 (TBC)",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
@@ -3462,14 +3420,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-qualifier-1st-match-abu-dhabi-t10-league-2026-match-updates-14WL",
-    "scrapedAt": "2026-11-02T08:36:16.729Z"
+    "scrapedAt": "2026-11-02T13:12:44.787Z"
   },
   {
     "id": "tbc-vs-tbc-final-abu-dhabi-t10-league-2026-match-updates-14WM",
     "date": "Fri, 20 Nov 2026",
-    "matchTime": "3:45 PM",
+    "matchTime": "8:45 PM",
     "seriesInfo": "",
-    "matchStatus": "3:45 PM",
+    "matchStatus": "8:45 PM",
     "team1": {
       "name": "Team 1 (TBC)",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
@@ -3483,14 +3441,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-final-abu-dhabi-t10-league-2026-match-updates-14WM",
-    "scrapedAt": "2026-11-02T08:36:16.729Z"
+    "scrapedAt": "2026-11-02T13:12:44.787Z"
   },
   {
     "id": "hbh-w-vs-syt-w-29th-t20-womens-big-bash-league-2026-match-updates-12XW",
     "date": "Sat, 21 Nov 2026",
-    "matchTime": "1:00 AM",
+    "matchTime": "6:00 AM",
     "seriesInfo": "",
-    "matchStatus": "1:00 AM",
+    "matchStatus": "6:00 AM",
     "team1": {
       "name": "Hobart Hurricanes Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4T.png",
@@ -3504,14 +3462,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/hbh-w-vs-syt-w-29th-t20-womens-big-bash-league-2026-match-updates-12XW",
-    "scrapedAt": "2026-11-02T08:36:16.729Z"
+    "scrapedAt": "2026-11-02T13:12:48.838Z"
   },
   {
     "id": "prs-w-vs-sys-w-30th-t20-womens-big-bash-league-2026-match-updates-12XX",
     "date": "Sat, 21 Nov 2026",
-    "matchTime": "4:30 AM",
+    "matchTime": "9:30 AM",
     "seriesInfo": "",
-    "matchStatus": "4:30 AM",
+    "matchStatus": "9:30 AM",
     "team1": {
       "name": "Sydney Sixers Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/50.png",
@@ -3525,14 +3483,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/prs-w-vs-sys-w-30th-t20-womens-big-bash-league-2026-match-updates-12XX",
-    "scrapedAt": "2026-11-02T08:36:20.751Z"
+    "scrapedAt": "2026-11-02T13:12:48.838Z"
   },
   {
     "id": "hk-vs-sl-a-5th-one-day-mens-asia-cup-rising-stars-2026-match-updates-150W",
     "date": "Sat, 21 Nov 2026",
-    "matchTime": "6:00 AM",
+    "matchTime": "11:00 AM",
     "seriesInfo": "",
-    "matchStatus": "6:00 AM",
+    "matchStatus": "11:00 AM",
     "team1": {
       "name": "Sri Lanka A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/RK.png",
@@ -3546,14 +3504,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/hk-vs-sl-a-5th-one-day-mens-asia-cup-rising-stars-2026-match-updates-150W",
-    "scrapedAt": "2026-11-02T08:36:20.751Z"
+    "scrapedAt": "2026-11-02T13:12:48.838Z"
   },
   {
     "id": "ire-a-vs-zim-a-2nd-one-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TH",
     "date": "Sat, 21 Nov 2026",
-    "matchTime": "7:30 AM",
+    "matchTime": "12:30 PM",
     "seriesInfo": "",
-    "matchStatus": "7:30 AM",
+    "matchStatus": "12:30 PM",
     "team1": {
       "name": "Zimbabwe A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/ID.png",
@@ -3567,14 +3525,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ire-a-vs-zim-a-2nd-one-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TH",
-    "scrapedAt": "2026-11-02T08:36:20.751Z"
+    "scrapedAt": "2026-11-02T13:12:48.838Z"
   },
   {
     "id": "aus-vs-eng-1st-t20i-england-tour-of-australia-2026-match-updates-11BO",
     "date": "Sat, 21 Nov 2026",
-    "matchTime": "8:15 AM",
+    "matchTime": "1:15 PM",
     "seriesInfo": "",
-    "matchStatus": "8:15 AM",
+    "matchStatus": "1:15 PM",
     "team1": {
       "name": "Australia",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/Q.png",
@@ -3588,14 +3546,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/aus-vs-eng-1st-t20i-england-tour-of-australia-2026-match-updates-11BO",
-    "scrapedAt": "2026-11-02T08:36:20.751Z"
+    "scrapedAt": "2026-11-02T13:12:48.838Z"
   },
   {
     "id": "afg-a-vs-ban-a-6th-one-day-mens-asia-cup-rising-stars-2026-match-updates-150X",
     "date": "Sat, 21 Nov 2026",
-    "matchTime": "10:00 AM",
+    "matchTime": "3:00 PM",
     "seriesInfo": "",
-    "matchStatus": "10:00 AM",
+    "matchStatus": "3:00 PM",
     "team1": {
       "name": "Bangladesh A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/PX.png",
@@ -3609,14 +3567,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/afg-a-vs-ban-a-6th-one-day-mens-asia-cup-rising-stars-2026-match-updates-150X",
-    "scrapedAt": "2026-11-02T08:36:20.751Z"
+    "scrapedAt": "2026-11-02T13:12:48.839Z"
   },
   {
     "id": "nsw-vs-qld-13th-first-class-sheffield-shield-2026-27-match-updates-1346",
     "date": "Sun, 22 Nov 2026",
-    "matchTime": "11:30 PM",
+    "matchTime": "4:30 AM",
     "seriesInfo": "",
-    "matchStatus": "11:30 PM",
+    "matchStatus": "4:30 AM",
     "team1": {
       "name": "New South Wales",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/3L.png",
@@ -3630,14 +3588,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/nsw-vs-qld-13th-first-class-sheffield-shield-2026-27-match-updates-1346",
-    "scrapedAt": "2026-11-02T08:36:20.752Z"
+    "scrapedAt": "2026-11-02T13:12:48.839Z"
   },
   {
     "id": "miz-vs-raj-65th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZQ",
     "date": "Sun, 22 Nov 2026",
-    "matchTime": "3:30 AM",
+    "matchTime": "8:30 AM",
     "seriesInfo": "",
-    "matchStatus": "3:30 AM",
+    "matchStatus": "8:30 AM",
     "team1": {
       "name": "Rajasthan",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/GV.png",
@@ -3651,14 +3609,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/miz-vs-raj-65th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZQ",
-    "scrapedAt": "2026-11-02T08:36:20.752Z"
+    "scrapedAt": "2026-11-02T13:12:48.839Z"
   },
   {
     "id": "ads-w-vs-bh-w-31st-t20-womens-big-bash-league-2026-match-updates-12XY",
     "date": "Sun, 22 Nov 2026",
-    "matchTime": "4:40 AM",
+    "matchTime": "9:40 AM",
     "seriesInfo": "",
-    "matchStatus": "4:40 AM",
+    "matchStatus": "9:40 AM",
     "team1": {
       "name": "Brisbane Heat Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4S.png",
@@ -3672,14 +3630,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ads-w-vs-bh-w-31st-t20-womens-big-bash-league-2026-match-updates-12XY",
-    "scrapedAt": "2026-11-02T08:36:20.752Z"
+    "scrapedAt": "2026-11-02T13:12:48.839Z"
   },
   {
     "id": "a1-vs-b2-24th-t20i-womens-emerging-nations-trophy-2026-match-updates-151Y",
     "date": "Sun, 22 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "2nd in Group B",
       "flagUrl": "https://crex.com/assets/img/unknown_team.png",
@@ -3693,14 +3651,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/a1-vs-b2-24th-t20i-womens-emerging-nations-trophy-2026-match-updates-151Y",
-    "scrapedAt": "2026-11-02T08:36:20.752Z"
+    "scrapedAt": "2026-11-02T13:12:48.839Z"
   },
   {
     "id": "a2-vs-b1-25th-t20i-womens-emerging-nations-trophy-2026-match-updates-151Z",
     "date": "Sun, 22 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "1st in Group B",
       "flagUrl": "https://crex.com/assets/img/unknown_team.png",
@@ -3714,14 +3672,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/a2-vs-b1-25th-t20i-womens-emerging-nations-trophy-2026-match-updates-151Z",
-    "scrapedAt": "2026-11-02T08:36:20.752Z"
+    "scrapedAt": "2026-11-02T13:12:48.839Z"
   },
   {
     "id": "del-vs-har-71st-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZW",
     "date": "Sun, 22 Nov 2026",
-    "matchTime": "5:30 AM",
+    "matchTime": "10:30 AM",
     "seriesInfo": "",
-    "matchStatus": "5:30 AM",
+    "matchStatus": "10:30 AM",
     "team1": {
       "name": "Delhi",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/GO.png",
@@ -3735,14 +3693,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/del-vs-har-71st-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZW",
-    "scrapedAt": "2026-11-02T08:36:20.752Z"
+    "scrapedAt": "2026-11-02T13:12:52.899Z"
   },
   {
     "id": "mah-vs-mp-75th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1400",
     "date": "Sun, 22 Nov 2026",
-    "matchTime": "8:00 AM",
+    "matchTime": "1:00 PM",
     "seriesInfo": "",
-    "matchStatus": "8:00 AM",
+    "matchStatus": "1:00 PM",
     "team1": {
       "name": "Madhya Pradesh",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/GQ.png",
@@ -3756,14 +3714,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/mah-vs-mp-75th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1400",
-    "scrapedAt": "2026-11-02T08:36:24.775Z"
+    "scrapedAt": "2026-11-02T13:12:52.899Z"
   },
   {
     "id": "eci-vs-grb-7th-list-a-csa-provincial-one-day-challenge-division-two-2026-27-match-updates-14AG",
     "date": "Sun, 22 Nov 2026",
-    "matchTime": "8:00 AM",
+    "matchTime": "1:00 PM",
     "seriesInfo": "",
-    "matchStatus": "8:00 AM",
+    "matchStatus": "1:00 PM",
     "team1": {
       "name": "Garden Route Badgers",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/J9.png",
@@ -3777,14 +3735,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/eci-vs-grb-7th-list-a-csa-provincial-one-day-challenge-division-two-2026-27-match-updates-14AG",
-    "scrapedAt": "2026-11-02T08:36:24.775Z"
+    "scrapedAt": "2026-11-02T13:12:52.899Z"
   },
   {
     "id": "lmp-vs-tus-8th-list-a-csa-provincial-one-day-challenge-division-two-2026-27-match-updates-14AH",
     "date": "Sun, 22 Nov 2026",
-    "matchTime": "8:00 AM",
+    "matchTime": "1:00 PM",
     "seriesInfo": "",
-    "matchStatus": "8:00 AM",
+    "matchStatus": "1:00 PM",
     "team1": {
       "name": "Limpopo Impalas",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/JD.png",
@@ -3798,14 +3756,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/lmp-vs-tus-8th-list-a-csa-provincial-one-day-challenge-division-two-2026-27-match-updates-14AH",
-    "scrapedAt": "2026-11-02T08:36:24.775Z"
+    "scrapedAt": "2026-11-02T13:12:52.899Z"
   },
   {
     "id": "es-vs-nch-9th-list-a-csa-provincial-one-day-challenge-division-two-2026-27-match-updates-14AI",
     "date": "Sun, 22 Nov 2026",
-    "matchTime": "8:00 AM",
+    "matchTime": "1:00 PM",
     "seriesInfo": "",
-    "matchStatus": "8:00 AM",
+    "matchStatus": "1:00 PM",
     "team1": {
       "name": "Eastern Storm",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/JF.png",
@@ -3819,14 +3777,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/es-vs-nch-9th-list-a-csa-provincial-one-day-challenge-division-two-2026-27-match-updates-14AI",
-    "scrapedAt": "2026-11-02T08:36:24.775Z"
+    "scrapedAt": "2026-11-02T13:12:52.899Z"
   },
   {
     "id": "mlr-w-vs-mls-w-32nd-t20-womens-big-bash-league-2026-match-updates-12XZ",
     "date": "Sun, 22 Nov 2026",
-    "matchTime": "8:10 AM",
+    "matchTime": "1:10 PM",
     "seriesInfo": "",
-    "matchStatus": "8:10 AM",
+    "matchStatus": "1:10 PM",
     "team1": {
       "name": "Melbourne Stars Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4W.png",
@@ -3840,14 +3798,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/mlr-w-vs-mls-w-32nd-t20-womens-big-bash-league-2026-match-updates-12XZ",
-    "scrapedAt": "2026-11-02T08:36:24.775Z"
+    "scrapedAt": "2026-11-02T13:12:52.899Z"
   },
   {
     "id": "a3-vs-b3-26th-t20i-womens-emerging-nations-trophy-2026-match-updates-1520",
     "date": "Sun, 22 Nov 2026",
-    "matchTime": "9:15 AM",
+    "matchTime": "2:15 PM",
     "seriesInfo": "",
-    "matchStatus": "9:15 AM",
+    "matchStatus": "2:15 PM",
     "team1": {
       "name": "3rd in Group A",
       "flagUrl": "https://crex.com/assets/img/unknown_team.png",
@@ -3861,14 +3819,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/a3-vs-b3-26th-t20i-womens-emerging-nations-trophy-2026-match-updates-1520",
-    "scrapedAt": "2026-11-02T08:36:24.775Z"
+    "scrapedAt": "2026-11-02T13:12:52.899Z"
   },
   {
     "id": "gg-vs-sw-2nd-t20-international-league-t20-2026-match-updates-14RS",
     "date": "Sun, 22 Nov 2026",
-    "matchTime": "10:00 AM",
+    "matchTime": "3:00 PM",
     "seriesInfo": "",
-    "matchStatus": "10:00 AM",
+    "matchStatus": "3:00 PM",
     "team1": {
       "name": "Sharjah Warriorz",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/M7.png",
@@ -3882,14 +3840,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/gg-vs-sw-2nd-t20-international-league-t20-2026-match-updates-14RS",
-    "scrapedAt": "2026-11-02T08:36:24.775Z"
+    "scrapedAt": "2026-11-02T13:12:52.899Z"
   },
   {
     "id": "ind-a-vs-pak-a-8th-one-day-mens-asia-cup-rising-stars-2026-match-updates-150Z",
     "date": "Sun, 22 Nov 2026",
-    "matchTime": "10:00 AM",
+    "matchTime": "3:00 PM",
     "seriesInfo": "",
-    "matchStatus": "10:00 AM",
+    "matchStatus": "3:00 PM",
     "team1": {
       "name": "India A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/6S.png",
@@ -3903,14 +3861,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ind-a-vs-pak-a-8th-one-day-mens-asia-cup-rising-stars-2026-match-updates-150Z",
-    "scrapedAt": "2026-11-02T08:36:24.775Z"
+    "scrapedAt": "2026-11-02T13:12:52.899Z"
   },
   {
     "id": "adkr-vs-dc-3rd-t20-international-league-t20-2026-match-updates-14RT",
     "date": "Sun, 22 Nov 2026",
-    "matchTime": "2:30 PM",
+    "matchTime": "7:30 PM",
     "seriesInfo": "",
-    "matchStatus": "2:30 PM",
+    "matchStatus": "7:30 PM",
     "team1": {
       "name": "Dubai Capitals",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/M4.png",
@@ -3924,14 +3882,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/adkr-vs-dc-3rd-t20-international-league-t20-2026-match-updates-14RT",
-    "scrapedAt": "2026-11-02T08:36:24.775Z"
+    "scrapedAt": "2026-11-02T13:12:52.900Z"
   },
   {
     "id": "tas-vs-waca-14th-first-class-sheffield-shield-2026-27-match-updates-1347",
     "date": "Mon, 23 Nov 2026",
-    "matchTime": "2:30 AM",
+    "matchTime": "7:30 AM",
     "seriesInfo": "",
-    "matchStatus": "2:30 AM",
+    "matchStatus": "7:30 AM",
     "team1": {
       "name": "Western Australia",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/3K.png",
@@ -3945,14 +3903,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/tas-vs-waca-14th-first-class-sheffield-shield-2026-27-match-updates-1347",
-    "scrapedAt": "2026-11-02T08:36:24.775Z"
+    "scrapedAt": "2026-11-02T13:12:56.956Z"
   },
   {
     "id": "a1-vs-b1-27th-t20i-womens-emerging-nations-trophy-2026-match-updates-1521",
     "date": "Mon, 23 Nov 2026",
-    "matchTime": "5:00 AM",
+    "matchTime": "10:00 AM",
     "seriesInfo": "",
-    "matchStatus": "5:00 AM",
+    "matchStatus": "10:00 AM",
     "team1": {
       "name": "1st in Group A",
       "flagUrl": "https://crex.com/assets/img/unknown_team.png",
@@ -3966,14 +3924,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/a1-vs-b1-27th-t20i-womens-emerging-nations-trophy-2026-match-updates-1521",
-    "scrapedAt": "2026-11-02T08:36:28.798Z"
+    "scrapedAt": "2026-11-02T13:12:56.956Z"
   },
   {
     "id": "afg-a-vs-hk-9th-one-day-mens-asia-cup-rising-stars-2026-match-updates-1510",
     "date": "Mon, 23 Nov 2026",
-    "matchTime": "6:00 AM",
+    "matchTime": "11:00 AM",
     "seriesInfo": "",
-    "matchStatus": "6:00 AM",
+    "matchStatus": "11:00 AM",
     "team1": {
       "name": "Afghanistan A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/RL.png",
@@ -3987,14 +3945,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/afg-a-vs-hk-9th-one-day-mens-asia-cup-rising-stars-2026-match-updates-1510",
-    "scrapedAt": "2026-11-02T08:36:28.798Z"
+    "scrapedAt": "2026-11-02T13:12:56.956Z"
   },
   {
     "id": "ire-a-vs-zim-a-3rd-one-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TI",
     "date": "Mon, 23 Nov 2026",
-    "matchTime": "7:30 AM",
+    "matchTime": "12:30 PM",
     "seriesInfo": "",
-    "matchStatus": "7:30 AM",
+    "matchStatus": "12:30 PM",
     "team1": {
       "name": "Zimbabwe A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/ID.png",
@@ -4008,14 +3966,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ire-a-vs-zim-a-3rd-one-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TI",
-    "scrapedAt": "2026-11-02T08:36:28.798Z"
+    "scrapedAt": "2026-11-02T13:12:56.956Z"
   },
   {
     "id": "ban-vs-sa-2nd-test-bangladesh-tour-of-south-africa-2026-match-updates-10MA",
     "date": "Mon, 23 Nov 2026",
-    "matchTime": "8:00 AM",
+    "matchTime": "1:00 PM",
     "seriesInfo": "",
-    "matchStatus": "8:00 AM",
+    "matchStatus": "1:00 PM",
     "team1": {
       "name": "South Africa",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/P.png",
@@ -4029,14 +3987,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ban-vs-sa-2nd-test-bangladesh-tour-of-south-africa-2026-match-updates-10MA",
-    "scrapedAt": "2026-11-02T08:36:28.798Z"
+    "scrapedAt": "2026-11-02T13:12:56.956Z"
   },
   {
     "id": "a2-vs-b3-28th-t20i-womens-emerging-nations-trophy-2026-match-updates-1522",
     "date": "Mon, 23 Nov 2026",
-    "matchTime": "9:15 AM",
+    "matchTime": "2:15 PM",
     "seriesInfo": "",
-    "matchStatus": "9:15 AM",
+    "matchStatus": "2:15 PM",
     "team1": {
       "name": "3rd in Group B",
       "flagUrl": "https://crex.com/assets/img/unknown_team.png",
@@ -4050,14 +4008,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/a2-vs-b3-28th-t20i-womens-emerging-nations-trophy-2026-match-updates-1522",
-    "scrapedAt": "2026-11-02T08:36:28.798Z"
+    "scrapedAt": "2026-11-02T13:12:56.956Z"
   },
   {
     "id": "a3-vs-b2-29th-t20i-womens-emerging-nations-trophy-2026-match-updates-1523",
     "date": "Mon, 23 Nov 2026",
-    "matchTime": "9:15 AM",
+    "matchTime": "2:15 PM",
     "seriesInfo": "",
-    "matchStatus": "9:15 AM",
+    "matchStatus": "2:15 PM",
     "team1": {
       "name": "3rd in Group A",
       "flagUrl": "https://crex.com/assets/img/unknown_team.png",
@@ -4071,14 +4029,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/a3-vs-b2-29th-t20i-womens-emerging-nations-trophy-2026-match-updates-1523",
-    "scrapedAt": "2026-11-02T08:36:28.798Z"
+    "scrapedAt": "2026-11-02T13:12:56.956Z"
   },
   {
     "id": "ban-a-vs-sl-a-10th-one-day-mens-asia-cup-rising-stars-2026-match-updates-1511",
     "date": "Mon, 23 Nov 2026",
-    "matchTime": "10:00 AM",
+    "matchTime": "3:00 PM",
     "seriesInfo": "",
-    "matchStatus": "10:00 AM",
+    "matchStatus": "3:00 PM",
     "team1": {
       "name": "Sri Lanka A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/RK.png",
@@ -4092,14 +4050,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ban-a-vs-sl-a-10th-one-day-mens-asia-cup-rising-stars-2026-match-updates-1511",
-    "scrapedAt": "2026-11-02T08:36:28.799Z"
+    "scrapedAt": "2026-11-02T13:12:56.956Z"
   },
   {
     "id": "dv-vs-sw-4th-t20-international-league-t20-2026-match-updates-14RU",
     "date": "Mon, 23 Nov 2026",
-    "matchTime": "2:30 PM",
+    "matchTime": "7:30 PM",
     "seriesInfo": "",
-    "matchStatus": "2:30 PM",
+    "matchStatus": "7:30 PM",
     "team1": {
       "name": "Sharjah Warriorz",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/M7.png",
@@ -4113,14 +4071,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/dv-vs-sw-4th-t20-international-league-t20-2026-match-updates-14RU",
-    "scrapedAt": "2026-11-02T08:36:28.799Z"
+    "scrapedAt": "2026-11-02T13:12:56.956Z"
   },
   {
     "id": "saca-vs-vic-15th-first-class-sheffield-shield-2026-27-match-updates-1348",
     "date": "Tue, 24 Nov 2026",
-    "matchTime": "12:00 AM",
+    "matchTime": "5:00 AM",
     "seriesInfo": "",
-    "matchStatus": "12:00 AM",
+    "matchStatus": "5:00 AM",
     "team1": {
       "name": "South Australia",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/3M.png",
@@ -4134,14 +4092,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/saca-vs-vic-15th-first-class-sheffield-shield-2026-27-match-updates-1348",
-    "scrapedAt": "2026-11-02T08:36:28.799Z"
+    "scrapedAt": "2026-11-02T13:12:56.956Z"
   },
   {
     "id": "cg-vs-miz-88th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-140D",
     "date": "Tue, 24 Nov 2026",
-    "matchTime": "5:30 AM",
+    "matchTime": "10:30 AM",
     "seriesInfo": "",
-    "matchStatus": "5:30 AM",
+    "matchStatus": "10:30 AM",
     "team1": {
       "name": "Chandigarh",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/GF.png",
@@ -4155,14 +4113,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/cg-vs-miz-88th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-140D",
-    "scrapedAt": "2026-11-02T08:36:28.799Z"
+    "scrapedAt": "2026-11-02T13:12:56.956Z"
   },
   {
     "id": "aus-vs-eng-2nd-t20i-england-tour-of-australia-2026-match-updates-11BP",
     "date": "Tue, 24 Nov 2026",
-    "matchTime": "8:15 AM",
+    "matchTime": "1:15 PM",
     "seriesInfo": "",
-    "matchStatus": "8:15 AM",
+    "matchStatus": "1:15 PM",
     "team1": {
       "name": "Australia",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/Q.png",
@@ -4176,14 +4134,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/aus-vs-eng-2nd-t20i-england-tour-of-australia-2026-match-updates-11BP",
-    "scrapedAt": "2026-11-02T08:36:32.822Z"
+    "scrapedAt": "2026-11-02T13:13:01.151Z"
   },
   {
     "id": "bh-w-vs-mlr-w-33rd-t20-womens-big-bash-league-2026-match-updates-12Y0",
     "date": "Wed, 25 Nov 2026",
-    "matchTime": "4:40 AM",
+    "matchTime": "9:40 AM",
     "seriesInfo": "",
-    "matchStatus": "4:40 AM",
+    "matchStatus": "9:40 AM",
     "team1": {
       "name": "Melbourne Renegades Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4V.png",
@@ -4197,158 +4155,11 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/bh-w-vs-mlr-w-33rd-t20-womens-big-bash-league-2026-match-updates-12Y0",
-    "scrapedAt": "2026-11-02T08:36:32.822Z"
+    "scrapedAt": "2026-11-02T13:13:01.151Z"
   },
   {
     "id": "tbc-vs-tbc-final-womens-emerging-nations-trophy-2026-match-updates-1524",
     "date": "Wed, 25 Nov 2026",
-    "matchTime": "5:00 AM",
-    "seriesInfo": "",
-    "matchStatus": "5:00 AM",
-    "team1": {
-      "name": "Team 1 (TBC)",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
-      "score": "",
-      "overs": ""
-    },
-    "team2": {
-      "name": "Team 2 (TBC)",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/CA.png",
-      "score": "",
-      "overs": ""
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-final-womens-emerging-nations-trophy-2026-match-updates-1524",
-    "scrapedAt": "2026-11-02T08:36:32.822Z"
-  },
-  {
-    "id": "dc-vs-dv-6th-t20-international-league-t20-2026-match-updates-14RW",
-    "date": "Wed, 25 Nov 2026",
-    "matchTime": "2:30 PM",
-    "seriesInfo": "",
-    "matchStatus": "2:30 PM",
-    "team1": {
-      "name": "Dubai Capitals",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/M4.png",
-      "score": "",
-      "overs": ""
-    },
-    "team2": {
-      "name": "Desert Vipers",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/M2.png",
-      "score": "",
-      "overs": ""
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/dc-vs-dv-6th-t20-international-league-t20-2026-match-updates-14RW",
-    "scrapedAt": "2026-11-02T08:36:32.823Z"
-  },
-  {
-    "id": "mp-vs-pdc-99th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-140O",
-    "date": "Thu, 26 Nov 2026",
-    "matchTime": "3:30 AM",
-    "seriesInfo": "",
-    "matchStatus": "3:30 AM",
-    "team1": {
-      "name": "Madhya Pradesh",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/GQ.png",
-      "score": "",
-      "overs": ""
-    },
-    "team2": {
-      "name": "Puducherry",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/GM.png",
-      "score": "",
-      "overs": ""
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/mp-vs-pdc-99th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-140O",
-    "scrapedAt": "2026-11-02T08:36:32.823Z"
-  },
-  {
-    "id": "ads-w-vs-syt-w-34th-t20-womens-big-bash-league-2026-match-updates-12Y1",
-    "date": "Thu, 26 Nov 2026",
-    "matchTime": "4:40 AM",
-    "seriesInfo": "",
-    "matchStatus": "4:40 AM",
-    "team1": {
-      "name": "Sydney Thunder Women",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/8W.png",
-      "score": "",
-      "overs": ""
-    },
-    "team2": {
-      "name": "Adelaide Strikers Women",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/4R.png",
-      "score": "",
-      "overs": ""
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/ads-w-vs-syt-w-34th-t20-womens-big-bash-league-2026-match-updates-12Y1",
-    "scrapedAt": "2026-11-02T08:36:32.823Z"
-  },
-  {
-    "id": "ire-a-vs-zim-a-4th-one-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TJ",
-    "date": "Thu, 26 Nov 2026",
-    "matchTime": "7:30 AM",
-    "seriesInfo": "",
-    "matchStatus": "7:30 AM",
-    "team1": {
-      "name": "Zimbabwe A",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/ID.png",
-      "score": "",
-      "overs": ""
-    },
-    "team2": {
-      "name": "Ireland A",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/14J.png",
-      "score": "",
-      "overs": ""
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/ire-a-vs-zim-a-4th-one-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TJ",
-    "scrapedAt": "2026-11-02T08:36:36.846Z"
-  },
-  {
-    "id": "cg-vs-jhkd-105th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-140U",
-    "date": "Thu, 26 Nov 2026",
-    "matchTime": "8:00 AM",
-    "seriesInfo": "",
-    "matchStatus": "8:00 AM",
-    "team1": {
-      "name": "Chandigarh",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/GF.png",
-      "score": "",
-      "overs": ""
-    },
-    "team2": {
-      "name": "Jharkhand",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/H6.png",
-      "score": "",
-      "overs": ""
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/cg-vs-jhkd-105th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-140U",
-    "scrapedAt": "2026-11-02T08:36:36.846Z"
-  },
-  {
-    "id": "mls-w-vs-sys-w-35th-t20-womens-big-bash-league-2026-match-updates-12Y2",
-    "date": "Thu, 26 Nov 2026",
-    "matchTime": "8:10 AM",
-    "seriesInfo": "",
-    "matchStatus": "8:10 AM",
-    "team1": {
-      "name": "Sydney Sixers Women",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/50.png",
-      "score": "",
-      "overs": ""
-    },
-    "team2": {
-      "name": "Melbourne Stars Women",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/4W.png",
-      "score": "",
-      "overs": ""
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/mls-w-vs-sys-w-35th-t20-womens-big-bash-league-2026-match-updates-12Y2",
-    "scrapedAt": "2026-11-02T08:36:36.846Z"
-  },
-  {
-    "id": "tbc-vs-tbc-1st-semi-final-mens-asia-cup-rising-stars-2026-match-updates-1514",
-    "date": "Thu, 26 Nov 2026",
     "matchTime": "10:00 AM",
     "seriesInfo": "",
     "matchStatus": "10:00 AM",
@@ -4364,12 +4175,348 @@
       "score": "",
       "overs": ""
     },
+    "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-final-womens-emerging-nations-trophy-2026-match-updates-1524",
+    "scrapedAt": "2026-11-02T13:13:01.151Z"
+  },
+  {
+    "id": "dc-vs-dv-6th-t20-international-league-t20-2026-match-updates-14RW",
+    "date": "Wed, 25 Nov 2026",
+    "matchTime": "7:30 PM",
+    "seriesInfo": "",
+    "matchStatus": "7:30 PM",
+    "team1": {
+      "name": "Dubai Capitals",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/M4.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Desert Vipers",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/M2.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/dc-vs-dv-6th-t20-international-league-t20-2026-match-updates-14RW",
+    "scrapedAt": "2026-11-02T13:13:01.151Z"
+  },
+  {
+    "id": "mp-vs-pdc-99th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-140O",
+    "date": "Thu, 26 Nov 2026",
+    "matchTime": "8:30 AM",
+    "seriesInfo": "",
+    "matchStatus": "8:30 AM",
+    "team1": {
+      "name": "Madhya Pradesh",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/GQ.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Puducherry",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/GM.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/mp-vs-pdc-99th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-140O",
+    "scrapedAt": "2026-11-02T13:13:01.152Z"
+  },
+  {
+    "id": "ads-w-vs-syt-w-34th-t20-womens-big-bash-league-2026-match-updates-12Y1",
+    "date": "Thu, 26 Nov 2026",
+    "matchTime": "9:40 AM",
+    "seriesInfo": "",
+    "matchStatus": "9:40 AM",
+    "team1": {
+      "name": "Sydney Thunder Women",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/8W.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Adelaide Strikers Women",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/4R.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/ads-w-vs-syt-w-34th-t20-womens-big-bash-league-2026-match-updates-12Y1",
+    "scrapedAt": "2026-11-02T13:13:01.152Z"
+  },
+  {
+    "id": "ire-a-vs-zim-a-4th-one-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TJ",
+    "date": "Thu, 26 Nov 2026",
+    "matchTime": "12:30 PM",
+    "seriesInfo": "",
+    "matchStatus": "12:30 PM",
+    "team1": {
+      "name": "Zimbabwe A",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/ID.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Ireland A",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/14J.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/ire-a-vs-zim-a-4th-one-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TJ",
+    "scrapedAt": "2026-11-02T13:13:05.212Z"
+  },
+  {
+    "id": "cg-vs-jhkd-105th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-140U",
+    "date": "Thu, 26 Nov 2026",
+    "matchTime": "1:00 PM",
+    "seriesInfo": "",
+    "matchStatus": "1:00 PM",
+    "team1": {
+      "name": "Chandigarh",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/GF.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Jharkhand",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/H6.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/cg-vs-jhkd-105th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-140U",
+    "scrapedAt": "2026-11-02T13:13:05.212Z"
+  },
+  {
+    "id": "mls-w-vs-sys-w-35th-t20-womens-big-bash-league-2026-match-updates-12Y2",
+    "date": "Thu, 26 Nov 2026",
+    "matchTime": "1:10 PM",
+    "seriesInfo": "",
+    "matchStatus": "1:10 PM",
+    "team1": {
+      "name": "Sydney Sixers Women",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/50.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Melbourne Stars Women",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/4W.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/mls-w-vs-sys-w-35th-t20-womens-big-bash-league-2026-match-updates-12Y2",
+    "scrapedAt": "2026-11-02T13:13:05.212Z"
+  },
+  {
+    "id": "tbc-vs-tbc-1st-semi-final-mens-asia-cup-rising-stars-2026-match-updates-1514",
+    "date": "Thu, 26 Nov 2026",
+    "matchTime": "3:00 PM",
+    "seriesInfo": "",
+    "matchStatus": "3:00 PM",
+    "team1": {
+      "name": "Team 1 (TBC)",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Team 2 (TBC)",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/CA.png",
+      "score": "",
+      "overs": ""
+    },
     "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-1st-semi-final-mens-asia-cup-rising-stars-2026-match-updates-1514",
-    "scrapedAt": "2026-11-02T08:36:36.846Z"
+    "scrapedAt": "2026-11-02T13:13:05.212Z"
   },
   {
     "id": "enwu19-vs-indwu19-1st-youth-t20-england-women-u19-tour-of-india-2026-match-updates-122Q",
     "date": "Thu, 26 Nov 2026",
+    "matchTime": "5:30 PM",
+    "seriesInfo": "",
+    "matchStatus": "5:30 PM",
+    "team1": {
+      "name": "India U19-Women",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/NC.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "England U19-Women",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/NB.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/enwu19-vs-indwu19-1st-youth-t20-england-women-u19-tour-of-india-2026-match-updates-122Q",
+    "scrapedAt": "2026-11-02T13:13:05.212Z"
+  },
+  {
+    "id": "cs-vs-nb-4th-first-class-plunket-shield-2026-27-match-updates-13RW",
+    "date": "Fri, 27 Nov 2026",
+    "matchTime": "2:30 AM",
+    "seriesInfo": "",
+    "matchStatus": "2:30 AM",
+    "team1": {
+      "name": "Northern Brave",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/54.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Central Stags",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/56.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/cs-vs-nb-4th-first-class-plunket-shield-2026-27-match-updates-13RW",
+    "scrapedAt": "2026-11-02T13:13:05.212Z"
+  },
+  {
+    "id": "otg-vs-wel-5th-first-class-plunket-shield-2026-27-match-updates-13RX",
+    "date": "Fri, 27 Nov 2026",
+    "matchTime": "2:30 AM",
+    "seriesInfo": "",
+    "matchStatus": "2:30 AM",
+    "team1": {
+      "name": "Otago",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/52.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Wellington",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/57.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/otg-vs-wel-5th-first-class-plunket-shield-2026-27-match-updates-13RX",
+    "scrapedAt": "2026-11-02T13:13:05.212Z"
+  },
+  {
+    "id": "auck-vs-cant-6th-first-class-plunket-shield-2026-27-match-updates-13RY",
+    "date": "Fri, 27 Nov 2026",
+    "matchTime": "2:30 AM",
+    "seriesInfo": "",
+    "matchStatus": "2:30 AM",
+    "team1": {
+      "name": "Auckland",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/53.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Canterbury",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/55.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/auck-vs-cant-6th-first-class-plunket-shield-2026-27-match-updates-13RY",
+    "scrapedAt": "2026-11-02T13:13:05.213Z"
+  },
+  {
+    "id": "ind-vs-nz-2nd-test-india-tour-of-new-zealand-2026-match-updates-12JN",
+    "date": "Fri, 27 Nov 2026",
+    "matchTime": "3:00 AM",
+    "seriesInfo": "",
+    "matchStatus": "3:00 AM",
+    "team1": {
+      "name": "New Zealand",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/R.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "India",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/O.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/ind-vs-nz-2nd-test-india-tour-of-new-zealand-2026-match-updates-12JN",
+    "scrapedAt": "2026-11-02T13:13:05.213Z"
+  },
+  {
+    "id": "aus-vs-eng-3rd-t20i-england-tour-of-australia-2026-match-updates-11BQ",
+    "date": "Fri, 27 Nov 2026",
+    "matchTime": "1:15 PM",
+    "seriesInfo": "",
+    "matchStatus": "1:15 PM",
+    "team1": {
+      "name": "Australia",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/Q.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "England",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/S.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/aus-vs-eng-3rd-t20i-england-tour-of-australia-2026-match-updates-11BQ",
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
+  },
+  {
+    "id": "tbc-vs-tbc-2nd-semi-final-mens-asia-cup-rising-stars-2026-match-updates-1515",
+    "date": "Fri, 27 Nov 2026",
+    "matchTime": "3:00 PM",
+    "seriesInfo": "",
+    "matchStatus": "3:00 PM",
+    "team1": {
+      "name": "Team 1 (TBC)",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Team 2 (TBC)",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/CA.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-2nd-semi-final-mens-asia-cup-rising-stars-2026-match-updates-1515",
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
+  },
+  {
+    "id": "hbh-w-vs-prs-w-36th-t20-womens-big-bash-league-2026-match-updates-12Y3",
+    "date": "Fri, 27 Nov 2026",
+    "matchTime": "3:10 PM",
+    "seriesInfo": "",
+    "matchStatus": "3:10 PM",
+    "team1": {
+      "name": "Perth Scorchers Women",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/4X.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Hobart Hurricanes Women",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/4T.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/hbh-w-vs-prs-w-36th-t20-womens-big-bash-league-2026-match-updates-12Y3",
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
+  },
+  {
+    "id": "dc-vs-sw-8th-t20-international-league-t20-2026-match-updates-14RY",
+    "date": "Fri, 27 Nov 2026",
+    "matchTime": "7:30 PM",
+    "seriesInfo": "",
+    "matchStatus": "7:30 PM",
+    "team1": {
+      "name": "Sharjah Warriorz",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/M7.png",
+      "score": "",
+      "overs": ""
+    },
+    "team2": {
+      "name": "Dubai Capitals",
+      "flagUrl": "https://cricketvectors.akamaized.net/Teams/M4.png",
+      "score": "",
+      "overs": ""
+    },
+    "detailUrl": "https://crex.com/cricket-live-score/dc-vs-sw-8th-t20-international-league-t20-2026-match-updates-14RY",
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
+  },
+  {
+    "id": "enwu19-vs-indwu19-2nd-youth-t20-england-women-u19-tour-of-india-2026-match-updates-122R",
+    "date": "Sat, 28 Nov 2026",
     "matchTime": "12:30 PM",
     "seriesInfo": "",
     "matchStatus": "12:30 PM",
@@ -4385,204 +4532,15 @@
       "score": "",
       "overs": ""
     },
-    "detailUrl": "https://crex.com/cricket-live-score/enwu19-vs-indwu19-1st-youth-t20-england-women-u19-tour-of-india-2026-match-updates-122Q",
-    "scrapedAt": "2026-11-02T08:36:36.846Z"
-  },
-  {
-    "id": "cs-vs-nb-4th-first-class-plunket-shield-2026-27-match-updates-13RW",
-    "date": "Fri, 27 Nov 2026",
-    "matchTime": "9:30 PM",
-    "seriesInfo": "",
-    "matchStatus": "9:30 PM",
-    "team1": {
-      "name": "Northern Brave",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/54.png",
-      "score": "",
-      "overs": ""
-    },
-    "team2": {
-      "name": "Central Stags",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/56.png",
-      "score": "",
-      "overs": ""
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/cs-vs-nb-4th-first-class-plunket-shield-2026-27-match-updates-13RW",
-    "scrapedAt": "2026-11-02T08:36:36.846Z"
-  },
-  {
-    "id": "otg-vs-wel-5th-first-class-plunket-shield-2026-27-match-updates-13RX",
-    "date": "Fri, 27 Nov 2026",
-    "matchTime": "9:30 PM",
-    "seriesInfo": "",
-    "matchStatus": "9:30 PM",
-    "team1": {
-      "name": "Otago",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/52.png",
-      "score": "",
-      "overs": ""
-    },
-    "team2": {
-      "name": "Wellington",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/57.png",
-      "score": "",
-      "overs": ""
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/otg-vs-wel-5th-first-class-plunket-shield-2026-27-match-updates-13RX",
-    "scrapedAt": "2026-11-02T08:36:36.846Z"
-  },
-  {
-    "id": "auck-vs-cant-6th-first-class-plunket-shield-2026-27-match-updates-13RY",
-    "date": "Fri, 27 Nov 2026",
-    "matchTime": "9:30 PM",
-    "seriesInfo": "",
-    "matchStatus": "9:30 PM",
-    "team1": {
-      "name": "Auckland",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/53.png",
-      "score": "",
-      "overs": ""
-    },
-    "team2": {
-      "name": "Canterbury",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/55.png",
-      "score": "",
-      "overs": ""
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/auck-vs-cant-6th-first-class-plunket-shield-2026-27-match-updates-13RY",
-    "scrapedAt": "2026-11-02T08:36:36.846Z"
-  },
-  {
-    "id": "ind-vs-nz-2nd-test-india-tour-of-new-zealand-2026-match-updates-12JN",
-    "date": "Fri, 27 Nov 2026",
-    "matchTime": "10:00 PM",
-    "seriesInfo": "",
-    "matchStatus": "10:00 PM",
-    "team1": {
-      "name": "New Zealand",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/R.png",
-      "score": "",
-      "overs": ""
-    },
-    "team2": {
-      "name": "India",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/O.png",
-      "score": "",
-      "overs": ""
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/ind-vs-nz-2nd-test-india-tour-of-new-zealand-2026-match-updates-12JN",
-    "scrapedAt": "2026-11-02T08:36:36.846Z"
-  },
-  {
-    "id": "aus-vs-eng-3rd-t20i-england-tour-of-australia-2026-match-updates-11BQ",
-    "date": "Fri, 27 Nov 2026",
-    "matchTime": "8:15 AM",
-    "seriesInfo": "",
-    "matchStatus": "8:15 AM",
-    "team1": {
-      "name": "Australia",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/Q.png",
-      "score": "",
-      "overs": ""
-    },
-    "team2": {
-      "name": "England",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/S.png",
-      "score": "",
-      "overs": ""
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/aus-vs-eng-3rd-t20i-england-tour-of-australia-2026-match-updates-11BQ",
-    "scrapedAt": "2026-11-02T08:36:36.846Z"
-  },
-  {
-    "id": "tbc-vs-tbc-2nd-semi-final-mens-asia-cup-rising-stars-2026-match-updates-1515",
-    "date": "Fri, 27 Nov 2026",
-    "matchTime": "10:00 AM",
-    "seriesInfo": "",
-    "matchStatus": "10:00 AM",
-    "team1": {
-      "name": "Team 1 (TBC)",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
-      "score": "",
-      "overs": ""
-    },
-    "team2": {
-      "name": "Team 2 (TBC)",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/CA.png",
-      "score": "",
-      "overs": ""
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-2nd-semi-final-mens-asia-cup-rising-stars-2026-match-updates-1515",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
-  },
-  {
-    "id": "hbh-w-vs-prs-w-36th-t20-womens-big-bash-league-2026-match-updates-12Y3",
-    "date": "Fri, 27 Nov 2026",
-    "matchTime": "10:10 AM",
-    "seriesInfo": "",
-    "matchStatus": "10:10 AM",
-    "team1": {
-      "name": "Perth Scorchers Women",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/4X.png",
-      "score": "",
-      "overs": ""
-    },
-    "team2": {
-      "name": "Hobart Hurricanes Women",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/4T.png",
-      "score": "",
-      "overs": ""
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/hbh-w-vs-prs-w-36th-t20-womens-big-bash-league-2026-match-updates-12Y3",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
-  },
-  {
-    "id": "dc-vs-sw-8th-t20-international-league-t20-2026-match-updates-14RY",
-    "date": "Fri, 27 Nov 2026",
-    "matchTime": "2:30 PM",
-    "seriesInfo": "",
-    "matchStatus": "2:30 PM",
-    "team1": {
-      "name": "Sharjah Warriorz",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/M7.png",
-      "score": "",
-      "overs": ""
-    },
-    "team2": {
-      "name": "Dubai Capitals",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/M4.png",
-      "score": "",
-      "overs": ""
-    },
-    "detailUrl": "https://crex.com/cricket-live-score/dc-vs-sw-8th-t20-international-league-t20-2026-match-updates-14RY",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
-  },
-  {
-    "id": "enwu19-vs-indwu19-2nd-youth-t20-england-women-u19-tour-of-india-2026-match-updates-122R",
-    "date": "Sat, 28 Nov 2026",
-    "matchTime": "7:30 AM",
-    "seriesInfo": "",
-    "matchStatus": "7:30 AM",
-    "team1": {
-      "name": "India U19-Women",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/NC.png",
-      "score": "",
-      "overs": ""
-    },
-    "team2": {
-      "name": "England U19-Women",
-      "flagUrl": "https://cricketvectors.akamaized.net/Teams/NB.png",
-      "score": "",
-      "overs": ""
-    },
     "detailUrl": "https://crex.com/cricket-live-score/enwu19-vs-indwu19-2nd-youth-t20-england-women-u19-tour-of-india-2026-match-updates-122R",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
   },
   {
     "id": "ire-a-vs-zim-a-5th-one-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TK",
     "date": "Sat, 28 Nov 2026",
-    "matchTime": "7:30 AM",
+    "matchTime": "12:30 PM",
     "seriesInfo": "",
-    "matchStatus": "7:30 AM",
+    "matchStatus": "12:30 PM",
     "team1": {
       "name": "Zimbabwe A",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/ID.png",
@@ -4596,14 +4554,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ire-a-vs-zim-a-5th-one-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TK",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
   },
   {
     "id": "mlr-w-vs-mls-w-37th-t20-womens-big-bash-league-2026-match-updates-12Y4",
     "date": "Sat, 28 Nov 2026",
-    "matchTime": "8:10 AM",
+    "matchTime": "1:10 PM",
     "seriesInfo": "",
-    "matchStatus": "8:10 AM",
+    "matchStatus": "1:10 PM",
     "team1": {
       "name": "Melbourne Renegades Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4V.png",
@@ -4617,14 +4575,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/mlr-w-vs-mls-w-37th-t20-womens-big-bash-league-2026-match-updates-12Y4",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
   },
   {
     "id": "sys-w-vs-syt-w-38th-t20-womens-big-bash-league-2026-match-updates-12Y5",
     "date": "Sat, 28 Nov 2026",
-    "matchTime": "8:10 AM",
+    "matchTime": "1:10 PM",
     "seriesInfo": "",
-    "matchStatus": "8:10 AM",
+    "matchStatus": "1:10 PM",
     "team1": {
       "name": "Sydney Thunder Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/8W.png",
@@ -4638,14 +4596,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/sys-w-vs-syt-w-38th-t20-womens-big-bash-league-2026-match-updates-12Y5",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
   },
   {
     "id": "dc-vs-gg-10th-t20-international-league-t20-2026-match-updates-14S0",
     "date": "Sat, 28 Nov 2026",
-    "matchTime": "2:30 PM",
+    "matchTime": "7:30 PM",
     "seriesInfo": "",
-    "matchStatus": "2:30 PM",
+    "matchStatus": "7:30 PM",
     "team1": {
       "name": "Dubai Capitals",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/M4.png",
@@ -4659,14 +4617,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/dc-vs-gg-10th-t20-international-league-t20-2026-match-updates-14S0",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
   },
   {
     "id": "bh-w-vs-prs-w-39th-t20-womens-big-bash-league-2026-match-updates-12Y6",
     "date": "Sun, 29 Nov 2026",
-    "matchTime": "1:00 AM",
+    "matchTime": "6:00 AM",
     "seriesInfo": "",
-    "matchStatus": "1:00 AM",
+    "matchStatus": "6:00 AM",
     "team1": {
       "name": "Brisbane Heat Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4S.png",
@@ -4680,14 +4638,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/bh-w-vs-prs-w-39th-t20-womens-big-bash-league-2026-match-updates-12Y6",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
   },
   {
     "id": "ads-w-vs-hbh-w-40th-t20-womens-big-bash-league-2026-match-updates-12Y7",
     "date": "Sun, 29 Nov 2026",
-    "matchTime": "4:30 AM",
+    "matchTime": "9:30 AM",
     "seriesInfo": "",
-    "matchStatus": "4:30 AM",
+    "matchStatus": "9:30 AM",
     "team1": {
       "name": "Adelaide Strikers Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/4R.png",
@@ -4701,14 +4659,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ads-w-vs-hbh-w-40th-t20-womens-big-bash-league-2026-match-updates-12Y7",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
   },
   {
     "id": "aus-vs-eng-4th-t20i-england-tour-of-australia-2026-match-updates-11BR",
     "date": "Sun, 29 Nov 2026",
-    "matchTime": "8:15 AM",
+    "matchTime": "1:15 PM",
     "seriesInfo": "",
-    "matchStatus": "8:15 AM",
+    "matchStatus": "1:15 PM",
     "team1": {
       "name": "Australia",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/Q.png",
@@ -4722,14 +4680,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/aus-vs-eng-4th-t20i-england-tour-of-australia-2026-match-updates-11BR",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
   },
   {
     "id": "adkr-vs-sw-11th-t20-international-league-t20-2026-match-updates-14S1",
     "date": "Sun, 29 Nov 2026",
-    "matchTime": "10:00 AM",
+    "matchTime": "3:00 PM",
     "seriesInfo": "",
-    "matchStatus": "10:00 AM",
+    "matchStatus": "3:00 PM",
     "team1": {
       "name": "Abu Dhabi Knight Riders",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/M3.png",
@@ -4743,14 +4701,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/adkr-vs-sw-11th-t20-international-league-t20-2026-match-updates-14S1",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
   },
   {
     "id": "tbc-vs-tbc-final-mens-asia-cup-rising-stars-2026-match-updates-1516",
     "date": "Sun, 29 Nov 2026",
-    "matchTime": "10:00 AM",
+    "matchTime": "3:00 PM",
     "seriesInfo": "",
-    "matchStatus": "10:00 AM",
+    "matchStatus": "3:00 PM",
     "team1": {
       "name": "Team 1 (TBC)",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
@@ -4764,14 +4722,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-final-mens-asia-cup-rising-stars-2026-match-updates-1516",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
   },
   {
     "id": "dv-vs-gg-12th-t20-international-league-t20-2026-match-updates-14S2",
     "date": "Sun, 29 Nov 2026",
-    "matchTime": "2:30 PM",
+    "matchTime": "7:30 PM",
     "seriesInfo": "",
-    "matchStatus": "2:30 PM",
+    "matchStatus": "7:30 PM",
     "team1": {
       "name": "Desert Vipers",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/M2.png",
@@ -4785,14 +4743,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/dv-vs-gg-12th-t20-international-league-t20-2026-match-updates-14S2",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
   },
   {
     "id": "tbc-vs-tbc-113th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1412",
     "date": "Mon, 30 Nov 2026",
-    "matchTime": "3:30 AM",
+    "matchTime": "8:30 AM",
     "seriesInfo": "",
-    "matchStatus": "3:30 AM",
+    "matchStatus": "8:30 AM",
     "team1": {
       "name": "Team 1 (TBC)",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
@@ -4806,14 +4764,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-113th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1412",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
   },
   {
     "id": "tbc-vs-tbc-114th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1413",
     "date": "Mon, 30 Nov 2026",
-    "matchTime": "5:30 AM",
+    "matchTime": "10:30 AM",
     "seriesInfo": "",
-    "matchStatus": "5:30 AM",
+    "matchStatus": "10:30 AM",
     "team1": {
       "name": "Team 1 (TBC)",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
@@ -4827,14 +4785,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-114th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1413",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
   },
   {
     "id": "engw-a-vs-indw-a-1st-t20-england-a-women-tour-of-india-2026-match-updates-1224",
     "date": "Mon, 30 Nov 2026",
-    "matchTime": "7:30 AM",
+    "matchTime": "12:30 PM",
     "seriesInfo": "",
-    "matchStatus": "7:30 AM",
+    "matchStatus": "12:30 PM",
     "team1": {
       "name": "India A Women",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/PF.png",
@@ -4848,14 +4806,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/engw-a-vs-indw-a-1st-t20-england-a-women-tour-of-india-2026-match-updates-1224",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
   },
   {
     "id": "tbc-vs-tbc-115th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1414",
     "date": "Mon, 30 Nov 2026",
-    "matchTime": "8:00 AM",
+    "matchTime": "1:00 PM",
     "seriesInfo": "",
-    "matchStatus": "8:00 AM",
+    "matchStatus": "1:00 PM",
     "team1": {
       "name": "Team 1 (TBC)",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
@@ -4869,14 +4827,14 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-115th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1414",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
+    "scrapedAt": "2026-11-02T13:13:09.268Z"
   },
   {
     "id": "tbc-vs-tbc-116th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1415",
     "date": "Mon, 30 Nov 2026",
-    "matchTime": "11:00 AM",
+    "matchTime": "4:00 PM",
     "seriesInfo": "",
-    "matchStatus": "11:00 AM",
+    "matchStatus": "4:00 PM",
     "team1": {
       "name": "Team 1 (TBC)",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/N.png",
@@ -4890,6 +4848,6 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-116th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1415",
-    "scrapedAt": "2026-11-02T08:36:40.869Z"
+    "scrapedAt": "2026-11-02T13:13:13.319Z"
   }
 ]

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>iOS Broadcast Scoreboard - With Video Slot</title>
+<link href="https://fonts.googleapis.com/css2?family=Teko:wght@600;700&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+body { background: #0a0f1c; height: 100vh; overflow: hidden; position: relative; }
+/* === STADIUM BACKGROUND FOR WHITE SPACE === */
+.middle-area {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 120px - 145px);
+    background: linear-gradient(180deg, #0a1628 0%, #0f172a 50%, #1e293b 100%);
+    /* OPTIONAL: Stadium image - uncomment if you have image */
+    /* background-image: url('./stadium.jpg'); */
+    /* background-size: cover; background-position: center; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1;
+}
+.middle-area::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(ellipse at center, rgba(56,189,248,0.08) 0%, transparent 70%);
+    z-index: 2;
+}
+/* === CENTER COMMENTARY === */
+.center-mid-ios-card {
+    position: relative;
+    width: 85vw;
+    max-width: 1000px;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1.5px solid rgba(255,204,0,0.4);
+    border-radius: 16px;
+    padding: 18px 28px;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.8), 0 0 30px rgba(255,204,0,0.15);
+}
+.center-mid-ios-text { font-size: 42px; font-weight: 900; color: #ffcc00; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 4px 20px rgba(0,0,0,0.95), 0 0 30px rgba(255,204,0,0.3); line-height: 1.15; }
+/* === VIDEO SLOT - TUMHARI VIDEO YAHAN AAYEGI === */
+.video-slot-container {
+    position: relative;
+    width: 640px;
+    max-width: 85vw;
+    height: 360px;
+    max-height: 38vh;
+    background: #000;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 2.5px solid rgba(255,204,0,0.5);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.9), 0 0 40px rgba(255,204,0,0.2);
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-slot-container video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-slot-placeholder {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+}
+.video-slot-placeholder.hidden { display: none; }
+.video-label {
+    position: absolute;
+    top: 10px;
+    left: 12px;
+    background: rgba(255,204,0,0.95);
+    color: #000;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    z-index: 15;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+.traffic-watermark {
+    position: absolute;
+    bottom: 10px;
+    right: 12px;
+    background: rgba(0,0,0,0.7);
+    backdrop-filter: blur(8px);
+    color: #ffcc00;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 800;
+    z-index: 15;
+    border: 1px solid rgba(255,204,0,0.3);
+}
+/* === TOP BAR === */
+.broadcast-bar { width: 100vw; height: 120px; position: absolute; top: 0; left: 0; background: linear-gradient(90deg, rgba(10,25,47,0.92) 0%, rgba(15,23,42,0.96) 50%, rgba(88,28,28,0.92) 100%); backdrop-filter: blur(25px); border-bottom: 1.5px solid rgba(255,255,255,0.15); display: grid; grid-template-columns: 28% 44% 28%; align-items: center; box-shadow: 0 15px 35px rgba(0,0,0,0.8); z-index: 100; padding: 0 25px; }
+.team-side { display: flex; align-items: center; gap: 15px; } .team-side.right { justify-content: flex-end; }
+.flag-name-wrapper { display: flex; flex-direction: column; align-items: center; }
+.team-code { font-size: 14px; font-weight: 800; text-transform: uppercase; color: #38bdf8; letter-spacing: 1px; margin-bottom: 4px; text-align: center; text-shadow: 0 2px 6px rgba(0,0,0,0.9); }
+.flag-img { width: 62px; height: 62px; border-radius: 50%; object-fit: cover; border: 2.5px solid #fff; box-shadow: 0 6px 18px rgba(0,0,0,0.7); background: #111; }
+.team-info { display: flex; flex-direction: column; justify-content: center; }
+.team-side.right .team-info { align-items: flex-end; text-align: right; }
+.team-role { font-size: 11px; font-weight: 900; color: #ffcc00; text-transform: uppercase; letter-spacing: 1.5px; margin-bottom: 2px; text-shadow: 0 2px 6px rgba(0,0,0,0.9); }
+.score-row { display: flex; align-items: baseline; gap: 8px; }
+.team-side.right .score-row { justify-content: flex-end; gap: 16px; }
+.score-val { font-family: 'Teko', sans-serif; font-size: 46px; line-height: 0.9; font-weight: 700; color: #fff; text-shadow: 0 3px 10px rgba(0,0,0,0.8); }
+.stat-group { display: flex; flex-direction: column; align-items: flex-end; }
+.stat-label { font-size: 11px; font-weight: 800; color: #ffcc00; letter-spacing: 1.2px; text-transform: uppercase; }
+.stat-value { font-family: 'Teko', sans-serif; font-size: 42px; line-height: 0.9; font-weight: 700; color: #fff; }
+.center-box { text-align: center; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 10px; }
+.matchup-tag { font-size: 22px; font-weight: 800; color: #fff; text-transform: uppercase; letter-spacing: 2px; text-shadow: 0 2px 10px rgba(0,0,0,0.9); max-width: 520px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.series-tag { font-size: 15px; font-weight: 800; color: #ffcc00; text-transform: uppercase; margin-top: 3px; text-shadow: 0 2px 8px rgba(0,0,0,0.9); max-width: 550px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* === BOTTOM PLAYERS === */
+.bottom-players-strip { width: 100vw; position: absolute; bottom: 0; left: 0; display: grid; grid-template-columns: 1fr 1fr 1fr; background: rgba(8,12,22,0.95); backdrop-filter: blur(16px); border-top: 3.5px solid #ffcc00; box-shadow: 0 -12px 35px rgba(0,0,0,0.9); z-index: 100; }
+.player-section-box { position: relative; padding: 10px 15px 10px 150px; display: flex; flex-direction: column; justify-content: space-between; height: 145px; border-right: 1.5px solid rgba(255,255,255,0.15); overflow: visible; }
+.player-section-box:last-child { border-right: none; }
+.batting-theme-1, .batting-theme-2 { background: linear-gradient(180deg, rgba(10,37,64,0.9) 0%, rgba(19,57,99,0.95) 100%); }
+.bowling-theme { background: linear-gradient(180deg, rgba(92,15,15,0.9) 0%, rgba(138,23,23,0.95) 100%); }
+.role-tag-box { position: absolute; top: 8px; right: 16px; background: rgba(255,255,255,0.95); color: #000; font-size: 11px; font-weight: 900; padding: 2px 12px; border-radius: 4px; letter-spacing: 1px; text-transform: uppercase; box-shadow: 0 2px 8px rgba(0,0,0,0.4); z-index: 10; }
+.playerProfileDefault { position: absolute; left: 10px; bottom: 0px; width: 130px; height: 160px; z-index: 20; overflow: visible; }
+.player-vector { position: absolute; bottom: 0; left: 8px; width: 130px; height: 230px; z-index: 5; object-fit: contain; }
+.player-jersey { position: absolute; bottom: 15px; left: 0px; width: 145px; height: 100px; z-index: 15; object-fit: contain; opacity: 0.98; filter: drop-shadow(0 5px 10px rgba(0,0,0,0.6)); }
+.card-main-content { display: flex; flex-direction: column; justify-content: center; height: 78px; margin-left: 15px; }
+.player-fullname { font-size: 15px; font-weight: 900; color: #fff; letter-spacing: 0.5px; text-transform: uppercase; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; text-shadow: 0 2px 6px rgba(0,0,0,0.6); margin-bottom: 2px; }
+.player-primary-stats { font-family: 'Teko', sans-serif; font-size: 42px; line-height: 0.9; color: #fff; font-weight: 700; text-shadow: 0 2px 6px rgba(0,0,0,0.6); margin-left: 15px; }
+.player-primary-stats span.highlight-num { color: #ffcc00; }
+.player-sub-stats-bar { display: flex; align-items: center; gap: 15px; font-size: 13px; font-weight: 800; color: #fff; border-top: 1px solid rgba(255,255,255,0.18); padding-top: 4px; margin-top: 2px; text-shadow: 0 1px 4px rgba(0,0,0,0.5); margin-left: 15px; }
+.player-sub-stats-bar span.yellow-val { color: #ffcc00; }
+#status { position: absolute; top: 130px; left: 10px; background: rgba(0,0,0,0.7); color: #0f0; padding: 5px 10px; border-radius: 5px; font-size: 12px; z-index: 200; }
+</style>
+</head>
+<body>
+<div id="status">Loading live data from Cloudflare...</div>
+<div class="broadcast-bar">
+    <div class="team-side">
+        <div class="flag-name-wrapper">
+            <span class="team-code" id="t1Code">...</span>
+            <img id="t1Flag" class="flag-img" src="" alt="Flag">
+        </div>
+        <div class="team-info">
+            <span class="team-role">BATTING</span>
+            <div class="score-row"><span class="score-val" id="t1Score">0/0</span></div>
+        </div>
+    </div>
+    <div class="center-box">
+        <span class="matchup-tag" id="matchupTitle">... VS ...</span>
+        <span class="series-tag" id="matchSeries">...</span>
+    </div>
+    <div class="team-side right">
+        <div class="score-row">
+            <div class="stat-group"><span class="stat-label">OVERS</span><span class="stat-value" id="valOvers">0</span></div>
+            <div class="stat-group"><span class="stat-label">BALLS</span><span class="stat-value" id="valBalls">0</span></div>
+        </div>
+        <div class="flag-name-wrapper">
+            <span class="team-code" id="t2Code">...</span>
+            <img id="t2Flag" class="flag-img" src="" alt="Flag">
+        </div>
+    </div>
+</div>
+<!-- === MIDDLE AREA - COMMENTARY + VIDEO SLOT === -->
+<div class="middle-area">
+    <!-- Commentary Card -->
+    <div class="center-mid-ios-card">
+        <div class="center-mid-ios-text" id="centerMidCommentary">NETHERLANDS WON BY 7 WICKETS</div>
+    </div>
+    <!-- VIDEO SLOT - YAHAN TUMHARI VIDEO AAYEGI -->
+    <div class="video-slot-container" id="videoSlot">
+        <div class="video-label">🔴 YOUR PROMO</div>
+        <div class="traffic-watermark">www.YourSite.com</div>
+        
+        <!-- PLACEHOLDER - Jab tak video nahi hai -->
+        <div class="video-slot-placeholder" id="videoPlaceholder">
+            <div style="font-size: 48px; margin-bottom: 10px;">🎬</div>
+            <div style="font-size: 16px; font-weight: 900; color: #ffcc00; letter-spacing: 1px;">VIDEO SLOT</div>
+            <div style="font-size: 12px; margin-top: 8px; opacity: 0.8; line-height: 1.4;">
+                Apni video yahan lagao<br>
+                File: <span style="color: #38bdf8;">./promo.mp4</span> ya <span style="color: #38bdf8;">./trailer.mp4</span><br>
+                Size: 640x360 | MP4 | Muted Autoplay Loop
+            </div>
+            <div style="margin-top: 12px; font-size: 10px; background: rgba(255,204,0,0.15); padding: 6px 12px; border-radius: 20px; border: 1px solid rgba(255,204,0,0.3);">
+                👉 HTML me line 148 pe src change karo
+            </div>
+        </div>
+        <!-- VIDEO TAG - TUM APNI VIDEO KA NAAM YAHAN LAGAO -->
+        <!-- 
+            INSTRUCTIONS:
+            1. Apni video banao (10-15 sec trailer apni website ka)
+            2. Uska naam rakho promo.mp4
+            3. Isi folder me daalo jahan scoreboard.html hai
+            4. Neeche src me ./promo.mp4 likha hai, wo kaam karega!
+            
+            Agar dusra naam hai to src change kar do:
+            <video src="./MY_VIDEO.mp4" ...>
+        -->
+        <video 
+            id="promoVideo"
+            src="./promo.mp4"
+            autoplay 
+            muted 
+            loop 
+            playsinline
+            poster=""
+            onerror="this.style.display='none'"
+            onloadeddata="document.getElementById('videoPlaceholder').classList.add('hidden')"
+        >
+            Your browser does not support video.
+        </video>
+    </div>
+</div>
+<div class="bottom-players-strip">
+    <div class="player-section-box batting-theme-1">
+        <div class="role-tag-box">BATSMAN</div>
+        <div class="playerProfileDefault"><img id="b1Img" class="player-vector" src="" alt=""><img id="b1Jersey" class="player-jersey" src="" alt=""></div>
+        <div class="card-main-content"><div class="player-fullname" id="b1Name">Batter 1</div><div class="player-primary-stats"><span id="b1Runs">0</span> <span class="highlight-num">(<span id="b1Balls">0</span>)</span></div></div>
+        <div class="player-sub-stats-bar"><div>4S: <span class="yellow-val" id="b14s">0</span></div><div>6S: <span class="yellow-val" id="b16s">0</span></div><div>SR: <span class="yellow-val" id="b1Sr">0.00</span></div></div>
+    </div>
+    <div class="player-section-box batting-theme-2">
+        <div class="role-tag-box">BATSMAN</div>
+        <div class="playerProfileDefault"><img id="b2Img" class="player-vector" src="" alt=""><img id="b2Jersey" class="player-jersey" src="" alt=""></div>
+        <div class="card-main-content"><div class="player-fullname" id="b2Name">Batter 2</div><div class="player-primary-stats"><span id="b2Runs">0</span> <span class="highlight-num">(<span id="b2Balls">0</span>)</span></div></div>
+        <div class="player-sub-stats-bar"><div>4S: <span class="yellow-val" id="b24s">0</span></div><div>6S: <span class="yellow-val" id="b26s">0</span></div><div>SR: <span class="yellow-val" id="b2Sr">0.00</span></div></div>
+    </div>
+    <div class="player-section-box bowling-theme">
+        <div class="role-tag-box">BOWLER</div>
+        <div class="playerProfileDefault"><img id="bowlImg" class="player-vector" src="" alt=""><img id="bowlJersey" class="player-jersey" src="" alt=""></div>
+        <div class="card-main-content"><div class="player-fullname" id="bowlName">Bowler</div><div class="player-primary-stats"><span id="bowlFigs">0-0</span> <span class="highlight-num">(<span id="bowlOvs">0.0</span>)</span></div></div>
+        <div class="player-sub-stats-bar"><div>ECON: <span class="yellow-val" id="bowlEcon">0.00</span></div></div>
+    </div>
+</div>
+<script>
+let currentMatchIndex = 0;
+let liveData = null;
+function getRouteParams() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const matchParam = urlParams.get('match') || urlParams.get('id') || urlParams.get('slug');
+    const indexParam = urlParams.get('index');
+    const hash = window.location.hash.replace('#','');
+    return { matchId: matchParam || hash || null, index: indexParam ? parseInt(indexParam) : null };
+}
+async function fetchLiveData() {
+    try {
+        let res;
+        try {
+            res = await fetch('./live-data.json?v=' + Date.now());
+            if (!res.ok) throw new Error('Local not found');
+        } catch(e) {
+            res = await fetch('https://raw.githubusercontent.com/DawerRaza2-bot/match-schedule/main/live-data.json?v=' + Date.now());
+        }
+        if (!res.ok) throw new Error('No live data');
+        const data = await res.json();
+        document.getElementById('status').innerText = `Live: ${data.count} | Updated: ${new Date(data.updatedAt).toLocaleTimeString()} | ${res.url.includes('raw.githubusercontent') ? 'GitHub' : 'Local'} | Avatars: ${data.matches[0]?.live?.batsman1?.vector ? 'YES' : 'NO'} | Route: ?match=ID`;
+        document.getElementById('status').style.background = 'rgba(0,100,0,0.8)';
+        liveData = data;
+        if (data.matches && data.matches.length > 0) {
+            const route = getRouteParams();
+            if (route.matchId) {
+                const foundIndex = data.matches.findIndex(m => m.id === route.matchId || m.id.includes(route.matchId) || m.detailUrl.includes(route.matchId));
+                if (foundIndex !== -1) currentMatchIndex = foundIndex;
+            } else if (route.index !== null && route.index >=0 && route.index < data.matches.length) {
+                currentMatchIndex = route.index;
+            }
+            updateUI(data.matches[currentMatchIndex].live, data.matches[currentMatchIndex]);
+        }
+    } catch(e) {
+        document.getElementById('status').innerText = 'Error: ' + e.message;
+        document.getElementById('status').style.background = 'rgba(100,0,0,0.8)';
+    }
+}
+function updateUI(d, matchMeta) {
+    if(!d) return;
+    document.getElementById('matchupTitle').innerText = (matchMeta.team1.name + " VS " + matchMeta.team2.name).toUpperCase();
+    document.getElementById('matchSeries').innerText = d.series || matchMeta.seriesInfo || "LIVE";
+    document.getElementById('t1Code').innerText = d.team1Name || matchMeta.team1.name;
+    if(d.team1Flag || matchMeta.team1.flagUrl) document.getElementById('t1Flag').src = d.team1Flag || matchMeta.team1.flagUrl;
+    document.getElementById('t1Score').innerText = d.team1Score;
+    document.getElementById('t2Code').innerText = d.team2Name || matchMeta.team2.name;
+    if(d.team2Flag || matchMeta.team2.flagUrl) document.getElementById('t2Flag').src = d.team2Flag || matchMeta.team2.flagUrl;
+    document.getElementById('centerMidCommentary').innerText = d.commentary;
+    document.getElementById('valOvers').innerText = d.currentOver;
+    document.getElementById('valBalls').innerText = d.currentBall;
+    document.getElementById('b1Name').innerText = d.batsman1.name || 'Batter 1';
+    document.getElementById('b1Runs').innerText = d.batsman1.runs;
+    document.getElementById('b1Balls').innerText = d.batsman1.balls;
+    document.getElementById('b14s').innerText = d.batsman1.fours;
+    document.getElementById('b16s').innerText = d.batsman1.sixes;
+    document.getElementById('b1Sr').innerText = d.batsman1.sr;
+    if(d.batsman1.vector) document.getElementById('b1Img').src = d.batsman1.vector;
+    if(d.batsman1.jersey) document.getElementById('b1Jersey').src = d.batsman1.jersey;
+    document.getElementById('b2Name').innerText = d.batsman2.name || 'Batter 2';
+    document.getElementById('b2Runs').innerText = d.batsman2.runs;
+    document.getElementById('b2Balls').innerText = d.batsman2.balls;
+    document.getElementById('b24s').innerText = d.batsman2.fours;
+    document.getElementById('b26s').innerText = d.batsman2.sixes;
+    document.getElementById('b2Sr').innerText = d.batsman2.sr;
+    if(d.batsman2.vector) document.getElementById('b2Img').src = d.batsman2.vector;
+    if(d.batsman2.jersey) document.getElementById('b2Jersey').src = d.batsman2.jersey;
+    document.getElementById('bowlName').innerText = d.bowler.name || 'Bowler';
+    document.getElementById('bowlFigs').innerText = d.bowler.figures;
+    document.getElementById('bowlOvs').innerText = d.bowler.overs;
+    document.getElementById('bowlEcon').innerText = d.bowler.econ;
+    if(d.bowler.vector) document.getElementById('bowlImg').src = d.bowler.vector;
+    if(d.bowler.jersey) document.getElementById('bowlJersey').src = d.bowler.jersey;
+}
+setInterval(fetchLiveData, 3000);
+fetchLiveData();
+document.addEventListener('keydown', (e) => {
+    if (!liveData || !liveData.matches) return;
+    if (e.key === 'ArrowRight') {
+        currentMatchIndex = (currentMatchIndex + 1) % liveData.matches.length;
+        updateUI(liveData.matches[currentMatchIndex].live, liveData.matches[currentMatchIndex]);
+    }
+    if (e.key === 'ArrowLeft') {
+        currentMatchIndex = (currentMatchIndex - 1 + liveData.matches.length) % liveData.matches.length;
+        updateUI(liveData.matches[currentMatchIndex].live, liveData.matches[currentMatchIndex]);
+    }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+{
+  "updatedAt": "2026-11-02T17:10:29.547Z",
+  "count": 1,
+  "matches": [
+    {
+      "id": "test-ned-vs-oma-144th-odi",
+      "detailUrl": "https://crex.com/cricket-live-score/ned-vs-oma-144th-odi-mens-cwc-league-2-2023-27-match-updates-14VF",
+      "date": "Mon, 2 Nov 2026",
+      "seriesInfo": "Mens CWC League 2",
+      "team1": {
+        "name": "OMA",
+        "flagUrl": "https://cricketvectors.akamaized.net/Teams/15.png"
+      },
+      "team2": {
+        "name": "NED",
+        "flagUrl": "https://cricketvectors.akamaized.net/Teams/12.png"
+      },
+      "live": {
+        "series": "NED Vs OMA, 144th ODI, CWC League-2 2023-27 Summary",
+        "team1Name": "NED",
+        "team1Flag": "https://cricketvectors.akamaized.net/Teams/12.png",
+        "team1Score": "183-3",
+        "team2Name": "OMA",
+        "team2Flag": "https://cricketvectors.akamaized.net/Teams/15.png",
+        "commentary": "Netherlands won by 7 wickets",
+        "currentOver": "36",
+        "currentBall": "0",
+        "batsman1": {
+          "name": "C Ackermann",
+          "runs": "1",
+          "balls": "2",
+          "fours": "0",
+          "sixes": "0",
+          "sr": "50.00",
+          "vector": "https://cricketvectors.akamaized.net/players/org/10X.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/12.png"
+        },
+        "batsman2": {
+          "name": "S Edwards",
+          "runs": "2",
+          "balls": "4",
+          "fours": "0",
+          "sixes": "0",
+          "sr": "50.00",
+          "vector": "https://cricketvectors.akamaized.net/players/org/10V.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/12.png"
+        },
+        "bowler": {
+          "name": "N Khan",
+          "figures": "1-38",
+          "overs": "9.0",
+          "econ": "4.22",
+          "vector": "https://cricketvectors.akamaized.net/players/org/B7B.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/15.png"
+        },
+        "isLive": true
+      },
+      "scrapedAt": "2026-11-02T17:10:29.464Z"
+    }
+  ],
+  "isTest": true
+}
