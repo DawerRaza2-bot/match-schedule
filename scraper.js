@@ -3,16 +3,15 @@ const path = require('path');
 
 const OUTPUT_FILE = path.join(__dirname, 'match-schedule.json');
 
-// TODAY to END OF MONTH - as you requested
 const now = new Date();
 now.setHours(0,0,0,0);
 const START_DATE = new Date(now);
-const END_DATE = new Date(now.getFullYear(), now.getMonth() + 1, 0); // Last day of current month
+const END_DATE = new Date(now.getFullYear(), now.getMonth() + 1, 0);
 END_DATE.setHours(23,59,59,999);
 
 console.log(`📅 TODAY: ${START_DATE.toDateString()}`);
 console.log(`🎯 TARGET: ${START_DATE.toDateString()} to ${END_DATE.toDateString()} (1 MONTH)`);
-console.log(`📅 INTERNATIONAL ONLY - CRON 25th MONTHLY`);
+console.log(`📅 INTERNATIONAL ONLY - VIA UI FILTER CLICK - FINAL FIX`);
 
 async function scrape() {
     const puppeteer = require('puppeteer-core');
@@ -28,29 +27,189 @@ async function scrape() {
         await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
         await page.setViewport({ width: 1920, height: 1080 });
 
-        // DIRECT URL with seriesType=international - BEST WAY - No UI click needed
-        console.log('📡 Opening https://crex.com/schedule?seriesType=international');
-        await page.goto('https://crex.com/schedule?seriesType=international', { waitUntil: 'domcontentloaded', timeout: 90000 });
-        await new Promise(r => setTimeout(r, 8000));
+        // CORRECT URL - No query param - Manual filter needed as you said
+        console.log('📡 Opening https://crex.com/schedule (Correct link as you said)');
+        await page.goto('https://crex.com/schedule', { waitUntil: 'domcontentloaded', timeout: 90000 });
+        await new Promise(r => setTimeout(r, 10000));
 
-        // Verify International filter applied
-        const verify = await page.evaluate(() => {
-            const wrappers = document.querySelectorAll('.option-wrapper');
-            for (let w of wrappers) {
-                const n = w.querySelector('.name');
-                if (n && n.innerText.toLowerCase().includes('series type')) {
-                    return w.querySelector('.selection')?.innerText.trim() || 'not found';
+        // ===== FINAL FIX: UI CLICK FOR SERIES TYPE -> INTERNATIONAL =====
+        console.log('🎯 Clicking Filter: Series Type -> International (Manual filter as per your screenshot)');
+
+        const filterClicked = await page.evaluate(async () => {
+            const sleep = (ms) => new Promise(r => setTimeout(r, ms));
+            console.log('Starting filter click...');
+
+            // Method: Find all elements that contain "Series Type" or "All Series"
+            // As per your screenshot: Filter Fixtures -> Team, Format, Series Type
+            
+            // Try multiple selectors for the filter wrapper
+            let seriesTypeWrapper = null;
+            let allWrappers = document.querySelectorAll('div');
+            
+            for (let div of allWrappers) {
+                const text = div.innerText || '';
+                if (text.includes('Series Type') && text.includes('All Series')) {
+                    // This div contains Series Type label and value
+                    seriesTypeWrapper = div;
+                    console.log('Found wrapper with Series Type:', div.innerHTML.substring(0,200));
+                    break;
                 }
             }
-            return 'wrapper not found';
+
+            // More direct: Find the element with "All Series" that is a dropdown
+            let allSeriesEl = null;
+            const allElements = document.querySelectorAll('*');
+            for (let el of allElements) {
+                if (el.innerText && el.innerText.trim() === 'All Series' && el.offsetParent !== null) {
+                    // Check if it's a clickable dropdown (has arrow icon nearby)
+                    const parent = el.closest('div');
+                    const hasDropdown = parent && (parent.innerHTML.includes('svg') || parent.innerHTML.includes('arrow') || parent.querySelector('svg'));
+                    if (el.tagName === 'DIV' || el.tagName === 'SPAN' || el.tagName === 'BUTTON') {
+                        // Check bounding rect - dropdowns have reasonable size
+                        const rect = el.getBoundingClientRect();
+                        if (rect.width > 50 && rect.width < 600 && rect.height > 15 && rect.height < 80) {
+                            allSeriesEl = el;
+                            console.log('Found All Series element:', el.tagName, rect, el.innerText);
+                            // Find the closest clickable parent
+                            let clickable = el;
+                            let depth = 0;
+                            while (clickable && depth < 5) {
+                                if (clickable.onclick || clickable.getAttribute('role') === 'button' || clickable.tagName === 'BUTTON' || clickable.classList.contains('selection') || clickable.closest('[class*="dropdown"]') || clickable.closest('[class*="select"]')) {
+                                    break;
+                                }
+                                clickable = clickable.parentElement;
+                                depth++;
+                            }
+                            if (clickable) allSeriesEl = clickable;
+                            break;
+                        }
+                    }
+                }
+            }
+
+            // Alternative: Use the exact structure from crex.com
+            // Look for div that has Series Type label
+            if (!allSeriesEl) {
+                const labels = document.querySelectorAll('*');
+                for (let label of labels) {
+                    if (label.innerText && label.innerText.trim() === 'Series Type') {
+                        // Found Series Type label, now find its sibling dropdown
+                        let sibling = label.nextElementSibling;
+                        let tries = 0;
+                        while (sibling && tries < 10) {
+                            if (sibling.innerText && sibling.innerText.includes('All Series')) {
+                                allSeriesEl = sibling;
+                                console.log('Found via Series Type label sibling:', sibling.innerHTML.substring(0,200));
+                                break;
+                            }
+                            sibling = sibling.nextElementSibling;
+                            tries++;
+                        }
+                        // Also check parent's children
+                        if (!allSeriesEl) {
+                            const parent = label.parentElement;
+                            if (parent) {
+                                const children = parent.querySelectorAll('*');
+                                for (let child of children) {
+                                    if (child.innerText && child.innerText.trim() === 'All Series' && child !== label) {
+                                        allSeriesEl = child;
+                                        console.log('Found via parent children:', child.innerHTML.substring(0,200));
+                                        break;
+                                    }
+                                }
+                            }
+                        }
+                        if (allSeriesEl) break;
+                    }
+                }
+            }
+
+            if (!allSeriesEl) {
+                console.log('❌ Could not find All Series element');
+                return { found: false, error: 'All Series not found' };
+            }
+
+            console.log('✅ Found All Series dropdown, clicking...');
+            allSeriesEl.click();
+            await sleep(3000);
+
+            // Now find International option in dropdown
+            let internationalEl = null;
+            const allOptions = document.querySelectorAll('*');
+            for (let opt of allOptions) {
+                if (opt.innerText && opt.innerText.trim() === 'International' && opt.offsetParent !== null) {
+                    const rect = opt.getBoundingClientRect();
+                    // Must be visible and reasonable size for a dropdown option
+                    if (rect.width > 20 && rect.width < 500 && rect.height > 10 && rect.height < 100) {
+                        // Make sure it's not the selection box itself but an option
+                        // Options usually appear after click in a list
+                        internationalEl = opt;
+                        console.log('Found International option:', opt.tagName, rect, opt.innerText);
+                        break;
+                    }
+                }
+            }
+
+            if (!internationalEl) {
+                console.log('❌ International option not found after click');
+                // Try to list what is visible
+                const visibleTexts = [];
+                document.querySelectorAll('*').forEach(el => {
+                    if (el.offsetParent !== null && el.innerText && el.innerText.length < 30) {
+                        const t = el.innerText.trim();
+                        if (['All Series', 'International', 'Domestic', 'League'].includes(t)) {
+                            visibleTexts.push(t + ' (' + el.tagName + ')');
+                        }
+                    }
+                });
+                console.log('Visible filter options:', visibleTexts);
+                return { found: false, error: 'International option not found', visible: visibleTexts };
+            }
+
+            console.log('✅ Clicking International...');
+            internationalEl.click();
+            await sleep(5000);
+
+            // Verify it changed
+            let finalText = 'unknown';
+            const checkEls = document.querySelectorAll('*');
+            for (let el of checkEls) {
+                if (el.innerText && (el.innerText.trim() === 'International' || el.innerText.trim() === 'All Series')) {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.width > 50 && rect.width < 600 && el.offsetParent !== null) {
+                        // This is likely the selection display
+                        finalText = el.innerText.trim();
+                        if (finalText === 'International') break;
+                    }
+                }
+            }
+
+            return { found: true, clicked: true, finalText: finalText };
         });
-        console.log(`✅ Verified Series Type: ${verify}`);
+
+        console.log(`Filter result: ${JSON.stringify(filterClicked)}`);
+        await new Promise(r => setTimeout(r, 8000));
+
+        // Final verification
+        const finalVerify = await page.evaluate(() => {
+            const allTexts = [];
+            document.querySelectorAll('*').forEach(el => {
+                if (el.offsetParent !== null && el.innerText) {
+                    const t = el.innerText.trim();
+                    if (t === 'International' || t === 'All Series') {
+                        allTexts.push({ text: t, tag: el.tagName, class: el.className.substring(0,50) });
+                    }
+                }
+            });
+            return allTexts.slice(0,10);
+        });
+        console.log(`Final verify (International should be selected):`, JSON.stringify(finalVerify));
 
         let allMatches = [];
         let pageNum = 1;
-        const maxPages = 40; // More pages to get full month
+        const maxPages = 40;
 
-        console.log('\n📄 Scraping INTERNATIONAL from Today to Month End...');
+        console.log('\n📄 Scraping INTERNATIONAL (after filter) from Today to Month End...');
 
         while (pageNum <= maxPages) {
             console.log(`\n--- PAGE ${pageNum} ---`);
@@ -116,7 +275,7 @@ async function scrape() {
             });
             console.log(`Added ${added} new, Total: ${allMatches.length}`);
 
-            // Check if we reached month end
+            // Check month end
             const uniqueDates = [...new Set(data.map(d => d.date))];
             try {
                 const lastDateStr = uniqueDates[uniqueDates.length - 1];
@@ -131,7 +290,6 @@ async function scrape() {
 
             if (pageNum >= maxPages) break;
 
-            // Pagination - try next button
             const paginated = await page.evaluate(() => {
                 const buttons = document.querySelectorAll('button');
                 for (let b of buttons) {
@@ -165,48 +323,41 @@ async function scrape() {
             pageNum++;
         }
 
-        console.log(`\n📊 Total scraped (before filter): ${allMatches.length}`);
+        console.log(`\n📊 Total scraped (before domestic filter): ${allMatches.length}`);
 
-        // FINAL FIXED FILTER - Remove 'a-tour' bug
+        // Extra safety: Filter out any remaining domestic even after International UI filter
         const domesticKeywords = [
-            'nepal-premier-league', 'biratnagar kings', 'janakpur bolts', 'lumbini lions', 'pokhara avengers',
-            'emirates blues', 'emirates red', 'ajman', 'dubai vs', 'sharjah', 'emirates-d20', 'd20-league',
-            'global t20 canada', 'toronto kings', 'montreal warriors', 'brampton wolves', 'vancouver knights',
-            'csa-pro-t20', 'dolphins vs', 'western province', 'rocks vs', 'warriors vs', 'eastern storm',
-            'ford-trophy', 'the-ford-trophy',
-            '-a-vs-', 'eng-a-vs', 'wi-a-vs', 'ind-a-vs', 'nz-a-vs', 'ire-a-vs', 'zim-a-vs', 'sl-a-vs', 'ban-a-vs', 'pak-a-vs', 'aus-a-vs',
-            'england-a-tour', 'west-indies-a-tour', 'india-a-tour', 'new-zealand-a-tour',
-            'u19-vs', '-u19-', 'u-19', 'youth-odi', 'u19-asia-cup',
-            'womens-big-bash', 'wbbl', 'hbh-w-vs', 'mlr-w-vs', 'ads-w-vs', 'bh-w-vs', 'prs-w-vs', 'syt-w-vs', 'mls-w-vs', 'sys-w-vs',
-            'womens-victoria', 'victoria-t20i-series', 'nam-w-vs', 'ugn-w-vs', 'rwa-w-vs', 'usa-w-vs',
-            'quaid-e-azam-trophy', 'quaid e azam trophy', 'first-class-quaid', 'karb-vs-srb', 'fais-vs-prb', 'lahm-vs-fata', 'islr-vs-mul', 'lahb-vs-rwl', 'lrk-vs-qet', 'bhwr-vs-prw', 'karw-vs-ajk', 'hyd-vs-dmj', 'abt-vs-srw',
-            'ranji trophy', 'duleep trophy', 'deodhar trophy', 'vijay hazare', 'syed mushtaq ali', 'maharaja trophy',
-            'county championship', 'hong-kong', 'hong kong premier'
+            'nepal-premier-league', 'biratnagar', 'janakpur', 'lumbini', 'pokhara',
+            'emirates blues', 'emirates red', 'emirates-d20', 'd20-league',
+            'quaid-e-azam', 'first-class-quaid', 'karb-vs-srb', 'fais-vs-prb', 'lahm-vs-fata', 'islr-vs-mul', 'lahb-vs-rwl', 'lrk-vs-qet', 'bhwr-vs-prw',
+            '-a-vs-', 'eng-a-vs', 'wi-a-vs', 'u19', 'wbbl', 'womens', 'women', 'victoria', 'hong-kong'
         ];
 
         const filtered = allMatches.filter(m => {
             const txt = `${m.id} ${m.seriesInfo} ${m.team1.name} ${m.team2.name}`.toLowerCase();
-            const isDomestic = domesticKeywords.some(k => txt.includes(k));
-            if (isDomestic) {
-                console.log(`❌ Filtered domestic: ${m.team1.name} vs ${m.team2.name} | ${m.id.substring(0,60)}`);
+            const isDom = domesticKeywords.some(k => txt.includes(k));
+            if (isDom) {
+                console.log(`❌ Extra filter domestic (should not happen after International UI): ${m.team1.name} vs ${m.team2.name}`);
                 return false;
             }
             return true;
         });
 
-        console.log(`\n✅ Filtering: ${allMatches.length} -> ${filtered.length} International`);
+        console.log(`\n✅ After International UI filter: ${allMatches.length} -> ${filtered.length} matches`);
 
         filtered.sort((a,b) => new Date(a.date) - new Date(b.date));
         
         fs.writeFileSync(OUTPUT_FILE, JSON.stringify(filtered, null, 2));
-        console.log(`\n🎉 FINAL: ${filtered.length} International matches from ${START_DATE.toDateString()} to ${END_DATE.toDateString()}`);
+        console.log(`\n🎉 FINAL: ${filtered.length} INTERNATIONAL matches from ${START_DATE.toDateString()} to ${END_DATE.toDateString()}`);
         if (filtered.length > 0) {
-            console.log('Samples:');
-            filtered.slice(0,15).forEach(m => console.log(`  ${m.date} | ${m.matchTime} | ${m.team1.name} vs ${m.team2.name} | ${m.seriesInfo}`));
+            console.log('Samples (first 20):');
+            filtered.slice(0,20).forEach(m => console.log(`  ${m.date} | ${m.matchTime} | ${m.team1.name} vs ${m.team2.name} | ${m.seriesInfo}`));
             console.log(`\nNext match: ${filtered[0]?.team1.name} vs ${filtered[0]?.team2.name} on ${filtered[0]?.date} at ${filtered[0]?.matchTime}`);
+        } else {
+            console.log('❌ No matches found - filter may have failed');
         }
         console.log(`✅ SAVED to ${OUTPUT_FILE}`);
-        console.log(`📅 CRON: This file will auto-update on 25th of every month via GitHub Actions`);
+        console.log(`📅 CRON: 25th monthly as you requested`);
 
     } catch (err) {
         console.error('Error:', err.message, err.stack);
