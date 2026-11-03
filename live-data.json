@@ -1,17 +1,18 @@
 {
-  "updatedAt": "2026-11-03T18:15:00.000Z",
+  "updatedAt": "2026-11-03T18:29:25.031Z",
   "count": 0,
   "matches": [],
   "nextMatch": {
-    "id": "ind-vs-nz-1st-odi-india-tour-of-new-zealand-2026-match-updates-12JH",
-    "team1": "New Zealand",
-    "team2": "India",
+    "id": "auck-vs-cs-7th-list-a-the-ford-trophy-2026-27-match-updates-13L0",
+    "team1": "Central Stags",
+    "team2": "Auckland",
     "date": "Wed, 4 Nov 2026",
-    "matchTime": "6:00 AM",
-    "seriesInfo": "India tour of New Zealand",
-    "detailUrl": "https://crex.com/cricket-live-score/ind-vs-nz-1st-odi-india-tour-of-new-zealand-2026-match-updates-12JH",
-    "team1Flag": "https://cricketvectors.akamaized.net/Teams/R.png",
-    "team2Flag": "https://cricketvectors.akamaized.net/Teams/O.png"
+    "matchTime": "9:30 PM",
+    "seriesInfo": "",
+    "detailUrl": "https://crex.com/cricket-live-score/auck-vs-cs-7th-list-a-the-ford-trophy-2026-27-match-updates-13L0",
+    "team1Flag": "https://cricketvectors.akamaized.net/Teams/56.png",
+    "team2Flag": "https://cricketvectors.akamaized.net/Teams/53.png"
   },
-  "message": "Next: New Zealand vs India on Wed, 4 Nov 2026 at 6:00 AM"
+  "message": "Next: Central Stags vs Auckland on Wed, 4 Nov 2026 at 9:30 PM",
+  "isTest": false
 }
