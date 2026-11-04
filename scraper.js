@@ -10,85 +10,51 @@ const END_DATE = new Date(now.getFullYear(), now.getMonth() + 1, 0);
 END_DATE.setHours(23,59,59,999);
 
 console.log(`📅 TODAY: ${START_DATE.toDateString()} to ${END_DATE.toDateString()}`);
-console.log(`🎯 INTERNATIONAL ONLY - UI FILTER - TIME FIX FINAL`);
+console.log(`🎯 AUTO INTERNATIONAL - NO UI CLICK - DIRECT FILTER - FINAL AUTO`);
 
 async function scrape() {
-    const puppeteer = require('puppeteer-core');
-    console.log('Using puppeteer-core');
+    let puppeteer;
+    try {
+        puppeteer = require('puppeteer-core');
+        console.log('Using puppeteer-core');
+    } catch(e) {
+        puppeteer = require('puppeteer');
+        console.log('Using puppeteer');
+    }
 
-    const browser = await puppeteer.launch({
-        headless: 'new', channel: 'chrome',
-        args: ['--no-sandbox','--disable-setuid-sandbox','--disable-dev-shm-usage','--disable-gpu']
-    }).catch(() => puppeteer.launch({ headless: 'new', args: ['--no-sandbox'] }));
+    let browser;
+    try {
+        browser = await puppeteer.launch({
+            headless: 'new', channel: 'chrome',
+            args: ['--no-sandbox','--disable-setuid-sandbox','--disable-dev-shm-usage']
+        });
+    } catch(err1) {
+        try {
+            browser = await puppeteer.launch({
+                headless: 'new',
+                executablePath: process.env.CHROME_PATH,
+                args: ['--no-sandbox']
+            });
+        } catch(err2) {
+            browser = await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
+        }
+    }
 
     try {
         const page = await browser.newPage();
         await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
         await page.setViewport({ width: 1920, height: 1080 });
 
-        console.log('📡 Opening https://crex.com/schedule');
+        // NO FILTER CLICK - Directly scrape https://crex.com/schedule (All matches) then filter International by keywords
+        console.log('📡 Opening https://crex.com/schedule (ALL - then filter International)');
         await page.goto('https://crex.com/schedule', { waitUntil: 'domcontentloaded', timeout: 90000 });
         await new Promise(r => setTimeout(r, 10000));
-
-        // UI CLICK - Series Type -> International
-        console.log('🎯 Selecting Series Type -> International');
-        const filterClicked = await page.evaluate(async () => {
-            const sleep = (ms) => new Promise(r => setTimeout(r, ms));
-            let allSeriesEl = null;
-            const allElements = document.querySelectorAll('*');
-            for (let el of allElements) {
-                if (el.innerText && el.innerText.trim() === 'All Series' && el.offsetParent !== null) {
-                    const rect = el.getBoundingClientRect();
-                    if (rect.width > 50 && rect.width < 600 && rect.height > 15 && rect.height < 80) {
-                        allSeriesEl = el;
-                        break;
-                    }
-                }
-            }
-            if (!allSeriesEl) {
-                const labels = document.querySelectorAll('*');
-                for (let label of labels) {
-                    if (label.innerText && label.innerText.trim() === 'Series Type') {
-                        const parent = label.parentElement;
-                        if (parent) {
-                            for (let child of parent.querySelectorAll('*')) {
-                                if (child.innerText && child.innerText.trim() === 'All Series' && child !== label) {
-                                    allSeriesEl = child;
-                                    break;
-                                }
-                            }
-                        }
-                        if (allSeriesEl) break;
-                    }
-                }
-            }
-            if (!allSeriesEl) return { found: false };
-            allSeriesEl.click();
-            await sleep(3000);
-            let internationalEl = null;
-            for (let opt of document.querySelectorAll('*')) {
-                if (opt.innerText && opt.innerText.trim() === 'International' && opt.offsetParent !== null) {
-                    const rect = opt.getBoundingClientRect();
-                    if (rect.width > 20 && rect.width < 500 && rect.height > 10 && rect.height < 100) {
-                        internationalEl = opt;
-                        break;
-                    }
-                }
-            }
-            if (!internationalEl) return { found: false };
-            internationalEl.click();
-            await sleep(5000);
-            return { found: true };
-        });
-
-        console.log(`Filter: ${JSON.stringify(filterClicked)}`);
-        await new Promise(r => setTimeout(r, 8000));
 
         let allMatches = [];
         let pageNum = 1;
         const maxPages = 40;
 
-        console.log('\n📄 Scraping with TIME FIX...');
+        console.log('\n📄 Scraping ALL matches then filtering International...');
 
         while (pageNum <= maxPages) {
             console.log(`--- PAGE ${pageNum} ---`);
@@ -106,43 +72,37 @@ async function scrape() {
                         const href = link.getAttribute('href');
                         if (!href) return;
                         
-                        // TIME FIX: Look for real time with AM/PM, not "1st"
+                        // TIME FIX - Find real AM/PM time
                         let matchTime = '';
-                        // Try all possible time selectors
-                        const timeSelectors = ['.time span', '.start-text', '.time', '.match-time', '.time-text'];
-                        let timeCandidates = [];
-                        timeSelectors.forEach(sel => {
-                            card.querySelectorAll(sel).forEach(el => {
-                                const txt = el.innerText.trim();
-                                if (txt) timeCandidates.push(txt);
-                            });
-                        });
-                        // Also check card innerText for time pattern
                         const cardText = card.innerText;
-                        const timeRegex = /(\d{1,2}:\d{2}\s*(AM|PM)|\d{1,2}\s*(AM|PM))/gi;
+                        const timeRegex = /(\d{1,2}:\d{2}\s*(AM|PM))/gi;
                         const timeMatches = cardText.match(timeRegex);
-                        if (timeMatches) timeCandidates = timeCandidates.concat(timeMatches);
-                        
-                        // Find first valid AM/PM time
-                        for (let t of timeCandidates) {
-                            if (t.match(/\d+.*(AM|PM)/i) && !t.includes('st') && !t.includes('nd') && !t.includes('rd') && !t.includes('th') || t.match(/^\d{1,2}:\d{2}/)) {
-                                // Must contain : or AM/PM and not be ordinal like 1st
-                                if (t.match(/(AM|PM)/i)) {
+                        if (timeMatches && timeMatches.length > 0) {
+                            matchTime = timeMatches[0];
+                        } else {
+                            // Check individual elements
+                            const timeEl = card.querySelector('.time span') || card.querySelector('.start-text');
+                            if (timeEl) {
+                                const t = timeEl.innerText.trim();
+                                if (t.match(/(AM|PM)/i) && !t.match(/^\d+(st|nd|rd|th)$/)) {
                                     matchTime = t;
-                                    break;
                                 }
                             }
                         }
-                        // If still no time, check if any candidate has : and is short
+                        // Check if Live
+                        const isLiveText = card.innerText.toLowerCase().includes('live');
+                        if (isLiveText && !matchTime) matchTime = 'Live';
                         if (!matchTime) {
-                            for (let t of timeCandidates) {
-                                if (t.includes(':') && t.length < 20 && !t.toLowerCase().includes('won') && !t.toLowerCase().includes('result')) {
-                                    matchTime = t;
-                                    break;
-                                }
-                            }
+                            // Check status
+                            const statusEl = card.querySelector('.result span') || card.querySelector('.time .reason');
+                            const status = statusEl ? statusEl.innerText.trim() : '';
+                            if (status.toLowerCase() === 'live') matchTime = 'Live';
+                            else matchTime = status || '10:00 AM';
                         }
-                        if (!matchTime) matchTime = '10:00 AM'; // Default for International
+                        // Final fallback - if still "1st", "2nd", etc, replace with 10 AM
+                        if (matchTime.match(/^\d+(st|nd|rd|th)$/i)) {
+                            matchTime = '10:00 AM';
+                        }
                         
                         const seriesEl = card.querySelector('.series-name') || card.querySelector('.reason');
                         const seriesInfo = seriesEl ? seriesEl.innerText.trim() : '';
@@ -189,6 +149,7 @@ async function scrape() {
                 }
             });
             console.log(`Added ${added} new, Total: ${allMatches.length}`);
+
             if (pageNum >= maxPages) break;
             const paginated = await page.evaluate(() => {
                 const buttons = document.querySelectorAll('button');
@@ -209,21 +170,92 @@ async function scrape() {
             pageNum++;
         }
 
-        console.log(`\n📊 Total: ${allMatches.length}`);
+        console.log(`\n📊 Total scraped (ALL): ${allMatches.length}`);
 
-        // Filter domestic
-        const domesticKeywords = ['nepal-premier', 'biratnagar', 'janakpur', 'lumbini', 'pokhara', 'emirates blues', 'emirates red', 'emirates-d20', 'quaid-e-azam', 'karb-vs-srb', 'fais-vs-prb', 'lahm-vs-fata', 'islr-vs-mul', 'lahb-vs-rwl', 'lrk-vs-qet', 'bhwr-vs-prw', 'eng-a-vs', 'wi-a-vs', 'u19', 'wbbl', 'womens', 'women', 'victoria', 'hong-kong'];
+        // FILTER INTERNATIONAL - Auto logic
+        const domesticKeywords = [
+            'nepal-premier-league', 'biratnagar', 'janakpur', 'lumbini', 'pokhara', 'karnali', 'sudurpaschim',
+            'emirates blues', 'emirates red', 'emirates-d20', 'd20-league', 'emirates-d10',
+            'quaid-e-azam', 'first-class-quaid', 'president-trophy', 'national-t20-cup', 'pakistan-cup',
+            'karb-vs-srb', 'fais-vs-prb', 'lahm-vs-fata', 'islr-vs-mul', 'lahb-vs-rwl', 'lrk-vs-qet', 'bhwr-vs-prw',
+            'csa-provincial', 'csa-pro', '4-day', 'ford trophy', 'plunket shield',
+            'eng-a-vs', 'wi-a-vs', 'ind-a-vs', 'nz-a-vs', 'aus-a-vs', 'sa-a-vs',
+            'u19', 'under-19', 'wbbl', 'womens-premier', 'wpl', 'the hundred women',
+            'victoria', 'hong-kong', 'singapore', 'malaysia', 'thailand',
+            'sheffield shield', 'marsh cup', 'county championship', 'vitality blast',
+            'ranji trophy', 'vijay hazare', 'syed mushtaq ali'
+        ];
+
+        const internationalKeywords = [
+            'tour of', 'odi', 't20i', 'test', 'world cup', 'champions trophy', 'asia cup',
+            'tri-series', 'tri series', 'bilateral', 'international',
+            'afg vs', 'zim vs', 'ind vs nz', 'nz vs ind', 'aus vs eng', 'eng vs aus',
+            'pak vs', 'sl vs', 'ban vs', 'wi vs', 'sa vs', 'ire vs', 'ned vs', 'sco vs'
+        ];
+
         const filtered = allMatches.filter(m => {
-            const txt = `${m.id} ${m.seriesInfo}`.toLowerCase();
-            return !domesticKeywords.some(k => txt.includes(k));
+            const txt = `${m.id} ${m.seriesInfo} ${m.team1.name} ${m.team2.name}`.toLowerCase();
+            
+            // First, remove domestic
+            const isDomestic = domesticKeywords.some(k => txt.includes(k));
+            if (isDomestic) {
+                console.log(`❌ Domestic: ${m.team1.name} vs ${m.team2.name} | ${m.seriesInfo}`);
+                return false;
+            }
+            
+            // Then keep only if looks international
+            // If team names are country codes (3 letters) and series mentions tour/ODI/Test etc, keep
+            const hasInternationalHint = internationalKeywords.some(k => txt.includes(k)) || 
+                                         (m.seriesInfo.toLowerCase().includes('tour') || 
+                                          m.seriesInfo.toLowerCase().includes('odi') ||
+                                          m.seriesInfo.toLowerCase().includes('t20i') ||
+                                          m.seriesInfo.toLowerCase().includes('test') ||
+                                          m.id.includes('tour-of'));
+            
+            // Also keep if both teams are international country names (not city/club names)
+            const countryNames = ['afghanistan', 'zimbabwe', 'india', 'new zealand', 'australia', 'england', 'pakistan', 'sri lanka', 'bangladesh', 'west indies', 'south africa', 'ireland', 'netherlands', 'scotland', 'afg', 'zim', 'ind', 'nz', 'aus', 'eng', 'pak', 'sl', 'ban', 'wi', 'sa', 'ire', 'ned', 'sco', 'oma', 'uae', 'nam', 'usa', 'can', 'nep', 'ken'];
+            const t1IsCountry = countryNames.some(c => m.team1.name.toLowerCase().includes(c) || m.team1.name.toLowerCase() === c);
+            const t2IsCountry = countryNames.some(c => m.team2.name.toLowerCase().includes(c) || m.team2.name.toLowerCase() === c);
+            
+            if (t1IsCountry && t2IsCountry) {
+                return true;
+            }
+            
+            if (hasInternationalHint) {
+                return true;
+            }
+            
+            // If unsure, but not domestic and has country vs country, keep
+            if (!isDomestic && m.team1.name && m.team2.name && m.team1.name.length <= 20 && m.team2.name.length <= 20) {
+                // Check if id contains vs and looks international (not domestic league)
+                if (m.id.includes('-vs-') && !m.id.includes('premier-league') && !m.id.includes('t20-league') && !m.id.includes('d20')) {
+                    return true;
+                }
+            }
+            
+            console.log(`❓ Filtered out (not international): ${m.team1.name} vs ${m.team2.name} | ${m.seriesInfo} | ${m.id}`);
+            return false;
         });
 
-        console.log(`After filter: ${filtered.length}`);
+        console.log(`\n✅ After AUTO International filter: ${allMatches.length} -> ${filtered.length} matches`);
+
         filtered.sort((a,b) => new Date(a.date) - new Date(b.date));
+        
         fs.writeFileSync(OUTPUT_FILE, JSON.stringify(filtered, null, 2));
-        console.log(`\n🎉 FINAL: ${filtered.length} INTERNATIONAL matches`);
-        filtered.slice(0,15).forEach(m => console.log(`  ${m.date} | ${m.matchTime} | ${m.team1.name} vs ${m.team2.name}`));
-        console.log(`✅ SAVED`);
+        console.log(`\n🎉 FINAL AUTO: ${filtered.length} INTERNATIONAL matches from ${START_DATE.toDateString()} to ${END_DATE.toDateString()}`);
+        if (filtered.length > 0) {
+            console.log('Samples (first 20):');
+            filtered.slice(0,20).forEach(m => console.log(`  ${m.date} | ${m.matchTime} | ${m.team1.name} vs ${m.team2.name} | ${m.seriesInfo} | ${m.matchStatus}`));
+            const liveNow = filtered.filter(m => m.matchTime.toLowerCase() === 'live' || m.matchStatus.toLowerCase() === 'live');
+            if (liveNow.length > 0) {
+                console.log(`\n🔴 LIVE NOW: ${liveNow.length} matches`);
+                liveNow.forEach(m => console.log(`  LIVE: ${m.team1.name} vs ${m.team2.name} | ${m.detailUrl}`));
+            }
+            console.log(`\nNext match: ${filtered[0]?.team1.name} vs ${filtered[0]?.team2.name} on ${filtered[0]?.date} at ${filtered[0]?.matchTime}`);
+        } else {
+            console.log('❌ No matches found');
+        }
+        console.log(`✅ SAVED to ${OUTPUT_FILE}`);
 
     } catch (err) {
         console.error('Error:', err.message, err.stack);
