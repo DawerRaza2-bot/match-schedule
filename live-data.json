@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-11-04T08:45:19.209Z",
+  "updatedAt": "2026-11-04T09:42:30.010Z",
   "count": 1,
   "matches": [
     {
       "id": "ind-vs-nz-1st-odi-india-tour-of-new-zealand-2026-match-updates-12JH",
       "detailUrl": "https://crex.com/cricket-live-score/ind-vs-nz-1st-odi-india-tour-of-new-zealand-2026-match-updates-12JH",
       "date": "Wed, 4 Nov 2026",
-      "seriesInfo": "IND Vs NZ, 1st ODI, IND Vs NZ 2026 Live",
+      "seriesInfo": "IND Vs NZ, 1st ODI, IND Vs NZ 2026 Summary",
       "team1": {
         "name": "NZ",
         "flagUrl": "https://cricketvectors.akamaized.net/Teams/R.png"
@@ -16,46 +16,46 @@
         "flagUrl": "https://cricketvectors.akamaized.net/Teams/O.png"
       },
       "live": {
-        "series": "IND Vs NZ, 1st ODI, IND Vs NZ 2026 Live",
-        "team1Name": "IND\nP2",
+        "series": "IND Vs NZ, 1st ODI, IND Vs NZ 2026 Summary",
+        "team1Name": "IND",
         "team1Flag": "https://cricketvectors.akamaized.net/Teams/O.png",
-        "team1Score": "69-1",
-        "team2Name": "CRR : 5.52RRR : 3.79\nIND need 74 runs in 117 balls",
-        "team2Flag": "",
-        "commentary": "IND need 74 runs in 117 balls",
-        "currentOver": "12",
-        "currentBall": "3",
+        "team1Score": "143-5",
+        "team2Name": "NZ",
+        "team2Flag": "https://cricketvectors.akamaized.net/Teams/R.png",
+        "commentary": "India won by 5 wickets (DLS METHOD) 🏆",
+        "currentOver": "22",
+        "currentBall": "4",
         "batsman1": {
-          "name": "V Kohli",
-          "runs": "33",
-          "balls": "28",
-          "fours": "6",
+          "name": "KL Rahul",
+          "runs": "3",
+          "balls": "5",
+          "fours": "0",
           "sixes": "0",
-          "sr": "117.86",
-          "vector": "https://cricketvectors.akamaized.net/players/org/4I.png",
+          "sr": "60.00",
+          "vector": "https://cricketvectors.akamaized.net/players/org/AK.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/O.png"
         },
         "batsman2": {
-          "name": "V Kohli",
-          "runs": "33",
-          "balls": "28",
-          "fours": "6",
+          "name": "KL Rahul",
+          "runs": "3",
+          "balls": "5",
+          "fours": "0",
           "sixes": "0",
-          "sr": "117.86",
-          "vector": "https://cricketvectors.akamaized.net/players/org/4I.png",
+          "sr": "60.00",
+          "vector": "https://cricketvectors.akamaized.net/players/org/AK.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/O.png"
         },
         "bowler": {
-          "name": "S Gill",
-          "figures": "28",
-          "overs": "41",
-          "econ": "4",
-          "vector": "https://cricketvectors.akamaized.net/players/org/O5.png",
+          "name": "N Dhir",
+          "figures": "5",
+          "overs": "3",
+          "econ": "1",
+          "vector": "https://cricketvectors.akamaized.net/players/org/AXL.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/O.png"
         },
         "isLive": true
       },
-      "scrapedAt": "2026-11-04T08:45:19.141Z"
+      "scrapedAt": "2026-11-04T09:42:29.975Z"
     }
   ]
 }
