@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T06:35:09.752Z",
+  "updatedAt": "2026-11-04T07:53:04.713Z",
   "count": 1,
   "matches": [
     {
@@ -17,45 +17,45 @@
       },
       "live": {
         "series": "IND Vs NZ, 1st ODI, IND Vs NZ 2026 Live",
-        "team1Name": "IND\nP1",
+        "team1Name": "IND\nP2",
         "team1Flag": "https://cricketvectors.akamaized.net/Teams/O.png",
-        "team1Score": "34-1",
-        "team2Name": "CRR : 5.10RRR : 3.51\nIND need 152 runs in 260 balls",
+        "team1Score": "54-1",
+        "team2Name": "CRR : 4.98RRR : 3.37\nIND need 132 runs in 235 balls",
         "team2Flag": "",
-        "commentary": "IND need 152 runs in 260 balls",
-        "currentOver": "6",
-        "currentBall": "4",
+        "commentary": "IND need 132 runs in 235 balls",
+        "currentOver": "10",
+        "currentBall": "5",
         "batsman1": {
           "name": "V Kohli",
-          "runs": "12",
-          "balls": "13",
-          "fours": "2",
+          "runs": "29",
+          "balls": "27",
+          "fours": "5",
           "sixes": "0",
-          "sr": "92.31",
+          "sr": "107.41",
           "vector": "https://cricketvectors.akamaized.net/players/org/4I.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/O.png"
         },
         "batsman2": {
           "name": "V Kohli",
-          "runs": "12",
-          "balls": "13",
-          "fours": "2",
+          "runs": "29",
+          "balls": "27",
+          "fours": "5",
           "sixes": "0",
-          "sr": "92.31",
+          "sr": "107.41",
           "vector": "https://cricketvectors.akamaized.net/players/org/4I.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/O.png"
         },
         "bowler": {
           "name": "S Gill",
-          "figures": "15",
-          "overs": "21",
+          "figures": "17",
+          "overs": "32",
           "econ": "2",
           "vector": "https://cricketvectors.akamaized.net/players/org/O5.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/O.png"
         },
         "isLive": true
       },
-      "scrapedAt": "2026-11-04T06:35:09.696Z"
+      "scrapedAt": "2026-11-04T07:53:04.657Z"
     }
   ]
 }
