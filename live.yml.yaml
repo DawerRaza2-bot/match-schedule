@@ -1,0 +1,41 @@
+name: Update Live Score - International
+on:
+  schedule:
+    - cron: '*/3 * * * *'
+  workflow_dispatch:
+concurrency:
+  group: live-data-ultra
+  cancel-in-progress: false
+permissions:
+  contents: write
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+      - name: Install Puppeteer Core
+        run: npm install puppeteer-core@21.6.1 --no-save --no-audit --no-fund
+      - name: Run Live Scraper ULTRA FIXED
+        run: |
+          node Live-Scraper-ULTRA-FIXED.js || node Live-Scraper-FIXED-CHROME.js || node live-scraper.js || node Live-Scraper.js
+          cat live-data.json | head -100
+      - name: Commit and Push ULTRA
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git rm -r --cached node_modules/ 2>/dev/null || true
+          rm -rf node_modules/
+          echo "node_modules/" > .gitignore
+          git add .gitignore live-data.json
+          git commit -m "Live Update $(date -u)" || echo "No changes"
+          git push origin main --force-with-lease || git push origin main --force || true
