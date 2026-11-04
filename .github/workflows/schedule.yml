@@ -4,38 +4,33 @@ on:
     - cron: '0 */6 * * * *'
   workflow_dispatch:
 concurrency:
-  group: schedule-ultra
-  cancel-in-progress: false
+  group: schedule-ultra-final
+  cancel-in-progress: true
 permissions:
   contents: write
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - name: Setup Chrome
-        uses: browser-actions/setup-chrome@v1
-      - name: Install Puppeteer Core
-        run: npm install puppeteer-core@21.6.1 --no-save --no-audit --no-fund
-      - name: Run scraper
+      - uses: browser-actions/setup-chrome@v1
+      - run: npm install puppeteer-core@21.6.1 --no-save --no-audit --no-fund
+      - name: Run Schedule Scraper
         run: |
           node scraper.js
-          cat match-schedule.json | head -100
-      - name: Commit and Push ULTRA
+          echo "=== SCHEDULE ==="
+          cat match-schedule.json | head -50
+      - name: FORCE PUSH - NO REBASE NO CONFLICT
         run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email 'github-actions[bot]@users.noreply.github.com'
-          git rm -r --cached node_modules/ 2>/dev/null || true
-          rm -rf node_modules/
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          rm -rf node_modules
           echo "node_modules/" > .gitignore
-          git add .gitignore match-schedule.json
-          git commit -m "Schedule Update $(date -u)" || echo "No changes"
-          git push origin main --force-with-lease || git push origin main --force || true
+          git add -f match-schedule.json .gitignore || true
+          git commit -m "Schedule $(date -u)" || echo "nothing to commit"
+          git push --force origin main || git push -f origin main || true
