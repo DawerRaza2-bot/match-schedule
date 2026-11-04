@@ -1,34 +1,86 @@
 name: Update Live Score - International
+
 on:
   schedule:
     - cron: '*/3 * * * *'
   workflow_dispatch:
+  push:
+    paths:
+      - 'live-data.json'
+
+concurrency:
+  group: live-data
+  cancel-in-progress: false
+
 permissions:
   contents: write
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-      - uses: actions/setup-node@v4
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - uses: browser-actions/setup-chrome@v1
-      - run: npm install puppeteer-core@21.6.1 --no-save --no-audit --no-fund
-      - run: node Live-Scraper.js || node live-scraper.js || node Live-Scraper-FIXED-CHROME.js
-      - run: |
+
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Install Puppeteer Core
+        run: npm install puppeteer-core@21.6.1 --no-save --no-audit --no-fund
+
+      - name: Run Live Scraper
+        run: |
+          node Live-Scraper.js || node live-scraper.js || node Live-Scraper-FIXED-CHROME.js || node scraper.js
+          ls -lh live-data.json || echo "No live-data.json"
+
+      - name: Commit and Push - CONFLICT PROOF
+        run: |
           git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git config --global user.email '【entity-github¦canonical_name=GitHub】-actions[bot]@users.noreply.【entity-github¦canonical_name=GitHub】.com'
+          git config --global --add safe.directory $GITHUB_WORKSPACE
+          
+          # Remove node_modules from git forever
+          git rm -r --cached node_modules/ 2>/dev/null || true
           rm -rf node_modules/
-          git add live-data.json
-          git stash --keep-index --include-untracked || true
-          git pull --rebase origin main || true
-          git stash pop || true
-          if git diff --name-only --diff-filter=U | grep -q "live-data.json"; then
-            git checkout --theirs live-data.json || git checkout --ours live-data.json
-            git add live-data.json
+          echo "node_modules/" >> .gitignore
+          echo ".DS_Store" >> .gitignore
+          sort .gitignore | uniq > .gitignore.tmp && mv .gitignore.tmp .gitignore
+          
+          # Stage
+          git add .gitignore live-data.json
+          
+          # If nothing to commit, exit
+          if git diff --staged --quiet; then
+            echo "No changes to live-data.json"
+            exit 0
           fi
-          git diff --staged --quiet || git commit -m "Update Live - $(date -u)"
-          git push || (git pull --rebase origin main && git push)
+          
+          git commit -m "Update Live - $(date -u) - Auto International"
+          
+          # Try push, if fails due to remote changes, force with theirs
+          for i in 1 2 3; do
+            echo "Push attempt $i"
+            git push origin main && break || {
+              echo "Push failed, trying rebase with theirs strategy..."
+              git fetch origin main
+              git reset --hard origin/main
+              if [ -f live-data.json ]; then
+                git checkout --theirs live-data.json 2>/dev/null || true
+              fi
+              git add .gitignore live-data.json
+              git commit -m "Update Live - $(date -u) - Retry $i" || true
+            }
+            sleep 2
+          done
+          
+          # Last resort force
+          git push origin main --force-with-lease || git push origin main --force || true
+          echo "Push completed"
