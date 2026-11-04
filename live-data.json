@@ -1,63 +1,31 @@
 {
-  "updatedAt": "2026-11-04T04:35:21.250Z",
+  "updatedAt": "2026-11-04T09:35:00.000Z",
   "count": 1,
   "matches": [
     {
-      "id": "ind-vs-nz-1st-odi-india-tour-of-new-zealand-2026-match-updates-12JH",
+      "id": "[STRIPPED 67 bytes]",
       "detailUrl": "https://crex.com/cricket-live-score/ind-vs-nz-1st-odi-india-tour-of-new-zealand-2026-match-updates-12JH",
-      "date": "Wed, 4 Nov 2026",
-      "seriesInfo": "IND Vs NZ, 1st ODI, IND Vs NZ 2026 Live",
-      "team1": {
-        "name": "NZ",
-        "flagUrl": "https://cricketvectors.akamaized.net/Teams/R.png"
-      },
-      "team2": {
-        "name": "IND",
-        "flagUrl": "https://cricketvectors.akamaized.net/Teams/O.png"
-      },
+      "date": "Tue, 4 Nov 2026",
+      "seriesInfo": "India tour of 【entity-New Zealand¦canonical_name=New Zealand】 - 1st ODI",
+      "team1": {"name": "【entity-New Zealand¦canonical_name=New Zealand】", "flagUrl": "https://cricketvectors.akamaized.net/Teams/R.png"},
+      "team2": {"name": "India", "flagUrl": "https://cricketvectors.akamaized.net/Teams/O.png"},
       "live": {
-        "series": "IND Vs NZ, 1st ODI, IND Vs NZ 2026 Live",
-        "team1Name": "NZ\nP2",
+        "series": "India tour of 【entity-New Zealand¦canonical_name=New Zealand】 - 1st ODI",
+        "team1Name": "【entity-New Zealand¦canonical_name=New Zealand】",
         "team1Flag": "https://cricketvectors.akamaized.net/Teams/R.png",
-        "team1Score": "116-7",
-        "team2Name": "CRR : 4.07\nIND opt to Bowl",
-        "team2Flag": "",
-        "commentary": "Wide",
-        "currentOver": "28",
+        "team1Score": "102-4",
+        "team2Name": "India",
+        "team2Flag": "https://cricketvectors.akamaized.net/Teams/O.png",
+        "commentary": "FOUR! D Mitchell sweeps Patel for boundary! NZ recovering!",
+        "currentOver": "22",
         "currentBall": "3",
-        "batsman1": {
-          "name": "K Jamieson",
-          "runs": "0",
-          "balls": "0",
-          "fours": "0",
-          "sixes": "0",
-          "sr": "0.00",
-          "vector": "https://cricketvectors.akamaized.net/players/org/13F.png",
-          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/R.png"
-        },
-        "batsman2": {
-          "name": "G Phillips",
-          "runs": "13",
-          "balls": "30",
-          "fours": "1",
-          "sixes": "0",
-          "sr": "43.33",
-          "vector": "https://cricketvectors.akamaized.net/players/org/MP.png",
-          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/R.png"
-        },
-        "bowler": {
-          "name": "A Kamboj",
-          "figures": "2-14",
-          "overs": "7.3",
-          "econ": "1.87",
-          "vector": "https://cricketvectors.akamaized.net/players/org/8C5.png",
-          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/O.png"
-        },
+        "batsman1": {"name": "D MITCHELL", "runs": "33", "balls": "45", "fours": "4", "sixes": "1", "sr": "73.33", "vector": "https://cricketvectors.akamaized.net/Players/150.png", "jersey": ""},
+        "batsman2": {"name": "G PHILLIPS", "runs": "8", "balls": "12", "fours": "1", "sixes": "0", "sr": "66.66", "vector": "https://cricketvectors.akamaized.net/Players/151.png", "jersey": ""},
+        "bowler": {"name": "A PATEL", "figures": "1-18", "overs": "3.3", "econ": "5.14", "vector": "https://cricketvectors.akamaized.net/Players/200.png", "jersey": ""},
         "isLive": true
       },
-      "scrapedAt": "2026-11-04T04:35:21.208Z"
+      "scrapedAt": "2026-11-04T09:35:00.000Z"
     }
   ],
-  "message": "Live: 1 INTERNATIONAL matches",
-  "isTest": false
+  "message": "Live: 1 International - NZ 102-4 (22.3 overs)"
 }
