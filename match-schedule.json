@@ -8,8 +8,8 @@
     "team1": {
       "name": "NZ",
       "flagUrl": "https://cricketvectors.akamaized.net/Teams/R.png",
-      "score": "80/3",
-      "overs": "15.2"
+      "score": "115/7",
+      "overs": "28.3"
     },
     "team2": {
       "name": "IND",
@@ -18,7 +18,7 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ind-vs-nz-1st-odi-india-tour-of-new-zealand-2026-match-updates-12JH",
-    "scrapedAt": "2026-11-04T03:36:28.343Z"
+    "scrapedAt": "2026-11-04T04:35:23.068Z"
   },
   {
     "id": "oma-vs-uae-145th-odi-mens-cwc-league-2-2023-27-match-updates-14VG",
@@ -39,7 +39,7 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/oma-vs-uae-145th-odi-mens-cwc-league-2-2023-27-match-updates-14VG",
-    "scrapedAt": "2026-11-04T03:36:28.343Z"
+    "scrapedAt": "2026-11-04T04:35:23.068Z"
   },
   {
     "id": "ban-vs-wi-2nd-test-west-indies-tour-of-bangladesh-2026-match-updates-13TE",
@@ -60,7 +60,7 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/ban-vs-wi-2nd-test-west-indies-tour-of-bangladesh-2026-match-updates-13TE",
-    "scrapedAt": "2026-11-04T03:36:28.343Z"
+    "scrapedAt": "2026-11-04T04:35:23.068Z"
   },
   {
     "id": "afg-vs-zim-1st-test-afghanistan-vs-zimbabwe-in-uae-2026-match-updates-13TP",
@@ -81,6 +81,6 @@
       "overs": ""
     },
     "detailUrl": "https://crex.com/cricket-live-score/afg-vs-zim-1st-test-afghanistan-vs-zimbabwe-in-uae-2026-match-updates-13TP",
-    "scrapedAt": "2026-11-04T03:36:28.343Z"
+    "scrapedAt": "2026-11-04T04:35:23.068Z"
   }
 ]
