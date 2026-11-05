@@ -1,361 +1,287 @@
+/**
+ * FINAL - PHASE 2: ALL SCHEDULES PLAYERS + TEAMS + TODAY RUNNING + API + SCOREBOARD MAP
+ * 
+ * Step 1 DONE: 1 match DUB vs EMB 14Z9 -> 30 players (players.json) via /match-details trick
+ * 
+ * Step 2 NOW: All schedules today (jo chal raha hai) + 1 month ka players teams nikalna
+ * - Fetch https://crex.com/schedule (Today + upcoming)
+ * - For each detailUrl + /match-details -> team1 + team2 players vectors jerseys team names
+ * - Save with today's date: players.json master + match-teams.json + match-schedule.json
+ * 
+ * Step 3: API + Scoreboard attach + map
+ * - API: https://api.goscorer.com/api/v3/getSV3?key=12JH -> p: MWK etc
+ * - Map: MWK -> players.json[MWK] -> vector + jersey + teamCode
+ * - Scoreboard: live-data.json -> scoreboard.html
+ * 
+ * Step 4: Play
+ */
 
 const fs = require('fs');
-const path = require('path');
 
-const SCHEDULE_FILE = path.join(__dirname, 'match-schedule.json');
-const LIVE_FILE = path.join(__dirname, 'live-data.json');
-
-async function scrapeLiveMatches() {
-    const puppeteer = require('puppeteer-core');
-    console.log('Using puppeteer-core - ULTRA FIXED WITH VECTORS');
-
-    let schedule = [];
+async function getBrowser() {
     try {
-        schedule = JSON.parse(fs.readFileSync(SCHEDULE_FILE, 'utf8'));
-    } catch(e) {
-        schedule = [];
+        const puppeteer = require('puppeteer-core');
+        return await puppeteer.launch({ headless: 'new', channel: 'chrome', args: ['--no-sandbox'] });
+    } catch {
+        const puppeteer = require('puppeteer');
+        return await puppeteer.launch({ headless: true, args: ['--no-sandbox'] });
     }
-
-    // Find Live matches from schedule OR directly scrape Crex Live page
-    let liveMatches = schedule.filter(m => 
-        (m.matchTime && m.matchTime.toLowerCase() === 'live') || 
-        (m.matchStatus && m.matchStatus.toLowerCase() === 'live')
-    ).slice(0, 3);
-
-    console.log(`Found ${liveMatches.length} Live from schedule`);
-
-    // If no live in schedule, try direct Crex live search
-    let directLiveUrls = [];
-    if (liveMatches.length === 0) {
-        console.log('No live in schedule, will search crex.com directly');
-        directLiveUrls = ['https://crex.com/cricket-live-score'];
-    }
-
-    const browser = await puppeteer.launch({
-        headless: 'new',
-        channel: 'chrome',
-        args: ['--no-sandbox','--disable-setuid-sandbox','--disable-dev-shm-usage','--disable-gpu']
-    }).catch(async () => {
-        return await puppeteer.launch({ headless: 'new', args: ['--no-sandbox'] });
-    });
-
-    const allLiveData = [];
-    const page = await browser.newPage();
-    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36');
-    await page.setViewport({ width: 1920, height: 1080 });
-
-    // If direct search needed
-    if (directLiveUrls.length > 0) {
-        try {
-            await page.goto('https://crex.com/cricket-live-score', { waitUntil: 'domcontentloaded', timeout: 60000 });
-            await new Promise(r => setTimeout(r, 8000));
-            const liveLinks = await page.evaluate(() => {
-                const links = [];
-                document.querySelectorAll('a[href*="cricket-live-score"]').forEach(a => {
-                    const href = a.getAttribute('href');
-                    if (href && href.includes('cricket-live-score') && href.length > 20) {
-                        links.push('https://crex.com' + href);
-                    }
-                });
-                return [...new Set(links)].slice(0, 3);
-            });
-            console.log('Direct live links found:', liveLinks);
-            liveMatches = liveLinks.map(url => ({ detailUrl: url, id: url.split('/').pop(), team1: {name: 'Team1'}, team2: {name: 'Team2'} }));
-        } catch(e) {
-            console.log('Direct search failed', e.message);
-        }
-    }
-
-    for (let match of liveMatches) {
-        const detailUrl = match.detailUrl;
-        if (!detailUrl) continue;
-        console.log(`Scraping Live: ${detailUrl}`);
-        try {
-            await page.goto(detailUrl, { waitUntil: 'domcontentloaded', timeout: 90000 });
-            await new Promise(r => setTimeout(r, 10000));
-
-            const liveData = await page.evaluate(() => {
-                const getText = (sel) => document.querySelector(sel)?.innerText?.trim() || '';
-                const getImg = (sel) => document.querySelector(sel)?.getAttribute('src') || '';
-
-                // Try multiple selectors for Crex live page
-                let team1Name = getText('.team-1 .team-name') || getText('.team-name:first-child') || 'NZ';
-                let team1Score = getText('.team-1 .team-score') || getText('.score:first-child') || '0-0';
-                let team2Name = getText('.team-2 .team-name') || 'IND';
-                
-                // Batsmen
-                let batsmen = [];
-                document.querySelectorAll('.batsman, .batsmen-row, [class*="batsman"]').forEach(row => {
-                    const name = row.querySelector('.player-name, .name')?.innerText?.trim();
-                    const runs = row.querySelector('.runs, .score')?.innerText?.trim();
-                    if (name && runs) batsmen.push({name, runs});
-                });
-                
-                // Fallback: try table rows
-                if (batsmen.length === 0) {
-                    const rows = document.querySelectorAll('table tbody tr');
-                    rows.forEach(r => {
-                        const cols = r.querySelectorAll('td');
-                        if (cols.length >= 2) {
-                            const name = cols[0]?.innerText?.trim();
-                            if (name && name.length > 2 && name.length < 30) {
-                                batsmen.push({el: r});
-                            }
-                        }
-                    });
-                }
-
-                // Extract from page text
-                let bodyText = document.body.innerText;
-                
-                // Commentary
-                let commentary = '';
-                const commEl = document.querySelector('.commentary, .latest-commentary, [class*="comment"]');
-                if (commEl) commentary = commEl.innerText.trim().substring(0, 150);
-                if (!commentary) {
-                    // Find WIDE, FOUR etc
-                    const match = bodyText.match(/(WIDE|FOUR|SIX|OUT|WICKET|DOT).*?\n/);
-                    if (match) commentary = match[0].trim();
-                    else commentary = 'Live - ' + (document.querySelector('h1')?.innerText || 'NZ vs IND Live');
-                }
-
-                // Overs and balls - find pattern like "32.0" or "32 0"
-                let overs = getText('.overs') || '';
-                if (!overs) {
-                    const overMatch = bodyText.match(/(\d+)\s*Overs/i);
-                    if (overMatch) overs = overMatch[1];
-                }
-
-                // Try to get real data from __NEXT_DATA__ or window
-                let nextData = null;
-                try {
-                    const script = document.getElementById('__NEXT_DATA__');
-                    if (script) nextData = JSON.parse(script.innerText);
-                } catch(e) {}
-
-                return {
-                    raw: {
-                        team1Name,
-                        team1Score,
-                        bodySnippet: bodyText.substring(0, 2000),
-                        commentary,
-                        overs,
-                        nextDataExists: !!nextData
-                    }
-                };
-            });
-
-            console.log('Raw live data:', JSON.stringify(liveData.raw, null, 2).substring(0, 1000));
-
-            // Parse with better logic using page content
-            const detailed = await page.evaluate(() => {
-                // More precise selectors for Crex new UI
-                let batsman1 = {name: '', runs: '0', balls: '0', fours: '0', sixes: '0', sr: '0.00', vector: '', jersey: ''};
-                let batsman2 = {name: '', runs: '0', balls: '0', fours: '0', sixes: '0', sr: '0.00', vector: '', jersey: ''};
-                let bowler = {name: '', figures: '0-0', overs: '0.0', econ: '0.00', vector: '', jersey: ''};
-                let team1Score = '';
-                let currentOver = '0';
-                let currentBall = '0';
-                let commentary = '';
-
-                // Try to find score
-                const scoreEls = document.querySelectorAll('[class*="score"]');
-                for (let el of scoreEls) {
-                    const txt = el.innerText.trim();
-                    if (txt.match(/\d+-\d+/)) {
-                        team1Score = txt;
-                        break;
-                    }
-                }
-                if (!team1Score) {
-                    const m = document.body.innerText.match(/\d+-\d+\s*\(\d+\.\d+\)/);
-                    if (m) team1Score = m[0].split(' ')[0];
-                }
-
-                // Try batsmen table
-                const playerRows = document.querySelectorAll('table tr, .player-row, [class*="batting"] [class*="row"]');
-                let foundBatsmen = [];
-                playerRows.forEach(row => {
-                    const text = row.innerText;
-                    // Pattern like "J Duffy 4 (5)"
-                    const bMatch = text.match(/([A-Z]\s?[A-Z]+)\s+(\d+)\s*\((\d+)\)/);
-                    if (bMatch && foundBatsmen.length < 2) {
-                        foundBatsmen.push({
-                            name: bMatch[1].trim(),
-                            runs: bMatch[2],
-                            balls: bMatch[3],
-                            rowText: text
-                        });
-                    }
-                });
-
-                if (foundBatsmen.length >= 1) {
-                    batsman1.name = foundBatsmen[0].name;
-                    batsman1.runs = foundBatsmen[0].runs;
-                    batsman1.balls = foundBatsmen[0].balls;
-                }
-                if (foundBatsmen.length >= 2) {
-                    batsman2.name = foundBatsmen[1].name;
-                    batsman2.runs = foundBatsmen[1].runs;
-                    batsman2.balls = foundBatsmen[1].balls;
-                }
-
-                // Bowler
-                const bowlerMatch = document.body.innerText.match(/([A-Z]\s?[A-Z]+)\s+(\d+-\d+)\s*\((\d+\.\d+)\)/);
-                if (bowlerMatch) {
-                    bowler.name = bowlerMatch[1];
-                    bowler.figures = bowlerMatch[2];
-                    bowler.overs = bowlerMatch[3];
-                }
-
-                // Commentary - last ball
-                const commEls = document.querySelectorAll('[class*="commentary"], [class*="update"]');
-                if (commEls.length > 0) {
-                    commentary = commEls[0].innerText.trim().substring(0, 120);
-                } else {
-                    // Look for WIDE, FOUR etc in caps
-                    const lines = document.body.innerText.split('\n');
-                    for (let line of lines.reverse()) {
-                        if (line.match(/WIDE|FOUR|SIX|WICKET|OUT/i) && line.length < 150 && line.length > 5) {
-                            commentary = line.trim();
-                            break;
-                        }
-                    }
-                }
-
-                // Overs/Balls
-                const overBallMatch = document.body.innerText.match(/(\d+)\s*(?:Overs?)?[^\d]*(\d+)\s*Balls?/i);
-                if (overBallMatch) {
-                    currentOver = overBallMatch[1];
-                    currentBall = overBallMatch[2];
-                } else {
-                    const ovMatch = document.body.innerText.match(/Overs:\s*(\d+)\s*Balls:\s*(\d+)/i);
-                    if (ovMatch) {
-                        currentOver = ovMatch[1];
-                        currentBall = ovMatch[2];
-                    }
-                }
-
-                // Vectors - find player images
-                const imgs = document.querySelectorAll('img[src*="cricketvectors"], img[src*="player"], img[alt*="Duffy"], img[alt*="Phillips"]');
-                let vectors = [];
-                imgs.forEach(img => {
-                    if (img.src.includes('cricketvectors') || img.src.includes('Players')) {
-                        vectors.push(img.src);
-                    }
-                });
-
-                return {
-                    team1Score: team1Score || '135-8',
-                    currentOver: currentOver || '32',
-                    currentBall: currentBall || '0',
-                    commentary: commentary || 'Live - NZ vs IND',
-                    batsman1,
-                    batsman2,
-                    bowler,
-                    vectors
-                };
-            });
-
-            console.log('Detailed:', JSON.stringify(detailed, null, 2));
-
-            // Build final with vectors fallback
-            const finalLive = {
-                series: match.seriesInfo || 'India tour of New Zealand - 1st ODI',
-                team1Name: match.team1.name || 'NZ',
-                team1Flag: match.team1.flagUrl || 'https://cricketvectors.akamaized.net/Teams/R.png',
-                team1Score: detailed.team1Score,
-                team2Name: match.team2.name || 'India',
-                team2Flag: match.team2.flagUrl || 'https://cricketvectors.akamaized.net/Teams/O.png',
-                commentary: detailed.commentary,
-                currentOver: detailed.currentOver,
-                currentBall: detailed.currentBall,
-                batsman1: {
-                    name: detailed.batsman1.name || 'J Duffy',
-                    runs: detailed.batsman1.runs || '4',
-                    balls: detailed.batsman1.balls || '5',
-                    fours: '1',
-                    sixes: '0',
-                    sr: '80.00',
-                    vector: detailed.vectors[0] || 'https://cricketvectors.akamaized.net/Players/150.png',
-                    jersey: ''
-                },
-                batsman2: {
-                    name: detailed.batsman2.name || 'G Phillips',
-                    runs: detailed.batsman2.runs || '27',
-                    balls: detailed.batsman2.balls || '40',
-                    fours: '2',
-                    sixes: '0',
-                    sr: '67.50',
-                    vector: detailed.vectors[1] || 'https://cricketvectors.akamaized.net/Players/151.png',
-                    jersey: ''
-                },
-                bowler: {
-                    name: detailed.bowler.name || 'A Patel',
-                    figures: detailed.bowler.figures || '2-25',
-                    overs: detailed.bowler.overs || '8.0',
-                    econ: '3.12',
-                    vector: detailed.vectors[2] || 'https://cricketvectors.akamaized.net/Players/200.png',
-                    jersey: ''
-                },
-                isLive: true
-            };
-
-            allLiveData.push({
-                id: match.id,
-                detailUrl: detailUrl,
-                date: match.date,
-                seriesInfo: match.seriesInfo,
-                team1: match.team1,
-                team2: match.team2,
-                live: finalLive,
-                scrapedAt: new Date().toISOString()
-            });
-
-        } catch(err) {
-            console.log(`Failed to scrape ${detailUrl}: ${err.message}`);
-        }
-    }
-
-    await browser.close();
-
-    if (allLiveData.length === 0) {
-        console.log('No live data scraped, keeping old file or creating countdown');
-        try {
-            const old = JSON.parse(fs.readFileSync(LIVE_FILE, 'utf8'));
-            if (old.matches && old.matches.length > 0) {
-                console.log('Keeping old live data');
-                // Update timestamp only
-                old.updatedAt = new Date().toISOString();
-                fs.writeFileSync(LIVE_FILE, JSON.stringify(old, null, 2));
-                return;
-            }
-        } catch(e) {}
-        
-        // No old data, create countdown
-        const nextMatch = schedule.length > 0 ? schedule[0] : null;
-        fs.writeFileSync(LIVE_FILE, JSON.stringify({
-            updatedAt: new Date().toISOString(),
-            count: 0,
-            matches: [],
-            nextMatch: nextMatch,
-            message: 'No live matches - Next: ' + (nextMatch ? nextMatch.team1.name + ' vs ' + nextMatch.team2.name : 'Checking')
-        }, null, 2));
-        return;
-    }
-
-    const output = {
-        updatedAt: new Date().toISOString(),
-        count: allLiveData.length,
-        matches: allLiveData,
-        message: `Live: ${allLiveData.length} International - ${allLiveData[0]?.live?.team1Score || ''}`
-    };
-
-    fs.writeFileSync(LIVE_FILE, JSON.stringify(output, null, 2));
-    console.log(`Saved ${allLiveData.length} live matches to ${LIVE_FILE}`);
 }
 
-scrapeLiveMatches().catch(err => {
-    console.error('Fatal error:', err);
-    process.exit(1);
-});
+(async () => {
+    const browser = await getBrowser();
+    const page = await browser.newPage();
+    await page.setUserAgent('Mozilla/5.0 Chrome/120.0.0.0');
+    await page.setViewport({ width: 1920, height: 1080 });
+
+    console.log('📅 PHASE 2: ALL SCHEDULES - Today jo chal raha hai + 1 month');
+    console.log('📡 Fetching https://crex.com/schedule');
+    await page.goto('https://crex.com/schedule', { waitUntil: 'networkidle2', timeout: 120000 });
+    await new Promise(r => setTimeout(r, 12000));
+
+    // Collect all matches today (no filter first, then filter)
+    console.log('\n📄 Collecting ALL schedules today...');
+    
+    let allMatches = [];
+    let pageNum = 0;
+    const maxPages = 8;
+
+    while (pageNum < maxPages) {
+        pageNum++;
+        console.log(`\n📄 Page ${pageNum}...`);
+        
+        const matchesRaw = await page.evaluate(() => {
+            const res = [];
+            document.querySelectorAll('a[href*="match-updates-"]').forEach(a => {
+                const href = a.getAttribute('href') || '';
+                const idMatch = href.match(/match-updates-([A-Za-z0-9]+)/);
+                if (!idMatch) return;
+                const id = idMatch[1];
+                const title = a.getAttribute('title') || a.innerText || '';
+                const detailUrl = href.startsWith('http') ? href : `https://crex.com${href}`;
+                const cleanDetailUrl = detailUrl.split('?')[0].split('#')[0].replace(/\/match-details.*/, '');
+                
+                let timeText = '';
+                const card = a.closest('li, div') || a.parentElement;
+                if (card) {
+                    const tm = card.innerText.match(/\d{1,2}:\d{2}\s*(AM|PM)/i);
+                    if (tm) timeText = tm[0];
+                }
+                
+                let dateHeader = '';
+                const headings = Array.from(document.querySelectorAll('h2,h3'));
+                headings.forEach(h => {
+                    if (h.innerText && (h.innerText.includes('Today') || h.innerText.match(/\d{1,2}\s*\w+/))) {
+                        dateHeader = h.innerText;
+                    }
+                });
+
+                res.push({ id, href, detailUrl: cleanDetailUrl, title: title.trim(), timeText, dateHeader });
+            });
+            return res;
+        });
+
+        console.log(`  Raw: ${matchesRaw.length}`);
+
+        for (const m of matchesRaw) {
+            if (!m.id || allMatches.find(x => x.id === m.id)) continue;
+            
+            // Keep all for now, including DUB vs EMB domestic for today test
+            const todayStr = new Date().toISOString().split('T')[0];
+            
+            allMatches.push({
+                id: m.id,
+                slug: m.href.split('/').filter(Boolean).pop()?.replace(/-match-updates-.*/, '') || m.id,
+                detailUrl: m.detailUrl,
+                directMatchDetailsUrl: m.detailUrl + '/match-details', // GOLD TRICK!
+                title: m.title,
+                matchTime: m.timeText || 'TBD',
+                date: todayStr,
+                dateHeader: m.dateHeader || 'Today',
+                isToday: m.dateHeader.toLowerCase().includes('today') || true, // Assume today for test
+                isInternational: !(m.title.toLowerCase().includes('emirates d20') || m.title.toLowerCase().includes('toronto') || m.title.toLowerCase().includes('dolphins')),
+                timestamp: Date.now()
+            });
+        }
+
+        console.log(`  Total collected: ${allMatches.length}`);
+
+        const hasNext = await page.evaluate(() => {
+            const btns = Array.from(document.querySelectorAll('button, a'));
+            const nxt = btns.find(b => b.innerText && (b.innerText.trim() === 'Next' || b.innerText === '>' || b.innerText === '›') && !b.disabled);
+            if (nxt) { nxt.click(); return true; }
+            return false;
+        });
+        if (!hasNext) break;
+        await new Promise(r => setTimeout(r, 5000));
+    }
+
+    allMatches = allMatches.filter((v,i,a) => a.findIndex(x => x.id === v.id) === i);
+    
+    // Fallback if no matches - use your DUB vs EMB 14Z9 + add few more
+    if (allMatches.length === 0) {
+        allMatches = [{
+            id: "14Z9",
+            slug: "dub-vs-emb-2nd-semi-final-emirates-d20-league-2026",
+            detailUrl: "https://crex.com/cricket-live-score/dub-vs-emb-2nd-semi-final-emirates-d20-league-2026-match-updates-14Z9",
+            directMatchDetailsUrl: "https://crex.com/cricket-live-score/dub-vs-emb-2nd-semi-final-emirates-d20-league-2026-match-updates-14Z9/match-details",
+            title: "DUB Vs EMB, 2nd Semi Final",
+            matchTime: "9:30 PM",
+            date: new Date().toISOString().split('T')[0],
+            dateHeader: "Today",
+            isToday: true,
+            isInternational: false,
+            timestamp: Date.now()
+        }];
+    }
+
+    console.log(`\n✅ TOTAL SCHEDULES: ${allMatches.length} (Today + upcoming)`);
+    allMatches.forEach(m => console.log(`  - ${m.id}: ${m.title} @ ${m.matchTime} | Today: ${m.isToday} | ${m.directMatchDetailsUrl}`));
+
+    // Save schedule with today's date
+    fs.writeFileSync('match-schedule.json', JSON.stringify(allMatches, null, 2));
+    console.log(`\n✅ Saved match-schedule.json: ${allMatches.length} matches`);
+
+    // PHASE 2: For each schedule, extract players teams vectors jerseys via /match-details
+    console.log(`\n🎯 PHASE 2: Extracting players for ${Math.min(allMatches.length, 10)} schedules via /match-details trick...`);
+    const limit = process.argv.includes('--full') ? allMatches.length : Math.min(10, allMatches.length);
+    
+    // Load existing players.json (your 30 players from Phase 1)
+    let masterPlayers = {};
+    try {
+        masterPlayers = JSON.parse(fs.readFileSync('players.json', 'utf8'));
+        console.log(`📂 Existing players.json: ${Object.keys(masterPlayers).length} players from Phase 1 (DUB vs EMB)`);
+    } catch {
+        console.log('📂 No existing players.json, starting fresh');
+    }
+
+    let matchTeams = {};
+    try {
+        matchTeams = JSON.parse(fs.readFileSync('match-teams.json', 'utf8'));
+    } catch {}
+
+    for (let i = 0; i < limit; i++) {
+        const match = allMatches[i];
+        const directUrl = match.directMatchDetailsUrl;
+        console.log(`\n[${i+1}/${limit}] ${match.id}: ${match.title} -> ${directUrl}`);
+
+        const detailPage = await browser.newPage();
+        await detailPage.setUserAgent('Mozilla/5.0 Chrome/120.0.0.0');
+        
+        try {
+            await detailPage.goto(directUrl, { waitUntil: 'networkidle2', timeout: 80000 });
+            await new Promise(r => setTimeout(r, 12000));
+            await detailPage.evaluate(() => window.scrollTo(0, 400));
+            await new Promise(r => setTimeout(r, 2000));
+
+            await detailPage.waitForSelector('.playingxi-card', { timeout: 20000 }).catch(() => console.log('  ⚠️ playingxi-card timeout'));
+
+            const scrapeTeam = async () => {
+                return await detailPage.evaluate(() => {
+                    const map = {};
+                    let teamCode = '';
+                    const activeBtn = document.querySelector('.playingxi-button.selected, .playingxi-button.active, .playingxi-button[class*="selected"]') || document.querySelector('.playingxi-button');
+                    if (activeBtn) teamCode = activeBtn.innerText.trim();
+                    
+                    document.querySelectorAll('.playingxi-card-row a').forEach(a => {
+                        const href = a.getAttribute('href') || '';
+                        if (!href.includes('/player/')) return;
+                        const id = href.split('-').pop();
+                        if (!id || id.length > 6) return;
+                        const short = a.querySelector('.p-name')?.innerText?.trim() || '';
+                        const full = a.getAttribute('title') || short;
+                        let vector = '', jersey = '';
+                        a.querySelectorAll('img').forEach(img => {
+                            if (img.src.includes('/players/org/')) vector = img.src.split('?')[0];
+                            if (img.src.includes('/jersey/')) jersey = img.src.split('?')[0];
+                        });
+                        if (short && id) {
+                            map[id] = {
+                                id, short, full,
+                                vector: vector || `https://cricketvectors.akamaized.net/players/org/${id}.png`,
+                                jersey: jersey || `https://cricketvectors.akamaized.net/jersey/limited/org/AD.png`,
+                                jerseyCode: jersey ? jersey.split('/').pop()?.replace('.png','') || 'AD' : 'AD',
+                                teamCode, teamName: teamCode,
+                                href, detailUrl: window.location.href,
+                                date: new Date().toISOString().split('T')[0]
+                            };
+                        }
+                    });
+                    return { map, teamCode };
+                });
+            };
+
+            // Team 1
+            await detailPage.evaluate(() => { const b = document.querySelectorAll('.playingxi-button')[0]; if(b) b.click(); });
+            await new Promise(r => setTimeout(r, 3500));
+            const t1 = await scrapeTeam();
+            console.log(`  ${t1.teamCode || 'Team1'}: ${Object.keys(t1.map).length} players - jersey ${Object.values(t1.map)[0]?.jerseyCode || '?'}`);
+
+            // Team 2
+            await detailPage.evaluate(() => { const b = document.querySelectorAll('.playingxi-button')[1]; if(b) b.click(); });
+            await new Promise(r => setTimeout(r, 3500));
+            const t2 = await scrapeTeam();
+            console.log(`  ${t2.teamCode || 'Team2'}: ${Object.keys(t2.map).length} players - jersey ${Object.values(t2.map)[0]?.jerseyCode || '?'}`);
+
+            // Bench
+            let benchMap = {};
+            try {
+                const hasBench = await detailPage.evaluate(() => !!document.querySelector('.bench-toggle, [class*="bench"]'));
+                if (hasBench) {
+                    await detailPage.evaluate(() => { const b = document.querySelector('.bench-toggle'); if(b) b.click(); });
+                    await new Promise(r => setTimeout(r, 2500));
+                    const bench = await scrapeTeam();
+                    benchMap = bench.map;
+                    console.log(`  BENCH: ${Object.keys(benchMap).length}`);
+                }
+            } catch {}
+
+            const allPlayersForMatch = { ...t1.map, ...t2.map, ...benchMap };
+            Object.assign(masterPlayers, allPlayersForMatch);
+
+            // Save with today's date mapping
+            matchTeams[match.id] = {
+                matchId: match.id,
+                slug: match.slug,
+                title: match.title,
+                detailUrl: match.detailUrl,
+                directUrl,
+                date: match.date,
+                isToday: match.isToday,
+                team1: { code: t1.teamCode, name: t1.teamCode, jerseyCode: Object.values(t1.map)[0]?.jerseyCode || '', playerIds: Object.keys(t1.map), count: Object.keys(t1.map).length, players: t1.map },
+                team2: { code: t2.teamCode, name: t2.teamCode, jerseyCode: Object.values(t2.map)[0]?.jerseyCode || '', playerIds: Object.keys(t2.map), count: Object.keys(t2.map).length, players: t2.map },
+                benchIds: Object.keys(benchMap),
+                totalPlayers: Object.keys(allPlayersForMatch).length,
+                allPlayerIds: Object.keys(allPlayersForMatch)
+            };
+
+            console.log(`  Progress: Master ${Object.keys(masterPlayers).length} players`);
+
+            // Save incremental with today's date
+            fs.writeFileSync('players.json', JSON.stringify(masterPlayers, null, 2));
+            fs.writeFileSync('match-teams.json', JSON.stringify(matchTeams, null, 2));
+            fs.writeFileSync(`players-${match.date}.json`, JSON.stringify(masterPlayers, null, 2));
+
+        } catch (e) {
+            console.log(`  ❌ ${match.id} failed: ${e.message}`);
+            matchTeams[match.id] = { matchId: match.id, title: match.title, error: e.message, date: match.date };
+        } finally {
+            await detailPage.close();
+            await new Promise(r => setTimeout(r, 2000));
+        }
+    }
+
+    console.log(`\n✅ FINAL PHASE 2:`);
+    console.log(`- match-schedule.json: ${allMatches.length} schedules (Today jo chal raha hai + upcoming)`);
+    console.log(`- players.json: ${Object.keys(masterPlayers).length} players master (all teams vectors + jerseys + teamCode + jerseyCode + date)`);
+    console.log(`- match-teams.json: ${Object.keys(matchTeams).length} matches mapping (kaunse match me kaunsi team ke kaunse players)`);
+    console.log(`- players-${new Date().toISOString().split('T')[0]}.json: Today's dated copy`);
+
+    console.log(`\n🎯 NEXT: API + SCOREBOARD ATTACH + MAP + PLAY`);
+    console.log(`1. live-scraper.js: API p: "MWK" -> players.json["MWK"] -> MWK.png + DD.png + EMB`);
+    console.log(`2. match-teams.json["14Z9"]: team1=DUB DE, team2=EMB DD -> only show those vectors`);
+    console.log(`3. live-data.json -> scoreboard.html -> fixed flags DE/DD + vectors + jerseys`);
+    console.log(`4. GitHub: schedule.yml hourly + live.yml every 3 min -> Cloudflare auto deploy -> OBS -> YT stream PLAY!`);
+
+    await browser.close();
+})();
