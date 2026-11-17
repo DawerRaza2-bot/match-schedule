@@ -1,36 +1,56 @@
+
 name: Update International Match Schedule
+
 on:
-  schedule:
-    - cron: '0 */6 * * * *'
   workflow_dispatch:
+
 concurrency:
   group: schedule-ultra-final
-  cancel-in-progress: true
+  cancel-in-progress: false
+
 permissions:
   contents: write
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 180
+
     steps:
-      - uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - uses: actions/setup-node@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - uses: browser-actions/setup-chrome@v1
-      - run: npm install puppeteer-core@21.6.1 --no-save --no-audit --no-fund
-      - name: Run Schedule Scraper
+
+      - name: Install Puppeteer
+        run: npm install puppeteer --no-save --no-package-lock --no-audit --no-fund
+
+      - name: Run Daily Scraper
+        run: node scraper.js --mode=daily
+
+      - name: Verify JSON files
         run: |
-          node scraper.js
-          echo "=== SCHEDULE ==="
-          cat match-schedule.json | head -50
-      - name: FORCE PUSH - NO REBASE NO CONFLICT
+          node -e "
+          const fs = require('fs');
+          for (const file of ['match-schedule.json','match-teams.json','players.json']) {
+            const data = JSON.parse(fs.readFileSync(file, 'utf8'));
+            console.log(file, 'OK');
+          }
+          "
+
+      - name: Commit updated JSON files
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          rm -rf node_modules
-          echo "node_modules/" > .gitignore
-          git add -f match-schedule.json .gitignore || true
-          git commit -m "Schedule $(date -u)" || echo "nothing to commit"
-          git push --force origin main || git push -f origin main || true
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+          git add match-schedule.json match-teams.json players.json
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Daily cricket data update"
+            git push origin HEAD:main
+          fi
