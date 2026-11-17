@@ -2,6 +2,9 @@
 name: Update International Match Schedule
 
 on:
+  schedule:
+    # Daily at 1:00 AM Pakistan time (20:00 UTC)
+    - cron: '0 20 * * *'
   workflow_dispatch:
 
 concurrency:
@@ -19,6 +22,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -35,9 +40,35 @@ jobs:
         run: |
           node -e "
           const fs = require('fs');
-          for (const file of ['match-schedule.json','match-teams.json','players.json']) {
+
+          const files = [
+            'match-schedule.json',
+            'match-teams.json',
+            'players.json'
+          ];
+
+          for (const file of files) {
+            if (!fs.existsSync(file)) {
+              throw new Error(file + ' is missing');
+            }
+
             const data = JSON.parse(fs.readFileSync(file, 'utf8'));
-            console.log(file, 'OK');
+
+            console.log(file + ': OK');
+
+            if (file === 'match-schedule.json') {
+              if (!Array.isArray(data) || data.length === 0) {
+                throw new Error('Schedule is empty or invalid');
+              }
+
+              const ids = data.map(match => String(match.id));
+
+              if (new Set(ids).size !== ids.length) {
+                throw new Error('Duplicate match IDs found');
+              }
+
+              console.log('Fixtures:', data.length);
+            }
           }
           "
 
@@ -50,7 +81,14 @@ jobs:
 
           if git diff --cached --quiet; then
             echo "No changes to commit."
-          else
-            git commit -m "Daily cricket data update"
-            git push origin HEAD:main
+            exit 0
           fi
+
+          git commit -m "Daily cricket data update"
+
+          # Latest GitHub changes ko safely include karo
+          git fetch origin main
+          git rebase origin/main
+
+          # Force push bilkul nahi karna
+          git push origin HEAD:main
