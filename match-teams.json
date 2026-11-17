@@ -3,7 +3,7 @@
     "id": "13LU",
     "detailUrl": "https://crex.com/cricket-live-score/pak-vs-sl-2nd-test-sri-lanka-tour-of-pakistan-2026-match-updates-13LU",
     "matchInfo": {
-      "dateText": "Tuesday, 17 November, 9:30 AM",
+      "dateText": "Tuesday, 17 November, 4:30 AM",
       "venue": "Rawalpindi Cricket Stadium, Rawalpindi",
       "broadcasters": [
         "tapmad",
@@ -33,7 +33,7 @@
         }
       ],
       "weather": {
-        "details": "Rawalpindi Cricket Stadium, Rawalpindi 21˚C Hazy sunshine 43% (Humidity) 0 % Chance"
+        "details": "Rawalpindi Cricket Stadium, Rawalpindi 22.6˚C Hazy sunshine 40% (Humidity) 0 % Chance"
       },
       "venueStats": {
         "summary": "10 Matches Win Bat first 10% Win Bowl first 80% Avg 1st Inns370 Avg 2st Inns395 Avg 3rd Inns183 Avg 4th Inns106 Highest Total by ENG vs PAK 657-10 Lowest Total by ENG vs PAK 112-10",
@@ -465,7 +465,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:24:25.652Z",
+    "scrapedAt": "2026-11-17T09:19:24.437Z",
     "date": "2026-11-17",
     "title": "PAK vs SL"
   },
@@ -473,7 +473,7 @@
     "id": "12XS",
     "detailUrl": "https://crex.com/cricket-live-score/ads-w-vs-sys-w-25th-t20-womens-big-bash-league-2026-match-updates-12XS",
     "matchInfo": {
-      "dateText": "Tuesday, 17 November, 1:10 PM",
+      "dateText": "Tuesday, 17 November, 8:10 AM",
       "venue": "Karen Rolton Oval, Adelaide, South Australia",
       "broadcasters": [
         "Ten Sports",
@@ -486,7 +486,7 @@
         "url": "https://crex.com/series/womens-big-bash-league-2026-2KG"
       },
       "weather": {
-        "details": "23.4˚C Hazy sunshine 42% (Humidity) 0 % Chance"
+        "details": "Karen Rolton Oval, Adelaide, South Australia 22.1˚C Clouds and sun 39% (Humidity) 14 % Chance"
       },
       "venueStats": {
         "summary": "34 Matches Win Bat first 56% Win Bowl first 38% Avg 1st Inns149 Avg 2st Inns130 Highest Total by MLRW vs BRHW 207-4 Lowest Total by MLSW vs ADSW 29-10 Highest Chased by MLRW vs ADSW 186-1 Lowest Defended by ADSW vs MLSW 126-4",
@@ -779,7 +779,7 @@
           "shortName": "E Johnston",
           "role": "All Rounder",
           "isCaptain": false,
-          "isWicketkeeper": false,
+          "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/789.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/4R.png",
           "jerseyCode": "4R",
@@ -973,7 +973,7 @@
           "shortName": "A Capsey",
           "role": "All Rounder",
           "isCaptain": false,
-          "isWicketkeeper": false,
+          "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/6DO.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/50.png",
           "jerseyCode": "50",
@@ -1065,7 +1065,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:25:29.418Z",
+    "scrapedAt": "2026-11-17T09:20:26.656Z",
     "date": "2026-11-17",
     "title": "ADS-W vs SYS-W"
   },
@@ -1073,7 +1073,7 @@
     "id": "14HQ",
     "detailUrl": "https://crex.com/cricket-live-score/lbl-vs-spr-qualifier-1-nepal-premier-league-2026-match-updates-14HQ",
     "matchInfo": {
-      "dateText": "Tuesday, 17 November, 4:15 PM",
+      "dateText": "Tuesday, 17 November, 11:15 AM",
       "venue": "Tribhuvan University International Cricket Ground, Kirtipur",
       "series": {
         "format": "Qualifier 1 T20",
@@ -1082,7 +1082,7 @@
         "url": "https://crex.com/series/nepal-premier-league-2026-2LV"
       },
       "weather": {
-        "details": "Tribhuvan University International Cricket Ground, Kirtipur 20˚C Partly sunny 48% (Humidity) 2 % Chance"
+        "details": "Tribhuvan University International Cricket Ground, Kirtipur 21.1˚C Partly sunny 42% (Humidity) 2 % Chance"
       },
       "venueStats": {
         "summary": "27 Matches Win Bat first 56% Win Bowl first 44% Avg 1st Inns143 Avg 2st Inns130 Highest Total by PKA vs KG 224-3 Lowest Total by JB vs SR 51-10 Highest Chased by KNY vs BK 187-6",
@@ -1838,7 +1838,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:26:01.691Z",
+    "scrapedAt": "2026-11-17T09:20:57.054Z",
     "date": "2026-11-17",
     "title": "Lumbini Lions vs Sudurpaschim Royals"
   },
@@ -1846,7 +1846,7 @@
     "id": "14WE",
     "detailUrl": "https://crex.com/cricket-live-score/aa-vs-yl-24th-match-abu-dhabi-t10-league-2026-match-updates-14WE",
     "matchInfo": {
-      "dateText": "Tuesday, 17 November, 6:45 PM",
+      "dateText": "Tuesday, 17 November, 1:45 PM",
       "venue": "Zayed Cricket Stadium, Abu Dhabi",
       "broadcasters": [
         "Tamasha",
@@ -1860,7 +1860,7 @@
         "url": "https://crex.com/series/abu-dhabi-t10-league-2026-2IO"
       },
       "weather": {
-        "details": "Zayed Cricket Stadium, Abu Dhabi 28.9˚C Partly sunny 39% (Humidity) 1 % Chance"
+        "details": "Zayed Cricket Stadium, Abu Dhabi 28.9˚C Mostly cloudy 42% (Humidity) 1 % Chance"
       },
       "venueStats": {
         "summary": "166 Matches Win Bat first 49% Win Bowl first 51% Avg 1st Inns110 Avg 2st Inns100 Highest Total by UT vs RDC 165-2 Lowest Total by DB vs NYS 31-10 Highest Chased by NYS vs NW 144-5 Lowest Defended by BGT vs NYS 131-5",
@@ -2558,7 +2558,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:26:33.550Z",
+    "scrapedAt": "2026-11-17T09:21:27.740Z",
     "date": "2026-11-17",
     "title": "Yas Lions vs Arabian Aces"
   },
@@ -2566,7 +2566,7 @@
     "id": "14WF",
     "detailUrl": "https://crex.com/cricket-live-score/rdc-vs-uab-25th-match-abu-dhabi-t10-league-2026-match-updates-14WF",
     "matchInfo": {
-      "dateText": "Tuesday, 17 November, 9:00 PM",
+      "dateText": "Tuesday, 17 November, 4:00 PM",
       "venue": "Zayed Cricket Stadium, Abu Dhabi",
       "broadcasters": [
         "Tamasha",
@@ -2580,7 +2580,7 @@
         "url": "https://crex.com/series/abu-dhabi-t10-league-2026-2IO"
       },
       "weather": {
-        "details": "Zayed Cricket Stadium, Abu Dhabi 28.9˚C Partly sunny 39% (Humidity) 1 % Chance"
+        "details": "Zayed Cricket Stadium, Abu Dhabi 30˚C Partly sunny 39% (Humidity) 1 % Chance"
       },
       "venueStats": {
         "summary": "166 Matches Win Bat first 49% Win Bowl first 51% Avg 1st Inns110 Avg 2st Inns100 Highest Total by UT vs RDC 165-2 Lowest Total by DB vs NYS 31-10 Highest Chased by NYS vs NW 144-5 Lowest Defended by BGT vs NYS 131-5",
@@ -3278,7 +3278,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:27:04.933Z",
+    "scrapedAt": "2026-11-17T09:21:58.550Z",
     "date": "2026-11-17",
     "title": "UAE Bulls vs Royal Desert Champions"
   },
@@ -3286,7 +3286,7 @@
     "id": "156R",
     "detailUrl": "https://crex.com/cricket-live-score/me-vs-mont-16th-one-day-pro50-championship-2026-match-updates-156R",
     "matchInfo": {
-      "dateText": "Tuesday, 17 November, 12:30 PM",
+      "dateText": "Tuesday, 17 November, 7:30 AM",
       "venue": "Prince Edward School Ground",
       "series": {
         "format": "16th One Day",
@@ -3295,8 +3295,9 @@
         "url": "https://crex.com/series/pro50-championship-2026-2OG"
       },
       "weather": {
-        "details": "Prince Edward School Ground 24.6˚C Clouds and sun 63% (Humidity) 90 % Chance"
-      }
+        "details": "Prince Edward School Ground 26.7˚C Partly sunny 54% (Humidity) 90 % Chance"
+      },
+      "toss": "MONT won the toss and chose to bowl"
     },
     "teams": {
       "ME": [
@@ -3723,7 +3724,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:24:56.749Z",
+    "scrapedAt": "2026-11-17T09:19:55.119Z",
     "date": "2026-11-17",
     "title": "ME vs MONT"
   },
@@ -3731,7 +3732,7 @@
     "id": "13YX",
     "detailUrl": "https://crex.com/cricket-live-score/chg-vs-odsa-33rd-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13YX",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 7:30 AM",
+      "dateText": "Wednesday, 18 November, 2:30 AM",
       "venue": "Jadavpur University Campus 2nd Ground, Salt lake",
       "series": {
         "format": "33rd T20",
@@ -4179,7 +4180,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:27:37.463Z",
+    "scrapedAt": "2026-11-17T09:22:29.037Z",
     "date": "2026-11-18",
     "title": "Chhattisgarh vs Odisha"
   },
@@ -4187,7 +4188,7 @@
     "id": "13X8",
     "detailUrl": "https://crex.com/cricket-live-score/nagl-vs-sikm-7th-t20-syed-mushtaq-ali-trophy-plate-2026-match-updates-13X8",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 8:00 AM",
+      "dateText": "Wednesday, 18 November, 3:00 AM",
       "venue": "Nagaland Cricket Association Stadium",
       "series": {
         "format": "7th T20",
@@ -4563,7 +4564,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:28:13.030Z",
+    "scrapedAt": "2026-11-17T09:22:59.959Z",
     "date": "2026-11-18",
     "title": "Sikkim vs Nagaland"
   },
@@ -4571,7 +4572,7 @@
     "id": "13X9",
     "detailUrl": "https://crex.com/cricket-live-score/ap-vs-ser-8th-t20-syed-mushtaq-ali-trophy-plate-2026-match-updates-13X9",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 8:00 AM",
+      "dateText": "Wednesday, 18 November, 3:00 AM",
       "venue": "Sovima Cricket Ground, Sovima",
       "series": {
         "format": "8th T20",
@@ -4971,7 +4972,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:28:45.070Z",
+    "scrapedAt": "2026-11-17T09:23:30.512Z",
     "date": "2026-11-18",
     "title": "Services vs Arunachal Pradesh"
   },
@@ -4979,7 +4980,7 @@
     "id": "13YW",
     "detailUrl": "https://crex.com/cricket-live-score/andr-vs-ker-34th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13YW",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 8:00 AM",
+      "dateText": "Wednesday, 18 November, 3:00 AM",
       "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
       "series": {
         "format": "34th T20",
@@ -5453,7 +5454,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:29:17.908Z",
+    "scrapedAt": "2026-11-17T09:24:01.186Z",
     "date": "2026-11-18",
     "title": "Kerala vs Andhra"
   },
@@ -5461,7 +5462,7 @@
     "id": "11BN",
     "detailUrl": "https://crex.com/cricket-live-score/aus-vs-eng-3rd-odi-england-tour-of-australia-2026-match-updates-11BN",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 8:30 AM",
+      "dateText": "Wednesday, 18 November, 3:30 AM",
       "venue": "Bellerive Oval, Hobart",
       "broadcasters": [
         "Ten Sports",
@@ -5488,7 +5489,7 @@
         }
       ],
       "weather": {
-        "details": "Bellerive Oval, Hobart 15˚C Mostly sunny 50% (Humidity) 15 % Chance"
+        "details": "Bellerive Oval, Hobart 14.4˚C Mostly sunny 52% (Humidity) 15 % Chance"
       },
       "venueStats": {
         "summary": "16 Matches Win Bat first 56% Win Bowl first 44% Avg 1st Inns266 Avg 2st Inns229 Highest Total by SL vs SCO 363-9 Lowest Total by SCO vs AUS 130-10 Highest Chased by SL vs IND 321-3 Lowest Defended by ENG vs AUS 230-10",
@@ -5896,7 +5897,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:29:48.945Z",
+    "scrapedAt": "2026-11-17T09:24:32.903Z",
     "date": "2026-11-18",
     "title": "Australia vs England"
   },
@@ -5904,7 +5905,7 @@
     "id": "13YU",
     "detailUrl": "https://crex.com/cricket-live-score/ben-vs-jhkd-35th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13YU",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 8:30 AM",
+      "dateText": "Wednesday, 18 November, 3:30 AM",
       "venue": "Sharad Pawar Cricket Academy BKC",
       "series": {
         "format": "35th T20",
@@ -6352,7 +6353,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:30:28.389Z",
+    "scrapedAt": "2026-11-17T09:25:03.400Z",
     "date": "2026-11-18",
     "title": "Bengal vs Jharkhand"
   },
@@ -6360,7 +6361,7 @@
     "id": "13YV",
     "detailUrl": "https://crex.com/cricket-live-score/bihr-vs-del-36th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13YV",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 8:30 AM",
+      "dateText": "Wednesday, 18 November, 3:30 AM",
       "venue": "Daly College Ground, Indore",
       "series": {
         "format": "36th T20",
@@ -6783,7 +6784,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:31:02.913Z",
+    "scrapedAt": "2026-11-17T09:25:34.116Z",
     "date": "2026-11-18",
     "title": "Delhi vs Bihar"
   },
@@ -6791,7 +6792,7 @@
     "id": "151R",
     "detailUrl": "https://crex.com/cricket-live-score/png-w-vs-uae-w-17th-t20i-womens-emerging-nations-trophy-2026-match-updates-151R",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 10:00 AM",
+      "dateText": "Wednesday, 18 November, 5:00 AM",
       "venue": "Karwan Cricket Ground, Ajman",
       "broadcasters": [
         "PTV Sports",
@@ -6806,7 +6807,7 @@
         "url": "https://crex.com/series/womens-emerging-nations-trophy-2026-2O9"
       },
       "weather": {
-        "details": "Karwan Cricket Ground, Ajman 30˚C Partly sunny 39% (Humidity) 1 % Chance"
+        "details": "Karwan Cricket Ground, Ajman 28.9˚C Sunny 44% (Humidity) 1 % Chance"
       },
       "venueStats": {
         "summary": "8 Matches Win Bat first 38% Win Bowl first 63% Avg 1st Inns129 Avg 2st Inns119 Highest Total by PAK-W vs THA-W 180-2 Lowest Total by THA-W vs ZIM-W 82-10 Highest Chased by SCO-W vs UAE-W 142-3",
@@ -7176,7 +7177,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:31:35.797Z",
+    "scrapedAt": "2026-11-17T09:26:04.704Z",
     "date": "2026-11-18",
     "title": "Papua New Guinea Women vs UAE Women"
   },
@@ -7184,7 +7185,7 @@
     "id": "151S",
     "detailUrl": "https://crex.com/cricket-live-score/ire-w-vs-sco-w-18th-t20i-womens-emerging-nations-trophy-2026-match-updates-151S",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 10:00 AM",
+      "dateText": "Wednesday, 18 November, 5:00 AM",
       "venue": "Seven Districts Ground, Ajman",
       "broadcasters": [
         "PTV Sports",
@@ -7199,7 +7200,7 @@
         "url": "https://crex.com/series/womens-emerging-nations-trophy-2026-2O9"
       },
       "weather": {
-        "details": "Seven Districts Ground, Ajman 30˚C Partly sunny 39% (Humidity) 1 % Chance"
+        "details": "Seven Districts Ground, Ajman 28.9˚C Sunny 44% (Humidity) 1 % Chance"
       },
       "venueStats": {
         "summary": "12 Matches Win Bat first 58% Win Bowl first 42% Avg 1st Inns124 Avg 2st Inns105 Highest Total by IRE-W vs UAE-W 171-5 Lowest Total by HK W vs UAEW 62-10 Highest Chased by NED-W vs THA-W 137-5",
@@ -7569,7 +7570,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:32:07.632Z",
+    "scrapedAt": "2026-11-17T09:26:35.654Z",
     "date": "2026-11-18",
     "title": "Ireland Women vs Scotland Women"
   },
@@ -7577,7 +7578,7 @@
     "id": "13YY",
     "detailUrl": "https://crex.com/cricket-live-score/hyd-vs-vid-37th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13YY",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 10:30 AM",
+      "dateText": "Wednesday, 18 November, 5:30 AM",
       "venue": "Eden Gardens, Kolkata",
       "series": {
         "format": "37th T20",
@@ -7990,7 +7991,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:32:39.414Z",
+    "scrapedAt": "2026-11-17T09:27:06.253Z",
     "date": "2026-11-18",
     "title": "Hyderabad vs Vidarbha"
   },
@@ -7998,7 +7999,7 @@
     "id": "13YZ",
     "detailUrl": "https://crex.com/cricket-live-score/hp-vs-mah-38th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13YZ",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 10:30 AM",
+      "dateText": "Wednesday, 18 November, 5:30 AM",
       "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali",
       "series": {
         "format": "38th T20",
@@ -8410,7 +8411,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:33:11.153Z",
+    "scrapedAt": "2026-11-17T09:27:37.546Z",
     "date": "2026-11-18",
     "title": "Maharashtra vs Himachal Pradesh"
   },
@@ -8418,7 +8419,7 @@
     "id": "13Z0",
     "detailUrl": "https://crex.com/cricket-live-score/pun-vs-rlys-39th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Z0",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 10:30 AM",
+      "dateText": "Wednesday, 18 November, 5:30 AM",
       "venue": "Holkar Cricket Stadium, Indore",
       "series": {
         "format": "39th T20",
@@ -8842,7 +8843,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:33:44.915Z",
+    "scrapedAt": "2026-11-17T09:28:08.599Z",
     "date": "2026-11-18",
     "title": "Punjab vs Railways"
   },
@@ -8850,7 +8851,7 @@
     "id": "13Z1",
     "detailUrl": "https://crex.com/cricket-live-score/cg-vs-raj-40th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Z1",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 10:30 AM",
+      "dateText": "Wednesday, 18 November, 5:30 AM",
       "venue": "Wankhede Stadium, Mumbai",
       "series": {
         "format": "40th T20",
@@ -9225,7 +9226,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:34:40.437Z",
+    "scrapedAt": "2026-11-17T09:28:39.368Z",
     "date": "2026-11-18",
     "title": "Chandigarh vs Rajasthan"
   },
@@ -9233,7 +9234,7 @@
     "id": "13Z5",
     "detailUrl": "https://crex.com/cricket-live-score/goa-vs-mum-41st-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Z5",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 12:00 PM",
+      "dateText": "Wednesday, 18 November, 7:00 AM",
       "venue": "Jadavpur University Campus 2nd Ground, Salt lake",
       "series": {
         "format": "41st T20",
@@ -9669,7 +9670,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:35:14.026Z",
+    "scrapedAt": "2026-11-17T09:29:10.294Z",
     "date": "2026-11-18",
     "title": "Goa vs Mumbai"
   },
@@ -9677,7 +9678,7 @@
     "id": "13Z4",
     "detailUrl": "https://crex.com/cricket-live-score/asm-vs-pdc-42nd-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Z4",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 12:15 PM",
+      "dateText": "Wednesday, 18 November, 7:15 AM",
       "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali",
       "series": {
         "format": "42nd T20",
@@ -10161,7 +10162,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:35:47.556Z",
+    "scrapedAt": "2026-11-17T09:29:41.214Z",
     "date": "2026-11-18",
     "title": "Assam vs Puducherry"
   },
@@ -10169,7 +10170,7 @@
     "id": "13XA",
     "detailUrl": "https://crex.com/cricket-live-score/mgly-vs-mnp-9th-t20-syed-mushtaq-ali-trophy-plate-2026-match-updates-13XA",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 12:30 PM",
+      "dateText": "Wednesday, 18 November, 7:30 AM",
       "venue": "Nagaland Cricket Association Stadium",
       "series": {
         "format": "9th T20",
@@ -10581,7 +10582,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:36:21.832Z",
+    "scrapedAt": "2026-11-17T09:30:12.229Z",
     "date": "2026-11-18",
     "title": "Meghalaya vs Manipur"
   },
@@ -10589,7 +10590,7 @@
     "id": "13Z2",
     "detailUrl": "https://crex.com/cricket-live-score/brd-vs-up-43rd-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Z2",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 1:00 PM",
+      "dateText": "Wednesday, 18 November, 8:00 AM",
       "venue": "Sharad Pawar Cricket Academy BKC",
       "series": {
         "format": "43rd T20",
@@ -11036,7 +11037,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:36:54.946Z",
+    "scrapedAt": "2026-11-17T09:30:43.405Z",
     "date": "2026-11-18",
     "title": "Uttar Pradesh vs Baroda"
   },
@@ -11044,7 +11045,7 @@
     "id": "13Z3",
     "detailUrl": "https://crex.com/cricket-live-score/har-vs-tn-44th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Z3",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 1:00 PM",
+      "dateText": "Wednesday, 18 November, 8:00 AM",
       "venue": "Daly College Ground, Indore",
       "series": {
         "format": "44th T20",
@@ -11443,7 +11444,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:37:27.474Z",
+    "scrapedAt": "2026-11-17T09:31:14.477Z",
     "date": "2026-11-18",
     "title": "Tamil Nadu vs Haryana"
   },
@@ -11451,7 +11452,7 @@
     "id": "151T",
     "detailUrl": "https://crex.com/cricket-live-score/ned-w-vs-zim-w-19th-t20i-womens-emerging-nations-trophy-2026-match-updates-151T",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 2:15 PM",
+      "dateText": "Wednesday, 18 November, 9:15 AM",
       "venue": "Karwan Cricket Ground, Ajman",
       "broadcasters": [
         "PTV Sports",
@@ -11466,7 +11467,7 @@
         "url": "https://crex.com/series/womens-emerging-nations-trophy-2026-2O9"
       },
       "weather": {
-        "details": "Karwan Cricket Ground, Ajman 30˚C Partly sunny 39% (Humidity) 1 % Chance"
+        "details": "Karwan Cricket Ground, Ajman 28.9˚C Sunny 44% (Humidity) 1 % Chance"
       },
       "venueStats": {
         "summary": "8 Matches Win Bat first 38% Win Bowl first 63% Avg 1st Inns129 Avg 2st Inns119 Highest Total by PAK-W vs THA-W 180-2 Lowest Total by THA-W vs ZIM-W 82-10 Highest Chased by SCO-W vs UAE-W 142-3",
@@ -11836,7 +11837,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:37:59.835Z",
+    "scrapedAt": "2026-11-17T09:31:45.068Z",
     "date": "2026-11-18",
     "title": "Netherlands Women vs Zimbabwe Women"
   },
@@ -11844,7 +11845,7 @@
     "id": "151U",
     "detailUrl": "https://crex.com/cricket-live-score/ban-w-vs-tha-w-20th-t20i-womens-emerging-nations-trophy-2026-match-updates-151U",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 2:15 PM",
+      "dateText": "Wednesday, 18 November, 9:15 AM",
       "venue": "Seven Districts Ground, Ajman",
       "broadcasters": [
         "PTV Sports",
@@ -11859,7 +11860,7 @@
         "url": "https://crex.com/series/womens-emerging-nations-trophy-2026-2O9"
       },
       "weather": {
-        "details": "Seven Districts Ground, Ajman 30˚C Partly sunny 39% (Humidity) 1 % Chance"
+        "details": "Seven Districts Ground, Ajman 28.9˚C Sunny 44% (Humidity) 1 % Chance"
       },
       "venueStats": {
         "summary": "12 Matches Win Bat first 58% Win Bowl first 42% Avg 1st Inns124 Avg 2st Inns105 Highest Total by IRE-W vs UAE-W 171-5 Lowest Total by HK W vs UAEW 62-10 Highest Chased by NED-W vs THA-W 137-5",
@@ -12241,7 +12242,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:38:31.995Z",
+    "scrapedAt": "2026-11-17T09:32:16.464Z",
     "date": "2026-11-18",
     "title": "Bangladesh Women vs Thailand Women"
   },
@@ -12249,7 +12250,7 @@
     "id": "13Z6",
     "detailUrl": "https://crex.com/cricket-live-score/guj-vs-utk-45th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Z6",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 4:00 PM",
+      "dateText": "Wednesday, 18 November, 11:00 AM",
       "venue": "Eden Gardens, Kolkata",
       "series": {
         "format": "45th T20",
@@ -12711,7 +12712,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:39:03.413Z",
+    "scrapedAt": "2026-11-17T09:32:46.884Z",
     "date": "2026-11-18",
     "title": "Uttarakhand vs Gujarat"
   },
@@ -12719,7 +12720,7 @@
     "id": "13Z7",
     "detailUrl": "https://crex.com/cricket-live-score/mp-vs-tri-46th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Z7",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 4:00 PM",
+      "dateText": "Wednesday, 18 November, 11:00 AM",
       "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali",
       "series": {
         "format": "46th T20",
@@ -13131,7 +13132,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:39:37.617Z",
+    "scrapedAt": "2026-11-17T09:33:18.049Z",
     "date": "2026-11-18",
     "title": "Madhya Pradesh vs Tripura"
   },
@@ -13139,7 +13140,7 @@
     "id": "13Z8",
     "detailUrl": "https://crex.com/cricket-live-score/jk-vs-saur-47th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Z8",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 4:00 PM",
+      "dateText": "Wednesday, 18 November, 11:00 AM",
       "venue": "Holkar Cricket Stadium, Indore",
       "series": {
         "format": "47th T20",
@@ -13574,7 +13575,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:40:13.560Z",
+    "scrapedAt": "2026-11-17T09:33:48.627Z",
     "date": "2026-11-18",
     "title": "Jammu and Kashmir vs Saurashtra"
   },
@@ -13582,7 +13583,7 @@
     "id": "13Z9",
     "detailUrl": "https://crex.com/cricket-live-score/kar-vs-miz-48th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Z9",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 4:00 PM",
+      "dateText": "Wednesday, 18 November, 11:00 AM",
       "venue": "Wankhede Stadium, Mumbai",
       "series": {
         "format": "48th T20",
@@ -13969,7 +13970,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:40:52.403Z",
+    "scrapedAt": "2026-11-17T09:34:20.126Z",
     "date": "2026-11-18",
     "title": "Karnataka vs Mizoram"
   },
@@ -13977,7 +13978,7 @@
     "id": "14HR",
     "detailUrl": "https://crex.com/cricket-live-score/cwr-vs-kmg-eliminator-1-nepal-premier-league-2026-match-updates-14HR",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 4:15 PM",
+      "dateText": "Wednesday, 18 November, 11:15 AM",
       "venue": "Tribhuvan University International Cricket Ground, Kirtipur",
       "series": {
         "format": "Eliminator 1 T20",
@@ -13986,7 +13987,7 @@
         "url": "https://crex.com/series/nepal-premier-league-2026-2LV"
       },
       "weather": {
-        "details": "Tribhuvan University International Cricket Ground, Kirtipur 20˚C Partly sunny 45% (Humidity) 2 % Chance"
+        "details": "Tribhuvan University International Cricket Ground, Kirtipur 20˚C Partly sunny 42% (Humidity) 2 % Chance"
       },
       "venueStats": {
         "summary": "27 Matches Win Bat first 56% Win Bowl first 44% Avg 1st Inns143 Avg 2st Inns130 Highest Total by PKA vs KG 224-3 Lowest Total by JB vs SR 51-10 Highest Chased by KNY vs BK 187-6",
@@ -14596,7 +14597,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:41:23.529Z",
+    "scrapedAt": "2026-11-17T09:34:51.463Z",
     "date": "2026-11-18",
     "title": "Kathmandu Gurkhas vs Chitwan Rhinos"
   },
@@ -14604,7 +14605,7 @@
     "id": "14WG",
     "detailUrl": "https://crex.com/cricket-live-score/uab-vs-ut-26th-match-abu-dhabi-t10-league-2026-match-updates-14WG",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 6:45 PM",
+      "dateText": "Wednesday, 18 November, 1:45 PM",
       "venue": "Zayed Cricket Stadium, Abu Dhabi",
       "broadcasters": [
         "Tamasha",
@@ -15143,7 +15144,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:41:54.911Z",
+    "scrapedAt": "2026-11-17T09:35:21.982Z",
     "date": "2026-11-18",
     "title": "UAE Bulls vs United Tigers"
   },
@@ -15151,7 +15152,7 @@
     "id": "14WH",
     "detailUrl": "https://crex.com/cricket-live-score/ee-vs-yl-27th-match-abu-dhabi-t10-league-2026-match-updates-14WH",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 9:00 PM",
+      "dateText": "Wednesday, 18 November, 4:00 PM",
       "venue": "Zayed Cricket Stadium, Abu Dhabi",
       "broadcasters": [
         "Tamasha",
@@ -15654,7 +15655,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:42:26.672Z",
+    "scrapedAt": "2026-11-17T09:35:52.901Z",
     "date": "2026-11-18",
     "title": "Emirates Eagles vs Yas Lions"
   },
@@ -15662,7 +15663,7 @@
     "id": "13RT",
     "detailUrl": "https://crex.com/cricket-live-score/auck-vs-nb-1st-first-class-plunket-shield-2026-27-match-updates-13RT",
     "matchInfo": {
-      "dateText": "Thursday, 19 November, 2:30 AM",
+      "dateText": "Wednesday, 18 November, 9:30 PM",
       "venue": "Seddon Park, Hamilton",
       "broadcasters": [
         "YouTube"
@@ -15678,7 +15679,7 @@
       "recentMatches": "& Team Form (Last 5 matches) Northern Brave * L L L W W Auckland * D W L L L"
     },
     "teams": {},
-    "scrapedAt": "2026-11-17T08:43:00.659Z",
+    "scrapedAt": "2026-11-17T09:36:23.923Z",
     "date": "2026-11-19",
     "title": "Northern Brave vs Auckland"
   },
@@ -15686,7 +15687,7 @@
     "id": "13RU",
     "detailUrl": "https://crex.com/cricket-live-score/cs-vs-wel-2nd-first-class-plunket-shield-2026-27-match-updates-13RU",
     "matchInfo": {
-      "dateText": "Thursday, 19 November, 2:30 AM",
+      "dateText": "Wednesday, 18 November, 9:30 PM",
       "venue": "Fitzherbert Park",
       "broadcasters": [
         "YouTube"
@@ -15702,7 +15703,7 @@
       "recentMatches": "& Team Form (Last 5 matches) Central Stags * W L W D D Wellington * L L L D L"
     },
     "teams": {},
-    "scrapedAt": "2026-11-17T08:43:55.478Z",
+    "scrapedAt": "2026-11-17T09:37:17.523Z",
     "date": "2026-11-19",
     "title": "Central Stags vs Wellington"
   },
@@ -15710,7 +15711,7 @@
     "id": "13RV",
     "detailUrl": "https://crex.com/cricket-live-score/cant-vs-otg-3rd-first-class-plunket-shield-2026-27-match-updates-13RV",
     "matchInfo": {
-      "dateText": "Thursday, 19 November, 2:30 AM",
+      "dateText": "Wednesday, 18 November, 9:30 PM",
       "venue": "University of Otago Oval, Dunedin",
       "broadcasters": [
         "YouTube"
@@ -15726,7 +15727,7 @@
       "recentMatches": "& Team Form (Last 5 matches) Otago * W W W D D Canterbury * D W W D W"
     },
     "teams": {},
-    "scrapedAt": "2026-11-17T08:44:50.196Z",
+    "scrapedAt": "2026-11-17T09:38:11.513Z",
     "date": "2026-11-19",
     "title": "Otago vs Canterbury"
   },
@@ -15734,7 +15735,7 @@
     "id": "12JM",
     "detailUrl": "https://crex.com/cricket-live-score/ind-vs-nz-1st-test-india-tour-of-new-zealand-2026-match-updates-12JM",
     "matchInfo": {
-      "dateText": "Thursday, 19 November, 3:00 AM",
+      "dateText": "Wednesday, 18 November, 10:00 PM",
       "venue": "Basin Reserve, Wellington",
       "broadcasters": [
         "Ten Sports",
@@ -16155,7 +16156,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:45:45.441Z",
+    "scrapedAt": "2026-11-17T09:39:05.757Z",
     "date": "2026-11-19",
     "title": "New Zealand vs India"
   },
@@ -16163,7 +16164,7 @@
     "id": "12XT",
     "detailUrl": "https://crex.com/cricket-live-score/hbh-w-vs-prs-w-26th-t20-womens-big-bash-league-2026-match-updates-12XT",
     "matchInfo": {
-      "dateText": "Thursday, 19 November, 9:40 AM",
+      "dateText": "Thursday, 19 November, 4:40 AM",
       "venue": "Allan Border Field, Brisbane",
       "broadcasters": [
         "Ten Sports",
@@ -16608,7 +16609,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:46:19.844Z",
+    "scrapedAt": "2026-11-17T09:39:36.491Z",
     "date": "2026-11-19",
     "title": "Hobart Hurricanes Women vs Perth Scorchers Women"
   },
@@ -16616,7 +16617,7 @@
     "id": "150S",
     "detailUrl": "https://crex.com/cricket-live-score/ban-a-vs-hk-1st-one-day-mens-asia-cup-rising-stars-2026-match-updates-150S",
     "matchInfo": {
-      "dateText": "Thursday, 19 November, 11:00 AM",
+      "dateText": "Thursday, 19 November, 6:00 AM",
       "venue": "University of Doha for Science and Technology, Doha",
       "broadcasters": [
         "Ten Sports",
@@ -16998,7 +16999,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:46:52.829Z",
+    "scrapedAt": "2026-11-17T09:40:07.588Z",
     "date": "2026-11-19",
     "title": "Bangladesh A vs Hong Kong"
   },
@@ -17006,7 +17007,7 @@
     "id": "14TG",
     "detailUrl": "https://crex.com/cricket-live-score/ire-a-vs-zim-a-1st-one-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TG",
     "matchInfo": {
-      "dateText": "Thursday, 19 November, 12:30 PM",
+      "dateText": "Thursday, 19 November, 7:30 AM",
       "broadcasters": [
         "YouTube"
       ],
@@ -17202,7 +17203,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:47:25.401Z",
+    "scrapedAt": "2026-11-17T09:40:38.522Z",
     "date": "2026-11-19",
     "title": "Zimbabwe A vs Ireland A"
   },
@@ -17210,7 +17211,7 @@
     "id": "12XU",
     "detailUrl": "https://crex.com/cricket-live-score/bh-w-vs-syt-w-27th-t20-womens-big-bash-league-2026-match-updates-12XU",
     "matchInfo": {
-      "dateText": "Thursday, 19 November, 1:10 PM",
+      "dateText": "Thursday, 19 November, 8:10 AM",
       "venue": "Allan Border Field, Brisbane",
       "broadcasters": [
         "Ten Sports",
@@ -17631,7 +17632,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:47:58.691Z",
+    "scrapedAt": "2026-11-17T09:41:09.900Z",
     "date": "2026-11-19",
     "title": "Brisbane Heat Women vs Sydney Thunder Women"
   },
@@ -17639,7 +17640,7 @@
     "id": "150T",
     "detailUrl": "https://crex.com/cricket-live-score/afg-a-vs-sl-a-2nd-one-day-mens-asia-cup-rising-stars-2026-match-updates-150T",
     "matchInfo": {
-      "dateText": "Thursday, 19 November, 3:00 PM",
+      "dateText": "Thursday, 19 November, 10:00 AM",
       "venue": "West End Park International Cricket Stadium, Doha",
       "broadcasters": [
         "Ten Sports",
@@ -18022,7 +18023,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:48:31.318Z",
+    "scrapedAt": "2026-11-17T09:41:40.719Z",
     "date": "2026-11-19",
     "title": "Sri Lanka A vs Afghanistan A"
   },
@@ -18030,7 +18031,7 @@
     "id": "14HS",
     "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-qualifier-2nd-t20-nepal-premier-league-2026-match-updates-14HS",
     "matchInfo": {
-      "dateText": "Thursday, 19 November, 4:15 PM",
+      "dateText": "Thursday, 19 November, 11:15 AM",
       "venue": "Tribhuvan University International Cricket Ground, Kirtipur",
       "series": {
         "format": "Qualifier 2 T20",
@@ -18062,7 +18063,7 @@
       }
     },
     "teams": {},
-    "scrapedAt": "2026-11-17T08:49:03.398Z",
+    "scrapedAt": "2026-11-17T09:42:11.366Z",
     "date": "2026-11-19",
     "title": "Team 1 (TBC) vs Team 2 (TBC)"
   },
@@ -18070,7 +18071,7 @@
     "id": "14WI",
     "detailUrl": "https://crex.com/cricket-live-score/aa-vs-uab-28th-match-abu-dhabi-t10-league-2026-match-updates-14WI",
     "matchInfo": {
-      "dateText": "Thursday, 19 November, 4:30 PM",
+      "dateText": "Thursday, 19 November, 11:30 AM",
       "venue": "Zayed Cricket Stadium, Abu Dhabi",
       "broadcasters": [
         "Tamasha",
@@ -18537,7 +18538,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:49:58.498Z",
+    "scrapedAt": "2026-11-17T09:43:05.673Z",
     "date": "2026-11-19",
     "title": "UAE Bulls vs Arabian Aces"
   },
@@ -18545,7 +18546,7 @@
     "id": "14WJ",
     "detailUrl": "https://crex.com/cricket-live-score/rdc-vs-yl-29th-match-abu-dhabi-t10-league-2026-match-updates-14WJ",
     "matchInfo": {
-      "dateText": "Thursday, 19 November, 6:45 PM",
+      "dateText": "Thursday, 19 November, 1:45 PM",
       "venue": "Zayed Cricket Stadium, Abu Dhabi",
       "broadcasters": [
         "Tamasha",
@@ -19048,7 +19049,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:50:29.998Z",
+    "scrapedAt": "2026-11-17T09:43:36.795Z",
     "date": "2026-11-19",
     "title": "Yas Lions vs Royal Desert Champions"
   },
@@ -19056,7 +19057,7 @@
     "id": "14WK",
     "detailUrl": "https://crex.com/cricket-live-score/ee-vs-ut-30th-match-abu-dhabi-t10-league-2026-match-updates-14WK",
     "matchInfo": {
-      "dateText": "Thursday, 19 November, 9:00 PM",
+      "dateText": "Thursday, 19 November, 4:00 PM",
       "venue": "Zayed Cricket Stadium, Abu Dhabi",
       "broadcasters": [
         "Tamasha",
@@ -19619,7 +19620,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T08:51:02.918Z",
+    "scrapedAt": "2026-11-17T09:44:08.195Z",
     "date": "2026-11-19",
     "title": "Emirates Eagles vs United Tigers"
   }
