@@ -1,36 +1,75 @@
+
 name: Update Live Score - International
+
 on:
   schedule:
-    - cron: '*/3 * * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
+
 concurrency:
   group: live-ultra-final
   cancel-in-progress: true
+
 permissions:
   contents: write
+
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-      - uses: actions/setup-node@v4
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: '20'
-      - uses: browser-actions/setup-chrome@v1
-      - run: npm install puppeteer-core@21.6.1 --no-save --no-audit --no-fund
+
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v1
+
+      - name: Install Puppeteer Core
+        run: npm install puppeteer-core@21.6.1 --no-save --no-package-lock --no-audit --no-fund
+
       - name: Run Live Scraper
+        run: node Live-Scraper.js
+
+      - name: Verify Live JSON
         run: |
-          node Live-Scraper-ULTRA-FIXED.js 2>&1 || node Live-Scraper-FIXED-CHROME.js 2>&1 || node live-scraper.js 2>&1 || node Live-Scraper.js 2>&1
-          echo "=== LIVE DATA ==="
-          cat live-data.json | head -50
-      - name: FORCE PUSH - NO REBASE NO CONFLICT
+          node -e "
+          const fs = require('fs');
+
+          if (!fs.existsSync('live-data.json')) {
+            throw new Error('live-data.json is missing');
+          }
+
+          const data = JSON.parse(
+            fs.readFileSync('live-data.json', 'utf8')
+          );
+
+          console.log('live-data.json: OK');
+          console.log('JSON verification successful');
+          "
+
+      - name: Commit Live Data Safely
         run: |
-          git config --global user.name '【entity-github¦canonical_name=GitHub】-actions[bot]'
-          git config --global user.email '【entity-github¦canonical_name=GitHub】-actions[bot]@users.noreply.【entity-github¦canonical_name=GitHub】.com'
-          rm -rf node_modules
-          echo "node_modules/" > .gitignore
-          git add -f live-data.json .gitignore || true
-          git commit -m "Live $(date -u)" || echo "nothing to commit"
-          git push --force origin main || git push -f origin main || true
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+
+          git add live-data.json
+
+          if git diff --cached --quiet; then
+            echo "No live data changes."
+            exit 0
+          fi
+
+          git commit -m "Update live cricket scores"
+
+          git fetch origin main
+          git rebase origin/main
+
+          git push origin HEAD:main
