@@ -1860,11 +1860,11 @@
         "url": "https://crex.com/series/abu-dhabi-t10-league-2026-2IO"
       },
       "weather": {
-        "details": "Zayed Cricket Stadium, Abu Dhabi 28.9˚C Mostly cloudy 42% (Humidity) 1 % Chance"
+        "details": "Zayed Cricket Stadium, Abu Dhabi 26.1˚C Clear 60% (Humidity) 1 % Chance"
       },
       "venueStats": {
-        "summary": "166 Matches Win Bat first 49% Win Bowl first 51% Avg 1st Inns110 Avg 2st Inns100 Highest Total by UT vs RDC 165-2 Lowest Total by DB vs NYS 31-10 Highest Chased by NYS vs NW 144-5 Lowest Defended by BGT vs NYS 131-5",
-        "matchCount": "166",
+        "summary": "167 Matches Win Bat first 49% Win Bowl first 51% Avg 1st Inns110 Avg 2st Inns100 Highest Total by UT vs RDC 165-2 Lowest Total by DB vs NYS 31-10 Highest Chased by NYS vs NW 144-5 Lowest Defended by BGT vs NYS 131-5",
+        "matchCount": "167",
         "venuePercentages": [
           "Win Bat first 49%",
           "Win Bowl first 51%"
@@ -1887,8 +1887,23 @@
         ]
       },
       "headToHead": "YL vs AA Head to Head (Last 10 matches) YL 1 - 0 AA AA 103/7 10.0 YL Won 12th T10, Abu Dhabi T10 2026 YL 10.0 132/5",
-      "teamComparison": "YL vs AA Team Comparison Overall On Venue YL vs all teams AA vs all teams 7 Matches Played 8 57% Win 75% 108 Avg Score 108 132 Highest Score 131 90 Lowest Score 89",
-      "recentMatches": "YL & AA Team Form (Last 5 matches) Yas Lions * W L L W W Arabian Aces * W W W W L"
+      "teamComparison": "YL vs AA Team Comparison Overall On Venue YL vs all teams AA vs all teams 8 Matches Played 9 62% Win 66% 113 Avg Score 112 149 Highest Score 145 90 Lowest Score 89",
+      "recentMatches": "YL & AA Team Form (Last 5 matches) Yas Lions * W L L W W Arabian Aces * W W W W L",
+      "toss": "YL won the toss and chose to bowl",
+      "umpires": [
+        {
+          "role": "On-field Umpire",
+          "name": "Martin Saggers, Ranmore Martinesz"
+        },
+        {
+          "role": "Third Umpire",
+          "name": "Shiju Sam"
+        },
+        {
+          "role": "Referee",
+          "name": "Roshan Mahanama"
+        }
+      ]
     },
     "teams": {
       "YL & AA Squad": [
@@ -2337,6 +2352,18 @@
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/1LH.png",
           "jerseyCode": "1LH",
           "profileUrl": "https://crex.com/player/fazalhaq-farooqi-5XK"
+        },
+        {
+          "id": "masood-gurbaz-91I",
+          "fullName": "Masood Gurbaz",
+          "shortName": "M Gurbaz",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/91I.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/1LH.png",
+          "jerseyCode": "1LH",
+          "profileUrl": "https://crex.com/player/masood-gurbaz-91I"
         }
       ],
       "AA": [
@@ -2358,7 +2385,7 @@
           "shortName": "S Billings",
           "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": false,
+          "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/CD.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/1LI.png",
           "jerseyCode": "1LI",
@@ -2558,9 +2585,9 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:21:27.740Z",
+    "scrapedAt": "2026-11-17T17:31:44.249Z",
     "date": "2026-11-17",
-    "title": "Yas Lions vs Arabian Aces"
+    "title": "YL vs AA"
   },
   "14WF": {
     "id": "14WF",
@@ -2580,11 +2607,11 @@
         "url": "https://crex.com/series/abu-dhabi-t10-league-2026-2IO"
       },
       "weather": {
-        "details": "Zayed Cricket Stadium, Abu Dhabi 30˚C Partly sunny 39% (Humidity) 1 % Chance"
+        "details": "Zayed Cricket Stadium, Abu Dhabi 26.1˚C Clear 60% (Humidity) 1 % Chance"
       },
       "venueStats": {
-        "summary": "166 Matches Win Bat first 49% Win Bowl first 51% Avg 1st Inns110 Avg 2st Inns100 Highest Total by UT vs RDC 165-2 Lowest Total by DB vs NYS 31-10 Highest Chased by NYS vs NW 144-5 Lowest Defended by BGT vs NYS 131-5",
-        "matchCount": "166",
+        "summary": "168 Matches Win Bat first 49% Win Bowl first 51% Avg 1st Inns110 Avg 2st Inns100 Highest Total by UT vs RDC 165-2 Lowest Total by DB vs NYS 31-10 Highest Chased by YL vs AA 149-5 Lowest Defended by BGT vs NYS 131-5",
+        "matchCount": "168",
         "venuePercentages": [
           "Win Bat first 49%",
           "Win Bowl first 51%"
@@ -2602,13 +2629,14 @@
         "scores": [
           "165-2",
           "31-10",
-          "144-5",
+          "149-5",
           "131-5"
         ]
       },
       "headToHead": "UAB vs RDC Head to Head (Last 10 matches) UAB 0 - 1 RDC RDC 124/4 9.1 RDC Won 11th T10, Abu Dhabi T10 2026 UAB 10.0 123/7",
       "teamComparison": "UAB vs RDC Team Comparison Overall On Venue UAB vs all teams RDC vs all teams 10 Matches Played 8 50% Win 25% 118 Avg Score 116 162 Highest Score 146 84 Lowest Score 81",
-      "recentMatches": "UAB & RDC Team Form (Last 5 matches) UAE Bulls * L W L L L Royal Desert Champions * L L W W L"
+      "recentMatches": "UAB & RDC Team Form (Last 5 matches) UAE Bulls * L W L L L Royal Desert Champions * L L L W W",
+      "toss": "UAB won the toss and chose to bowl"
     },
     "teams": {
       "UAB & RDC Squad": [
@@ -2848,7 +2876,7 @@
           "shortName": "A Fletcher",
           "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": true,
+          "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/JR.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/78.png",
           "jerseyCode": "78",
@@ -2896,7 +2924,7 @@
           "shortName": "A Khan",
           "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": false,
+          "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/1D2.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/78.png",
           "jerseyCode": "78",
@@ -3278,9 +3306,9 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:21:58.550Z",
+    "scrapedAt": "2026-11-17T17:32:14.534Z",
     "date": "2026-11-17",
-    "title": "UAE Bulls vs Royal Desert Champions"
+    "title": "UAB vs RDC"
   },
   "156R": {
     "id": "156R",
@@ -3764,7 +3792,10 @@
       },
       "headToHead": "CHG vs ODSA Head to Head (Last 10 matches) CHG 1 - 1 ODSA CHG 108 19.4 ODSA Won 52nd T20, SMAT Elite T20 2025 ODSA 20.0 135/8 CHG 167/7 20.0 CHG Won 117th T20, SMAT Trophy 2022 ODSA 17.3 80",
       "teamComparison": "CHG vs ODSA Team Comparison Overall On Venue CHG vs all teams ODSA vs all teams 10 Matches Played 10 40% Win 30% 150 Avg Score 169 203 Highest Score 229 108 Lowest Score 118",
-      "recentMatches": "CHG & ODSA Team Form (Last 5 matches) Chhattisgarh * L W W L L Odisha * L L L W W"
+      "recentMatches": "CHG & ODSA Team Form (Last 5 matches) Chhattisgarh * L W W L L Odisha * L L L W W",
+      "weather": {
+        "details": "Jadavpur University Campus 2nd Ground, Salt lake 24.4˚C Hazy clouds 59% (Humidity) 2 % Chance"
+      }
     },
     "teams": {
       "CHG": [
@@ -4062,7 +4093,7 @@
           "id": "sourav-gouda-LRT",
           "fullName": "Sourav Gouda",
           "shortName": "S Gouda",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/LRT.png",
@@ -4180,7 +4211,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:22:29.037Z",
+    "scrapedAt": "2026-11-17T17:33:45.897Z",
     "date": "2026-11-18",
     "title": "Chhattisgarh vs Odisha"
   },
@@ -4188,7 +4219,7 @@
     "id": "13X8",
     "detailUrl": "https://crex.com/cricket-live-score/nagl-vs-sikm-7th-t20-syed-mushtaq-ali-trophy-plate-2026-match-updates-13X8",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 3:00 AM",
+      "dateText": "Wednesday, 18 November, 2:30 AM",
       "venue": "Nagaland Cricket Association Stadium",
       "series": {
         "format": "7th T20",
@@ -4220,7 +4251,10 @@
       },
       "headToHead": "SIKM vs NAGL Head to Head (Last 10 matches) SIKM 1 - 1 NAGL NAGL 101 19.0 SIKM Won 9th T20, SMAT Plate T20 2025 SIKM 12.4 105/3 NAGL 176/4 20.0 Nagaland won 49th T20, SMAT Trophy 2021 SIKM 14.2 76",
       "teamComparison": "SIKM vs NAGL Team Comparison Overall On Venue SIKM vs all teams NAGL vs all teams 10 Matches Played 10 50% Win 40% 121 Avg Score 155 181 Highest Score 220 70 Lowest Score 101",
-      "recentMatches": "SIKM & NAGL Team Form (Last 5 matches) Sikkim * W L L W W Nagaland * W L W W L"
+      "recentMatches": "SIKM & NAGL Team Form (Last 5 matches) Sikkim * W L L W W Nagaland * W L W W L",
+      "weather": {
+        "details": "Nagaland Cricket Association Stadium 16.5˚C Cloudy 95% (Humidity) 2 % Chance"
+      }
     },
     "teams": {
       "SIKM": [
@@ -4398,7 +4432,7 @@
           "id": "chetan-bist-5RB",
           "fullName": "Chetan Bist",
           "shortName": "C Bist",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/5RB.png",
@@ -4564,7 +4598,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:22:59.959Z",
+    "scrapedAt": "2026-11-17T17:32:44.892Z",
     "date": "2026-11-18",
     "title": "Sikkim vs Nagaland"
   },
@@ -4572,7 +4606,7 @@
     "id": "13X9",
     "detailUrl": "https://crex.com/cricket-live-score/ap-vs-ser-8th-t20-syed-mushtaq-ali-trophy-plate-2026-match-updates-13X9",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 3:00 AM",
+      "dateText": "Wednesday, 18 November, 2:30 AM",
       "venue": "Sovima Cricket Ground, Sovima",
       "series": {
         "format": "8th T20",
@@ -4636,7 +4670,7 @@
           "id": "arun-kumar-FOV",
           "fullName": "Arun Kumar",
           "shortName": "A Kumar",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/FOV.png",
@@ -4660,7 +4694,7 @@
           "id": "mohit-ahlawat-64A",
           "fullName": "Mohit Ahlawat",
           "shortName": "M Ahlawat",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/64A.png",
@@ -4830,7 +4864,7 @@
           "id": "kamsha-yangfo-5OJ",
           "fullName": "Kamsha Yangfo",
           "shortName": "K Yangfo",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/5OJ.png",
@@ -4842,7 +4876,7 @@
           "id": "biki-kumar-FFP",
           "fullName": "Biki Kumar",
           "shortName": "B Kumar",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/FFP.png",
@@ -4972,7 +5006,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:23:30.512Z",
+    "scrapedAt": "2026-11-17T17:33:15.139Z",
     "date": "2026-11-18",
     "title": "Services vs Arunachal Pradesh"
   },
@@ -4981,7 +5015,7 @@
     "detailUrl": "https://crex.com/cricket-live-score/andr-vs-ker-34th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13YW",
     "matchInfo": {
       "dateText": "Wednesday, 18 November, 3:00 AM",
-      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
+      "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali",
       "series": {
         "format": "34th T20",
         "name": "SMAT Elite T20 2026",
@@ -4989,32 +5023,33 @@
         "url": "https://crex.com/series/syed-mushtaq-ali-trophy-elite-2026-2K9"
       },
       "venueStats": {
-        "summary": "4 Matches Win Bat first 75% Win Bowl first 25% Avg 1st Inns185 Avg 2st Inns119 Highest Total by MP vs ASM 250-6 Lowest Total by TRI vs ANDR 98-10 Highest Chased by MP vs KER 142-5 Lowest Defended by ANDR vs TRI 141-9",
-        "matchCount": "4",
+        "summary": "3 Matches Win Bat first 100% Win Bowl first 0% Avg 1st Inns190 Avg 2st Inns169 Highest Total by PDC vs TRI 209-10 Lowest Total by ANDR vs HP 150-8 Lowest Defended by PDC vs MAH 204-9",
+        "matchCount": "3",
         "venuePercentages": [
-          "Win Bat first 75%",
-          "Win Bowl first 25%"
+          "Win Bat first 100%",
+          "Win Bowl first 0%"
         ],
         "averages": [
-          "185",
-          "119"
+          "190",
+          "169"
         ],
         "tableHeaders": [
           "Highest Total",
           "Lowest Total",
-          "Highest Chased",
           "Lowest Defended"
         ],
         "scores": [
-          "250-6",
-          "98-10",
-          "142-5",
-          "141-9"
+          "209-10",
+          "150-8",
+          "204-9"
         ]
       },
       "headToHead": "KER vs ANDR Head to Head (Last 10 matches) KER 0 - 3 ANDR ANDR 123/3 12.0 ANDR Won 92nd T20, SMAT Elite T20 2025 KER 20.0 119/7 ANDR 88/4 13.0 ANDR Won 94th T20, SMAT T20 2024 KER 18.1 87 KER 112/4 20.0 ANDR Won 70th T20, SMAT Trophy 2021 ANDR 17.1 113/4",
       "teamComparison": "KER vs ANDR Team Comparison Overall On Venue KER vs all teams ANDR vs all teams 10 Matches Played 10 40% Win 60% 141 Avg Score 156 211 Highest Score 211 87 Lowest Score 112",
-      "recentMatches": "KER & ANDR Team Form (Last 5 matches) Kerala * W L L L W Andhra * L W W W L"
+      "recentMatches": "KER & ANDR Team Form (Last 5 matches) Kerala * W L L L W Andhra * L W W W L",
+      "weather": {
+        "details": "Punjab Cricket Association IS Bindra Stadium, Mohali 13.9˚C Clear 54% (Humidity) 0 % Chance"
+      }
     },
     "teams": {
       "KER": [
@@ -5022,9 +5057,9 @@
           "id": "sanju-samson-72",
           "fullName": "Sanju Samson",
           "shortName": "S Samson",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": true,
-          "isWicketkeeper": true,
+          "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/72.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
           "jerseyCode": "GJ",
@@ -5058,9 +5093,9 @@
           "id": "mohammed-azharuddeen-5TL",
           "fullName": "Mohammed Azharuddeen",
           "shortName": "M Azharuddeen",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": false,
+          "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/5TL.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
           "jerseyCode": "GJ",
@@ -5082,7 +5117,7 @@
           "id": "vishnu-vinod-2WK",
           "fullName": "Vishnu Vinod",
           "shortName": "V Vinod",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/2WK.png",
@@ -5154,7 +5189,7 @@
           "id": "krishna-devan-HF0",
           "fullName": "Krishna Devan",
           "shortName": "K Devan",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/HF0.png",
@@ -5276,9 +5311,9 @@
           "id": "sdnv-prasad-E76",
           "fullName": "SDNV Prasad",
           "shortName": "S Prasad",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": true,
+          "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/E76.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
           "jerseyCode": "GN",
@@ -5420,9 +5455,9 @@
           "id": "revanth-reddy-DHZ",
           "fullName": "Revanth Reddy",
           "shortName": "R Reddy",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": false,
+          "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/DHZ.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
           "jerseyCode": "GN",
@@ -5454,7 +5489,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:24:01.186Z",
+    "scrapedAt": "2026-11-17T17:34:16.268Z",
     "date": "2026-11-18",
     "title": "Kerala vs Andhra"
   },
@@ -5489,7 +5524,7 @@
         }
       ],
       "weather": {
-        "details": "Bellerive Oval, Hobart 14.4˚C Mostly sunny 52% (Humidity) 15 % Chance"
+        "details": "Bellerive Oval, Hobart 7.7˚C Mostly clear 70% (Humidity) 1 % Chance"
       },
       "venueStats": {
         "summary": "16 Matches Win Bat first 56% Win Bowl first 44% Avg 1st Inns266 Avg 2st Inns229 Highest Total by SL vs SCO 363-9 Lowest Total by SCO vs AUS 130-10 Highest Chased by SL vs IND 321-3 Lowest Defended by ENG vs AUS 230-10",
@@ -5897,7 +5932,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:24:32.903Z",
+    "scrapedAt": "2026-11-17T17:34:46.561Z",
     "date": "2026-11-18",
     "title": "Australia vs England"
   },
@@ -5937,7 +5972,10 @@
       },
       "headToHead": "BEN vs JHKD Head to Head (Last 10 matches) BEN 2 - 0 JHKD BEN 177/8 20.0 BEN Won 98th T20, SMAT T20 2023 JHKD 20.0 172/6 BEN 161/6 20.0 Bengal won 24th T20, SMAT Trophy 2021 JHKD 20.0 145/9",
       "teamComparison": "BEN vs JHKD Team Comparison Overall BEN vs all teams JHKD vs all teams 10 Matches Played 10 50% Win 80% 164 Avg Score 184 212 Highest Score 262 96 Lowest Score 81",
-      "recentMatches": "BEN & JHKD Team Form (Last 5 matches) Bengal * W L L L W Jharkhand * L W W L W"
+      "recentMatches": "BEN & JHKD Team Form (Last 5 matches) Bengal * W L L L W Jharkhand * L W W L W",
+      "weather": {
+        "details": "Sharad Pawar Cricket Academy BKC 28.2˚C Hazy clouds 57% (Humidity) 0 % Chance"
+      }
     },
     "teams": {
       "BEN": [
@@ -5993,7 +6031,7 @@
           "id": "abishek-porel-87L",
           "fullName": "Abishek Porel",
           "shortName": "A Porel",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/87L.png",
@@ -6187,9 +6225,9 @@
           "id": "pankaj-kumar-8C9",
           "fullName": "Pankaj Kumar",
           "shortName": "P Kumar",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": true,
+          "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/8C9.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/H6.png",
           "jerseyCode": "H6",
@@ -6199,9 +6237,9 @@
           "id": "robin-minz-D9S",
           "fullName": "Robin Minz",
           "shortName": "R Minz",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": false,
+          "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/D9S.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/H6.png",
           "jerseyCode": "H6",
@@ -6353,7 +6391,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:25:03.400Z",
+    "scrapedAt": "2026-11-17T17:35:16.895Z",
     "date": "2026-11-18",
     "title": "Bengal vs Jharkhand"
   },
@@ -6392,7 +6430,10 @@
         ]
       },
       "teamComparison": "DEL vs BIHR Team Comparison Overall DEL vs all teams BIHR vs all teams 10 Matches Played 10 60% Win 20% 188 Avg Score 142 243 Highest Score 180 132 Lowest Score 112",
-      "recentMatches": "DEL & BIHR Team Form (Last 5 matches) Delhi * W W W L W Bihar * W L W L L"
+      "recentMatches": "DEL & BIHR Team Form (Last 5 matches) Delhi * W W W L W Bihar * W L W L L",
+      "weather": {
+        "details": "Daly College Ground, Indore 22.8˚C Clear 49% (Humidity) 1 % Chance"
+      }
     },
     "teams": {
       "DEL": [
@@ -6400,7 +6441,7 @@
           "id": "anuj-rawat-1DA",
           "fullName": "Anuj Rawat",
           "shortName": "A Rawat",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/1DA.png",
@@ -6436,7 +6477,7 @@
           "id": "tejasvi-dahiya-EOT",
           "fullName": "Tejasvi Dahiya",
           "shortName": "T Dahiya",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/EOT.png",
@@ -6582,7 +6623,7 @@
           "id": "ayush-loharuka-FGJ",
           "fullName": "Ayush Loharuka",
           "shortName": "A Loharuka",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/FGJ.png",
@@ -6750,7 +6791,7 @@
           "id": "mayank-kumar-QOL",
           "fullName": "Mayank Kumar",
           "shortName": "M Kumar",
-          "role": "All Rounder",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/QOL.png",
@@ -6784,7 +6825,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:25:34.116Z",
+    "scrapedAt": "2026-11-17T17:35:47.361Z",
     "date": "2026-11-18",
     "title": "Delhi vs Bihar"
   },
@@ -6807,7 +6848,7 @@
         "url": "https://crex.com/series/womens-emerging-nations-trophy-2026-2O9"
       },
       "weather": {
-        "details": "Karwan Cricket Ground, Ajman 28.9˚C Sunny 44% (Humidity) 1 % Chance"
+        "details": "Karwan Cricket Ground, Ajman 25˚C Clear 57% (Humidity) 1 % Chance"
       },
       "venueStats": {
         "summary": "8 Matches Win Bat first 38% Win Bowl first 63% Avg 1st Inns129 Avg 2st Inns119 Highest Total by PAK-W vs THA-W 180-2 Lowest Total by THA-W vs ZIM-W 82-10 Highest Chased by SCO-W vs UAE-W 142-3",
@@ -7177,7 +7218,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:26:04.704Z",
+    "scrapedAt": "2026-11-17T17:36:17.663Z",
     "date": "2026-11-18",
     "title": "Papua New Guinea Women vs UAE Women"
   },
@@ -7200,7 +7241,7 @@
         "url": "https://crex.com/series/womens-emerging-nations-trophy-2026-2O9"
       },
       "weather": {
-        "details": "Seven Districts Ground, Ajman 28.9˚C Sunny 44% (Humidity) 1 % Chance"
+        "details": "Seven Districts Ground, Ajman 25˚C Clear 57% (Humidity) 1 % Chance"
       },
       "venueStats": {
         "summary": "12 Matches Win Bat first 58% Win Bowl first 42% Avg 1st Inns124 Avg 2st Inns105 Highest Total by IRE-W vs UAE-W 171-5 Lowest Total by HK W vs UAEW 62-10 Highest Chased by NED-W vs THA-W 137-5",
@@ -7570,7 +7611,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:26:35.654Z",
+    "scrapedAt": "2026-11-17T17:36:47.949Z",
     "date": "2026-11-18",
     "title": "Ireland Women vs Scotland Women"
   },
@@ -7611,7 +7652,10 @@
         ]
       },
       "teamComparison": "HYD vs VID Team Comparison Overall On Venue HYD vs all teams VID vs all teams 10 Matches Played 10 70% Win 50% 146 Avg Score 160 179 Highest Score 221 115 Lowest Score 106",
-      "recentMatches": "HYD & VID Team Form (Last 5 matches) Hyderabad * W L L W W Vidarbha * W W W L L"
+      "recentMatches": "HYD & VID Team Form (Last 5 matches) Hyderabad * W L L W W Vidarbha * W W W L L",
+      "weather": {
+        "details": "Eden Gardens, Kolkata 24.4˚C Hazy clouds 59% (Humidity) 2 % Chance"
+      }
     },
     "teams": {
       "HYD": [
@@ -7787,7 +7831,7 @@
           "id": "rahul-radesh-B80",
           "fullName": "Rahul Radesh",
           "shortName": "R Radesh",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/B80.png",
@@ -7991,7 +8035,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:27:06.253Z",
+    "scrapedAt": "2026-11-17T17:37:18.795Z",
     "date": "2026-11-18",
     "title": "Hyderabad vs Vidarbha"
   },
@@ -8000,7 +8044,7 @@
     "detailUrl": "https://crex.com/cricket-live-score/hp-vs-mah-38th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13YZ",
     "matchInfo": {
       "dateText": "Wednesday, 18 November, 5:30 AM",
-      "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
       "series": {
         "format": "38th T20",
         "name": "SMAT Elite T20 2026",
@@ -8008,30 +8052,35 @@
         "url": "https://crex.com/series/syed-mushtaq-ali-trophy-elite-2026-2K9"
       },
       "venueStats": {
-        "summary": "3 Matches Win Bat first 100% Win Bowl first 0% Avg 1st Inns190 Avg 2st Inns169 Highest Total by PDC vs TRI 209-10 Lowest Total by ANDR vs HP 150-8 Lowest Defended by PDC vs MAH 204-9",
-        "matchCount": "3",
+        "summary": "4 Matches Win Bat first 75% Win Bowl first 25% Avg 1st Inns185 Avg 2st Inns119 Highest Total by MP vs ASM 250-6 Lowest Total by TRI vs ANDR 98-10 Highest Chased by MP vs KER 142-5 Lowest Defended by ANDR vs TRI 141-9",
+        "matchCount": "4",
         "venuePercentages": [
-          "Win Bat first 100%",
-          "Win Bowl first 0%"
+          "Win Bat first 75%",
+          "Win Bowl first 25%"
         ],
         "averages": [
-          "190",
-          "169"
+          "185",
+          "119"
         ],
         "tableHeaders": [
           "Highest Total",
           "Lowest Total",
+          "Highest Chased",
           "Lowest Defended"
         ],
         "scores": [
-          "209-10",
-          "150-8",
-          "204-9"
+          "250-6",
+          "98-10",
+          "142-5",
+          "141-9"
         ]
       },
       "headToHead": "MAH vs HP Head to Head (Last 10 matches) MAH 0 - 1 HP HP 121/6 18.5 Himachal Pradesh won 76th T20, SMAT Trophy 2021 MAH 20.0 117/9",
-      "teamComparison": "MAH vs HP Team Comparison Overall On Venue MAH vs all teams HP vs all teams 10 Matches Played 10 50% Win 40% 160 Avg Score 168 231 Highest Score 208 117 Lowest Score 135",
-      "recentMatches": "MAH & HP Team Form (Last 5 matches) Maharashtra * L L W W L Himachal Pradesh * W W L L L"
+      "teamComparison": "MAH vs HP Team Comparison Overall MAH vs all teams HP vs all teams 10 Matches Played 10 50% Win 40% 160 Avg Score 168 231 Highest Score 208 117 Lowest Score 135",
+      "recentMatches": "MAH & HP Team Form (Last 5 matches) Maharashtra * L L W W L Himachal Pradesh * W W L L L",
+      "weather": {
+        "details": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh 14.7˚C Hazy clouds 60% (Humidity) 0 % Chance"
+      }
     },
     "teams": {
       "MAH": [
@@ -8243,7 +8292,7 @@
           "id": "suraj-shinde-BTO",
           "fullName": "Suraj Shinde",
           "shortName": "S Shinde",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/BTO.png",
@@ -8269,7 +8318,7 @@
           "id": "innesh-mahajan-D0N",
           "fullName": "Innesh Mahajan",
           "shortName": "I Mahajan",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/D0N.png",
@@ -8401,7 +8450,7 @@
           "id": "vaibhav-kalta-QGL",
           "fullName": "Vaibhav Kalta",
           "shortName": "V Kalta",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/QGL.png",
@@ -8411,7 +8460,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:27:37.546Z",
+    "scrapedAt": "2026-11-17T17:37:49.224Z",
     "date": "2026-11-18",
     "title": "Maharashtra vs Himachal Pradesh"
   },
@@ -8451,7 +8500,10 @@
       },
       "headToHead": "PUN vs RLYS Head to Head (Last 10 matches) PUN 2 - 0 RLYS PUN 218/5 20.0 PUN Won 52nd T20, SMAT T20 2023 RLYS 16.0 98 PUN 200/4 20.0 PUN Won 46th T20, SMAT Trophy 2021 RLYS 17.1 83",
       "teamComparison": "PUN vs RLYS Team Comparison Overall PUN vs all teams RLYS vs all teams 10 Matches Played 10 60% Win 40% 213 Avg Score 160 310 Highest Score 178 131 Lowest Score 135",
-      "recentMatches": "PUN & RLYS Team Form (Last 5 matches) Punjab * L W W L L Railways * L L L W L"
+      "recentMatches": "PUN & RLYS Team Form (Last 5 matches) Punjab * L W W L L Railways * L L L W L",
+      "weather": {
+        "details": "Holkar Cricket Stadium, Indore 22.8˚C Clear 49% (Humidity) 1 % Chance"
+      }
     },
     "teams": {
       "PUN": [
@@ -8471,7 +8523,7 @@
           "id": "salil-arora-7D0",
           "fullName": "Salil Arora",
           "shortName": "S Arora",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/7D0.png",
@@ -8483,7 +8535,7 @@
           "id": "prabhsimran-singh-EN",
           "fullName": "Prabhsimran Singh",
           "shortName": "P Singh",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/EN.png",
@@ -8653,9 +8705,9 @@
           "id": "chethan-lr-96I",
           "fullName": "Chethan LR",
           "shortName": "C LR",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": true,
+          "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/96I.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/H8.png",
           "jerseyCode": "H8",
@@ -8677,9 +8729,9 @@
           "id": "ravi-singh-G35",
           "fullName": "Ravi Singh",
           "shortName": "R Singh",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": false,
+          "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/G35.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/H8.png",
           "jerseyCode": "H8",
@@ -8833,7 +8885,7 @@
           "id": "upendra-yadav-63K",
           "fullName": "Upendra Yadav",
           "shortName": "U Yadav",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/63K.png",
@@ -8843,7 +8895,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:28:08.599Z",
+    "scrapedAt": "2026-11-17T17:38:19.552Z",
     "date": "2026-11-18",
     "title": "Punjab vs Railways"
   },
@@ -8882,7 +8934,10 @@
         ]
       },
       "teamComparison": "CG vs RAJ Team Comparison Overall CG vs all teams RAJ vs all teams 10 Matches Played 10 40% Win 60% 145 Avg Score 176 172 Highest Score 216 115 Lowest Score 132",
-      "recentMatches": "CG & RAJ Team Form (Last 5 matches) Chandigarh * L W W L L Rajasthan * W W L L L"
+      "recentMatches": "CG & RAJ Team Form (Last 5 matches) Chandigarh * L W W L L Rajasthan * W W L L L",
+      "weather": {
+        "details": "Wankhede Stadium, Mumbai 27.6˚C Hazy clouds 61% (Humidity) 0 % Chance"
+      }
     },
     "teams": {
       "CG": [
@@ -9046,7 +9101,7 @@
           "id": "aarush-bhandari-H00",
           "fullName": "Aarush Bhandari",
           "shortName": "A Bhandari",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/H00.png",
@@ -9060,9 +9115,9 @@
           "id": "mukul-choudhary-B82",
           "fullName": "Mukul Choudhary",
           "shortName": "M Choudhary",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": true,
+          "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/B82.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
           "jerseyCode": "GV",
@@ -9072,9 +9127,9 @@
           "id": "kartik-sharma-FSM",
           "fullName": "Kartik Sharma",
           "shortName": "K Sharma",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": false,
+          "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/FSM.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
           "jerseyCode": "GV",
@@ -9084,7 +9139,7 @@
           "id": "kunal-singh-rathore-A0Q",
           "fullName": "Kunal Singh Rathore",
           "shortName": "K S Rathore",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/A0Q.png",
@@ -9226,7 +9281,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:28:39.368Z",
+    "scrapedAt": "2026-11-17T17:38:50.391Z",
     "date": "2026-11-18",
     "title": "Chandigarh vs Rajasthan"
   },
@@ -9266,7 +9321,10 @@
       },
       "headToHead": "GOA vs MUM Head to Head (Last 10 matches) GOA 0 - 1 MUM GOA 224/8 20.0 MUM Won 5th T20, SMAT T20 2024 MUM 20.0 250/4",
       "teamComparison": "GOA vs MUM Team Comparison Overall On Venue GOA vs all teams MUM vs all teams 10 Matches Played 10 40% Win 80% 160 Avg Score 179 184 Highest Score 238 136 Lowest Score 123",
-      "recentMatches": "GOA & MUM Team Form (Last 5 matches) Goa * L L L L L Mumbai * W W W W L"
+      "recentMatches": "GOA & MUM Team Form (Last 5 matches) Goa * L L L L L Mumbai * W W W W L",
+      "weather": {
+        "details": "Jadavpur University Campus 2nd Ground, Salt lake 24.4˚C Hazy clouds 59% (Humidity) 2 % Chance"
+      }
     },
     "teams": {
       "GOA": [
@@ -9370,7 +9428,7 @@
           "id": "shivendra-bhujbal-G4L",
           "fullName": "Shivendra Bhujbal",
           "shortName": "S Bhujbal",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/G4L.png",
@@ -9394,7 +9452,7 @@
           "id": "rajashekhar-harikant-C35",
           "fullName": "Rajashekhar Harikant",
           "shortName": "R Harikant",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/C35.png",
@@ -9504,9 +9562,9 @@
           "id": "divyansh-saxena-16A",
           "fullName": "Divyansh Saxena",
           "shortName": "D Saxena",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": true,
+          "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/16A.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GP.png",
           "jerseyCode": "GP",
@@ -9660,9 +9718,9 @@
           "id": "hardik-tamore-5PW",
           "fullName": "Hardik Tamore",
           "shortName": "H Tamore",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": false,
+          "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/5PW.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GP.png",
           "jerseyCode": "GP",
@@ -9670,7 +9728,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:29:10.294Z",
+    "scrapedAt": "2026-11-17T17:39:51.371Z",
     "date": "2026-11-18",
     "title": "Goa vs Mumbai"
   },
@@ -9710,7 +9768,10 @@
       },
       "headToHead": "ASM vs PDC Head to Head (Last 10 matches) ASM 1 - 0 PDC ASM 125/5 12.0 ASM Won 78th T20, SMAT T20 2024 PDC 9.0 96/3",
       "teamComparison": "ASM vs PDC Team Comparison Overall On Venue ASM vs all teams PDC vs all teams 10 Matches Played 10 30% Win 60% 123 Avg Score 163 175 Highest Score 209 79 Lowest Score 83",
-      "recentMatches": "ASM & PDC Team Form (Last 5 matches) Assam * L L W L W Puducherry * W W W W L"
+      "recentMatches": "ASM & PDC Team Form (Last 5 matches) Assam * L L W L W Puducherry * W W W W L",
+      "weather": {
+        "details": "Punjab Cricket Association IS Bindra Stadium, Mohali 13.9˚C Clear 54% (Humidity) 0 % Chance"
+      }
     },
     "teams": {
       "ASM": [
@@ -9874,7 +9935,7 @@
           "id": "rohit-sen-IEA",
           "fullName": "Rohit Sen",
           "shortName": "R Sen",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/IEA.png",
@@ -9984,9 +10045,9 @@
           "id": "bhanu-anand-EGQ",
           "fullName": "Bhanu Anand",
           "shortName": "B Anand",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": true,
+          "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/EGQ.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GM.png",
           "jerseyCode": "GM",
@@ -10068,9 +10129,9 @@
           "id": "prasad-pawar-ATL",
           "fullName": "Prasad Pawar",
           "shortName": "P Pawar",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": false,
+          "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/ATL.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GM.png",
           "jerseyCode": "GM",
@@ -10128,7 +10189,7 @@
           "id": "gautam-shastry-EHH",
           "fullName": "Gautam Shastry",
           "shortName": "G Shastry",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/EHH.png",
@@ -10162,7 +10223,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:29:41.214Z",
+    "scrapedAt": "2026-11-17T17:40:22.002Z",
     "date": "2026-11-18",
     "title": "Assam vs Puducherry"
   },
@@ -10170,7 +10231,7 @@
     "id": "13XA",
     "detailUrl": "https://crex.com/cricket-live-score/mgly-vs-mnp-9th-t20-syed-mushtaq-ali-trophy-plate-2026-match-updates-13XA",
     "matchInfo": {
-      "dateText": "Wednesday, 18 November, 7:30 AM",
+      "dateText": "Wednesday, 18 November, 7:00 AM",
       "venue": "Nagaland Cricket Association Stadium",
       "series": {
         "format": "9th T20",
@@ -10202,7 +10263,10 @@
       },
       "headToHead": "MGLY vs MNP Head to Head (Last 10 matches) MGLY 0 - 2 MNP MNP 143 19.5 MNP Won 4th T20, SMAT Plate T20 2025 MGLY 19.4 118 MGLY 62 13.0 Manipur won 17th T20, SMAT Trophy 2021 MNP 12.1 66/4",
       "teamComparison": "MGLY vs MNP Team Comparison Overall MGLY vs all teams MNP vs all teams 10 Matches Played 10 30% Win 40% 135 Avg Score 148 190 Highest Score 207 81 Lowest Score 110",
-      "recentMatches": "MGLY & MNP Team Form (Last 5 matches) Meghalaya * L W L L W Manipur * L W L L L"
+      "recentMatches": "MGLY & MNP Team Form (Last 5 matches) Meghalaya * L W L L W Manipur * L W L L L",
+      "weather": {
+        "details": "Nagaland Cricket Association Stadium 16.5˚C Cloudy 95% (Humidity) 2 % Chance"
+      }
     },
     "teams": {
       "MGLY": [
@@ -10210,7 +10274,7 @@
           "id": "srinivas-sharath-24C",
           "fullName": "Srinivas Sharath",
           "shortName": "S Sharath",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/24C.png",
@@ -10390,7 +10454,7 @@
           "id": "manish-sharma-IXD",
           "fullName": "Manish Sharma",
           "shortName": "M Sharma",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/IXD.png",
@@ -10416,9 +10480,9 @@
           "id": "ahmed-shah-5UD",
           "fullName": "Ahmed Shah",
           "shortName": "A Shah",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": true,
+          "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/5UD.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GE.png",
           "jerseyCode": "GE",
@@ -10428,9 +10492,9 @@
           "id": "mandingbam-andyroshan-MB6",
           "fullName": "Mandingbam Andyroshan",
           "shortName": "M Andyroshan",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": false,
+          "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/MB6.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GE.png",
           "jerseyCode": "GE",
@@ -10582,7 +10646,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:30:12.229Z",
+    "scrapedAt": "2026-11-17T17:39:20.866Z",
     "date": "2026-11-18",
     "title": "Meghalaya vs Manipur"
   },
@@ -10621,7 +10685,10 @@
         ]
       },
       "teamComparison": "UP vs BRD Team Comparison Overall On Venue UP vs all teams BRD vs all teams 10 Matches Played 10 40% Win 50% 167 Avg Score 160 212 Highest Score 224 127 Lowest Score 74",
-      "recentMatches": "UP & BRD Team Form (Last 5 matches) Uttar Pradesh * W L L L W Baroda * W L W L W"
+      "recentMatches": "UP & BRD Team Form (Last 5 matches) Uttar Pradesh * W L L L W Baroda * W L W L W",
+      "weather": {
+        "details": "Sharad Pawar Cricket Academy BKC 28.2˚C Hazy clouds 57% (Humidity) 0 % Chance"
+      }
     },
     "teams": {
       "UP": [
@@ -10665,7 +10732,7 @@
           "id": "aryan-juyal-5M3",
           "fullName": "Aryan Juyal",
           "shortName": "A Juyal",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/5M3.png",
@@ -10785,7 +10852,7 @@
           "id": "aaradhya-yadav-7J8",
           "fullName": "Aaradhya Yadav",
           "shortName": "A Yadav",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/7J8.png",
@@ -10931,7 +10998,7 @@
           "id": "jitesh-sharma-CY",
           "fullName": "Jitesh Sharma",
           "shortName": "J Sharma",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/CY.png",
@@ -11037,7 +11104,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:30:43.405Z",
+    "scrapedAt": "2026-11-17T17:40:52.385Z",
     "date": "2026-11-18",
     "title": "Uttar Pradesh vs Baroda"
   },
@@ -11076,7 +11143,10 @@
         ]
       },
       "teamComparison": "TN vs HAR Team Comparison Overall On Venue TN vs all teams HAR vs all teams 10 Matches Played 10 50% Win 60% 176 Avg Score 181 204 Highest Score 246 100 Lowest Score 118",
-      "recentMatches": "TN & HAR Team Form (Last 5 matches) Tamil Nadu * L W W L W Haryana * L L L W L"
+      "recentMatches": "TN & HAR Team Form (Last 5 matches) Tamil Nadu * L W W L W Haryana * L L L W L",
+      "weather": {
+        "details": "Daly College Ground, Indore 22.8˚C Clear 49% (Humidity) 1 % Chance"
+      }
     },
     "teams": {
       "TN": [
@@ -11096,7 +11166,7 @@
           "id": "tushar-raheja-6LU",
           "fullName": "Tushar Raheja",
           "shortName": "T Raheja",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/6LU.png",
@@ -11144,7 +11214,7 @@
           "id": "amith-sathvik-6Q4",
           "fullName": "Amith Sathvik",
           "shortName": "A Sathvik",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/6Q4.png",
@@ -11156,7 +11226,7 @@
           "id": "rithik-easwaran-8WQ",
           "fullName": "Rithik Easwaran",
           "shortName": "R Easwaran",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/8WQ.png",
@@ -11192,7 +11262,7 @@
           "id": "narayan-jagadeesan-E6",
           "fullName": "Narayan Jagadeesan",
           "shortName": "N Jagadeesan",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/E6.png",
@@ -11290,7 +11360,7 @@
           "id": "dinesh-bana-7JG",
           "fullName": "Dinesh Bana",
           "shortName": "D Bana",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/7JG.png",
@@ -11398,7 +11468,7 @@
           "id": "parth-vats-G2B",
           "fullName": "Parth Vats",
           "shortName": "P Vats",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/G2B.png",
@@ -11444,7 +11514,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:31:14.477Z",
+    "scrapedAt": "2026-11-17T17:41:22.910Z",
     "date": "2026-11-18",
     "title": "Tamil Nadu vs Haryana"
   },
@@ -11467,7 +11537,7 @@
         "url": "https://crex.com/series/womens-emerging-nations-trophy-2026-2O9"
       },
       "weather": {
-        "details": "Karwan Cricket Ground, Ajman 28.9˚C Sunny 44% (Humidity) 1 % Chance"
+        "details": "Karwan Cricket Ground, Ajman 23.9˚C Clear 56% (Humidity) 1 % Chance"
       },
       "venueStats": {
         "summary": "8 Matches Win Bat first 38% Win Bowl first 63% Avg 1st Inns129 Avg 2st Inns119 Highest Total by PAK-W vs THA-W 180-2 Lowest Total by THA-W vs ZIM-W 82-10 Highest Chased by SCO-W vs UAE-W 142-3",
@@ -11837,7 +11907,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:31:45.068Z",
+    "scrapedAt": "2026-11-17T17:41:53.415Z",
     "date": "2026-11-18",
     "title": "Netherlands Women vs Zimbabwe Women"
   },
@@ -11860,7 +11930,7 @@
         "url": "https://crex.com/series/womens-emerging-nations-trophy-2026-2O9"
       },
       "weather": {
-        "details": "Seven Districts Ground, Ajman 28.9˚C Sunny 44% (Humidity) 1 % Chance"
+        "details": "Seven Districts Ground, Ajman 23.9˚C Clear 56% (Humidity) 1 % Chance"
       },
       "venueStats": {
         "summary": "12 Matches Win Bat first 58% Win Bowl first 42% Avg 1st Inns124 Avg 2st Inns105 Highest Total by IRE-W vs UAE-W 171-5 Lowest Total by HK W vs UAEW 62-10 Highest Chased by NED-W vs THA-W 137-5",
@@ -12242,7 +12312,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:32:16.464Z",
+    "scrapedAt": "2026-11-17T17:42:23.616Z",
     "date": "2026-11-18",
     "title": "Bangladesh Women vs Thailand Women"
   },
@@ -12284,7 +12354,10 @@
       },
       "headToHead": "UTK vs GUJ Head to Head (Last 10 matches) UTK 0 - 2 GUJ GUJ 185/2 13.1 GUJ Won 92nd T20, SMAT T20 2024 UTK 20.0 182/7 GUJ 172/5 20.0 Gujarat won 21st T20, SMAT Trophy 2021 UTK 20.0 99/8",
       "teamComparison": "UTK vs GUJ Team Comparison Overall On Venue UTK vs all teams GUJ vs all teams 10 Matches Played 10 30% Win 60% 159 Avg Score 161 197 Highest Score 251 100 Lowest Score 73",
-      "recentMatches": "UTK & GUJ Team Form (Last 5 matches) Uttarakhand * W L L W L Gujarat * L W L W L"
+      "recentMatches": "UTK & GUJ Team Form (Last 5 matches) Uttarakhand * W L L W L Gujarat * L W L W L",
+      "weather": {
+        "details": "Eden Gardens, Kolkata 24.4˚C Hazy clouds 55% (Humidity) 2 % Chance"
+      }
     },
     "teams": {
       "UTK": [
@@ -12472,9 +12545,9 @@
           "id": "sanskar-rawat-F89",
           "fullName": "Sanskar Rawat",
           "shortName": "S Rawat",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": true,
+          "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/F89.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GY.png",
           "jerseyCode": "GY",
@@ -12496,9 +12569,9 @@
           "id": "vijay-sharma-5NL",
           "fullName": "Vijay Sharma",
           "shortName": "V Sharma",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": false,
+          "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/5NL.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GY.png",
           "jerseyCode": "GY",
@@ -12534,7 +12607,7 @@
           "id": "urvil-patel-5NI",
           "fullName": "Urvil Patel",
           "shortName": "U Patel",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": true,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/5NI.png",
@@ -12690,7 +12763,7 @@
           "id": "priyesh-patel-5NO",
           "fullName": "Priyesh Patel",
           "shortName": "P Patel",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/5NO.png",
@@ -12712,7 +12785,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:32:46.884Z",
+    "scrapedAt": "2026-11-17T17:42:53.968Z",
     "date": "2026-11-18",
     "title": "Uttarakhand vs Gujarat"
   },
@@ -12721,7 +12794,7 @@
     "detailUrl": "https://crex.com/cricket-live-score/mp-vs-tri-46th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13Z7",
     "matchInfo": {
       "dateText": "Wednesday, 18 November, 11:00 AM",
-      "venue": "Punjab Cricket Association IS Bindra Stadium, Mohali",
+      "venue": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh",
       "series": {
         "format": "46th T20",
         "name": "SMAT Elite T20 2026",
@@ -12729,30 +12802,35 @@
         "url": "https://crex.com/series/syed-mushtaq-ali-trophy-elite-2026-2K9"
       },
       "venueStats": {
-        "summary": "3 Matches Win Bat first 100% Win Bowl first 0% Avg 1st Inns190 Avg 2st Inns169 Highest Total by PDC vs TRI 209-10 Lowest Total by ANDR vs HP 150-8 Lowest Defended by PDC vs MAH 204-9",
-        "matchCount": "3",
+        "summary": "4 Matches Win Bat first 75% Win Bowl first 25% Avg 1st Inns185 Avg 2st Inns119 Highest Total by MP vs ASM 250-6 Lowest Total by TRI vs ANDR 98-10 Highest Chased by MP vs KER 142-5 Lowest Defended by ANDR vs TRI 141-9",
+        "matchCount": "4",
         "venuePercentages": [
-          "Win Bat first 100%",
-          "Win Bowl first 0%"
+          "Win Bat first 75%",
+          "Win Bowl first 25%"
         ],
         "averages": [
-          "190",
-          "169"
+          "185",
+          "119"
         ],
         "tableHeaders": [
           "Highest Total",
           "Lowest Total",
+          "Highest Chased",
           "Lowest Defended"
         ],
         "scores": [
-          "209-10",
-          "150-8",
-          "204-9"
+          "250-6",
+          "98-10",
+          "142-5",
+          "141-9"
         ]
       },
       "headToHead": "MP vs TRI Head to Head (Last 10 matches) MP 1 - 0 TRI MP 168/5 20.0 MP Won 64th T20, SMAT T20 2023 TRI 19.4 131",
-      "teamComparison": "MP vs TRI Team Comparison Overall MP vs all teams TRI vs all teams 10 Matches Played 10 60% Win 20% 168 Avg Score 153 250 Highest Score 197 113 Lowest Score 98",
-      "recentMatches": "MP & TRI Team Form (Last 5 matches) Madhya Pradesh * W W L L W Tripura * L L W L L"
+      "teamComparison": "MP vs TRI Team Comparison Overall On Venue MP vs all teams TRI vs all teams 10 Matches Played 10 60% Win 20% 168 Avg Score 153 250 Highest Score 197 113 Lowest Score 98",
+      "recentMatches": "MP & TRI Team Form (Last 5 matches) Madhya Pradesh * W W L L W Tripura * L L W L L",
+      "weather": {
+        "details": "Maharaja Yadavindra Singh International Cricket Stadium, Mullanpur, New Chandigarh 14.7˚C Hazy clouds 52% (Humidity) 0 % Chance"
+      }
     },
     "teams": {
       "MP": [
@@ -12784,7 +12862,7 @@
           "id": "harsh-gawli-AUO",
           "fullName": "Harsh Gawli",
           "shortName": "H Gawli",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/AUO.png",
@@ -12892,7 +12970,7 @@
           "id": "apurve-dwivedi-DRM",
           "fullName": "Apurve Dwivedi",
           "shortName": "A Dwivedi",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/DRM.png",
@@ -13086,7 +13164,7 @@
           "id": "sentu-sarkar-M31",
           "fullName": "Sentu Sarkar",
           "shortName": "S Sarkar",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/M31.png",
@@ -13110,7 +13188,7 @@
           "id": "lakshay-thareja-5PE",
           "fullName": "Lakshay Thareja",
           "shortName": "L Thareja",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/5PE.png",
@@ -13132,7 +13210,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:33:18.049Z",
+    "scrapedAt": "2026-11-17T17:43:24.327Z",
     "date": "2026-11-18",
     "title": "Madhya Pradesh vs Tripura"
   },
@@ -13171,7 +13249,10 @@
         ]
       },
       "teamComparison": "J&K vs SAUR Team Comparison Overall On Venue J&K vs all teams SAUR vs all teams 10 Matches Played 10 60% Win 40% 146 Avg Score 156 201 Highest Score 197 84 Lowest Score 119",
-      "recentMatches": "J&K & SAUR Team Form (Last 5 matches) Jammu and Kashmir * W L W L L Saurashtra * W W L W L"
+      "recentMatches": "J&K & SAUR Team Form (Last 5 matches) Jammu and Kashmir * W L W L L Saurashtra * W W L W L",
+      "weather": {
+        "details": "Holkar Cricket Stadium, Indore 22.8˚C Clear 49% (Humidity) 1 % Chance"
+      }
     },
     "teams": {
       "J&K": [
@@ -13203,7 +13284,7 @@
           "id": "dikshant-kundal-MNF",
           "fullName": "Dikshant Kundal",
           "shortName": "D Kundal",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/MNF.png",
@@ -13385,9 +13466,9 @@
           "id": "ruchit-ahir-C6A",
           "fullName": "Ruchit Ahir",
           "shortName": "R Ahir",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": true,
+          "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/C6A.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GT.png",
           "jerseyCode": "GT",
@@ -13397,9 +13478,9 @@
           "id": "harvik-desai-5MR",
           "fullName": "Harvik Desai",
           "shortName": "H Desai",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": false,
+          "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/5MR.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GT.png",
           "jerseyCode": "GT",
@@ -13409,7 +13490,7 @@
           "id": "harvansh-singh-FV1",
           "fullName": "Harvansh Singh",
           "shortName": "H Singh",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/FV1.png",
@@ -13575,7 +13656,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:33:48.627Z",
+    "scrapedAt": "2026-11-17T17:43:55.034Z",
     "date": "2026-11-18",
     "title": "Jammu and Kashmir vs Saurashtra"
   },
@@ -13614,7 +13695,10 @@
         ]
       },
       "teamComparison": "KAR vs MIZ Team Comparison Overall On Venue KAR vs all teams MIZ vs all teams 10 Matches Played 10 30% Win 60% 193 Avg Score 146 245 Highest Score 198 157 Lowest Score 76",
-      "recentMatches": "KAR & MIZ Team Form (Last 5 matches) Karnataka * L W L L L Mizoram * L L W W W"
+      "recentMatches": "KAR & MIZ Team Form (Last 5 matches) Karnataka * L W L L L Mizoram * L L W W W",
+      "weather": {
+        "details": "Wankhede Stadium, Mumbai 27.6˚C Hazy clouds 61% (Humidity) 0 % Chance"
+      }
     },
     "teams": {
       "KAR": [
@@ -13670,7 +13754,7 @@
           "id": "luvnith-sujith-sisodia-8MY",
           "fullName": "Luvnith Sujith Sisodia",
           "shortName": "L S Sisodia",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/8MY.png",
@@ -13766,7 +13850,7 @@
           "id": "krishnan-shrijith-27I",
           "fullName": "Krishnan Shrijith",
           "shortName": "K Shrijith",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/27I.png",
@@ -13912,7 +13996,7 @@
           "id": "manender-narender-singh-5R2",
           "fullName": "Manender Narender Singh",
           "shortName": "M N Singh",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/5R2.png",
@@ -13970,7 +14054,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:34:20.126Z",
+    "scrapedAt": "2026-11-17T17:44:25.274Z",
     "date": "2026-11-18",
     "title": "Karnataka vs Mizoram"
   },
@@ -13987,7 +14071,7 @@
         "url": "https://crex.com/series/nepal-premier-league-2026-2LV"
       },
       "weather": {
-        "details": "Tribhuvan University International Cricket Ground, Kirtipur 20˚C Partly sunny 42% (Humidity) 2 % Chance"
+        "details": "Tribhuvan University International Cricket Ground, Kirtipur 12.8˚C Partly cloudy 87% (Humidity) 2 % Chance"
       },
       "venueStats": {
         "summary": "27 Matches Win Bat first 56% Win Bowl first 44% Avg 1st Inns143 Avg 2st Inns130 Highest Total by PKA vs KG 224-3 Lowest Total by JB vs SR 51-10 Highest Chased by KNY vs BK 187-6",
@@ -14597,7 +14681,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:34:51.463Z",
+    "scrapedAt": "2026-11-17T17:44:56.212Z",
     "date": "2026-11-18",
     "title": "Kathmandu Gurkhas vs Chitwan Rhinos"
   },
@@ -14644,7 +14728,10 @@
       },
       "headToHead": "UAB vs UT Head to Head (Last 10 matches) UAB 0 - 1 UT UT 126/6 10.0 UT Won 5th T10, Abu Dhabi T10 2026 UAB 10.0 101/4",
       "teamComparison": "UAB vs UT Team Comparison Overall On Venue UAB vs all teams UT vs all teams 10 Matches Played 8 50% Win 62% 118 Avg Score 118 162 Highest Score 165 84 Lowest Score 84",
-      "recentMatches": "UAB & UT Team Form (Last 5 matches) UAE Bulls * L W L L L United Tigers * L L W W L"
+      "recentMatches": "UAB & UT Team Form (Last 5 matches) UAE Bulls * L W L L L United Tigers * L L W W L",
+      "weather": {
+        "details": "Zayed Cricket Stadium, Abu Dhabi 26.1˚C Clear 60% (Humidity) 1 % Chance"
+      }
     },
     "teams": {
       "UAB": [
@@ -14712,9 +14799,9 @@
           "id": "aneurin-donald-1HU",
           "fullName": "Aneurin Donald",
           "shortName": "A Donald",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": true,
+          "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/1HU.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/78.png",
           "jerseyCode": "78",
@@ -14736,9 +14823,9 @@
           "id": "andre-fletcher-JR",
           "fullName": "Andre Fletcher",
           "shortName": "A Fletcher",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": false,
+          "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/JR.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/78.png",
           "jerseyCode": "78",
@@ -14748,7 +14835,7 @@
           "id": "khawaja-nafay-B57",
           "fullName": "Khawaja Nafay",
           "shortName": "K Nafay",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/B57.png",
@@ -14808,7 +14895,7 @@
           "id": "azam-khan-1D2",
           "fullName": "Azam Khan",
           "shortName": "A Khan",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/1D2.png",
@@ -14954,9 +15041,9 @@
           "id": "nurul-hasan-HA",
           "fullName": "Nurul Hasan",
           "shortName": "N Hasan",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": true,
+          "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/HA.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/1LJ.png",
           "jerseyCode": "1LJ",
@@ -14990,7 +15077,7 @@
           "id": "noor-ul-rahman-KEV",
           "fullName": "Noor ul Rahman",
           "shortName": "N u Rahman",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/KEV.png",
@@ -15074,9 +15161,9 @@
           "id": "joe-clarke-1C6",
           "fullName": "Joe Clarke",
           "shortName": "J Clarke",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
-          "isWicketkeeper": false,
+          "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/1C6.png",
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/1LJ.png",
           "jerseyCode": "1LJ",
@@ -15144,7 +15231,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:35:21.982Z",
+    "scrapedAt": "2026-11-17T17:45:26.640Z",
     "date": "2026-11-18",
     "title": "UAE Bulls vs United Tigers"
   },
@@ -15190,8 +15277,11 @@
         ]
       },
       "headToHead": "EE vs YL Head to Head (Last 10 matches) EE 0 - 1 YL YL 117/4 8.4 YL Won 4th T10, Abu Dhabi T10 2026 EE 10.0 115/4",
-      "teamComparison": "EE vs YL Team Comparison Overall On Venue EE vs all teams YL vs all teams 8 Matches Played 7 50% Win 57% 116 Avg Score 108 137 Highest Score 132 94 Lowest Score 90",
-      "recentMatches": "EE & YL Team Form (Last 5 matches) Emirates Eagles * W W L L W Yas Lions * W L L W W"
+      "teamComparison": "EE vs YL Team Comparison Overall On Venue EE vs all teams YL vs all teams 8 Matches Played 8 50% Win 62% 116 Avg Score 113 137 Highest Score 149 94 Lowest Score 90",
+      "recentMatches": "EE & YL Team Form (Last 5 matches) Emirates Eagles * W W L L W Yas Lions * W L L W W",
+      "weather": {
+        "details": "Zayed Cricket Stadium, Abu Dhabi 26.1˚C Clear 60% (Humidity) 1 % Chance"
+      }
     },
     "teams": {
       "EE": [
@@ -15295,7 +15385,7 @@
           "id": "ks-bharat-BX",
           "fullName": "KS Bharat",
           "shortName": "K Bharat",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/BX.png",
@@ -15391,7 +15481,7 @@
           "id": "kusal-perera-FD",
           "fullName": "Kusal Perera",
           "shortName": "K Perera",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/FD.png",
@@ -15453,7 +15543,7 @@
           "id": "andries-gous-1FX",
           "fullName": "Andries Gous",
           "shortName": "A Gous",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/1FX.png",
@@ -15537,7 +15627,7 @@
           "id": "tom-moores-1C7",
           "fullName": "Tom Moores",
           "shortName": "T Moores",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/1C7.png",
@@ -15652,10 +15742,22 @@
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/1LH.png",
           "jerseyCode": "1LH",
           "profileUrl": "https://crex.com/player/awais-ahmed-D69"
+        },
+        {
+          "id": "masood-gurbaz-91I",
+          "fullName": "Masood Gurbaz",
+          "shortName": "M Gurbaz",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/91I.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/1LH.png",
+          "jerseyCode": "1LH",
+          "profileUrl": "https://crex.com/player/masood-gurbaz-91I"
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:35:52.901Z",
+    "scrapedAt": "2026-11-17T17:45:57.106Z",
     "date": "2026-11-18",
     "title": "Emirates Eagles vs Yas Lions"
   },
@@ -15679,7 +15781,7 @@
       "recentMatches": "& Team Form (Last 5 matches) Northern Brave * L L L W W Auckland * D W L L L"
     },
     "teams": {},
-    "scrapedAt": "2026-11-17T09:36:23.923Z",
+    "scrapedAt": "2026-11-17T17:46:27.363Z",
     "date": "2026-11-19",
     "title": "Northern Brave vs Auckland"
   },
@@ -15703,7 +15805,7 @@
       "recentMatches": "& Team Form (Last 5 matches) Central Stags * W L W D D Wellington * L L L D L"
     },
     "teams": {},
-    "scrapedAt": "2026-11-17T09:37:17.523Z",
+    "scrapedAt": "2026-11-17T17:47:20.925Z",
     "date": "2026-11-19",
     "title": "Central Stags vs Wellington"
   },
@@ -15727,7 +15829,7 @@
       "recentMatches": "& Team Form (Last 5 matches) Otago * W W W D D Canterbury * D W W D W"
     },
     "teams": {},
-    "scrapedAt": "2026-11-17T09:38:11.513Z",
+    "scrapedAt": "2026-11-17T17:48:14.780Z",
     "date": "2026-11-19",
     "title": "Otago vs Canterbury"
   },
@@ -15762,7 +15864,7 @@
         }
       ],
       "weather": {
-        "details": "Basin Reserve, Wellington 13.9˚C Clear 82% (Humidity) 55 % Chance"
+        "details": "Basin Reserve, Wellington 12.8˚C Sunny 76% (Humidity) 25 % Chance"
       },
       "venueStats": {
         "summary": "26 Matches Win Bat first 42% Win Bowl first 35% Avg 1st Inns330 Avg 2st Inns298 Avg 3rd Inns302 Avg 4th Inns134 Highest Total by NZ vs IND 680-8 Lowest Total by NZ vs PAK 99-10",
@@ -16156,7 +16258,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:39:05.757Z",
+    "scrapedAt": "2026-11-17T17:49:08.679Z",
     "date": "2026-11-19",
     "title": "New Zealand vs India"
   },
@@ -16177,7 +16279,7 @@
         "url": "https://crex.com/series/womens-big-bash-league-2026-2KG"
       },
       "weather": {
-        "details": "Allan Border Field, Brisbane 22.8˚C Partly cloudy 73% (Humidity) 65 % Chance"
+        "details": "Allan Border Field, Brisbane 18.9˚C Mostly cloudy 82% (Humidity) 65 % Chance"
       },
       "venueStats": {
         "summary": "40 Matches Win Bat first 35% Win Bowl first 65% Avg 1st Inns141 Avg 2st Inns132 Highest Total by SYTW vs BHW 200-6 Lowest Total by BRHW vs MLSW 94-7 Highest Chased by MLRW vs BRHW 185-4 Lowest Defended by HBHW vs ADSW 113-8",
@@ -16609,7 +16711,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:39:36.491Z",
+    "scrapedAt": "2026-11-17T17:49:39.117Z",
     "date": "2026-11-19",
     "title": "Hobart Hurricanes Women vs Perth Scorchers Women"
   },
@@ -16999,7 +17101,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:40:07.588Z",
+    "scrapedAt": "2026-11-17T17:50:09.533Z",
     "date": "2026-11-19",
     "title": "Bangladesh A vs Hong Kong"
   },
@@ -17203,7 +17305,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:40:38.522Z",
+    "scrapedAt": "2026-11-17T17:50:40.191Z",
     "date": "2026-11-19",
     "title": "Zimbabwe A vs Ireland A"
   },
@@ -17224,7 +17326,7 @@
         "url": "https://crex.com/series/womens-big-bash-league-2026-2KG"
       },
       "weather": {
-        "details": "Allan Border Field, Brisbane 22.8˚C Partly cloudy 73% (Humidity) 65 % Chance"
+        "details": "Allan Border Field, Brisbane 18.9˚C Mostly cloudy 82% (Humidity) 65 % Chance"
       },
       "venueStats": {
         "summary": "40 Matches Win Bat first 35% Win Bowl first 65% Avg 1st Inns141 Avg 2st Inns132 Highest Total by SYTW vs BHW 200-6 Lowest Total by BRHW vs MLSW 94-7 Highest Chased by MLRW vs BRHW 185-4 Lowest Defended by HBHW vs ADSW 113-8",
@@ -17632,7 +17734,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:41:09.900Z",
+    "scrapedAt": "2026-11-17T17:51:10.994Z",
     "date": "2026-11-19",
     "title": "Brisbane Heat Women vs Sydney Thunder Women"
   },
@@ -18023,13 +18125,13 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:41:40.719Z",
+    "scrapedAt": "2026-11-17T17:51:41.442Z",
     "date": "2026-11-19",
     "title": "Sri Lanka A vs Afghanistan A"
   },
   "14HS": {
     "id": "14HS",
-    "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-qualifier-2nd-t20-nepal-premier-league-2026-match-updates-14HS",
+    "detailUrl": "https://crex.com/cricket-live-score/spr-vs-tbc-qualifier-2-nepal-premier-league-2026-match-updates-14HS",
     "matchInfo": {
       "dateText": "Thursday, 19 November, 11:15 AM",
       "venue": "Tribhuvan University International Cricket Ground, Kirtipur",
@@ -18040,15 +18142,15 @@
         "url": "https://crex.com/series/nepal-premier-league-2026-2LV"
       },
       "venueStats": {
-        "summary": "27 Matches Win Bat first 56% Win Bowl first 44% Avg 1st Inns143 Avg 2st Inns130 Highest Total by PKA vs KG 224-3 Lowest Total by JB vs SR 51-10 Highest Chased by KNY vs BK 187-6",
-        "matchCount": "27",
+        "summary": "28 Matches Win Bat first 54% Win Bowl first 46% Avg 1st Inns142 Avg 2st Inns129 Highest Total by PKA vs KG 224-3 Lowest Total by JB vs SR 51-10 Highest Chased by KNY vs BK 187-6",
+        "matchCount": "28",
         "venuePercentages": [
-          "Win Bat first 56%",
-          "Win Bowl first 44%"
+          "Win Bat first 54%",
+          "Win Bowl first 46%"
         ],
         "averages": [
-          "143",
-          "130"
+          "142",
+          "129"
         ],
         "tableHeaders": [
           "Highest Total",
@@ -18060,12 +18162,280 @@
           "51-10",
           "187-6"
         ]
-      }
+      },
+      "recentMatches": "SPR & TBC Team Form (Last 5 matches) Sudurpaschim Royals * L W W W W"
     },
-    "teams": {},
-    "scrapedAt": "2026-11-17T09:42:11.366Z",
+    "teams": {
+      "SPR": [
+        {
+          "id": "dipendra-singh-airee-4NY",
+          "fullName": "Dipendra Singh Airee",
+          "shortName": "D S Airee",
+          "role": "All Rounder",
+          "isCaptain": true,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/4NY.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/dipendra-singh-airee-4NY"
+        },
+        {
+          "id": "binod-bhandari-YU",
+          "fullName": "Binod Bhandari",
+          "shortName": "B Bhandari",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": true,
+          "vector": "https://cricketvectors.akamaized.net/players/org/YU.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/binod-bhandari-YU"
+        },
+        {
+          "id": "dipak-bohra-D73",
+          "fullName": "Dipak Bohra",
+          "shortName": "D Bohra",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/D73.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/dipak-bohra-D73"
+        },
+        {
+          "id": "brandon-mcmullen-9MN",
+          "fullName": "Brandon McMullen",
+          "shortName": "B McMullen",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/9MN.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/brandon-mcmullen-9MN"
+        },
+        {
+          "id": "scott-kuggeleijn-MX",
+          "fullName": "Scott Kuggeleijn",
+          "shortName": "S Kuggeleijn",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/MX.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/scott-kuggeleijn-MX"
+        },
+        {
+          "id": "aarif-sheikh-10Y",
+          "fullName": "Aarif Sheikh",
+          "shortName": "A Sheikh",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/10Y.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/aarif-sheikh-10Y"
+        },
+        {
+          "id": "ishan-pandey-11B",
+          "fullName": "Ishan Pandey",
+          "shortName": "I Pandey",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/11B.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/ishan-pandey-11B"
+        },
+        {
+          "id": "hemant-dhami-D10",
+          "fullName": "Hemant Dhami",
+          "shortName": "H Dhami",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/D10.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/hemant-dhami-D10"
+        },
+        {
+          "id": "hikmat-mahara-MCE",
+          "fullName": "Hikmat Mahara",
+          "shortName": "H Mahara",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/MCE.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/hikmat-mahara-MCE"
+        },
+        {
+          "id": "milan-bohra-M9P",
+          "fullName": "Milan Bohra",
+          "shortName": "M Bohra",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/M9P.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/milan-bohra-M9P"
+        },
+        {
+          "id": "sachin-bhatta-MAT",
+          "fullName": "Sachin Bhatta",
+          "shortName": "S Bhatta",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/MAT.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/sachin-bhatta-MAT"
+        },
+        {
+          "id": "tek-rawat-QJP",
+          "fullName": "Tek Rawat",
+          "shortName": "T Rawat",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/QJP.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/tek-rawat-QJP"
+        },
+        {
+          "id": "ayub-chand-QJQ",
+          "fullName": "Ayub Chand",
+          "shortName": "A Chand",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/QJQ.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/ayub-chand-QJQ"
+        },
+        {
+          "id": "tek-raj-thalal-QJR",
+          "fullName": "Tek Raj Thalal",
+          "shortName": "T R Thalal",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/QJR.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/tek-raj-thalal-QJR"
+        },
+        {
+          "id": "abinash-bohara-Z6",
+          "fullName": "Abinash Bohara",
+          "shortName": "A Bohara",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/Z6.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/abinash-bohara-Z6"
+        },
+        {
+          "id": "sherfane-rutherford-EH",
+          "fullName": "Sherfane Rutherford",
+          "shortName": "S Rutherford",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/EH.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/sherfane-rutherford-EH"
+        },
+        {
+          "id": "fabian-allen-L0",
+          "fullName": "Fabian Allen",
+          "shortName": "F Allen",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/L0.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/fabian-allen-L0"
+        },
+        {
+          "id": "saif-zaib-3IP",
+          "fullName": "Saif Zaib",
+          "shortName": "S Zaib",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/3IP.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/saif-zaib-3IP"
+        },
+        {
+          "id": "anil-kharel-72T",
+          "fullName": "Anil Kharel",
+          "shortName": "A Kharel",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/72T.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/anil-kharel-72T"
+        },
+        {
+          "id": "tharindu-ratnayake-4XH",
+          "fullName": "Tharindu Ratnayake",
+          "shortName": "T Ratnayake",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/4XH.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/tharindu-ratnayake-4XH"
+        },
+        {
+          "id": "george-munsey-JK",
+          "fullName": "George Munsey",
+          "shortName": "G Munsey",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/JK.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/george-munsey-JK"
+        },
+        {
+          "id": "thanuka-dabare-94R",
+          "fullName": "Thanuka Dabare",
+          "shortName": "T Dabare",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/94R.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/ZY.png",
+          "jerseyCode": "ZY",
+          "profileUrl": "https://crex.com/player/thanuka-dabare-94R"
+        }
+      ]
+    },
+    "scrapedAt": "2026-11-17T17:52:11.842Z",
     "date": "2026-11-19",
-    "title": "Team 1 (TBC) vs Team 2 (TBC)"
+    "title": "Sudurpaschim Royals vs Team 2 (TBC)"
   },
   "14WI": {
     "id": "14WI",
@@ -18085,8 +18455,8 @@
         "url": "https://crex.com/series/abu-dhabi-t10-league-2026-2IO"
       },
       "venueStats": {
-        "summary": "167 Matches Win Bat first 49% Win Bowl first 51% Avg 1st Inns110 Avg 2st Inns100 Highest Total by UT vs RDC 165-2 Lowest Total by DB vs NYS 31-10 Highest Chased by NYS vs NW 144-5 Lowest Defended by BGT vs NYS 131-5",
-        "matchCount": "167",
+        "summary": "168 Matches Win Bat first 49% Win Bowl first 51% Avg 1st Inns110 Avg 2st Inns100 Highest Total by UT vs RDC 165-2 Lowest Total by DB vs NYS 31-10 Highest Chased by YL vs AA 149-5 Lowest Defended by BGT vs NYS 131-5",
+        "matchCount": "168",
         "venuePercentages": [
           "Win Bat first 49%",
           "Win Bowl first 51%"
@@ -18104,13 +18474,13 @@
         "scores": [
           "165-2",
           "31-10",
-          "144-5",
+          "149-5",
           "131-5"
         ]
       },
       "headToHead": "UAB vs AA Head to Head (Last 10 matches) UAB 0 - 1 AA AA 92/8 10.0 AA Won 15th T10, Abu Dhabi T10 2026 UAB 10.0 84/7",
-      "teamComparison": "UAB vs AA Team Comparison Overall On Venue UAB vs all teams AA vs all teams 10 Matches Played 8 50% Win 75% 118 Avg Score 108 162 Highest Score 131 84 Lowest Score 89",
-      "recentMatches": "UAB & AA Team Form (Last 5 matches) UAE Bulls * L W L L L Arabian Aces * W W W W L"
+      "teamComparison": "UAB vs AA Team Comparison Overall On Venue UAB vs all teams AA vs all teams 10 Matches Played 9 50% Win 66% 118 Avg Score 112 162 Highest Score 145 84 Lowest Score 89",
+      "recentMatches": "UAB & AA Team Form (Last 5 matches) UAE Bulls * L W L L L Arabian Aces * L W W W W"
     },
     "teams": {
       "UAB": [
@@ -18538,7 +18908,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:43:05.673Z",
+    "scrapedAt": "2026-11-17T17:52:42.925Z",
     "date": "2026-11-19",
     "title": "UAE Bulls vs Arabian Aces"
   },
@@ -18560,8 +18930,8 @@
         "url": "https://crex.com/series/abu-dhabi-t10-league-2026-2IO"
       },
       "venueStats": {
-        "summary": "167 Matches Win Bat first 49% Win Bowl first 51% Avg 1st Inns110 Avg 2st Inns100 Highest Total by UT vs RDC 165-2 Lowest Total by DB vs NYS 31-10 Highest Chased by NYS vs NW 144-5 Lowest Defended by BGT vs NYS 131-5",
-        "matchCount": "167",
+        "summary": "168 Matches Win Bat first 49% Win Bowl first 51% Avg 1st Inns110 Avg 2st Inns100 Highest Total by UT vs RDC 165-2 Lowest Total by DB vs NYS 31-10 Highest Chased by YL vs AA 149-5 Lowest Defended by BGT vs NYS 131-5",
+        "matchCount": "168",
         "venuePercentages": [
           "Win Bat first 49%",
           "Win Bowl first 51%"
@@ -18579,13 +18949,13 @@
         "scores": [
           "165-2",
           "31-10",
-          "144-5",
+          "149-5",
           "131-5"
         ]
       },
       "headToHead": "YL vs RDC Head to Head (Last 10 matches) YL 0 - 1 RDC RDC 136/4 10.0 RDC Won 14th T10, Abu Dhabi T10 2026 YL 10.0 97/6",
-      "teamComparison": "YL vs RDC Team Comparison Overall On Venue YL vs all teams RDC vs all teams 7 Matches Played 8 57% Win 25% 108 Avg Score 116 132 Highest Score 146 90 Lowest Score 81",
-      "recentMatches": "YL & RDC Team Form (Last 5 matches) Yas Lions * W L L W W Royal Desert Champions * L L L W W"
+      "teamComparison": "YL vs RDC Team Comparison Overall On Venue YL vs all teams RDC vs all teams 8 Matches Played 8 62% Win 25% 113 Avg Score 116 149 Highest Score 146 90 Lowest Score 81",
+      "recentMatches": "YL & RDC Team Form (Last 5 matches) Yas Lions * W W L L W Royal Desert Champions * L L L W W"
     },
     "teams": {
       "YL": [
@@ -18816,6 +19186,18 @@
           "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/1LH.png",
           "jerseyCode": "1LH",
           "profileUrl": "https://crex.com/player/awais-ahmed-D69"
+        },
+        {
+          "id": "masood-gurbaz-91I",
+          "fullName": "Masood Gurbaz",
+          "shortName": "M Gurbaz",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/91I.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/1LH.png",
+          "jerseyCode": "1LH",
+          "profileUrl": "https://crex.com/player/masood-gurbaz-91I"
         }
       ],
       "RDC": [
@@ -19049,7 +19431,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:43:36.795Z",
+    "scrapedAt": "2026-11-17T17:53:13.668Z",
     "date": "2026-11-19",
     "title": "Yas Lions vs Royal Desert Champions"
   },
@@ -19071,8 +19453,8 @@
         "url": "https://crex.com/series/abu-dhabi-t10-league-2026-2IO"
       },
       "venueStats": {
-        "summary": "167 Matches Win Bat first 49% Win Bowl first 51% Avg 1st Inns110 Avg 2st Inns100 Highest Total by UT vs RDC 165-2 Lowest Total by DB vs NYS 31-10 Highest Chased by NYS vs NW 144-5 Lowest Defended by BGT vs NYS 131-5",
-        "matchCount": "167",
+        "summary": "168 Matches Win Bat first 49% Win Bowl first 51% Avg 1st Inns110 Avg 2st Inns100 Highest Total by UT vs RDC 165-2 Lowest Total by DB vs NYS 31-10 Highest Chased by YL vs AA 149-5 Lowest Defended by BGT vs NYS 131-5",
+        "matchCount": "168",
         "venuePercentages": [
           "Win Bat first 49%",
           "Win Bowl first 51%"
@@ -19090,7 +19472,7 @@
         "scores": [
           "165-2",
           "31-10",
-          "144-5",
+          "149-5",
           "131-5"
         ]
       },
@@ -19620,7 +20002,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-17T09:44:08.195Z",
+    "scrapedAt": "2026-11-17T17:53:45.184Z",
     "date": "2026-11-19",
     "title": "Emirates Eagles vs United Tigers"
   }
