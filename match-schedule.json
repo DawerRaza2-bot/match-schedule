@@ -1,869 +1,5 @@
 [
   {
-    "id": "1576",
-    "title": "Malaysia Women vs Indonesia Women",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "2:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/idn-w-vs-mas-w-1st-t20i-womens-t20i-tri-series-in-malaysia-2026-match-updates-1576",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Malaysia Women",
-        "name": "Malaysia Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/2F.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Indonesia Women",
-        "name": "Indonesia Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/CI.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13XB",
-    "title": "Arunachal Pradesh vs Meghalaya",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "2:30 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/ap-vs-mgly-10th-t20-syed-mushtaq-ali-trophy-plate-2026-match-updates-13XB",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Arunachal Pradesh",
-        "name": "Arunachal Pradesh",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GG.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Meghalaya",
-        "name": "Meghalaya",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GK.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13XC",
-    "title": "Services vs Nagaland",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "2:30 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/nagl-vs-ser-11th-t20-syed-mushtaq-ali-trophy-plate-2026-match-updates-13XC",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Services",
-        "name": "Services",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GR.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Nagaland",
-        "name": "Nagaland",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GH.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZD",
-    "title": "Hyderabad vs Goa",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "2:30 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/goa-vs-hyd-49th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZD",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Hyderabad",
-        "name": "Hyderabad",
-        "flag": "https://cricketvectors.akamaized.net/Teams/H5.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Goa",
-        "name": "Goa",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GS.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZC",
-    "title": "Maharashtra vs Assam",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "3:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/asm-vs-mah-50th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZC",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Maharashtra",
-        "name": "Maharashtra",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GZ.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Assam",
-        "name": "Assam",
-        "flag": "https://cricketvectors.akamaized.net/Teams/H2.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZA",
-    "title": "Chandigarh vs Uttar Pradesh",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "3:30 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/cg-vs-up-51st-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZA",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Chandigarh",
-        "name": "Chandigarh",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GF.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Uttar Pradesh",
-        "name": "Uttar Pradesh",
-        "flag": "https://cricketvectors.akamaized.net/Teams/HD.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZB",
-    "title": "Punjab vs Tamil Nadu",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "3:30 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/pun-vs-tn-52nd-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZB",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Punjab",
-        "name": "Punjab",
-        "flag": "https://cricketvectors.akamaized.net/Teams/HC.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Tamil Nadu",
-        "name": "Tamil Nadu",
-        "flag": "https://cricketvectors.akamaized.net/Teams/H7.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "151V",
-    "title": "Scotland Women vs Netherlands Women",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "5:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/ned-w-vs-sco-w-21st-t20i-womens-emerging-nations-trophy-2026-match-updates-151V",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Scotland Women",
-        "name": "Scotland Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/CK.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Netherlands Women",
-        "name": "Netherlands Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/IF.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "151W",
-    "title": "Sri Lanka Women vs Zimbabwe Women",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "5:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/sl-w-vs-zim-w-22nd-t20i-womens-emerging-nations-trophy-2026-match-updates-151W",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Sri Lanka Women",
-        "name": "Sri Lanka Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/1J.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Zimbabwe Women",
-        "name": "Zimbabwe Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/6I.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZE",
-    "title": "Uttarakhand vs Odisha",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "5:30 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/odsa-vs-utk-53rd-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZE",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Uttarakhand",
-        "name": "Uttarakhand",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GY.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Odisha",
-        "name": "Odisha",
-        "flag": "https://cricketvectors.akamaized.net/Teams/H3.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZF",
-    "title": "Madhya Pradesh vs Andhra",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "5:30 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/andr-vs-mp-54th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZF",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Madhya Pradesh",
-        "name": "Madhya Pradesh",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GQ.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Andhra",
-        "name": "Andhra",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GN.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZG",
-    "title": "Jammu and Kashmir vs Bihar",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "5:30 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/bihr-vs-jk-55th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZG",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Jammu and Kashmir",
-        "name": "Jammu and Kashmir",
-        "flag": "https://cricketvectors.akamaized.net/Teams/HB.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Bihar",
-        "name": "Bihar",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GD.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZH",
-    "title": "Karnataka vs Jharkhand",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "5:30 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/jhkd-vs-kar-56th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZH",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Karnataka",
-        "name": "Karnataka",
-        "flag": "https://cricketvectors.akamaized.net/Teams/H9.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Jharkhand",
-        "name": "Jharkhand",
-        "flag": "https://cricketvectors.akamaized.net/Teams/H6.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "150U",
-    "title": "Pakistan A vs United Arab Emirates",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "6:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/pak-a-vs-uae-3rd-one-day-mens-asia-cup-rising-stars-2026-match-updates-150U",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Pakistan A",
-        "name": "Pakistan A",
-        "flag": "https://cricketvectors.akamaized.net/Teams/RJ.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "United Arab Emirates",
-        "name": "United Arab Emirates",
-        "flag": "https://cricketvectors.akamaized.net/Teams/11.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13XD",
-    "title": "Sikkim vs Manipur",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "7:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/mnp-vs-sikm-12th-t20-syed-mushtaq-ali-trophy-plate-2026-match-updates-13XD",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Sikkim",
-        "name": "Sikkim",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GC.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Manipur",
-        "name": "Manipur",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GE.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZL",
-    "title": "Chhattisgarh vs Gujarat",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "7:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/chg-vs-guj-57th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZL",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Chhattisgarh",
-        "name": "Chhattisgarh",
-        "flag": "https://cricketvectors.akamaized.net/Teams/H0.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Gujarat",
-        "name": "Gujarat",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GX.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZK",
-    "title": "Kerala vs Tripura",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "7:15 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/ker-vs-tri-58th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZK",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Kerala",
-        "name": "Kerala",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GJ.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Tripura",
-        "name": "Tripura",
-        "flag": "https://cricketvectors.akamaized.net/Teams/HA.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "14TH",
-    "title": "Zimbabwe A vs Ireland A",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "7:30 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/ire-a-vs-zim-a-2nd-one-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TH",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Zimbabwe A",
-        "name": "Zimbabwe A",
-        "flag": "https://cricketvectors.akamaized.net/Teams/ID.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Ireland A",
-        "name": "Ireland A",
-        "flag": "https://cricketvectors.akamaized.net/Teams/14J.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZI",
-    "title": "Bengal vs Mizoram",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "8:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/ben-vs-miz-59th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZI",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Bengal",
-        "name": "Bengal",
-        "flag": "https://cricketvectors.akamaized.net/Teams/H4.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Mizoram",
-        "name": "Mizoram",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GI.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZJ",
-    "title": "Delhi vs Saurashtra",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "8:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/del-vs-saur-60th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZJ",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Delhi",
-        "name": "Delhi",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GO.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Saurashtra",
-        "name": "Saurashtra",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GT.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "12XV",
-    "title": "Adelaide Strikers Women vs Melbourne Renegades Women",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "8:10 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/ads-w-vs-mlr-w-28th-t20-womens-big-bash-league-2026-match-updates-12XV",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Adelaide Strikers Women",
-        "name": "Adelaide Strikers Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/4R.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Melbourne Renegades Women",
-        "name": "Melbourne Renegades Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/4V.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "151X",
-    "title": "Pakistan Women vs Ireland Women",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "9:15 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/ire-w-vs-pak-w-23rd-t20i-womens-emerging-nations-trophy-2026-match-updates-151X",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Pakistan Women",
-        "name": "Pakistan Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/1K.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Ireland Women",
-        "name": "Ireland Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/2H.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "150V",
-    "title": "India A vs Nepal",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "10:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/ind-a-vs-nep-4th-one-day-mens-asia-cup-rising-stars-2026-match-updates-150V",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "India A",
-        "name": "India A",
-        "flag": "https://cricketvectors.akamaized.net/Teams/6S.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Nepal",
-        "name": "Nepal",
-        "flag": "https://cricketvectors.akamaized.net/Teams/19.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZM",
-    "title": "Vidarbha vs Mumbai",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "11:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/mum-vs-vid-61st-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZM",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Vidarbha",
-        "name": "Vidarbha",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GU.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Mumbai",
-        "name": "Mumbai",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GP.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZN",
-    "title": "Himachal Pradesh vs Puducherry",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "11:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/hp-vs-pdc-62nd-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZN",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Himachal Pradesh",
-        "name": "Himachal Pradesh",
-        "flag": "https://cricketvectors.akamaized.net/Teams/H1.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Puducherry",
-        "name": "Puducherry",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GM.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZO",
-    "title": "Railways vs Haryana",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "11:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/har-vs-rlys-63rd-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZO",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Railways",
-        "name": "Railways",
-        "flag": "https://cricketvectors.akamaized.net/Teams/H8.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Haryana",
-        "name": "Haryana",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GL.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZP",
-    "title": "Rajasthan vs Baroda",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "11:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/brd-vs-raj-64th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZP",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Rajasthan",
-        "name": "Rajasthan",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GV.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Baroda",
-        "name": "Baroda",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GW.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "1570",
-    "title": "Karnataka Women vs Railways Women",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "11:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/kar-w-vs-rlys-w-final-senior-womens-t20-trophy-elite-2026-27-match-updates-1570",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Karnataka Women",
-        "name": "Karnataka Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/L5.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Railways Women",
-        "name": "Railways Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/L4.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "157D",
-    "title": "Milan Icons vs Brescia Lions",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "11:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/bl-vs-mi-1st-match-italia-t10-league-2026-match-updates-157D",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Milan Icons",
-        "name": "Milan Icons",
-        "flag": "https://cricketvectors.akamaized.net/Teams/1LU.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Brescia Lions",
-        "name": "Brescia Lions",
-        "flag": "https://cricketvectors.akamaized.net/Teams/1LW.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "157E",
-    "title": "Rome Gladiators vs Napoli Knights",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "1:15 PM",
-    "detailUrl": "https://crex.com/cricket-live-score/nk-vs-rg-2nd-match-italia-t10-league-2026-match-updates-157E",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Rome Gladiators",
-        "name": "Rome Gladiators",
-        "flag": "https://cricketvectors.akamaized.net/Teams/1LX.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Napoli Knights",
-        "name": "Napoli Knights",
-        "flag": "https://cricketvectors.akamaized.net/Teams/1LT.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "14WL",
-    "title": "Arabian Aces vs UAE Bulls",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "1:30 PM",
-    "detailUrl": "https://crex.com/cricket-live-score/aa-vs-uab-qualifier-1-abu-dhabi-t10-league-2026-match-updates-14WL",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Arabian Aces",
-        "name": "Arabian Aces",
-        "flag": "https://cricketvectors.akamaized.net/Teams/1LI.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "UAE Bulls",
-        "name": "UAE Bulls",
-        "flag": "https://cricketvectors.akamaized.net/Teams/78.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "14WM",
-    "title": "Yas Lions vs Team 2 (TBC)",
-    "dateText": "Fri, 20 Nov 2026",
-    "date": "2026-11-20",
-    "timeText": "3:45 PM",
-    "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-yl-final-abu-dhabi-t10-league-2026-match-updates-14WM",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Yas Lions",
-        "name": "Yas Lions",
-        "flag": "https://cricketvectors.akamaized.net/Teams/1LH.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Team 2 (TBC)",
-        "name": "Team 2 (TBC)",
-        "flag": "https://cricketvectors.akamaized.net/Teams/CA.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
     "id": "12XW",
     "title": "Hobart Hurricanes Women vs Sydney Thunder Women",
     "dateText": "Sat, 21 Nov 2026",
@@ -1215,33 +351,6 @@
     "source": "CREX"
   },
   {
-    "id": "154P",
-    "title": "Peshawar Region Whites vs Quetta Region",
-    "dateText": "Sat, 21 Nov 2026",
-    "date": "2026-11-21",
-    "timeText": "4:30 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/prw-vs-qet-27th-first-class-quaid-e-azam-trophy-silver-2026-match-updates-154P",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Peshawar Region Whites",
-        "name": "Peshawar Region Whites",
-        "flag": "https://cricketvectors.akamaized.net/Teams/1LR.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Quetta Region",
-        "name": "Quetta Region",
-        "flag": "https://cricketvectors.akamaized.net/Teams/TH.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
     "id": "150W",
     "title": "Sri Lanka A vs Hong Kong",
     "dateText": "Sat, 21 Nov 2026",
@@ -1408,7 +517,7 @@
     "title": "Desert Vipers vs MI Emirates",
     "dateText": "Sat, 21 Nov 2026",
     "date": "2026-11-21",
-    "timeText": "3:30 PM",
+    "timeText": "2:30 PM",
     "detailUrl": "https://crex.com/cricket-live-score/dv-vs-mie-1st-t20-international-league-t20-2026-match-updates-14RR",
     "status": "UPCOMING",
     "result": "",
@@ -1539,12 +648,66 @@
     "source": "CREX"
   },
   {
+    "id": "13ZT",
+    "title": "Vidarbha vs Gujarat",
+    "dateText": "Sun, 22 Nov 2026",
+    "date": "2026-11-22",
+    "timeText": "2:30 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/guj-vs-vid-65th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZT",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Vidarbha",
+        "name": "Vidarbha",
+        "flag": "https://cricketvectors.akamaized.net/Teams/GU.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Gujarat",
+        "name": "Gujarat",
+        "flag": "https://cricketvectors.akamaized.net/Teams/GX.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "13ZS",
+    "title": "Himachal Pradesh vs Tripura",
+    "dateText": "Sun, 22 Nov 2026",
+    "date": "2026-11-22",
+    "timeText": "3:00 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/hp-vs-tri-66th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZS",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Himachal Pradesh",
+        "name": "Himachal Pradesh",
+        "flag": "https://cricketvectors.akamaized.net/Teams/H1.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Tripura",
+        "name": "Tripura",
+        "flag": "https://cricketvectors.akamaized.net/Teams/HA.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
     "id": "13ZQ",
     "title": "Rajasthan vs Mizoram",
     "dateText": "Sun, 22 Nov 2026",
     "date": "2026-11-22",
     "timeText": "3:30 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/miz-vs-raj-65th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZQ",
+    "detailUrl": "https://crex.com/cricket-live-score/miz-vs-raj-67th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZQ",
     "status": "UPCOMING",
     "result": "",
     "teams": [
@@ -1571,7 +734,7 @@
     "dateText": "Sun, 22 Nov 2026",
     "date": "2026-11-22",
     "timeText": "3:30 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/rlys-vs-saur-66th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZR",
+    "detailUrl": "https://crex.com/cricket-live-score/rlys-vs-saur-68th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZR",
     "status": "UPCOMING",
     "result": "",
     "teams": [
@@ -1586,60 +749,6 @@
         "code": "Saurashtra",
         "name": "Saurashtra",
         "flag": "https://cricketvectors.akamaized.net/Teams/GT.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZS",
-    "title": "Himachal Pradesh vs Tripura",
-    "dateText": "Sun, 22 Nov 2026",
-    "date": "2026-11-22",
-    "timeText": "3:30 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/hp-vs-tri-67th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZS",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Himachal Pradesh",
-        "name": "Himachal Pradesh",
-        "flag": "https://cricketvectors.akamaized.net/Teams/H1.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Tripura",
-        "name": "Tripura",
-        "flag": "https://cricketvectors.akamaized.net/Teams/HA.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "13ZT",
-    "title": "Vidarbha vs Gujarat",
-    "dateText": "Sun, 22 Nov 2026",
-    "date": "2026-11-22",
-    "timeText": "3:30 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/guj-vs-vid-68th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZT",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Vidarbha",
-        "name": "Vidarbha",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GU.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Gujarat",
-        "name": "Gujarat",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GX.png",
         "score": "",
         "overs": ""
       }
@@ -1890,6 +999,60 @@
     "source": "CREX"
   },
   {
+    "id": "1401",
+    "title": "Uttarakhand vs Hyderabad",
+    "dateText": "Sun, 22 Nov 2026",
+    "date": "2026-11-22",
+    "timeText": "7:00 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/hyd-vs-utk-73rd-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1401",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Uttarakhand",
+        "name": "Uttarakhand",
+        "flag": "https://cricketvectors.akamaized.net/Teams/GY.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Hyderabad",
+        "name": "Hyderabad",
+        "flag": "https://cricketvectors.akamaized.net/Teams/H5.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "1400",
+    "title": "Madhya Pradesh vs Maharashtra",
+    "dateText": "Sun, 22 Nov 2026",
+    "date": "2026-11-22",
+    "timeText": "7:15 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/mah-vs-mp-74th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1400",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Madhya Pradesh",
+        "name": "Madhya Pradesh",
+        "flag": "https://cricketvectors.akamaized.net/Teams/GQ.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Maharashtra",
+        "name": "Maharashtra",
+        "flag": "https://cricketvectors.akamaized.net/Teams/GZ.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
     "id": "14TI",
     "title": "Zimbabwe A vs Ireland A",
     "dateText": "Sun, 22 Nov 2026",
@@ -1949,7 +1112,7 @@
     "dateText": "Sun, 22 Nov 2026",
     "date": "2026-11-22",
     "timeText": "8:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/cg-vs-kar-73rd-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZY",
+    "detailUrl": "https://crex.com/cricket-live-score/cg-vs-kar-75th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZY",
     "status": "UPCOMING",
     "result": "",
     "teams": [
@@ -1976,7 +1139,7 @@
     "dateText": "Sun, 22 Nov 2026",
     "date": "2026-11-22",
     "timeText": "8:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/jk-vs-pun-74th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZZ",
+    "detailUrl": "https://crex.com/cricket-live-score/jk-vs-pun-76th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-13ZZ",
     "status": "UPCOMING",
     "result": "",
     "teams": [
@@ -1991,60 +1154,6 @@
         "code": "Punjab",
         "name": "Punjab",
         "flag": "https://cricketvectors.akamaized.net/Teams/HC.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "1400",
-    "title": "Madhya Pradesh vs Maharashtra",
-    "dateText": "Sun, 22 Nov 2026",
-    "date": "2026-11-22",
-    "timeText": "8:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/mah-vs-mp-75th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1400",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Madhya Pradesh",
-        "name": "Madhya Pradesh",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GQ.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Maharashtra",
-        "name": "Maharashtra",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GZ.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "1401",
-    "title": "Uttarakhand vs Hyderabad",
-    "dateText": "Sun, 22 Nov 2026",
-    "date": "2026-11-22",
-    "timeText": "8:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/hyd-vs-utk-76th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1401",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Uttarakhand",
-        "name": "Uttarakhand",
-        "flag": "https://cricketvectors.akamaized.net/Teams/GY.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Hyderabad",
-        "name": "Hyderabad",
-        "flag": "https://cricketvectors.akamaized.net/Teams/H5.png",
         "score": "",
         "overs": ""
       }
@@ -2423,6 +1532,303 @@
         "code": "Abu Dhabi Knight Riders",
         "name": "Abu Dhabi Knight Riders",
         "flag": "https://cricketvectors.akamaized.net/Teams/M3.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "1579",
+    "title": "Malaysia Women vs Indonesia Women",
+    "dateText": "Mon, 23 Nov 2026",
+    "date": "2026-11-23",
+    "timeText": "2:00 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/idn-w-vs-mas-w-4th-t20i-womens-t20i-tri-series-in-malaysia-2026-match-updates-1579",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Malaysia Women",
+        "name": "Malaysia Women",
+        "flag": "https://cricketvectors.akamaized.net/Teams/2F.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Indonesia Women",
+        "name": "Indonesia Women",
+        "flag": "https://cricketvectors.akamaized.net/Teams/CI.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "1347",
+    "title": "Western Australia vs Tasmania",
+    "dateText": "Mon, 23 Nov 2026",
+    "date": "2026-11-23",
+    "timeText": "2:30 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/tas-vs-waca-14th-first-class-sheffield-shield-2026-27-match-updates-1347",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Western Australia",
+        "name": "Western Australia",
+        "flag": "https://cricketvectors.akamaized.net/Teams/3K.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Tasmania",
+        "name": "Tasmania",
+        "flag": "https://cricketvectors.akamaized.net/Teams/FV.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "1521",
+    "title": "Sri Lanka Women vs Pakistan Women",
+    "dateText": "Mon, 23 Nov 2026",
+    "date": "2026-11-23",
+    "timeText": "5:00 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/pak-w-vs-sl-w-27th-t20i-womens-emerging-nations-trophy-2026-match-updates-1521",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Sri Lanka Women",
+        "name": "Sri Lanka Women",
+        "flag": "https://cricketvectors.akamaized.net/Teams/1J.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Pakistan Women",
+        "name": "Pakistan Women",
+        "flag": "https://cricketvectors.akamaized.net/Teams/1K.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "1510",
+    "title": "Afghanistan A vs Hong Kong",
+    "dateText": "Mon, 23 Nov 2026",
+    "date": "2026-11-23",
+    "timeText": "6:00 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/afg-a-vs-hk-9th-one-day-mens-asia-cup-rising-stars-2026-match-updates-1510",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Afghanistan A",
+        "name": "Afghanistan A",
+        "flag": "https://cricketvectors.akamaized.net/Teams/RL.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Hong Kong",
+        "name": "Hong Kong",
+        "flag": "https://cricketvectors.akamaized.net/Teams/13.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "10MA",
+    "title": "South Africa vs Bangladesh",
+    "dateText": "Mon, 23 Nov 2026",
+    "date": "2026-11-23",
+    "timeText": "8:00 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/ban-vs-sa-2nd-test-bangladesh-tour-of-south-africa-2026-match-updates-10MA",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "South Africa",
+        "name": "South Africa",
+        "flag": "https://cricketvectors.akamaized.net/Teams/P.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Bangladesh",
+        "name": "Bangladesh",
+        "flag": "https://cricketvectors.akamaized.net/Teams/W.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "1522",
+    "title": "Zimbabwe Women vs Scotland Women",
+    "dateText": "Mon, 23 Nov 2026",
+    "date": "2026-11-23",
+    "timeText": "9:15 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/sco-w-vs-zim-w-28th-t20i-womens-emerging-nations-trophy-2026-match-updates-1522",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Zimbabwe Women",
+        "name": "Zimbabwe Women",
+        "flag": "https://cricketvectors.akamaized.net/Teams/6I.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Scotland Women",
+        "name": "Scotland Women",
+        "flag": "https://cricketvectors.akamaized.net/Teams/CK.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "1523",
+    "title": "Ireland Women vs Netherlands Women",
+    "dateText": "Mon, 23 Nov 2026",
+    "date": "2026-11-23",
+    "timeText": "9:15 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/ire-w-vs-ned-w-29th-t20i-womens-emerging-nations-trophy-2026-match-updates-1523",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Ireland Women",
+        "name": "Ireland Women",
+        "flag": "https://cricketvectors.akamaized.net/Teams/2H.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Netherlands Women",
+        "name": "Netherlands Women",
+        "flag": "https://cricketvectors.akamaized.net/Teams/IF.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "1511",
+    "title": "Sri Lanka A vs Bangladesh A",
+    "dateText": "Mon, 23 Nov 2026",
+    "date": "2026-11-23",
+    "timeText": "10:00 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/ban-a-vs-sl-a-10th-one-day-mens-asia-cup-rising-stars-2026-match-updates-1511",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Sri Lanka A",
+        "name": "Sri Lanka A",
+        "flag": "https://cricketvectors.akamaized.net/Teams/RK.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Bangladesh A",
+        "name": "Bangladesh A",
+        "flag": "https://cricketvectors.akamaized.net/Teams/PX.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "157J",
+    "title": "Rome Gladiators vs Venice Livewire",
+    "dateText": "Mon, 23 Nov 2026",
+    "date": "2026-11-23",
+    "timeText": "11:00 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/rg-vs-vl-7th-match-italia-t10-league-2026-match-updates-157J",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Rome Gladiators",
+        "name": "Rome Gladiators",
+        "flag": "https://cricketvectors.akamaized.net/Teams/1LX.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Venice Livewire",
+        "name": "Venice Livewire",
+        "flag": "https://cricketvectors.akamaized.net/Teams/1LV.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "157K",
+    "title": "Milan Icons vs Napoli Knights",
+    "dateText": "Mon, 23 Nov 2026",
+    "date": "2026-11-23",
+    "timeText": "1:15 PM",
+    "detailUrl": "https://crex.com/cricket-live-score/mi-vs-nk-8th-match-italia-t10-league-2026-match-updates-157K",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Milan Icons",
+        "name": "Milan Icons",
+        "flag": "https://cricketvectors.akamaized.net/Teams/1LU.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Napoli Knights",
+        "name": "Napoli Knights",
+        "flag": "https://cricketvectors.akamaized.net/Teams/1LT.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "14RU",
+    "title": "Sharjah Warriorz vs Desert Vipers",
+    "dateText": "Mon, 23 Nov 2026",
+    "date": "2026-11-23",
+    "timeText": "2:30 PM",
+    "detailUrl": "https://crex.com/cricket-live-score/dv-vs-sw-4th-t20-international-league-t20-2026-match-updates-14RU",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Sharjah Warriorz",
+        "name": "Sharjah Warriorz",
+        "flag": "https://cricketvectors.akamaized.net/Teams/M7.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Desert Vipers",
+        "name": "Desert Vipers",
+        "flag": "https://cricketvectors.akamaized.net/Teams/M2.png",
         "score": "",
         "overs": ""
       }
