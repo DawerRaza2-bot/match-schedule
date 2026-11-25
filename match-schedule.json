@@ -1,194 +1,5 @@
 [
   {
-    "id": "157B",
-    "title": "Malaysia Women vs China Women",
-    "dateText": "Wed, 25 Nov 2026",
-    "date": "2026-11-25",
-    "timeText": "2:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/chn-w-vs-mas-w-6th-t20i-womens-t20i-tri-series-in-malaysia-2026-match-updates-157B",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Malaysia Women",
-        "name": "Malaysia Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/2F.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "China Women",
-        "name": "China Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/O3.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "1524",
-    "title": "Sri Lanka Women vs Ireland Women",
-    "dateText": "Wed, 25 Nov 2026",
-    "date": "2026-11-25",
-    "timeText": "5:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/ire-w-vs-sl-w-final-womens-emerging-nations-trophy-2026-match-updates-1524",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Sri Lanka Women",
-        "name": "Sri Lanka Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/1J.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Ireland Women",
-        "name": "Ireland Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/2H.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "14TJ",
-    "title": "Zimbabwe A vs Ireland A",
-    "dateText": "Wed, 25 Nov 2026",
-    "date": "2026-11-25",
-    "timeText": "7:30 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/ire-a-vs-zim-a-4th-one-day-ireland-a-tour-of-zimbabwe-2026-match-updates-14TJ",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Zimbabwe A",
-        "name": "Zimbabwe A",
-        "flag": "https://cricketvectors.akamaized.net/Teams/ID.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Ireland A",
-        "name": "Ireland A",
-        "flag": "https://cricketvectors.akamaized.net/Teams/14J.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "12Y0",
-    "title": "Melbourne Renegades Women vs Brisbane Heat Women",
-    "dateText": "Wed, 25 Nov 2026",
-    "date": "2026-11-25",
-    "timeText": "8:10 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/bh-w-vs-mlr-w-33rd-t20-womens-big-bash-league-2026-match-updates-12Y0",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Melbourne Renegades Women",
-        "name": "Melbourne Renegades Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/4V.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Brisbane Heat Women",
-        "name": "Brisbane Heat Women",
-        "flag": "https://cricketvectors.akamaized.net/Teams/4S.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "157N",
-    "title": "Team 1 (TBC) vs Team 2 (TBC)",
-    "dateText": "Wed, 25 Nov 2026",
-    "date": "2026-11-25",
-    "timeText": "11:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-11th-match-italia-t10-league-2026-match-updates-157N",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Team 1 (TBC)",
-        "name": "Team 1 (TBC)",
-        "flag": "https://cricketvectors.akamaized.net/Teams/N.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Team 2 (TBC)",
-        "name": "Team 2 (TBC)",
-        "flag": "https://cricketvectors.akamaized.net/Teams/CA.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "157O",
-    "title": "Team 1 (TBC) vs Team 2 (TBC)",
-    "dateText": "Wed, 25 Nov 2026",
-    "date": "2026-11-25",
-    "timeText": "1:15 PM",
-    "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-12th-match-italia-t10-league-2026-match-updates-157O",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Team 1 (TBC)",
-        "name": "Team 1 (TBC)",
-        "flag": "https://cricketvectors.akamaized.net/Teams/N.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Team 2 (TBC)",
-        "name": "Team 2 (TBC)",
-        "flag": "https://cricketvectors.akamaized.net/Teams/CA.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
-    "id": "14RW",
-    "title": "Dubai Capitals vs Desert Vipers",
-    "dateText": "Wed, 25 Nov 2026",
-    "date": "2026-11-25",
-    "timeText": "2:30 PM",
-    "detailUrl": "https://crex.com/cricket-live-score/dc-vs-dv-6th-t20-international-league-t20-2026-match-updates-14RW",
-    "status": "UPCOMING",
-    "result": "",
-    "teams": [
-      {
-        "code": "Dubai Capitals",
-        "name": "Dubai Capitals",
-        "flag": "https://cricketvectors.akamaized.net/Teams/M4.png",
-        "score": "",
-        "overs": ""
-      },
-      {
-        "code": "Desert Vipers",
-        "name": "Desert Vipers",
-        "flag": "https://cricketvectors.akamaized.net/Teams/M2.png",
-        "score": "",
-        "overs": ""
-      }
-    ],
-    "source": "CREX"
-  },
-  {
     "id": "140P",
     "title": "Uttarakhand vs Mumbai",
     "dateText": "Thu, 26 Nov 2026",
@@ -838,25 +649,25 @@
   },
   {
     "id": "157P",
-    "title": "Team 1 (TBC) vs Team 2 (TBC)",
+    "title": "Rome Gladiators vs Napoli Knights",
     "dateText": "Thu, 26 Nov 2026",
     "date": "2026-11-26",
     "timeText": "11:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-13th-match-italia-t10-league-2026-match-updates-157P",
+    "detailUrl": "https://crex.com/cricket-live-score/nk-vs-rg-13th-match-italia-t10-league-2026-match-updates-157P",
     "status": "UPCOMING",
     "result": "",
     "teams": [
       {
-        "code": "Team 1 (TBC)",
-        "name": "Team 1 (TBC)",
-        "flag": "https://cricketvectors.akamaized.net/Teams/N.png",
+        "code": "Rome Gladiators",
+        "name": "Rome Gladiators",
+        "flag": "https://cricketvectors.akamaized.net/Teams/1LX.png",
         "score": "",
         "overs": ""
       },
       {
-        "code": "Team 2 (TBC)",
-        "name": "Team 2 (TBC)",
-        "flag": "https://cricketvectors.akamaized.net/Teams/CA.png",
+        "code": "Napoli Knights",
+        "name": "Napoli Knights",
+        "flag": "https://cricketvectors.akamaized.net/Teams/1LT.png",
         "score": "",
         "overs": ""
       }
@@ -892,25 +703,25 @@
   },
   {
     "id": "157Q",
-    "title": "Team 1 (TBC) vs Team 2 (TBC)",
+    "title": "Brescia Lions vs Venice Livewire",
     "dateText": "Thu, 26 Nov 2026",
     "date": "2026-11-26",
     "timeText": "1:15 PM",
-    "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-14th-match-italia-t10-league-2026-match-updates-157Q",
+    "detailUrl": "https://crex.com/cricket-live-score/bl-vs-vl-14th-match-italia-t10-league-2026-match-updates-157Q",
     "status": "UPCOMING",
     "result": "",
     "teams": [
       {
-        "code": "Team 1 (TBC)",
-        "name": "Team 1 (TBC)",
-        "flag": "https://cricketvectors.akamaized.net/Teams/N.png",
+        "code": "Brescia Lions",
+        "name": "Brescia Lions",
+        "flag": "https://cricketvectors.akamaized.net/Teams/1LW.png",
         "score": "",
         "overs": ""
       },
       {
-        "code": "Team 2 (TBC)",
-        "name": "Team 2 (TBC)",
-        "flag": "https://cricketvectors.akamaized.net/Teams/CA.png",
+        "code": "Venice Livewire",
+        "name": "Venice Livewire",
+        "flag": "https://cricketvectors.akamaized.net/Teams/1LV.png",
         "score": "",
         "overs": ""
       }
@@ -1054,25 +865,25 @@
   },
   {
     "id": "157C",
-    "title": "Team 1 (TBC) vs Team 2 (TBC)",
+    "title": "Indonesia Women vs Malaysia Women",
     "dateText": "Fri, 27 Nov 2026",
     "date": "2026-11-27",
     "timeText": "2:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-final-womens-t20i-tri-series-in-malaysia-2026-match-updates-157C",
+    "detailUrl": "https://crex.com/cricket-live-score/idn-w-vs-mas-w-final-womens-t20i-tri-series-in-malaysia-2026-match-updates-157C",
     "status": "UPCOMING",
     "result": "",
     "teams": [
       {
-        "code": "Team 1 (TBC)",
-        "name": "Team 1 (TBC)",
-        "flag": "https://cricketvectors.akamaized.net/Teams/N.png",
+        "code": "Indonesia Women",
+        "name": "Indonesia Women",
+        "flag": "https://cricketvectors.akamaized.net/Teams/CI.png",
         "score": "",
         "overs": ""
       },
       {
-        "code": "Team 2 (TBC)",
-        "name": "Team 2 (TBC)",
-        "flag": "https://cricketvectors.akamaized.net/Teams/CA.png",
+        "code": "Malaysia Women",
+        "name": "Malaysia Women",
+        "flag": "https://cricketvectors.akamaized.net/Teams/2F.png",
         "score": "",
         "overs": ""
       }
@@ -1459,25 +1270,25 @@
   },
   {
     "id": "157R",
-    "title": "Team 1 (TBC) vs Team 2 (TBC)",
+    "title": "Rome Gladiators vs Venice Livewire",
     "dateText": "Fri, 27 Nov 2026",
     "date": "2026-11-27",
     "timeText": "11:00 AM",
-    "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-15th-match-italia-t10-league-2026-match-updates-157R",
+    "detailUrl": "https://crex.com/cricket-live-score/rg-vs-vl-15th-match-italia-t10-league-2026-match-updates-157R",
     "status": "UPCOMING",
     "result": "",
     "teams": [
       {
-        "code": "Team 1 (TBC)",
-        "name": "Team 1 (TBC)",
-        "flag": "https://cricketvectors.akamaized.net/Teams/N.png",
+        "code": "Rome Gladiators",
+        "name": "Rome Gladiators",
+        "flag": "https://cricketvectors.akamaized.net/Teams/1LX.png",
         "score": "",
         "overs": ""
       },
       {
-        "code": "Team 2 (TBC)",
-        "name": "Team 2 (TBC)",
-        "flag": "https://cricketvectors.akamaized.net/Teams/CA.png",
+        "code": "Venice Livewire",
+        "name": "Venice Livewire",
+        "flag": "https://cricketvectors.akamaized.net/Teams/1LV.png",
         "score": "",
         "overs": ""
       }
@@ -1486,25 +1297,25 @@
   },
   {
     "id": "157S",
-    "title": "Team 1 (TBC) vs Team 2 (TBC)",
+    "title": "Brescia Lions vs Napoli Knights",
     "dateText": "Fri, 27 Nov 2026",
     "date": "2026-11-27",
     "timeText": "1:15 PM",
-    "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-16th-match-italia-t10-league-2026-match-updates-157S",
+    "detailUrl": "https://crex.com/cricket-live-score/bl-vs-nk-16th-match-italia-t10-league-2026-match-updates-157S",
     "status": "UPCOMING",
     "result": "",
     "teams": [
       {
-        "code": "Team 1 (TBC)",
-        "name": "Team 1 (TBC)",
-        "flag": "https://cricketvectors.akamaized.net/Teams/N.png",
+        "code": "Brescia Lions",
+        "name": "Brescia Lions",
+        "flag": "https://cricketvectors.akamaized.net/Teams/1LW.png",
         "score": "",
         "overs": ""
       },
       {
-        "code": "Team 2 (TBC)",
-        "name": "Team 2 (TBC)",
-        "flag": "https://cricketvectors.akamaized.net/Teams/CA.png",
+        "code": "Napoli Knights",
+        "name": "Napoli Knights",
+        "flag": "https://cricketvectors.akamaized.net/Teams/1LT.png",
         "score": "",
         "overs": ""
       }
@@ -1532,6 +1343,222 @@
         "code": "Dubai Capitals",
         "name": "Dubai Capitals",
         "flag": "https://cricketvectors.akamaized.net/Teams/M4.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "12Y4",
+    "title": "Melbourne Renegades Women vs Melbourne Stars Women",
+    "dateText": "Sat, 28 Nov 2026",
+    "date": "2026-11-28",
+    "timeText": "4:40 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/mlr-w-vs-mls-w-37th-t20-womens-big-bash-league-2026-match-updates-12Y4",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Melbourne Renegades Women",
+        "name": "Melbourne Renegades Women",
+        "flag": "https://cricketvectors.akamaized.net/Teams/4V.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Melbourne Stars Women",
+        "name": "Melbourne Stars Women",
+        "flag": "https://cricketvectors.akamaized.net/Teams/4W.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "122R",
+    "title": "India U19-Women vs England U19-Women",
+    "dateText": "Sat, 28 Nov 2026",
+    "date": "2026-11-28",
+    "timeText": "7:30 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/enwu19-vs-indwu19-2nd-youth-t20-england-women-u19-tour-of-india-2026-match-updates-122R",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "India U19-Women",
+        "name": "India U19-Women",
+        "flag": "https://cricketvectors.akamaized.net/Teams/NC.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "England U19-Women",
+        "name": "England U19-Women",
+        "flag": "https://cricketvectors.akamaized.net/Teams/NB.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "156W",
+    "title": "Matabeleland Tuskers vs Southern Rocks",
+    "dateText": "Sat, 28 Nov 2026",
+    "date": "2026-11-28",
+    "timeText": "7:30 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/mt-vs-sr-20th-list-a-pro50-championship-2026-match-updates-156W",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Matabeleland Tuskers",
+        "name": "Matabeleland Tuskers",
+        "flag": "https://cricketvectors.akamaized.net/Teams/145.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Southern Rocks",
+        "name": "Southern Rocks",
+        "flag": "https://cricketvectors.akamaized.net/Teams/148.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "12Y5",
+    "title": "Sydney Thunder Women vs Sydney Sixers Women",
+    "dateText": "Sat, 28 Nov 2026",
+    "date": "2026-11-28",
+    "timeText": "8:10 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/sys-w-vs-syt-w-38th-t20-womens-big-bash-league-2026-match-updates-12Y5",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Sydney Thunder Women",
+        "name": "Sydney Thunder Women",
+        "flag": "https://cricketvectors.akamaized.net/Teams/8W.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Sydney Sixers Women",
+        "name": "Sydney Sixers Women",
+        "flag": "https://cricketvectors.akamaized.net/Teams/50.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "14RZ",
+    "title": "Desert Vipers vs MI Emirates",
+    "dateText": "Sat, 28 Nov 2026",
+    "date": "2026-11-28",
+    "timeText": "10:00 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/dv-vs-mie-9th-t20-international-league-t20-2026-match-updates-14RZ",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Desert Vipers",
+        "name": "Desert Vipers",
+        "flag": "https://cricketvectors.akamaized.net/Teams/M2.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "MI Emirates",
+        "name": "MI Emirates",
+        "flag": "https://cricketvectors.akamaized.net/Teams/M6.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "157T",
+    "title": "Team 1 (TBC) vs Team 2 (TBC)",
+    "dateText": "Sat, 28 Nov 2026",
+    "date": "2026-11-28",
+    "timeText": "10:00 AM",
+    "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-3rd-place-playoff-italia-t10-league-2026-match-updates-157T",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Team 1 (TBC)",
+        "name": "Team 1 (TBC)",
+        "flag": "https://cricketvectors.akamaized.net/Teams/N.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Team 2 (TBC)",
+        "name": "Team 2 (TBC)",
+        "flag": "https://cricketvectors.akamaized.net/Teams/CA.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "157U",
+    "title": "Team 1 (TBC) vs Team 2 (TBC)",
+    "dateText": "Sat, 28 Nov 2026",
+    "date": "2026-11-28",
+    "timeText": "12:30 PM",
+    "detailUrl": "https://crex.com/cricket-live-score/tbc-vs-tbc-final-italia-t10-league-2026-match-updates-157U",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Team 1 (TBC)",
+        "name": "Team 1 (TBC)",
+        "flag": "https://cricketvectors.akamaized.net/Teams/N.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Team 2 (TBC)",
+        "name": "Team 2 (TBC)",
+        "flag": "https://cricketvectors.akamaized.net/Teams/CA.png",
+        "score": "",
+        "overs": ""
+      }
+    ],
+    "source": "CREX"
+  },
+  {
+    "id": "14S0",
+    "title": "Dubai Capitals vs Gulf Giants",
+    "dateText": "Sat, 28 Nov 2026",
+    "date": "2026-11-28",
+    "timeText": "2:30 PM",
+    "detailUrl": "https://crex.com/cricket-live-score/dc-vs-gg-10th-t20-international-league-t20-2026-match-updates-14S0",
+    "status": "UPCOMING",
+    "result": "",
+    "teams": [
+      {
+        "code": "Dubai Capitals",
+        "name": "Dubai Capitals",
+        "flag": "https://cricketvectors.akamaized.net/Teams/M4.png",
+        "score": "",
+        "overs": ""
+      },
+      {
+        "code": "Gulf Giants",
+        "name": "Gulf Giants",
+        "flag": "https://cricketvectors.akamaized.net/Teams/M5.png",
         "score": "",
         "overs": ""
       }
