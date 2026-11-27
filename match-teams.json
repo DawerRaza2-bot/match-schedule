@@ -1,4 +1,208 @@
 {
+  "1224": {
+    "id": "1224",
+    "detailUrl": "https://crex.com/cricket-live-score/engw-a-vs-indw-a-1st-t20-england-a-women-tour-of-india-2026-match-updates-1224",
+    "matchInfo": {
+      "dateText": "Monday, 30 November, 7:30 AM",
+      "venue": "Maharashtra Cricket Association Stadium, Pune",
+      "series": {
+        "format": "1st T20",
+        "name": "ENGW-A vs INDW-A 2026",
+        "image": "https://cricketvectors.akamaized.net/Series/2I6.png",
+        "url": "https://crex.com/series/england-a-women-tour-of-india-2026-2I6"
+      },
+      "headToHead": "INDW-A vs ENGW-A Head to Head (Last 10 matches) INDW-A 1 - 2 ENGW-A ENGW-A 112/4 16.4 ENGW-A Won 3rd T20, INDW-A vs ENGW-A 2026 INDW-A 19.5 111 ENGW-A 173/5 18.3 ENGW-A Won 2nd T20, INDW-A vs ENGW-A 2026 INDW-A 20.0 172/4 ENGW-A 126/7 20.0 INDW-A Won 1st T20, INDW-A vs ENGW-A 2026 INDW-A 18.1 127/5",
+      "teamComparison": "INDW-A vs ENGW-A Team Comparison Overall INDW-A vs all teams ENGW-A vs all teams 10 Matches Played 4 50% Win 75% 126 Avg Score 132 172 Highest Score 173 82 Lowest Score 112",
+      "recentMatches": "INDW-A & ENGW-A Team Form (Last 5 matches) India A Women * L L L L L England A Women * W W L W"
+    },
+    "teams": {
+      "INDW-A": [
+        {
+          "id": "anushka-sharma-KAG",
+          "fullName": "Anushka Sharma",
+          "shortName": "A Sharma",
+          "role": "All Rounder",
+          "isCaptain": true,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/KAG.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/PF.png",
+          "jerseyCode": "PF",
+          "profileUrl": "https://crex.com/player/anushka-sharma-KAG"
+        },
+        {
+          "id": "dinesh-vrinda-D6U",
+          "fullName": "Dinesh Vrinda",
+          "shortName": "D Vrinda",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/D6U.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/PF.png",
+          "jerseyCode": "PF",
+          "profileUrl": "https://crex.com/player/dinesh-vrinda-D6U"
+        },
+        {
+          "id": "tanisha-singh-EOL",
+          "fullName": "Tanisha Singh",
+          "shortName": "T Singh",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/EOL.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/PF.png",
+          "jerseyCode": "PF",
+          "profileUrl": "https://crex.com/player/tanisha-singh-EOL"
+        },
+        {
+          "id": "sanika-chalke-GBE",
+          "fullName": "Sanika Chalke",
+          "shortName": "S Chalke",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/GBE.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/PF.png",
+          "jerseyCode": "PF",
+          "profileUrl": "https://crex.com/player/sanika-chalke-GBE"
+        },
+        {
+          "id": "niki-prasad-GBD",
+          "fullName": "Niki Prasad",
+          "shortName": "N Prasad",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/GBD.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/PF.png",
+          "jerseyCode": "PF",
+          "profileUrl": "https://crex.com/player/niki-prasad-GBD"
+        },
+        {
+          "id": "gunalan-kamalini-GBF",
+          "fullName": "Gunalan Kamalini",
+          "shortName": "G Kamalini",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": true,
+          "vector": "https://cricketvectors.akamaized.net/players/org/GBF.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/PF.png",
+          "jerseyCode": "PF",
+          "profileUrl": "https://crex.com/player/gunalan-kamalini-GBF"
+        },
+        {
+          "id": "shipra-giri-M8S",
+          "fullName": "Shipra Giri",
+          "shortName": "S Giri",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/M8S.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/PF.png",
+          "jerseyCode": "PF",
+          "profileUrl": "https://crex.com/player/shipra-giri-M8S"
+        },
+        {
+          "id": "minnu-mani-BEK",
+          "fullName": "Minnu Mani",
+          "shortName": "M Mani",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/BEK.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/PF.png",
+          "jerseyCode": "PF",
+          "profileUrl": "https://crex.com/player/minnu-mani-BEK"
+        },
+        {
+          "id": "amanjot-kaur-AOT",
+          "fullName": "Amanjot Kaur",
+          "shortName": "A Kaur",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/AOT.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/PF.png",
+          "jerseyCode": "PF",
+          "profileUrl": "https://crex.com/player/amanjot-kaur-AOT"
+        },
+        {
+          "id": "shreyanka-patil-AOP",
+          "fullName": "Shreyanka Patil",
+          "shortName": "S Patil",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/AOP.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/PF.png",
+          "jerseyCode": "PF",
+          "profileUrl": "https://crex.com/player/shreyanka-patil-AOP"
+        },
+        {
+          "id": "vaishnavi-sharma-GJT",
+          "fullName": "Vaishnavi Sharma",
+          "shortName": "V Sharma",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/GJT.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/PF.png",
+          "jerseyCode": "PF",
+          "profileUrl": "https://crex.com/player/vaishnavi-sharma-GJT"
+        },
+        {
+          "id": "prema-rawat-F9K",
+          "fullName": "Prema Rawat",
+          "shortName": "P Rawat",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/F9K.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/PF.png",
+          "jerseyCode": "PF",
+          "profileUrl": "https://crex.com/player/prema-rawat-F9K"
+        },
+        {
+          "id": "saima-thakor-D6T",
+          "fullName": "Saima Thakor",
+          "shortName": "S Thakor",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/D6T.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/PF.png",
+          "jerseyCode": "PF",
+          "profileUrl": "https://crex.com/player/saima-thakor-D6T"
+        },
+        {
+          "id": "monica-patel-65M",
+          "fullName": "Monica Patel",
+          "shortName": "M Patel",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/65M.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/PF.png",
+          "jerseyCode": "PF",
+          "profileUrl": "https://crex.com/player/monica-patel-65M"
+        },
+        {
+          "id": "kashvee-gautam-D67",
+          "fullName": "Kashvee Gautam",
+          "shortName": "K Gautam",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/D67.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/PF.png",
+          "jerseyCode": "PF",
+          "profileUrl": "https://crex.com/player/kashvee-gautam-D67"
+        }
+      ]
+    },
+    "scrapedAt": "2026-11-27T20:57:32.320Z",
+    "date": "2026-11-30",
+    "title": "India A Women vs England A Women"
+  },
   "1346": {
     "id": "1346",
     "detailUrl": "https://crex.com/cricket-live-score/nsw-vs-qld-13th-first-class-sheffield-shield-2026-27-match-updates-1346",
@@ -7506,6 +7710,941 @@
     "date": "2026-11-26",
     "title": "Mizoram vs Uttar Pradesh"
   },
+  "1412": {
+    "id": "1412",
+    "detailUrl": "https://crex.com/cricket-live-score/pun-vs-raj-113th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1412",
+    "matchInfo": {
+      "dateText": "Monday, 30 November, 3:30 AM",
+      "venue": "VCA Stadium, Civil Lines, Nagpur",
+      "series": {
+        "format": "113th T20",
+        "name": "SMAT Elite T20 2026",
+        "image": "https://cricketvectors.akamaized.net/Series/2K9.png",
+        "url": "https://crex.com/series/syed-mushtaq-ali-trophy-elite-2026-2K9"
+      },
+      "headToHead": "RAJ vs PUN Head to Head (Last 10 matches) RAJ 0 - 1 PUN PUN 162/5 17.4 PUN Won 103rd T20, SMAT T20 2024 RAJ 20.0 161/9",
+      "teamComparison": "RAJ vs PUN Team Comparison Overall RAJ vs all teams PUN vs all teams 10 Matches Played 10 50% Win 60% 173 Avg Score 181 224 Highest Score 235 113 Lowest Score 131",
+      "recentMatches": "RAJ & PUN Team Form (Last 5 matches) Rajasthan * W L W L W Punjab * W W L W W"
+    },
+    "teams": {
+      "RAJ": [
+        {
+          "id": "mukul-choudhary-B82",
+          "fullName": "Mukul Choudhary",
+          "shortName": "M Choudhary",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": true,
+          "vector": "https://cricketvectors.akamaized.net/players/org/B82.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
+          "jerseyCode": "GV",
+          "profileUrl": "https://crex.com/player/mukul-choudhary-B82"
+        },
+        {
+          "id": "kartik-sharma-FSM",
+          "fullName": "Kartik Sharma",
+          "shortName": "K Sharma",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/FSM.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
+          "jerseyCode": "GV",
+          "profileUrl": "https://crex.com/player/kartik-sharma-FSM"
+        },
+        {
+          "id": "kunal-singh-rathore-A0Q",
+          "fullName": "Kunal Singh Rathore",
+          "shortName": "K S Rathore",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/A0Q.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
+          "jerseyCode": "GV",
+          "profileUrl": "https://crex.com/player/kunal-singh-rathore-A0Q"
+        },
+        {
+          "id": "abhijeet-tomar-7OW",
+          "fullName": "Abhijeet Tomar",
+          "shortName": "A Tomar",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/7OW.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
+          "jerseyCode": "GV",
+          "profileUrl": "https://crex.com/player/abhijeet-tomar-7OW"
+        },
+        {
+          "id": "mahipal-lomror-CK",
+          "fullName": "Mahipal Lomror",
+          "shortName": "M Lomror",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/CK.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
+          "jerseyCode": "GV",
+          "profileUrl": "https://crex.com/player/mahipal-lomror-CK"
+        },
+        {
+          "id": "manav-suthar-7OY",
+          "fullName": "Manav Suthar",
+          "shortName": "M Suthar",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/7OY.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
+          "jerseyCode": "GV",
+          "profileUrl": "https://crex.com/player/manav-suthar-7OY"
+        },
+        {
+          "id": "deepak-chahar-3U",
+          "fullName": "Deepak Chahar",
+          "shortName": "D Chahar",
+          "role": "Bowler",
+          "isCaptain": true,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/3U.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
+          "jerseyCode": "GV",
+          "profileUrl": "https://crex.com/player/deepak-chahar-3U"
+        },
+        {
+          "id": "rahul-chahar-DE",
+          "fullName": "Rahul Chahar",
+          "shortName": "R Chahar",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/DE.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
+          "jerseyCode": "GV",
+          "profileUrl": "https://crex.com/player/rahul-chahar-DE"
+        },
+        {
+          "id": "ramnivas-golada-647",
+          "fullName": "Ramnivas Golada",
+          "shortName": "R Golada",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/647.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
+          "jerseyCode": "GV",
+          "profileUrl": "https://crex.com/player/ramnivas-golada-647"
+        },
+        {
+          "id": "himanshu-nehra-B88",
+          "fullName": "Himanshu Nehra",
+          "shortName": "H Nehra",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/B88.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
+          "jerseyCode": "GV",
+          "profileUrl": "https://crex.com/player/himanshu-nehra-B88"
+        },
+        {
+          "id": "rohan-rajbar-QGQ",
+          "fullName": "Rohan Rajbar",
+          "shortName": "R Rajbar",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/QGQ.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
+          "jerseyCode": "GV",
+          "profileUrl": "https://crex.com/player/rohan-rajbar-QGQ"
+        },
+        {
+          "id": "ajayraj-singh-C8E",
+          "fullName": "Ajayraj Singh",
+          "shortName": "A Singh",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/C8E.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
+          "jerseyCode": "GV",
+          "profileUrl": "https://crex.com/player/ajayraj-singh-C8E"
+        },
+        {
+          "id": "himanshu-rana-QP4",
+          "fullName": "Himanshu Rana",
+          "shortName": "H Rana",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/QP4.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
+          "jerseyCode": "GV",
+          "profileUrl": "https://crex.com/player/himanshu-rana-QP4"
+        },
+        {
+          "id": "honey-pratap-singh-QPA",
+          "fullName": "Honey Pratap Singh",
+          "shortName": "H P Singh",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/QPA.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
+          "jerseyCode": "GV",
+          "profileUrl": "https://crex.com/player/honey-pratap-singh-QPA"
+        },
+        {
+          "id": "arafat-khan-646",
+          "fullName": "Arafat Khan",
+          "shortName": "A Khan",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/646.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
+          "jerseyCode": "GV",
+          "profileUrl": "https://crex.com/player/arafat-khan-646"
+        },
+        {
+          "id": "nilesh-tank-QRO",
+          "fullName": "Nilesh Tank",
+          "shortName": "N Tank",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/QRO.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GV.png",
+          "jerseyCode": "GV",
+          "profileUrl": "https://crex.com/player/nilesh-tank-QRO"
+        }
+      ]
+    },
+    "scrapedAt": "2026-11-27T20:56:18.083Z",
+    "date": "2026-11-30",
+    "title": "Rajasthan vs Punjab"
+  },
+  "1413": {
+    "id": "1413",
+    "detailUrl": "https://crex.com/cricket-live-score/ker-vs-vid-114th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1413",
+    "matchInfo": {
+      "dateText": "Monday, 30 November, 5:30 AM",
+      "venue": "Vidarbha Cricket Association Stadium, Jamtha, Nagpur",
+      "series": {
+        "format": "114th T20",
+        "name": "SMAT Elite T20 2026",
+        "image": "https://cricketvectors.akamaized.net/Series/2K9.png",
+        "url": "https://crex.com/series/syed-mushtaq-ali-trophy-elite-2026-2K9"
+      },
+      "headToHead": "KER vs VID Head to Head (Last 10 matches) KER 0 - 1 VID KER 164 19.2 VID Won 64th T20, SMAT Elite T20 2025 VID 18.3 165/4",
+      "teamComparison": "KER vs VID Team Comparison Overall KER vs all teams VID vs all teams 10 Matches Played 10 60% Win 80% 170 Avg Score 168 268 Highest Score 208 101 Lowest Score 117",
+      "recentMatches": "KER & VID Team Form (Last 5 matches) Kerala * W W W W L Vidarbha * W W W W W"
+    },
+    "teams": {
+      "KER": [
+        {
+          "id": "sanju-samson-72",
+          "fullName": "Sanju Samson",
+          "shortName": "S Samson",
+          "role": "Wicket-keeper",
+          "isCaptain": true,
+          "isWicketkeeper": true,
+          "vector": "https://cricketvectors.akamaized.net/players/org/72.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/sanju-samson-72"
+        },
+        {
+          "id": "imran-ahammed-ETD",
+          "fullName": "Imran Ahammed",
+          "shortName": "I Ahammed",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/ETD.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/imran-ahammed-ETD"
+        },
+        {
+          "id": "rohan-kunnummal-5TG",
+          "fullName": "Rohan Kunnummal",
+          "shortName": "R Kunnummal",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/5TG.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/rohan-kunnummal-5TG"
+        },
+        {
+          "id": "mohammed-azharuddeen-5TL",
+          "fullName": "Mohammed Azharuddeen",
+          "shortName": "M Azharuddeen",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/5TL.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/mohammed-azharuddeen-5TL"
+        },
+        {
+          "id": "salman-nizar-5TH",
+          "fullName": "Salman Nizar",
+          "shortName": "S Nizar",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/5TH.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/salman-nizar-5TH"
+        },
+        {
+          "id": "vishnu-vinod-2WK",
+          "fullName": "Vishnu Vinod",
+          "shortName": "V Vinod",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/2WK.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/vishnu-vinod-2WK"
+        },
+        {
+          "id": "jalaj-saxena-9U",
+          "fullName": "Jalaj Saxena",
+          "shortName": "J Saxena",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/9U.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/jalaj-saxena-9U"
+        },
+        {
+          "id": "km-asif-E7",
+          "fullName": "KM Asif",
+          "shortName": "K Asif",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/E7.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/km-asif-E7"
+        },
+        {
+          "id": "md-nidheesh-5TN",
+          "fullName": "MD Nidheesh",
+          "shortName": "M Nidheesh",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/5TN.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/md-nidheesh-5TN"
+        },
+        {
+          "id": "vignesh-puthur-G3U",
+          "fullName": "Vignesh Puthur",
+          "shortName": "V Puthur",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/G3U.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/vignesh-puthur-G3U"
+        },
+        {
+          "id": "karthik-b-nair-EG2",
+          "fullName": "Karthik B Nair",
+          "shortName": "K B Nair",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/EG2.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/karthik-b-nair-EG2"
+        },
+        {
+          "id": "krishna-devan-HF0",
+          "fullName": "Krishna Devan",
+          "shortName": "K Devan",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/HF0.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/krishna-devan-HF0"
+        },
+        {
+          "id": "biju-narayanan-ETT",
+          "fullName": "Biju Narayanan",
+          "shortName": "B Narayanan",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/ETT.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/biju-narayanan-ETT"
+        },
+        {
+          "id": "nikhil-m-EY3",
+          "fullName": "Nikhil M",
+          "shortName": "N M",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/EY3.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/nikhil-m-EY3"
+        },
+        {
+          "id": "govind-pai-EW9",
+          "fullName": "Govind Pai",
+          "shortName": "G Pai",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/EW9.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/govind-pai-EW9"
+        },
+        {
+          "id": "akhil-scaria-ACU",
+          "fullName": "Akhil Scaria",
+          "shortName": "A Scaria",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/ACU.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/akhil-scaria-ACU"
+        },
+        {
+          "id": "sharafuddeen-n-m-7E0",
+          "fullName": "Sharafuddeen N M",
+          "shortName": "S N M",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/7E0.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/sharafuddeen-n-m-7E0"
+        },
+        {
+          "id": "vyshak-chandran-7XI",
+          "fullName": "Vyshak Chandran",
+          "shortName": "V Chandran",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/7XI.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/vyshak-chandran-7XI"
+        },
+        {
+          "id": "abdul-basith-7XL",
+          "fullName": "Abdul Basith",
+          "shortName": "A Basith",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/7XL.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GJ.png",
+          "jerseyCode": "GJ",
+          "profileUrl": "https://crex.com/player/abdul-basith-7XL"
+        }
+      ]
+    },
+    "scrapedAt": "2026-11-27T20:56:55.082Z",
+    "date": "2026-11-30",
+    "title": "Kerala vs Vidarbha"
+  },
+  "1414": {
+    "id": "1414",
+    "detailUrl": "https://crex.com/cricket-live-score/andr-vs-mum-115th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1414",
+    "matchInfo": {
+      "dateText": "Monday, 30 November, 8:00 AM",
+      "venue": "VCA Stadium, Civil Lines, Nagpur",
+      "series": {
+        "format": "115th T20",
+        "name": "SMAT Elite T20 2026",
+        "image": "https://cricketvectors.akamaized.net/Series/2K9.png",
+        "url": "https://crex.com/series/syed-mushtaq-ali-trophy-elite-2026-2K9"
+      },
+      "headToHead": "ANDR vs MUM Head to Head (Last 10 matches) ANDR 0 - 3 MUM ANDR 159/7 20.0 MUM Won 48th T20, SMAT Elite T20 2025 MUM 15.2 162/1 ANDR 229/4 20.0 MUM Won 122nd T20, SMAT T20 2024 MUM 19.3 233/6 MUM 156/5 18.5 Mumbai Won 92nd T20, SMAT Trophy 2021 ANDR 20.0 154/8",
+      "teamComparison": "ANDR vs MUM Team Comparison Overall ANDR vs all teams MUM vs all teams 10 Matches Played 10 80% Win 90% 169 Avg Score 188 225 Highest Score 238 112 Lowest Score 131",
+      "recentMatches": "ANDR & MUM Team Form (Last 5 matches) Andhra * W W W W W Mumbai * W W W W W"
+    },
+    "teams": {
+      "ANDR": [
+        {
+          "id": "ricky-bhui-AU",
+          "fullName": "Ricky Bhui",
+          "shortName": "R Bhui",
+          "role": "Batter",
+          "isCaptain": true,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/AU.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/ricky-bhui-AU"
+        },
+        {
+          "id": "ashwin-hebbar-5N8",
+          "fullName": "Ashwin Hebbar",
+          "shortName": "A Hebbar",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/5N8.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/ashwin-hebbar-5N8"
+        },
+        {
+          "id": "marthala-dhanush-L7F",
+          "fullName": "Marthala Dhanush",
+          "shortName": "M Dhanush",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/L7F.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/marthala-dhanush-L7F"
+        },
+        {
+          "id": "sdnv-prasad-E76",
+          "fullName": "SDNV Prasad",
+          "shortName": "S Prasad",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": true,
+          "vector": "https://cricketvectors.akamaized.net/players/org/E76.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/sdnv-prasad-E76"
+        },
+        {
+          "id": "shaik-rasheed-7XM",
+          "fullName": "Shaik Rasheed",
+          "shortName": "S Rasheed",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/7XM.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/shaik-rasheed-7XM"
+        },
+        {
+          "id": "saurabh-kumar-DX",
+          "fullName": "Saurabh Kumar",
+          "shortName": "S Kumar",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/DX.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/saurabh-kumar-DX"
+        },
+        {
+          "id": "thanneeru-bharath-E6Q",
+          "fullName": "Thanneeru Bharath",
+          "shortName": "T Bharath",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/E6Q.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/thanneeru-bharath-E6Q"
+        },
+        {
+          "id": "satyanarayana-raju-C4E",
+          "fullName": "Satyanarayana Raju",
+          "shortName": "S Raju",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/C4E.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/satyanarayana-raju-C4E"
+        },
+        {
+          "id": "kv-sasikanth-5O1",
+          "fullName": "KV Sasikanth",
+          "shortName": "K Sasikanth",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/5O1.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/kv-sasikanth-5O1"
+        },
+        {
+          "id": "tripurana-vijay-7RQ",
+          "fullName": "Tripurana Vijay",
+          "shortName": "T Vijay",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/7RQ.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/tripurana-vijay-7RQ"
+        },
+        {
+          "id": "bailapudi-yeswanth-E6T",
+          "fullName": "Bailapudi Yeswanth",
+          "shortName": "B Yeswanth",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/E6T.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/bailapudi-yeswanth-E6T"
+        },
+        {
+          "id": "m-hemanth-reddy-8XQ",
+          "fullName": "M Hemanth Reddy",
+          "shortName": "M H Reddy",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/8XQ.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/m-hemanth-reddy-8XQ"
+        },
+        {
+          "id": "seeram-venkata-rahul-C3V",
+          "fullName": "Seeram Venkata Rahul",
+          "shortName": "S V Rahul",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/C3V.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/seeram-venkata-rahul-C3V"
+        },
+        {
+          "id": "kadiyam-pavana-sai-rahul-8YX",
+          "fullName": "Kadiyam Pavana Sai Rahul",
+          "shortName": "K P S Rahul",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/8YX.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/kadiyam-pavana-sai-rahul-8YX"
+        },
+        {
+          "id": "k-s-narasimha-raju-901",
+          "fullName": "K S Narasimha Raju",
+          "shortName": "K S N Raju",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/901.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/k-s-narasimha-raju-901"
+        },
+        {
+          "id": "revanth-reddy-DHZ",
+          "fullName": "Revanth Reddy",
+          "shortName": "R Reddy",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/DHZ.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/revanth-reddy-DHZ"
+        },
+        {
+          "id": "cheepurapalli-stephen-5O2",
+          "fullName": "Cheepurapalli Stephen",
+          "shortName": "C Stephen",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/5O2.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/cheepurapalli-stephen-5O2"
+        },
+        {
+          "id": "b-munish-varma-8YV",
+          "fullName": "B Munish Varma",
+          "shortName": "B M Varma",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/8YV.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GN.png",
+          "jerseyCode": "GN",
+          "profileUrl": "https://crex.com/player/b-munish-varma-8YV"
+        }
+      ]
+    },
+    "scrapedAt": "2026-11-27T20:58:09.899Z",
+    "date": "2026-11-30",
+    "title": "Andhra vs Mumbai"
+  },
+  "1415": {
+    "id": "1415",
+    "detailUrl": "https://crex.com/cricket-live-score/brd-vs-del-116th-t20-syed-mushtaq-ali-trophy-elite-2026-match-updates-1415",
+    "matchInfo": {
+      "dateText": "Monday, 30 November, 11:00 AM",
+      "venue": "Vidarbha Cricket Association Stadium, Jamtha, Nagpur",
+      "series": {
+        "format": "116th T20",
+        "name": "SMAT Elite T20 2026",
+        "image": "https://cricketvectors.akamaized.net/Series/2K9.png",
+        "url": "https://crex.com/series/syed-mushtaq-ali-trophy-elite-2026-2K9"
+      },
+      "teamComparison": "BRD vs DEL Team Comparison Overall BRD vs all teams DEL vs all teams 10 Matches Played 10 70% Win 70% 145 Avg Score 206 220 Highest Score 275 74 Lowest Score 127",
+      "recentMatches": "BRD & DEL Team Form (Last 5 matches) Baroda * L W W W W Delhi * W W W L L"
+    },
+    "teams": {
+      "BRD": [
+        {
+          "id": "krunal-pandya-CW",
+          "fullName": "Krunal Pandya",
+          "shortName": "K Pandya",
+          "role": "All Rounder",
+          "isCaptain": true,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/CW.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/krunal-pandya-CW"
+        },
+        {
+          "id": "atit-sheth-139",
+          "fullName": "Atit Sheth",
+          "shortName": "A Sheth",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/139.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/atit-sheth-139"
+        },
+        {
+          "id": "deepak-hooda-AV",
+          "fullName": "Deepak Hooda",
+          "shortName": "D Hooda",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/AV.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/deepak-hooda-AV"
+        },
+        {
+          "id": "shivalik-sharma-60N",
+          "fullName": "Shivalik Sharma",
+          "shortName": "S Sharma",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/60N.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/shivalik-sharma-60N"
+        },
+        {
+          "id": "shashwat-rawat-173",
+          "fullName": "Shashwat Rawat",
+          "shortName": "S Rawat",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/173.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/shashwat-rawat-173"
+        },
+        {
+          "id": "amit-passi-GDZ",
+          "fullName": "Amit Passi",
+          "shortName": "A Passi",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/GDZ.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/amit-passi-GDZ"
+        },
+        {
+          "id": "jitesh-sharma-CY",
+          "fullName": "Jitesh Sharma",
+          "shortName": "J Sharma",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": true,
+          "vector": "https://cricketvectors.akamaized.net/players/org/CY.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/jitesh-sharma-CY"
+        },
+        {
+          "id": "bhanu-pania-5U1",
+          "fullName": "Bhanu Pania",
+          "shortName": "B Pania",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/5U1.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/bhanu-pania-5U1"
+        },
+        {
+          "id": "mahesh-pithiya-A0H",
+          "fullName": "Mahesh Pithiya",
+          "shortName": "M Pithiya",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/A0H.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/mahesh-pithiya-A0H"
+        },
+        {
+          "id": "parikshit-patidar-OJR",
+          "fullName": "Parikshit Patidar",
+          "shortName": "P Patidar",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/OJR.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/parikshit-patidar-OJR"
+        },
+        {
+          "id": "hemant-punde-OK6",
+          "fullName": "Hemant Punde",
+          "shortName": "H Punde",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/OK6.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/hemant-punde-OK6"
+        },
+        {
+          "id": "raj-limbani-D0P",
+          "fullName": "Raj Limbani",
+          "shortName": "R Limbani",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/D0P.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/raj-limbani-D0P"
+        },
+        {
+          "id": "rasikh-salam-EO",
+          "fullName": "Rasikh Salam",
+          "shortName": "R Salam",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/EO.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/rasikh-salam-EO"
+        },
+        {
+          "id": "dhruv-bharghav-patel-5M8",
+          "fullName": "Dhruv Bharghav Patel",
+          "shortName": "D B Patel",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/5M8.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/dhruv-bharghav-patel-5M8"
+        },
+        {
+          "id": "safvan-patel-A0F",
+          "fullName": "Safvan Patel",
+          "shortName": "S Patel",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/A0F.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/safvan-patel-A0F"
+        },
+        {
+          "id": "priyanshu-moliya-AXP",
+          "fullName": "Priyanshu Moliya",
+          "shortName": "P Moliya",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/AXP.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/priyanshu-moliya-AXP"
+        },
+        {
+          "id": "chintal-gandhi-60M",
+          "fullName": "Chintal Gandhi",
+          "shortName": "C Gandhi",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/60M.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/GW.png",
+          "jerseyCode": "GW",
+          "profileUrl": "https://crex.com/player/chintal-gandhi-60M"
+        }
+      ]
+    },
+    "scrapedAt": "2026-11-27T20:58:47.464Z",
+    "date": "2026-11-30",
+    "title": "Baroda vs Delhi"
+  },
   "1510": {
     "id": "1510",
     "detailUrl": "https://crex.com/cricket-live-score/afg-a-vs-hk-9th-one-day-mens-asia-cup-rising-stars-2026-match-updates-1510",
@@ -9881,7 +11020,7 @@
   },
   "1516": {
     "id": "1516",
-    "detailUrl": "https://crex.com/cricket-live-score/sl-a-vs-tbc-final-mens-asia-cup-rising-stars-2026-match-updates-1516",
+    "detailUrl": "https://crex.com/cricket-live-score/pak-a-vs-sl-a-final-mens-asia-cup-rising-stars-2026-match-updates-1516",
     "matchInfo": {
       "dateText": "Sunday, 29 November, 10:00 AM",
       "venue": "West End Park International Cricket Stadium, Doha",
@@ -9891,7 +11030,12 @@
         "image": "https://cricketvectors.akamaized.net/Series/2O8.png",
         "url": "https://crex.com/series/mens-asia-cup-rising-stars-2026-2O8"
       },
-      "recentMatches": "SL-A & TBC Team Form (Last 5 matches) Sri Lanka A * W W W W L"
+      "recentMatches": "SL-A & PAK-A Team Form (Last 5 matches) Sri Lanka A * W W W W L Pakistan A * W W W W L",
+      "weather": {
+        "details": "West End Park International Cricket Stadium, Doha 25˚C Partly cloudy 69% (Humidity) 1 % Chance"
+      },
+      "headToHead": "SL-A vs PAK-A Head to Head (Last 10 matches) SL-A 0 - 1 PAK-A SL-A 262 45.4 PAK-A Won 1st Semi Final, Emerging Asia Cup 2023 PAK-A 50.0 322",
+      "teamComparison": "SL-A vs PAK-A Team Comparison Overall On Venue SL-A vs all teams PAK-A vs all teams 10 Matches Played 10 80% Win 80% 259 Avg Score 248 322 Highest Score 352 144 Lowest Score 152"
     },
     "teams": {
       "SL-A": [
@@ -9935,7 +11079,7 @@
           "id": "nishan-madushka-4XU",
           "fullName": "Nishan Madushka",
           "shortName": "N Madushka",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/4XU.png",
@@ -9983,7 +11127,7 @@
           "id": "sharujan-shanmuganathan-D1R",
           "fullName": "Sharujan Shanmuganathan",
           "shortName": "S Shanmuganathan",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/D1R.png",
@@ -10077,9 +11221,9 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-26T20:58:31.226Z",
+    "scrapedAt": "2026-11-27T20:54:27.140Z",
     "date": "2026-11-29",
-    "title": "Sri Lanka A vs Team 2 (TBC)"
+    "title": "Sri Lanka A vs Pakistan A"
   },
   "1520": {
     "id": "1520",
@@ -70673,7 +71817,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-26T20:56:57.884Z",
+    "scrapedAt": "2026-11-27T20:52:36.523Z",
     "date": "2026-11-29",
     "title": "Eastern Storm vs Northern Cape Heat"
   },
@@ -103161,7 +104305,7 @@
       "teamComparison": "MLR-W vs MLS-W Team Comparison Overall On Venue MLR-W vs all teams MLS-W vs all teams 10 Matches Played 10 50% Win 40% 145 Avg Score 149 188 Highest Score 192 121 Lowest Score 109",
       "recentMatches": "MLR-W & MLS-W Team Form (Last 5 matches) Melbourne Renegades Women * W L W L W Melbourne Stars Women * L W L L L",
       "weather": {
-        "details": "Junction Oval, Melbourne 17.9˚C Cloudy 84% (Humidity) 80 % Chance"
+        "details": "Junction Oval, Melbourne 23.1˚C Cloudy 78% (Humidity) 85 % Chance"
       }
     },
     "teams": {
@@ -103517,7 +104661,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-26T20:49:40.453Z",
+    "scrapedAt": "2026-11-27T20:44:25.155Z",
     "date": "2026-11-28",
     "title": "Melbourne Renegades Women vs Melbourne Stars Women"
   },
@@ -103537,7 +104681,7 @@
       "teamComparison": "INDWU19 vs ENGWU19 Team Comparison Overall On Venue INDWU19 vs all teams ENGWU19 vs all teams 10 Matches Played 10 100% Win 30% 124 Avg Score 103 208 Highest Score 161 32 Lowest Score 67",
       "recentMatches": "INDWU19 & ENGWU19 Team Form (Last 5 matches) India U19-Women * W W W W W England U19-Women * L L L L L",
       "weather": {
-        "details": "Kotambi Stadium, Vadodara 20.7˚C Clear 52% (Humidity) 0 % Chance"
+        "details": "Kotambi Stadium, Vadodara 20.8˚C Clear 57% (Humidity) 0 % Chance"
       },
       "venueStats": {
         "summary": "1 Matches Win Bat first 100% Win Bowl first 0% Avg 1st Inns197 Avg 2nd Inns161 Highest Total by INDWU19 vs ENWU19 197-5 Lowest Total by ENWU19 vs INDWU19 161-10 Lowest Defended by INDWU19 vs ENWU19 197-5",
@@ -104110,7 +105254,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-26T20:50:41.685Z",
+    "scrapedAt": "2026-11-27T20:45:38.466Z",
     "date": "2026-11-28",
     "title": "India U19-Women vs England U19-Women"
   },
@@ -104128,7 +105272,10 @@
       },
       "headToHead": "MT vs SR Head to Head (Last 10 matches) MT 1 - 0 SR MT 151/5 32.1 MT Won 19th List A, Pro50 SR 43.3 149",
       "teamComparison": "MT vs SR Team Comparison Overall On Venue MT vs all teams SR vs all teams 1 Matches Played 1 100% Win 0% 151 Avg Score 149 151 Highest Score 149 151 Lowest Score 149",
-      "recentMatches": "MT & SR Team Form (Last 5 matches) Matabeleland Tuskers * W Southern Rocks * L"
+      "recentMatches": "MT & SR Team Form (Last 5 matches) Matabeleland Tuskers * W Southern Rocks * L",
+      "weather": {
+        "details": "Mosi-oa-Tunya International Cricket Stadium, Victoria Falls 22.3˚C Some clouds 86% (Humidity) 55 % Chance"
+      }
     },
     "teams": {
       "MT": [
@@ -104196,7 +105343,7 @@
           "id": "brandon-ndiweni-KPT",
           "fullName": "Brandon Ndiweni",
           "shortName": "B Ndiweni",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/KPT.png",
@@ -104208,7 +105355,7 @@
           "id": "brendan-taylor-8L",
           "fullName": "Brendan Taylor",
           "shortName": "B Taylor",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/8L.png",
@@ -104244,7 +105391,7 @@
           "id": "clive-madande-858",
           "fullName": "Clive Madande",
           "shortName": "C Madande",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/858.png",
@@ -104628,7 +105775,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-26T20:51:12.388Z",
+    "scrapedAt": "2026-11-27T20:46:15.323Z",
     "date": "2026-11-28",
     "title": "Matabeleland Tuskers vs Southern Rocks"
   },
@@ -104672,7 +105819,7 @@
       "teamComparison": "SYT-W vs SYS-W Team Comparison Overall On Venue SYT-W vs all teams SYS-W vs all teams 10 Matches Played 10 50% Win 80% 162 Avg Score 155 240 Highest Score 196 93 Lowest Score 126",
       "recentMatches": "SYT-W & SYS-W Team Form (Last 5 matches) Sydney Thunder Women * W L W L L Sydney Sixers Women * W W W L W",
       "weather": {
-        "details": "Drummoyne Oval, Sydney 21.1˚C Cloudy 88% (Humidity) 60 % Chance"
+        "details": "Drummoyne Oval, Sydney 21.4˚C Mostly cloudy 91% (Humidity) 88 % Chance"
       }
     },
     "teams": {
@@ -105041,7 +106188,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-26T20:51:43.183Z",
+    "scrapedAt": "2026-11-27T20:46:51.899Z",
     "date": "2026-11-28",
     "title": "Sydney Thunder Women vs Sydney Sixers Women"
   },
@@ -105058,14 +106205,14 @@
         "url": "https://crex.com/series/international-league-t20-2026-2GZ"
       },
       "venueStats": {
-        "summary": "32 Matches Win Bat first 56% Win Bowl first 44% Avg 1st Inns165 Avg 2nd Inns149 Highest Total by DV vs MIE 233-1 Lowest Total by DV vs MIE 74-10 Highest Chased by DC vs ADKR 207-2 Lowest Defended by MIE vs GG 179-5",
-        "matchCount": "32",
+        "summary": "33 Matches Win Bat first 58% Win Bowl first 42% Avg 1st Inns166 Avg 2nd Inns149 Highest Total by DV vs MIE 233-1 Lowest Total by DV vs MIE 74-10 Highest Chased by DC vs ADKR 207-2 Lowest Defended by MIE vs GG 179-5",
+        "matchCount": "33",
         "venuePercentages": [
-          "Win Bat first 56%",
-          "Win Bowl first 44%"
+          "Win Bat first 58%",
+          "Win Bowl first 42%"
         ],
         "averages": [
-          "165",
+          "166",
           "149"
         ],
         "tableHeaders": [
@@ -105083,9 +106230,9 @@
       },
       "headToHead": "DV vs MIE Head to Head (Last 10 matches) DV 5 - 5 MIE DV 122 19.1 MIE Won 1st T20, ILT20 2026 MIE 20.0 174/8 DV 182/4 20.0 DV Won Final, ILT20 2025-26 MIE 18.3 136 DV 233/1 20.0 DV Won Qualifier 1, ILT20 2025-26 MIE 20.0 188/7 DV 124/7 20.0 MIE Won 24th T20, ILT20 2025-26 MIE 17.3 128/6 MIE 158/9 20.0 DV Won 9th T20, ILT20 2025-26 DV 20.0 159/4",
       "teamComparison": "DV vs MIE Team Comparison Overall On Venue DV vs all teams MIE vs all teams 10 Matches Played 10 50% Win 70% 155 Avg Score 150 233 Highest Score 207 116 Lowest Score 91",
-      "recentMatches": "DV & MIE Team Form (Last 5 matches) Desert Vipers * L W L L W MI Emirates * L W L W L",
+      "recentMatches": "DV & MIE Team Form (Last 5 matches) Desert Vipers * L W L L W MI Emirates * W L W L W",
       "weather": {
-        "details": "Zayed Cricket Stadium, Abu Dhabi 23.9˚C Clear 68% (Humidity) 1 % Chance"
+        "details": "Zayed Cricket Stadium, Abu Dhabi 22.8˚C Clear 77% (Humidity) 0 % Chance"
       }
     },
     "teams": {
@@ -105658,7 +106805,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-26T20:52:13.653Z",
+    "scrapedAt": "2026-11-27T20:47:28.447Z",
     "date": "2026-11-28",
     "title": "Desert Vipers vs MI Emirates"
   },
@@ -105677,7 +106824,7 @@
       "headToHead": "vs Head to Head (Last 10 matches) TBC Final, ECS Prague 2020 TBC TBC Qualifier 2, ECS Prague 2020 TBC TBC Eliminator 1, ECS Prague 2020 TBC TBC Qualifier 1, ECS Prague 2020 TBC TBC Final, Malaysia T10 TBC"
     },
     "teams": {},
-    "scrapedAt": "2026-11-26T20:52:44.248Z",
+    "scrapedAt": "2026-11-27T20:48:05.214Z",
     "date": "2026-11-28",
     "title": "Team 1 (TBC) vs Team 2 (TBC)"
   },
@@ -105696,7 +106843,7 @@
       "headToHead": "vs Head to Head (Last 10 matches) TBC Final, ECS Prague 2020 TBC TBC Qualifier 2, ECS Prague 2020 TBC TBC Eliminator 1, ECS Prague 2020 TBC TBC Qualifier 1, ECS Prague 2020 TBC TBC Final, Malaysia T10 TBC"
     },
     "teams": {},
-    "scrapedAt": "2026-11-26T20:53:38.158Z",
+    "scrapedAt": "2026-11-27T20:48:58.203Z",
     "date": "2026-11-28",
     "title": "Team 1 (TBC) vs Team 2 (TBC)"
   },
@@ -105735,10 +106882,10 @@
         ]
       },
       "headToHead": "DC vs GG Head to Head (Last 10 matches) DC 3 - 6 GG GG 156 19.5 DC Won 23rd T20, ILT20 2025-26 DC 19.2 162/4 DC 160/6 20.0 GG Won 5th T20, ILT20 2025-26 GG 18.5 161/6 DC 154/5 18.4 DC Won 16th T20, ILT20 2025 GG 20.0 153/5 GG 168/4 18.1 GG Won 10th T20, ILT20 2025 DC 20.0 165/7 DC 139/1 15.5 DC Won Qualifier 2, ILT20 2024 GG 20.0 138/6",
-      "teamComparison": "DC vs GG Team Comparison Overall On Venue DC vs all teams GG vs all teams 10 Matches Played 10 50% Win 30% 147 Avg Score 152 196 Highest Score 179 108 Lowest Score 93",
+      "teamComparison": "DC vs GG Team Comparison Overall On Venue DC vs all teams GG vs all teams 10 Matches Played 10 40% Win 30% 140 Avg Score 152 180 Highest Score 179 108 Lowest Score 93",
       "recentMatches": "DC & GG Team Form (Last 5 matches) Dubai Capitals * W L L L W Gulf Giants * W W L L L",
       "weather": {
-        "details": "Dubai International Cricket Stadium, Dubai 24.5˚C Clear 64% (Humidity) 0 % Chance"
+        "details": "Dubai International Cricket Stadium, Dubai 23.9˚C Clear 65% (Humidity) 0 % Chance"
       }
     },
     "teams": {
@@ -106371,7 +107518,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-26T20:54:32.059Z",
+    "scrapedAt": "2026-11-27T20:49:51.867Z",
     "date": "2026-11-28",
     "title": "Dubai Capitals vs Gulf Giants"
   },
@@ -106387,8 +107534,11 @@
         "image": "https://cricketvectors.akamaized.net/Series/2OQ.png",
         "url": "https://crex.com/series/oman-d20-league-2026-2OQ"
       },
-      "teamComparison": "MAT vs MF Team Comparison Overall On Venue MAT vs all teams MF vs all teams 10 Matches Played 1 60% Win 0% 134 Avg Score 140 166 Highest Score 140 100 Lowest Score 140",
-      "recentMatches": "MAT & MF Team Form (Last 5 matches) Majees Titans * L L W W L Mustafa Fragrance Strikers * L"
+      "teamComparison": "MAT vs MF Team Comparison Overall On Venue MAT vs all teams MF vs all teams 10 Matches Played 1 60% Win 0% 139 Avg Score 140 181 Highest Score 140 100 Lowest Score 140",
+      "recentMatches": "MAT & MF Team Form (Last 5 matches) Majees Titans * W L L W W Mustafa Fragrance Strikers * L",
+      "weather": {
+        "details": "Al Amerat Cricket Ground (Ministry Turf 1) 23.2˚C Clear 78% (Humidity) 0 % Chance"
+      }
     },
     "teams": {
       "MAT": [
@@ -106420,7 +107570,7 @@
           "id": "abhinav-sharma-LCP",
           "fullName": "Abhinav Sharma",
           "shortName": "A Sharma",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/LCP.png",
@@ -106480,7 +107630,7 @@
           "id": "hammad-mirza-7UZ",
           "fullName": "Hammad Mirza",
           "shortName": "H Mirza",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/7UZ.png",
@@ -106552,7 +107702,7 @@
           "id": "rahil-habibullah-7WW",
           "fullName": "Rahil Habibullah",
           "shortName": "R Habibullah",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/7WW.png",
@@ -106588,7 +107738,7 @@
           "id": "vinayak-shukla-7TV",
           "fullName": "Vinayak Shukla",
           "shortName": "V Shukla",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/7TV.png",
@@ -106828,7 +107978,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-26T20:50:10.762Z",
+    "scrapedAt": "2026-11-27T20:45:01.883Z",
     "date": "2026-11-28",
     "title": "Majees Titans vs Mustafa Fragrance Strikers"
   },
@@ -106869,8 +108019,11 @@
         ]
       },
       "headToHead": "BH-W vs PRS-W Head to Head (Last 10 matches) BH-W 5 - 5 PRS-W PRS-W 165/3 19.2 PRSW Won 39th T20, WBBL 2025 BH-W 20.0 164/7 BH-W 149 19.1 PRSW Won 6th T20, WBBL 2025 PRS-W 20.0 172/3 PRS-W 114/8 20.0 BHW Won 8th T20, T20 Spring 2025 BH-W 16.2 115/3 PRS-W 142/8 20.0 PRSW Won 14th T20, WBBL 2024 BH-W 18.0 114 PRS-W 130/8 20.0 BHW Won Challenger, WBBL 2023 BH-W 20.0 197/5",
-      "teamComparison": "BH-W vs PRS-W Team Comparison Overall On Venue BH-W vs all teams PRS-W vs all teams 10 Matches Played 10 40% Win 70% 152 Avg Score 138 225 Highest Score 183 88 Lowest Score 92",
-      "recentMatches": "BH-W & PRS-W Team Form (Last 5 matches) Brisbane Heat Women * L L L W W Perth Scorchers Women * L W L W W"
+      "teamComparison": "BH-W vs PRS-W Team Comparison Overall On Venue BH-W vs all teams PRS-W vs all teams 10 Matches Played 10 40% Win 80% 152 Avg Score 146 225 Highest Score 183 88 Lowest Score 118",
+      "recentMatches": "BH-W & PRS-W Team Form (Last 5 matches) Brisbane Heat Women * L L L W W Perth Scorchers Women * W L W L W",
+      "weather": {
+        "details": "Karen Rolton Oval, Adelaide, South Australia 17.1˚C Clouds and sun 82% (Humidity) 60 % Chance"
+      }
     },
     "teams": {
       "BH-W": [
@@ -106878,7 +108031,7 @@
           "id": "lily-bassingthwaighte-FE3",
           "fullName": "Lily Bassingthwaighte",
           "shortName": "L Bassingthwaighte",
-          "role": "All Rounder",
+          "role": "Bowler",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/FE3.png",
@@ -106938,7 +108091,7 @@
           "id": "lucy-hamilton-9Q4",
           "fullName": "Lucy Hamilton",
           "shortName": "L Hamilton",
-          "role": "Bowler",
+          "role": "All Rounder",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/9Q4.png",
@@ -107010,7 +108163,7 @@
           "id": "georgia-redmayne-37X",
           "fullName": "Georgia Redmayne",
           "shortName": "G Redmayne",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": true,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/37X.png",
@@ -107022,7 +108175,7 @@
           "id": "mikayla-wrigley-EYM",
           "fullName": "Mikayla Wrigley",
           "shortName": "M Wrigley",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/EYM.png",
@@ -107046,7 +108199,7 @@
           "id": "yastika-bhatia-65J",
           "fullName": "Yastika Bhatia",
           "shortName": "Y Bhatia",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": false,
           "vector": "https://cricketvectors.akamaized.net/players/org/65J.png",
@@ -107250,7 +108403,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-26T20:55:02.406Z",
+    "scrapedAt": "2026-11-27T20:50:28.662Z",
     "date": "2026-11-29",
     "title": "Brisbane Heat Women vs Perth Scorchers Women"
   },
@@ -107291,8 +108444,11 @@
         ]
       },
       "headToHead": "ADS-W vs HBH-W Head to Head (Last 10 matches) ADS-W 5 - 5 HBH-W HBH-W 138/5 20.0 ADS-W Won 17th T20, WBBL 2026 ADS-W 20.0 139/6 ADS-W 165/5 20.0 ADS-W Won 9th T20, T20 Spring 2026 HBH-W 20.0 136/8 HBH-W 136/6 19.4 HBHW Won 14th T20, WBBL 2025 ADS-W 20.0 134/7 ADS-W 140/7 20.0 ADSW Won 29th T20, WBBL 2024 HBH-W 15.2 102 HBH-W 191/2 20.0 HBHW Won 25th T20, WBBL 2024 ADS-W 20.0 163/3",
-      "teamComparison": "ADS-W vs HBH-W Team Comparison Overall On Venue ADS-W vs all teams HBH-W vs all teams 10 Matches Played 10 50% Win 10% 166 Avg Score 131 233 Highest Score 174 116 Lowest Score 86",
-      "recentMatches": "ADS-W & HBH-W Team Form (Last 5 matches) Adelaide Strikers Women * L W W L W Hobart Hurricanes Women * W L L L L"
+      "teamComparison": "ADS-W vs HBH-W Team Comparison Overall On Venue ADS-W vs all teams HBH-W vs all teams 10 Matches Played 10 50% Win 10% 166 Avg Score 132 233 Highest Score 174 116 Lowest Score 86",
+      "recentMatches": "ADS-W & HBH-W Team Form (Last 5 matches) Adelaide Strikers Women * L W W L W Hobart Hurricanes Women * L W L L L",
+      "weather": {
+        "details": "Karen Rolton Oval, Adelaide, South Australia 17.1˚C Clouds and sun 82% (Humidity) 60 % Chance"
+      }
     },
     "teams": {
       "ADS-W": [
@@ -107684,7 +108840,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-26T20:55:32.704Z",
+    "scrapedAt": "2026-11-27T20:51:05.465Z",
     "date": "2026-11-29",
     "title": "Adelaide Strikers Women vs Hobart Hurricanes Women"
   },
@@ -107701,7 +108857,7 @@
       }
     },
     "teams": {},
-    "scrapedAt": "2026-11-26T20:56:03.903Z",
+    "scrapedAt": "2026-11-27T20:51:42.252Z",
     "date": "2026-11-29",
     "title": "Team 1 (TBC) vs Team 2 (TBC)"
   },
@@ -107741,9 +108897,12 @@
           "117-9"
         ]
       },
-      "headToHead": "AUS vs ENG Head to Head (Last 10 matches) AUS 4 - 6 ENG AUS 184/8 20.0 ENG Won 2nd T20I, ENG vs AUS 2026 ENG 13.1 188/2 AUS 191/7 19.5 AUS Won 1st T20I, ENG vs AUS 2026 ENG 20.0 187/9 ENG 194/7 19.0 ENG Won 2nd T20I, AUS vs ENG 2024 AUS 20.0 193/6 ENG 151 19.2 AUS Won 1st T20I, AUS vs ENG 2024 AUS 19.3 179 AUS 201/7 20.0 AUS Won 17th T20I, T20 WC 2024 ENG 20.0 165/6",
+      "headToHead": "AUS vs ENG Head to Head (Last 10 matches) AUS 4 - 6 ENG AUS 108 16.5 ENG Won (DLS Method) 3rd T20I, ENG vs AUS 2026 ENG 8.5 93/3 AUS 184/8 20.0 ENG Won 2nd T20I, ENG vs AUS 2026 ENG 13.1 188/2 AUS 191/7 19.5 AUS Won 1st T20I, ENG vs AUS 2026 ENG 20.0 187/9 ENG 194/7 19.0 ENG Won 2nd T20I, AUS vs ENG 2024 AUS 20.0 193/6 ENG 151 19.2 AUS Won 1st T20I, AUS vs ENG 2024 AUS 19.3 179",
       "teamComparison": "AUS vs ENG Team Comparison Overall On Venue AUS vs all teams ENG vs all teams 10 Matches Played 10 60% Win 80% 152 Avg Score 195 196 Highest Score 257 96 Lowest Score 126",
-      "recentMatches": "AUS & ENG Team Form (Last 5 matches) Australia * L W W W W England * W L W W W"
+      "recentMatches": "AUS & ENG Team Form (Last 5 matches) Australia * L L W W W England * W W L W W",
+      "weather": {
+        "details": "Sydney Cricket Ground, Sydney 22.8˚C Mostly cloudy 81% (Humidity) 90 % Chance"
+      }
     },
     "teams": {
       "AUS": [
@@ -107859,7 +109018,7 @@
           "id": "sam-harper-1ZE",
           "fullName": "Sam Harper",
           "shortName": "S Harper",
-          "role": "Wicket-keeper",
+          "role": "Batter",
           "isCaptain": false,
           "isWicketkeeper": true,
           "vector": "https://cricketvectors.akamaized.net/players/org/1ZE.png",
@@ -108159,7 +109318,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-26T20:57:29.229Z",
+    "scrapedAt": "2026-11-27T20:53:13.332Z",
     "date": "2026-11-29",
     "title": "Australia vs England"
   },
@@ -108200,8 +109359,8 @@
         ]
       },
       "headToHead": "ADKR vs SW Head to Head (Last 10 matches) ADKR 4 - 4 SW ADKR 134/9 20.0 SW Won 25th T20, ILT20 2025-26 SW 20.0 135/6 SW 194/9 20.0 ADKR Won 2nd T20, ILT20 2025-26 ADKR 20.0 233/4 SW 162/6 19.0 SW Won 25th T20, ILT20 2025 ADKR 20.0 161/8 ADKR 159/5 20.0 ADKR Won 6th T20, ILT20 2025 SW 19.3 129 ADKR 94 17.1 SW Won 25th T20, ILT20 2024 SW 13.5 95/3",
-      "teamComparison": "ADKR vs SW Team Comparison Overall On Venue ADKR vs all teams SW vs all teams 10 Matches Played 10 50% Win 30% 161 Avg Score 144 187 Highest Score 174 120 Lowest Score 90",
-      "recentMatches": "ADKR & SW Team Form (Last 5 matches) Abu Dhabi Knight Riders * L W L W W Sharjah Warriorz * L L L L W"
+      "teamComparison": "ADKR vs SW Team Comparison Overall On Venue ADKR vs all teams SW vs all teams 10 Matches Played 10 50% Win 40% 161 Avg Score 142 187 Highest Score 174 120 Lowest Score 90",
+      "recentMatches": "ADKR & SW Team Form (Last 5 matches) Abu Dhabi Knight Riders * L W L W W Sharjah Warriorz * W L L L L"
     },
     "teams": {
       "ADKR": [
@@ -108785,7 +109944,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-26T20:58:00.281Z",
+    "scrapedAt": "2026-11-27T20:53:50.295Z",
     "date": "2026-11-29",
     "title": "Abu Dhabi Knight Riders vs Sharjah Warriorz"
   },
@@ -109195,7 +110354,7 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-26T20:59:02.144Z",
+    "scrapedAt": "2026-11-27T20:55:03.825Z",
     "date": "2026-11-29",
     "title": "Yalla Shabab Giants vs Royal Oman Stallions"
   },
@@ -109819,8 +110978,647 @@
         }
       ]
     },
-    "scrapedAt": "2026-11-26T20:59:32.909Z",
+    "scrapedAt": "2026-11-27T20:55:41.234Z",
     "date": "2026-11-29",
     "title": "Desert Vipers vs Gulf Giants"
+  },
+  "159E": {
+    "id": "159E",
+    "detailUrl": "https://crex.com/cricket-live-score/auck-vs-cant-6th-first-class-plunket-shield-2026-27-match-updates-159E",
+    "matchInfo": {
+      "dateText": "Friday, 27 November, 9:30 PM",
+      "venue": "Eden Park Outer Oval, Auckland",
+      "series": {
+        "format": "6th First Class",
+        "name": "Plunket 2026-27",
+        "image": "https://cricketvectors.akamaized.net/Series/2MH.png",
+        "url": "https://crex.com/series/plunket-shield-2026-27-2MH"
+      },
+      "weather": {
+        "details": "Eden Park Outer Oval, Auckland 17.8˚C Clouds and sun 76% (Humidity) 6 % Chance"
+      },
+      "headToHead": "AUCK vs CANT Head to Head (Last 10 matches) AUCK 0 - 3 CANT AUCK 280 & 337/6 Match Drawn 22nd First Class, Plunket 2025-26 CANT 153.1 591 AUCK 138 & 324 CANT Won 11th First Class, Plunket 2025-26 CANT 119.0 534/8 AUCK 567/9 140.0 Match Drawn 9th First Class, Plunket 2024-25 CANT 110.0 446/3 AUCK 216 & 257 CANT Won 23rd TEST, Plunket 2023-24 CANT 242 & 232/4 AUCK 217 & 256 CANT Won 7th TEST, Plunket 2023-24 CANT 413/9 & 63/2",
+      "teamComparison": "AUCK vs CANT Team Comparison Overall On Venue AUCK vs all teams CANT vs all teams 10 Matches Played 10 30% Win 40% 284 Avg Score 365 414 Highest Score 591 137 Lowest Score 124",
+      "recentMatches": "AUCK & CANT Team Form (Last 5 matches) Auckland * L D W L L Canterbury * D D W W D"
+    },
+    "teams": {
+      "AUCK": [
+        {
+          "id": "dale-phillips-4Y6",
+          "fullName": "Dale Phillips",
+          "shortName": "D Phillips",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/4Y6.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/dale-phillips-4Y6"
+        },
+        {
+          "id": "bevon-john-jacobs-CZY",
+          "fullName": "Bevon-John Jacobs",
+          "shortName": "B Jacobs",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/CZY.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/bevon-john-jacobs-CZY"
+        },
+        {
+          "id": "max-o-dowd-MM",
+          "fullName": "Max O'Dowd",
+          "shortName": "M O'Dowd",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/MM.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/max-o-dowd-MM"
+        },
+        {
+          "id": "cam-fletcher-4WF",
+          "fullName": "Cam Fletcher",
+          "shortName": "C Fletcher",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": true,
+          "vector": "https://cricketvectors.akamaized.net/players/org/4WF.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/cam-fletcher-4WF"
+        },
+        {
+          "id": "siddhesh-dixit-G1S",
+          "fullName": "Siddhesh Dixit",
+          "shortName": "S Dixit",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/G1S.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/siddhesh-dixit-G1S"
+        },
+        {
+          "id": "samrath-singh-FUS",
+          "fullName": "Samrath Singh",
+          "shortName": "S Singh",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/FUS.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/samrath-singh-FUS"
+        },
+        {
+          "id": "lachlan-stackpole-D79",
+          "fullName": "Lachlan Stackpole",
+          "shortName": "L Stackpole",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/D79.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/lachlan-stackpole-D79"
+        },
+        {
+          "id": "sean-solia-4WV",
+          "fullName": "Sean Solia",
+          "shortName": "S Solia",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/4WV.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/sean-solia-4WV"
+        },
+        {
+          "id": "ryan-harrison-5EU",
+          "fullName": "Ryan Harrison",
+          "shortName": "R Harrison",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/5EU.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/ryan-harrison-5EU"
+        },
+        {
+          "id": "harry-cullen-hieatt-QKZ",
+          "fullName": "Harry Cullen Hieatt",
+          "shortName": "H C Hieatt",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/QKZ.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/harry-cullen-hieatt-QKZ"
+        },
+        {
+          "id": "jimmy-neesham-12X",
+          "fullName": "Jimmy Neesham",
+          "shortName": "J Neesham",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/12X.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/jimmy-neesham-12X"
+        },
+        {
+          "id": "jock-mckenzie-8FQ",
+          "fullName": "Jock McKenzie",
+          "shortName": "J McKenzie",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/8FQ.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/jock-mckenzie-8FQ"
+        },
+        {
+          "id": "rohit-gulati-GKF",
+          "fullName": "Rohit Gulati",
+          "shortName": "R Gulati",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/GKF.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/rohit-gulati-GKF"
+        },
+        {
+          "id": "simon-keene-14N",
+          "fullName": "Simon Keene",
+          "shortName": "S Keene",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/14N.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/simon-keene-14N"
+        },
+        {
+          "id": "mark-chapman-JV",
+          "fullName": "Mark Chapman",
+          "shortName": "M Chapman",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/JV.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/mark-chapman-JV"
+        },
+        {
+          "id": "jaskaran-sandhu-M4X",
+          "fullName": "Jaskaran Sandhu",
+          "shortName": "J Sandhu",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/M4X.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/jaskaran-sandhu-M4X"
+        },
+        {
+          "id": "jack-wright-QKY",
+          "fullName": "Jack Wright",
+          "shortName": "J Wright",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/QKY.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/jack-wright-QKY"
+        },
+        {
+          "id": "luke-watson-D7H",
+          "fullName": "Luke Watson",
+          "shortName": "L Watson",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/D7H.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/luke-watson-D7H"
+        },
+        {
+          "id": "adithya-ashok-147",
+          "fullName": "Adithya Ashok",
+          "shortName": "A Ashok",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/147.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/adithya-ashok-147"
+        },
+        {
+          "id": "angus-olliver-DH2",
+          "fullName": "Angus Olliver",
+          "shortName": "A Olliver",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/DH2.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/angus-olliver-DH2"
+        },
+        {
+          "id": "ben-lister-4X8",
+          "fullName": "Ben Lister",
+          "shortName": "B Lister",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/4X8.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/ben-lister-4X8"
+        },
+        {
+          "id": "jordan-david-sussex-DND",
+          "fullName": "Jordan David Sussex",
+          "shortName": "J D Sussex",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/DND.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/test/org/53.png",
+          "jerseyCode": "53",
+          "profileUrl": "https://crex.com/player/jordan-david-sussex-DND"
+        }
+      ]
+    },
+    "scrapedAt": "2026-11-27T20:43:48.398Z",
+    "date": "2026-11-28",
+    "title": "Auckland vs Canterbury"
+  },
+  "14S3": {
+    "id": "14S3",
+    "detailUrl": "https://crex.com/cricket-live-score/adkr-vs-mie-13th-t20-international-league-t20-2026-match-updates-14S3",
+    "matchInfo": {
+      "dateText": "Monday, 30 November, 2:30 PM",
+      "venue": "Zayed Cricket Stadium, Abu Dhabi",
+      "series": {
+        "format": "13th T20",
+        "name": "ILT20 2026",
+        "image": "https://cricketvectors.akamaized.net/Series/2GZ.png",
+        "url": "https://crex.com/series/international-league-t20-2026-2GZ"
+      },
+      "venueStats": {
+        "summary": "33 Matches Win Bat first 58% Win Bowl first 42% Avg 1st Inns166 Avg 2nd Inns149 Highest Total by DV vs MIE 233-1 Lowest Total by DV vs MIE 74-10 Highest Chased by DC vs ADKR 207-2 Lowest Defended by MIE vs GG 179-5",
+        "matchCount": "33",
+        "venuePercentages": [
+          "Win Bat first 58%",
+          "Win Bowl first 42%"
+        ],
+        "averages": [
+          "166",
+          "149"
+        ],
+        "tableHeaders": [
+          "Highest Total",
+          "Lowest Total",
+          "Highest Chased",
+          "Lowest Defended"
+        ],
+        "scores": [
+          "233-1",
+          "74-10",
+          "207-2",
+          "179-5"
+        ]
+      },
+      "headToHead": "ADKR vs MIE Head to Head (Last 10 matches) ADKR 1 - 9 MIE ADKR 171/7 20.0 MIE Won 7th T20, ILT20 2026 MIE 20.0 207/4 MIE 122/3 16.1 MIE Won Qualifier 2, ILT20 2025-26 ADKR 20.0 120/8 ADKR 152/7 20.0 MIE Won 21st T20, ILT20 2025-26 MIE 20.0 187/4 MIE 123/3 13.5 MIE Won 11th T20, ILT20 2025-26 ADKR 19.3 122 MIE 140/6 20.0 ADKR Won 17th T20, ILT20 2025 ADKR 20.0 182/7",
+      "teamComparison": "ADKR vs MIE Team Comparison Overall On Venue ADKR vs all teams MIE vs all teams 10 Matches Played 10 50% Win 70% 161 Avg Score 150 187 Highest Score 207 120 Lowest Score 91",
+      "recentMatches": "ADKR & MIE Team Form (Last 5 matches) Abu Dhabi Knight Riders * L W L W W MI Emirates * W L W L W"
+    },
+    "teams": {
+      "ADKR": [
+        {
+          "id": "finn-allen-4W4",
+          "fullName": "Finn Allen",
+          "shortName": "F Allen",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": true,
+          "vector": "https://cricketvectors.akamaized.net/players/org/4W4.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/finn-allen-4W4"
+        },
+        {
+          "id": "alishan-sharafu-162",
+          "fullName": "Alishan Sharafu",
+          "shortName": "A Sharafu",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/162.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/alishan-sharafu-162"
+        },
+        {
+          "id": "andre-fletcher-JR",
+          "fullName": "Andre Fletcher",
+          "shortName": "A Fletcher",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/JR.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/andre-fletcher-JR"
+        },
+        {
+          "id": "colin-munro-8Z",
+          "fullName": "Colin Munro",
+          "shortName": "C Munro",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/8Z.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/colin-munro-8Z"
+        },
+        {
+          "id": "manan-ali-BK3",
+          "fullName": "Manan Ali",
+          "shortName": "M Ali",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/BK3.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/manan-ali-BK3"
+        },
+        {
+          "id": "michael-kyle-pepper-46C",
+          "fullName": "Michael-Kyle Pepper",
+          "shortName": "M Pepper",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/46C.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/michael-kyle-pepper-46C"
+        },
+        {
+          "id": "lorcan-tucker-XX",
+          "fullName": "Lorcan Tucker",
+          "shortName": "L Tucker",
+          "role": "Wicket-keeper",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/XX.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/lorcan-tucker-XX"
+        },
+        {
+          "id": "ravija-sandaruwan-2WX",
+          "fullName": "Ravija Sandaruwan",
+          "shortName": "R Sandaruwan",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/2WX.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/ravija-sandaruwan-2WX"
+        },
+        {
+          "id": "jason-holder-9P",
+          "fullName": "Jason Holder",
+          "shortName": "J Holder",
+          "role": "All Rounder",
+          "isCaptain": true,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/9P.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/jason-holder-9P"
+        },
+        {
+          "id": "matthew-tromp-9M8",
+          "fullName": "Matthew Tromp",
+          "shortName": "M Tromp",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/9M8.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/matthew-tromp-9M8"
+        },
+        {
+          "id": "moeen-ali-B8",
+          "fullName": "Moeen Ali",
+          "shortName": "M Ali",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/B8.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/moeen-ali-B8"
+        },
+        {
+          "id": "gulbadin-naib-ME",
+          "fullName": "Gulbadin Naib",
+          "shortName": "G Naib",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/ME.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/gulbadin-naib-ME"
+        },
+        {
+          "id": "amshi-de-silva-189",
+          "fullName": "Amshi de Silva",
+          "shortName": "A d Silva",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/189.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/amshi-de-silva-189"
+        },
+        {
+          "id": "abdullah-tarakhail-4G7",
+          "fullName": "Abdullah Tarakhail",
+          "shortName": "A Tarakhail",
+          "role": "Batter",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/4G7.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/abdullah-tarakhail-4G7"
+        },
+        {
+          "id": "sunil-narine-5K",
+          "fullName": "Sunil Narine",
+          "shortName": "S Narine",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/5K.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/sunil-narine-5K"
+        },
+        {
+          "id": "muhammad-rohid-khan-A5R",
+          "fullName": "Muhammad Rohid Khan",
+          "shortName": "M R Khan",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/A5R.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/muhammad-rohid-khan-A5R"
+        },
+        {
+          "id": "ibrar-ahmad-G2J",
+          "fullName": "Ibrar Ahmad",
+          "shortName": "I Ahmad",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/G2J.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/ibrar-ahmad-G2J"
+        },
+        {
+          "id": "ajay-kumar-J7I",
+          "fullName": "Ajay Kumar",
+          "shortName": "A Kumar",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/J7I.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/ajay-kumar-J7I"
+        },
+        {
+          "id": "jakeem-pollard-GF0",
+          "fullName": "Jakeem Pollard",
+          "shortName": "J Pollard",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/GF0.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/jakeem-pollard-GF0"
+        },
+        {
+          "id": "arab-gul-momand-DBG",
+          "fullName": "Arab Gul Momand",
+          "shortName": "A G Momand",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/DBG.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/arab-gul-momand-DBG"
+        },
+        {
+          "id": "usman-tariq-CZW",
+          "fullName": "Usman Tariq",
+          "shortName": "U Tariq",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/CZW.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/usman-tariq-CZW"
+        },
+        {
+          "id": "qais-ahmad-12A",
+          "fullName": "Qais Ahmad",
+          "shortName": "Q Ahmad",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/12A.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/qais-ahmad-12A"
+        },
+        {
+          "id": "tahir-zaman-J7H",
+          "fullName": "Tahir Zaman",
+          "shortName": "T Zaman",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/J7H.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/tahir-zaman-J7H"
+        },
+        {
+          "id": "andre-russell-4U",
+          "fullName": "Andre Russell",
+          "shortName": "A Russell",
+          "role": "All Rounder",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/4U.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/andre-russell-4U"
+        },
+        {
+          "id": "khalil-gurbaz-91B",
+          "fullName": "Khalil Gurbaz",
+          "shortName": "K Gurbaz",
+          "role": "Bowler",
+          "isCaptain": false,
+          "isWicketkeeper": false,
+          "vector": "https://cricketvectors.akamaized.net/players/org/91B.png",
+          "jersey": "https://cricketvectors.akamaized.net/jersey/limited/org/M3.png",
+          "jerseyCode": "M3",
+          "profileUrl": "https://crex.com/player/khalil-gurbaz-91B"
+        }
+      ]
+    },
+    "scrapedAt": "2026-11-27T20:59:25.015Z",
+    "date": "2026-11-30",
+    "title": "Abu Dhabi Knight Riders vs MI Emirates"
   }
 }
